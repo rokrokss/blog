@@ -52,6 +52,9 @@ author:
   # douban:  #your Douban username
   # linkedin:  #your Linkedin username
 
+## Google Analytics ##
+ga_tracking_id: UA-111579778-1  #Google analytics id for the site
+
 ## Comment system (Disqus) ##
 disqus:
   # shortname:  #the Disqus shortname for the site
