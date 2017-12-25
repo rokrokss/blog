@@ -16,9 +16,9 @@
 ## Base settings ##
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: Someone's blog
+title: IMROK
 description: > #this means to ignore newlines until "nav_lists:"
-  Someone's Blog
+  IMROK
 
 nav_lists:
   - titles:
@@ -40,19 +40,19 @@ repository_tree: master
 
 ## Language & timezone ##
 lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
-timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+timezone: Asia/Seoul #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 ## Author & social ##
 author:
-  name: Someone
-  email: someone@somemail.com  #your Email address e.g. someone@site.com
-  facebook: someone  #your Facebook username
-  twitter: someone  #your Twitter username
-  github: someone  #your GitHub username
-  googleplus:   #your Google+ username
-  weibo:   #your Weibo username
-  douban:   #your Douban username
-  linkedin:   #your Linkedin username
+  name: 김형록
+  email: q0115643@kaist.ac.kr  #your Email address e.g. someone@site.com
+  facebook: 100004915320124  #your Facebook username
+  #twitter: someone  #your Twitter username
+  github: q0115643  #your GitHub username
+  #googleplus:   #your Google+ username
+  #weibo:   #your Weibo username
+  #douban:   #your Douban username
+  #linkedin:   #your Linkedin username
 
 ## Comment system (Disqus) ##
 disqus:
