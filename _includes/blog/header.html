@@ -45,17 +45,6 @@
         {%- assign __locale = list.titles -%}
         {%- include snippets/locale-to-string.html -%}
         <li><a href="{{ href }}">{%- if list.title -%}{{ list.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
-      {%- endfor -%}
-      {%- if site.paths.rss -%}
-        {%- assign __path = site.paths.rss -%}
-      {%- else -%}
-        {%- assign __path = '/feed.xml' -%}
-      {%- endif -%}
-      {%- include snippets/prepend-baseurl.html -%}
-      {%- assign href = __return -%}
-      {%- assign __locale = site.data.locale.NAV.RSS -%}
-      {%- include snippets/locale-to-string.html -%}
-      <li><a type="application/rss+xml" href="{{ href }}">{{ __return }}</a></li>
     </ul>
   </nav>
 </header>
