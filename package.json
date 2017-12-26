@@ -34,5 +34,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-svg2png": "^2.0.2",
     "gulp-to-ico": "^1.0.0"
+  },
+  "dependencies": {
+    "gitalk": "^1.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }

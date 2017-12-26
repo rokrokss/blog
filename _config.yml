@@ -45,7 +45,7 @@ timezone: Asia/Seoul #see https://en.wikipedia.org/wiki/List_of_tz_database_time
 author:
   name: 김형록
   email: q0115643@kaist.ac.kr #your Email address e.g. someone@site.com
-  #facebook: 100004915320124  #your Facebook username
+  facebook: 100004915320124  #your Facebook username
   # twitter:  #your Twitter username
   github: q0115643  #your GitHub username
   # googleplus:  #your Google+ username
@@ -71,7 +71,7 @@ gitalk:
     # - owner
 
 ## Google Analytics ##
-# ga_tracking_id:  #Google analytics id for the site
+ga_tracking_id: UA-111579778-1  #Google analytics id for the site
 
 ## Reading quantity (LeanCloud) ##
 leancloud:

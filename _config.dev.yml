@@ -40,7 +40,7 @@ repository: someone/someone.github.io
 repository_tree: master
 
 ## Language & timezone ##
-lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+lang: kr #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
 timezone: Asia/Seoul #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 ## Author & social ##
@@ -62,12 +62,12 @@ disqus:
 ## Comment system (gitalk) ##
 # please refer to https://github.com/gitalk/gitalk for more info.
 gitalk:
-  clientID: 143666b578a416f82175 #Github Application Client ID
-  clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775 #Github Application Client Secret
-  repository: gitalk-demo #Github repo
-  owner: kitian616 #Github repo owner
-  admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
-    - kitian616
+  #clientID: 143666b578a416f82175 #Github Application Client ID
+  #clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775 #Github Application Client Secret
+  #repository: gitalk-demo #Github repo
+  #owner: q0115643 #Github repo owner
+  #admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+  #  - q0115643
 
 ## Google Analytics ##
 ga_tracking_id: UA-111579778-1  #Google analytics id for the site
