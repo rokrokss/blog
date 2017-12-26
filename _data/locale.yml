@@ -36,7 +36,7 @@ LAST_UPDATED:
 
 ARTICLE_DATE_FORMAT:
   en:      "%b %d, %Y"
-  kr:      "%d일 %m월, %Y년"
+  kr:      "%Y년 %m월 %d일"
   zh:      "%Y年 %m月%d日"
   zh-Hans: "%Y年 %m月%d日"
   zh-Hant: "%Y年 %m月%d日"
