@@ -58,7 +58,7 @@ ga_tracking_id: UA-111579778-1  #Google analytics id for the site
 
 ## Comment system (Disqus) ##
 disqus:
-  # shortname:  #the Disqus shortname for the site
+  shortname: rokrokss  #the Disqus shortname for the site
 
 ## Comment system (gitalk) ##
 # please refer to https://github.com/gitalk/gitalk for more info.
@@ -79,7 +79,7 @@ leancloud:
   # app_key:  #LeanCloud App key
   # app_class:  #LeanCloud App class
 
-# mathjax: true
+mathjax: true
 
 ## Paginate ##
 paginate: 5
