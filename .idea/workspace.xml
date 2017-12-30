@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -57,12 +55,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-12-30-테스트.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-12-30-테스트.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-12-30-테스트.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -80,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
+            <state relative-caret-position="181">
               <caret line="79" column="2" lean-forward="false" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
               <folding />
             </state>
@@ -138,6 +136,7 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2017-12-27-테스트.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-12-30-테스트.md" />
       </list>
     </option>
   </component>
@@ -338,12 +337,12 @@
       <workItem from="1514184801765" duration="5514000" />
       <workItem from="1514302994306" duration="5294000" />
       <workItem from="1514545737820" duration="15489000" />
-      <workItem from="1514603035294" duration="3262000" />
+      <workItem from="1514603035294" duration="3309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33961000" />
+    <option name="totallyTimeSpent" value="34008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -723,6 +722,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-12-30-테스트.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -733,20 +743,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
+        <state relative-caret-position="181">
           <caret line="79" column="2" lean-forward="false" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-12-30-테스트.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
