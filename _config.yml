@@ -53,9 +53,6 @@ author:
   # douban:  #your Douban username
   # linkedin:  #your Linkedin username
 
-## Google Analytics ##
-ga_tracking_id: UA-111579778-1  #Google analytics id for the site
-
 ## Comment system (Disqus) ##
 disqus:
   shortname: rokrokss  #the Disqus shortname for the site
@@ -87,7 +84,7 @@ paginate_path: /blog/page:num
 
 ## Post excerpts ##
 excerpt_separator: <!--more-->
-excerpt_type: html # text | html
+excerpt_type: text # text | html
 
 ## Build ##
 markdown: kramdown
