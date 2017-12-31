@@ -29,8 +29,11 @@
     border: 0 solid rgba($text-color-l, .6);
     border-right-width: 1px;
     margin: 0 $base-font-size / 4 0 0;
+    font-size: 13px;
   }
   .date-wrapper {
+    line-height: 1;
     margin: 0 $base-font-size 0 0;
+    font-size: 13px;
   }
 }
