@@ -11,14 +11,6 @@
   <div class="site-logo">
     {%- include logo/logo.svg -%}
   </div>
-  {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class -%}
-  <div class="view-wrapper">
-        today <span class="visit" id="today">0
-        </span> | total
-        <span class="visit" id="total">0
-        </span>
-  </div>
-  {%- endif -%}
   <nav>
     <ul class="inline-list">
       {%- if site.paths.home -%}
@@ -66,4 +58,12 @@
       <li><a type="application/rss+xml" href="{{ href }}">{{ __return }}</a></li>
     </ul>
   </nav>
+  {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class -%}
+  <div class="visit-wrapper">
+    today <span class="visit" id="today">0
+  </span>  <span class="visit-visit"> &nbsp;|&nbsp; </span>  total
+    <span class="visit" id="total">0
+        </span>
+  </div>
+  {%- endif -%}
 </header>
