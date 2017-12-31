@@ -36,7 +36,9 @@
     "gulp-to-ico": "^1.0.0"
   },
   "dependencies": {
+    "date": "^1.0.2",
     "gitalk": "^1.2.0",
+    "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

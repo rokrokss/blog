@@ -11,6 +11,14 @@
   <div class="site-logo">
     {%- include logo/logo.svg -%}
   </div>
+  {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class -%}
+  <div class="view-wrapper">
+        today <span class="visit" id="today">0
+        </span> | total
+        <span class="visit" id="total">0
+        </span>
+  </div>
+  {%- endif -%}
   <nav>
     <ul class="inline-list">
       {%- if site.paths.home -%}
