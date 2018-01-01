@@ -106,7 +106,7 @@ exclude:
   - /docs
   - /node_modules
   - /screenshots
-  # - /test
+  - /test
   - /vendor
 
 ## Plugins ##
