@@ -193,6 +193,20 @@ layout: blog-default
 					throw error;
 				}
 			});
+            $(".visit").each(function() {
+                var curId = this.id;
+                var query = new AV.Query('{{ site.leancloud.app_class }}');
+                query.equalTo('key', curId);
+                query.first().then(function(result) {
+                    if (result) {
+                        $('#' + curId).text(result.attributes.views);
+                    }
+                }, function(error) {
+                    if (error) {
+                        throw error;
+                    }
+                });
+            });
 		});
 	</script>
 {%- endif -%}
