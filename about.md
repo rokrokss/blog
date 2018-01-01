@@ -7,6 +7,7 @@ titles:
   zh-Hans: 关于
   zh-Hant: 關於
 key: page-about
+comment: false
 ---
 
 안녕하세요.
