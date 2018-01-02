@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md" afterPath="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="319">
-                <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <first_editor relative-caret-position="337">
+                <caret line="97" column="63" lean-forward="false" selection-start-line="97" selection-start-column="63" selection-end-line="97" selection-end-column="63" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -192,6 +193,11 @@
             <path>
               <item name="my_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_blog" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -248,12 +254,12 @@
       <workItem from="1514799022557" duration="10292000" />
       <workItem from="1514814315187" duration="10036000" />
       <workItem from="1514898998373" duration="3329000" />
-      <workItem from="1514907577899" duration="2223000" />
+      <workItem from="1514907577899" duration="3205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80572000" />
+    <option name="totallyTimeSpent" value="81554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -705,8 +711,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="319">
-            <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <first_editor relative-caret-position="337">
+            <caret line="97" column="63" lean-forward="false" selection-start-line="97" selection-start-column="63" selection-end-line="97" selection-end-column="63" />
             <folding />
           </first_editor>
           <second_editor />
