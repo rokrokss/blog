@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md" afterPath="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="349">
-                <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <first_editor relative-caret-position="351">
+                <caret line="84" column="80" lean-forward="false" selection-start-line="84" selection-start-column="80" selection-end-line="84" selection-end-column="80" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -34,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-1-개요.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="263">
-                <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <first_editor relative-caret-position="208">
+                <caret line="23" column="99" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="99" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -246,12 +246,12 @@
       <workItem from="1514695120747" duration="6932000" />
       <workItem from="1514799022557" duration="10292000" />
       <workItem from="1514814315187" duration="10036000" />
-      <workItem from="1514898998373" duration="1617000" />
+      <workItem from="1514898998373" duration="1701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76637000" />
+    <option name="totallyTimeSpent" value="76721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -701,8 +701,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-1-개요.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="263">
-            <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <first_editor relative-caret-position="208">
+            <caret line="23" column="99" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="99" />
             <folding />
           </first_editor>
           <second_editor />
@@ -712,8 +712,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <first_editor relative-caret-position="351">
+            <caret line="84" column="80" lean-forward="false" selection-start-line="84" selection-start-column="80" selection-end-line="84" selection-end-column="80" />
             <folding />
           </first_editor>
           <second_editor />
