@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" afterPath="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,7 +22,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="180">
-                <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="55" />
+                <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -35,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <first_editor relative-caret-position="278">
+                <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -271,12 +270,12 @@
       <workItem from="1514898998373" duration="3329000" />
       <workItem from="1514907577899" duration="3638000" />
       <workItem from="1515829486471" duration="16000" />
-      <workItem from="1516015820402" duration="4166000" />
+      <workItem from="1516015820402" duration="4255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86169000" />
+    <option name="totallyTimeSpent" value="86258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -708,7 +707,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="180">
-            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="55" />
+            <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             <folding />
           </first_editor>
           <second_editor />
@@ -718,8 +717,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <first_editor relative-caret-position="278">
+            <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
             <folding />
           </first_editor>
           <second_editor />
