@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="" />
+    <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" afterPath="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2018-01-15-식물들의사생활-이승우.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2018-01-15-식물들의사생활-이승우.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+              <first_editor relative-caret-position="420">
+                <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -28,12 +30,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-15-Markdown-정리.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-15-Markdown-정리.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-Markdown-정리.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <first_editor relative-caret-position="2595">
+                <caret line="173" column="10" lean-forward="false" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -134,8 +136,8 @@
         <option value="$PROJECT_DIR$/_includes/blog/tags.html" />
         <option value="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-1-개요.md" />
         <option value="$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md" />
-        <option value="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" />
         <option value="$PROJECT_DIR$/_posts/2018-01-15-Markdown-정리.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md" />
       </list>
     </option>
   </component>
@@ -281,12 +283,12 @@
       <workItem from="1514898998373" duration="3329000" />
       <workItem from="1514907577899" duration="3638000" />
       <workItem from="1515829486471" duration="16000" />
-      <workItem from="1516015820402" duration="1850000" />
+      <workItem from="1516015820402" duration="2159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83853000" />
+    <option name="totallyTimeSpent" value="84162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -718,17 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-2-트위터-마이닝.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -743,8 +734,19 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-Markdown-정리.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <first_editor relative-caret-position="2595">
+            <caret line="173" column="10" lean-forward="false" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-식물들의사생활-이승우.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
