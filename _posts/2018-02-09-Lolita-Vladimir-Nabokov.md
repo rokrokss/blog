@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: 식물들의 사생활 - 이승우
-key: 20180115
+title: 롤리타 - 블라디미르 나보코프
+key: 201802091
 picture_frame: shadow
 tags:
   - 감상
