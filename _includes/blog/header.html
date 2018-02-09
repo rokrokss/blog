@@ -6,7 +6,8 @@
   {%- endif -%}
   {%- include snippets/prepend-baseurl.html -%}
   {%- if site.title -%}
-    <a class="site-title" title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+    <a class="site-title" title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+  Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;">{{ site.title }}</a>
   {%- endif -%}
   <div class="site-logo">
     {%- include logo/logo.svg -%}
