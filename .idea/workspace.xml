@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-24-제49호품목의경매-토머스핀천.md" afterPath="$PROJECT_DIR$/_posts/2018-02-24-제49호품목의경매-토머스핀천.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-02-09-롤리타-블라디미르나보코프.md" afterPath="$PROJECT_DIR$/_posts/2018-02-09-롤리타-블라디미르나보코프.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,12 +31,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-02-09-롤리타-블라디미르나보코프.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2018-02-09-롤리타-블라디미르나보코프.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-02-09-롤리타-블라디미르나보코프.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="525">
-                <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <first_editor relative-caret-position="428">
+                <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -44,12 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-02-24-제49호품목의경매-토머스핀천.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-02-24-제49호품목의경매-토머스핀천.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-02-24-제49호품목의경매-토머스핀천.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="305">
-                <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <first_editor relative-caret-position="335">
+                <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -263,12 +263,12 @@
       <workItem from="1519477196231" duration="1763000" />
       <workItem from="1519490129409" duration="3388000" />
       <workItem from="1519556453822" duration="272000" />
-      <workItem from="1519557475863" duration="311000" />
+      <workItem from="1519557475863" duration="392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130516000" />
+    <option name="totallyTimeSpent" value="130597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -677,22 +677,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-09-롤리타-블라디미르나보코프.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-24-제49호품목의경매-토머스핀천.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="525">
-            <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="335">
+            <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-24-제49호품목의경매-토머스핀천.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-09-롤리타-블라디미르나보코프.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="305">
-            <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="428">
+            <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
             <folding />
           </first_editor>
           <second_editor />
