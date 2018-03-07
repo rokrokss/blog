@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-08-위대한개츠비-스콧피츠제럴드.md" afterPath="$PROJECT_DIR$/_posts/2018-03-08-위대한개츠비-스콧피츠제럴드.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-03-08-위대한개츠비-스콧피츠제럴드.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <first_editor relative-caret-position="405">
+                <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -254,12 +254,12 @@
       <workItem from="1519557475863" duration="1312000" />
       <workItem from="1519564627580" duration="8646000" />
       <workItem from="1519634296478" duration="637000" />
-      <workItem from="1520440087133" duration="1704000" />
+      <workItem from="1520440087133" duration="2448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142504000" />
+    <option name="totallyTimeSpent" value="143248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -691,8 +691,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-03-08-위대한개츠비-스콧피츠제럴드.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <first_editor relative-caret-position="405">
+            <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
