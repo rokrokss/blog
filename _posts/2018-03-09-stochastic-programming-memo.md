@@ -44,7 +44,7 @@ where $$Q(x, \xi)$$ is the optimal value of the second-stage problem
 $$
     \begin{array}{ll}
     \min_{y\in \Bbb R^m} & q(\xi)^Ty \\
-    \text{subject to} & T(\xi)+W(\xi)y=h(\xi) \\
+    \text{subject to} & T(\xi)x+W(\xi)y=h(\xi) \\
     \ & y\ge0 \\
     \end{array}
 $$
