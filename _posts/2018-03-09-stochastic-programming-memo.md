@@ -49,6 +49,17 @@ $$
     \end{array}
 $$
 
+$$ x\in \Bbb R^n && is the first-stage decision variable vector
+
+
+
+
+
+
+
+
+
+
 
 
 
