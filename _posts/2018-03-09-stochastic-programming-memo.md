@@ -48,7 +48,7 @@ $$
     \ & y\ge0 \\
     \end{array}
 $$
-
+ 
 $$ x\in \Bbb R^n $$ is the first-stage decision variable vector. <br>
 $$ y\in \Bbb R^m $$ is the second-stage decision variable vector. <br>
 $$ \xi(q, T, W, h) $$ contains the data of the second-stage problem. <br>
