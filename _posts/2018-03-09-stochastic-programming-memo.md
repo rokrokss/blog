@@ -23,7 +23,7 @@ The basic idea of two-stage stochastic programming is that (optimal)
 decisions should be based on data available at the time the decisions
 are made and **cannot depend on future observations**.
 
-
+$$\min_{x\in X}{g(x)=f(x)+E_\xi[Q(x,\xi)]}$$
 
 
 
