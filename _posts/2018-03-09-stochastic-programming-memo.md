@@ -33,12 +33,21 @@ The classical two-stage linear stochastic programming problems can be formulated
 
 $$
     \begin{array}{ll}
-    \min_{x\in \Bbb R^n} \\
-    \text{subject to} \\
+    \min_{x\in \Bbb R^n} & g(x)=c^T x+E_\xi[Q(x, \xi)] \\
+    \text{subject to} & Ax=b \\
+    \ & x\ge0 \\
     \end{array}
 $$
- 
 
+where $$Q(x, \xi)$$ is the optimal value of the second-stage problem
+
+$$
+    \begin{array}{ll}
+    \min_{y\in \Bbb R^m} & q(\xi)^Ty \\
+    \text{subject to} & T(\xi)+W(\xi)y=h(\xi) \\
+    \ & y\ge0 \\
+    \end{array}
+$$
 
 
 
