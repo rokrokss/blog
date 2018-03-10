@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Stochastic programming 메모
 key: 201803091
-modify_date: 2018-03-09
+modify_date: 2018-03-10
 picture_frame: shadow
 tags:
   - Stochastic programming
