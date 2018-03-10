@@ -63,9 +63,13 @@ a random vector with a known probability distribution (not just uncertain).
 
 ### Discretization
 To solve the two-stage stochastic problem numerically, one often needs to assume that the random vector $$\xi$$
-has a finite number of possible realizations, called scenarios, say $$\xi_1,...,\xi_K$$, with respective probability masses
+has a finite number of possible realizations, called **scenarios**, say $$\xi_1,...,\xi_K$$, with respective probability masses
 $$p_1,...,p_K$$. Then the expectation in the first-stage problem's objective function can be written as the summation:
-$$E[Q(x,\xi)]=\sum_{k=1}^K p_k Q(x,\xi_k)$$
+
+$$
+    E[Q(x,\xi)]=\sum_{k=1}^K p_k Q(x,\xi_k)
+$$
+
 and, moreover, the two-stage problem can be formulated as one large linear programming problem
 (this is called the **deterministic equivalent** of the original problem).
 
