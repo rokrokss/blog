@@ -38,7 +38,7 @@ $$
     \ & x\ge0 \\
     \end{array}
 $$
-
+ 
 where $$Q(x, \xi)$$ is the optimal value of the second-stage problem
 
 $$
