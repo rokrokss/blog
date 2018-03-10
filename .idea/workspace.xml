@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md" afterPath="$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md" afterPath="$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,51 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2018-03-09-stochastic-programming-memo.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2018-03-09-stochastic-programming-memo.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="281">
-                <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-12-12-mathjax.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/_posts/2016-12-12-mathjax.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-03-10-matjax-memo.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-01-01-소셜-웹-마이닝-1-개요.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-01-01-소셜-웹-마이닝-1-개요.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-22">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="86">
+                <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -155,8 +117,8 @@
         <option value="$PROJECT_DIR$/_posts/2018-02-03-cs224d-시작.md" />
         <option value="$PROJECT_DIR$/_posts/2018-02-26-cs224d-word-vector.md" />
         <option value="$PROJECT_DIR$/_posts/2018-03-08-위대한개츠비-스콧피츠제럴드.md" />
-        <option value="$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md" />
         <option value="$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md" />
       </list>
     </option>
   </component>
@@ -296,12 +258,12 @@
       <workItem from="1520440087133" duration="9313000" />
       <workItem from="1520582056242" duration="2177000" />
       <workItem from="1520591396799" duration="5250000" />
-      <workItem from="1520679623270" duration="733000" />
+      <workItem from="1520679623270" duration="1062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158273000" />
+    <option name="totallyTimeSpent" value="158602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -711,11 +673,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="281">
-            <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -744,11 +706,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-03-10-matjax-memo.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-03-09-stochastic-programming-memo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="86">
+            <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
             <folding />
           </first_editor>
           <second_editor />
