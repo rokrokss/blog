@@ -57,6 +57,18 @@ at the first stage we have to make a "here-and-now" decision $$x$$ before the re
 viewed as a random vector, is known. At the second stage, after a realization of $$\xi$$ becomes available,
 we optimize our behavior by solving an appropriate optimization problem.
 
+### Distributional assumption(분포 가정?)
+The formulation of the above two-stage problem assumes that the second-stage data $$\xi$$ can be modeled as
+a random vector with a known probability distribution (not just uncertain).
+
+### Discretization
+To solve the two-stage stochastic problem numerically, one often needs to assume that the random vector $$\xi$$
+has a finite number of possible realizations, called scenarios, say $$\xi_1,...,\xi_K$$, with respective probability masses
+$$p_1,...,p_K$$. Then the expectation in the first-stage problem's objective function can be written as the summation:
+
+$$E[Q(x,\xi)]=\sum_{k=1}^K p_k Q(x,\xi_k)$$
+
+
 
 
 
