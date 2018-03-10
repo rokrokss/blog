@@ -53,7 +53,9 @@ $$ x\in \Bbb R^n $$ is the first-stage decision variable vector. <br>
 $$ y\in \Bbb R^m $$ is the second-stage decision variable vector. <br>
 $$ \xi(q, T, W, h) $$ contains the data of the second-stage problem. <br>
 
-at the first stage we have to make a "here-and-now" decision $$x$$ before the realization of the uncertain data $$\xi$$.
+at the first stage we have to make a "here-and-now" decision $$x$$ before the realization of the uncertain data $$\xi$$,
+viewed as a random vector, is known. At the second stage, after a realization of $$\xi$$ becomes available,
+we optimize our behavior by solving an appropriate optimization problem.
 
 
 
