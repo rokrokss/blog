@@ -29,7 +29,7 @@ where $$Q(x, \xi)$$ is the optimal value of the second-stage problem
 
 $$\min_{y}{\{q(y, \xi) | T(\xi)x+W(\xi)y=h(\xi)\}}$$
 
-The classical two-stage linear stochastic programming problems can be formulated as
+The classical two-stage **linear** stochastic programming problems can be formulated as
 
 $$
     \begin{array}{ll}
