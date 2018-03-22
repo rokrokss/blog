@@ -9,13 +9,13 @@ tags:
   - NLP
 ---
 
-###참고 논문 리스트
+##참고 논문 리스트
 
 - [ACL2017](https://acl2017.wordpress.com/2017/04/05/accepted-papers-and-demonstrations/)
 - [EMNLP2017](http://emnlp2017.net/accepted-papers.html)
 
 
-###Neural Network & Language Model 참고 자료
+##Neural Network & Language Model 참고 자료
 
 - [Neural Networks and Deep learning](http://neuralnetworksanddeeplearning.com/index.html)
 - [Deep Learning tutorial](http://ufldl.stanford.edu/tutorial/)
