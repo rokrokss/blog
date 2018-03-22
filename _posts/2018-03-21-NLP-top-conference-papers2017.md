@@ -22,3 +22,4 @@ tags:
 7. [char RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 8. [practical neural net for NLP](https://github.com/clab/dynet_tutorial_examples)
 
+<!--more-->
