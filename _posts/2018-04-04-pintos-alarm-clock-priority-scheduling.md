@@ -35,11 +35,20 @@ sleep_list 만들어서 timer_interrupt 때마다 wake_up_threads()를 호출하
 
 ### Scheduling 관련 함수
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-01.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-04.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-01.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-05.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-01.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-06.png)
+
+ready_list에 우선도 순으로 insert한다.
+thread_create()과 thread_set_priority(int new_priority)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-07.png)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-08.png)
+
+이거 추가해서 priority 체크 후 preemption해야 하면 바로 thread_yield()
 
 
 
