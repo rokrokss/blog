@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md" afterPath="$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="319">
-                <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <first_editor relative-caret-position="304">
+                <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -36,7 +35,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="1200">
-                <caret line="80" column="12" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+                <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -274,12 +273,12 @@
       <workItem from="1521697056209" duration="2045000" />
       <workItem from="1521808679965" duration="663000" />
       <workItem from="1521877522287" duration="357000" />
-      <workItem from="1522818036401" duration="515000" />
+      <workItem from="1522818036401" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167350000" />
+    <option name="totallyTimeSpent" value="167417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -723,7 +722,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1200">
-            <caret line="80" column="12" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+            <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
@@ -733,8 +732,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="319">
-            <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <first_editor relative-caret-position="304">
+            <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

@@ -23,4 +23,7 @@ Busy waiting -> wake up when time comes
 thread가 언제 일어나야 하는지 wakeup_tick에 저장하고 thread_block()
 sleep_list 만들어서 timer_interrupt 때마다 wake_up_threads()를 호출하여 sleep_list 확인하면서 thread_unblock()
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-01.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-02.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-03.png)
+
 
