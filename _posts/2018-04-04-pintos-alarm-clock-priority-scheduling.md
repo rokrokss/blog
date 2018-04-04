@@ -61,5 +61,56 @@ sema->waiters 리스트를 우선도 정렬된 상태로 만들어야 하는데,
 
 ### condition 관련 부분
 
+cond_wait에서 cond->waiters에 push_back 하고 cond_signal에서 뽑아주는데, 여기서도 cond_signal에서 뽑아줄 때 list_max로 뽑아줌.
+*이 부분 내가 잘못 알았는데 cond->waiters의 element 1개에 해당되는 semaphore의 waiters(thread list)에는 thread가 1개씩만 있어서 마지막에 뽑는 부분을 list_front로 해도 된다고 함*
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-10.png)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-11.png)
+
+### lock 관련 부분
+
+lock_acquire(lock) 에서 lock 요구.
+lock->holder의 priority가 자신보다 낮을 경우 holder의 priority를 자신의 priority로 바꿔줌.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-12.png)
+
+그리고 바꾸는 동안
+enum intr_level old_level;
+old_level = intr_disable();
+~
+intr_set_level(old_level);
+을 통해 interrupt 막아야함
+
+thread->lock_wanted, lock->big_priority 추가하고
+중간에서 lock_donation(lock)을 불러 일련의 과정을 따로 쓰자
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-13.png)
+
+해당 lock의 holder가 없다면 donation 필요 없음.
+lock->big_priority 보다 현재 priority가 크다면 덮어쓰기.
+holder->priority가 lock->priority보다 작으면
+holder->priority랑 original_priority 조정
+그리고 holder가 대기 중인 다른 lock이 존재한다면, holder의 priority가 바뀌었으므로 그 lock에서도 donation을 recursive하게 부름.
+lock->big_priority는 해당 lock을 원하는/갖는 모든 thread 중 가장 큰 priority
+
+
+이제 lock_release(lock)로
+holder가 사라지고 lock->semaphore를 sema_up 해줘야함
+그리고 lock_donation_payback()으로 바뀐 priority를 원래대로 돌려줌.
+lock_list가 thread가 가진 lock의 리스트이므로 일단 제거 후 lock_donation_payback()으로 들어가자
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-14.png)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-15.png)
+
+lock_donation_payback()에서는
+curr->original_priority가 존재하지 않는 경우 donation 받지 않았으므로 패스.
+받았을 경우, 만약 lock_list가 없으면 다른 lock에서 priority를 받았을 리 없으니 curr->priority를 original_priority로 바꾸고 패스.
+아니면, lock_list의 lock이 가진 가장 큰 big_priority와 현재 priority를 비교하여 original_priority보다 더 크면 그걸로 바꿈.
+그 이후 lock_release()로 돌아와 lock의 big_priority 수정.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-16.png)
+
+original_priority가 생겼으니 thread_set_priority 함수도 조정 필요.
 
