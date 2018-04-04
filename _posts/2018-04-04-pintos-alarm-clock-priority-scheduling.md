@@ -115,4 +115,6 @@ curr->original_priority가 존재하지 않는 경우 donation 받지 않았으�
 
 original_priority가 생겼으니 thread_set_priority 함수도 조정 필요.
 
-끝!
+**끝!**
+
+그리고 내 pintos 코드는 Github에 올려 놓긴 했는데 아직 비공개고 수업 끝나면 공개로 전환할 예정.
