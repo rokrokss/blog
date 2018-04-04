@@ -50,6 +50,16 @@ thread_create()과 thread_set_priority(int new_priority)
 
 이거 추가해서 priority 체크 후 preemption해야 하면 바로 thread_yield()
 
+### Synchronization 관련 함수
+
+#### semaphore 관련 부분
+
+sema->waiters 리스트를 우선도 정렬된 상태로 만들어야 하는데, 나는 insert 해주는 sema->value가 0일 때 sema_down() 함수는 그대로 두고, 원래는 pop_front를 해주던 sema_up에서 list_max로 max_elem을 뽑고, list_remove 한 후에 해당 스레드를 unblock 해줬다.
+그리고, 이 경우에도 unblock으로 ready_list에 추가 되므로 thread_yield()가 따로 필요하다.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-09.png)
+
+#### condition 관련 부분
 
 
 
