@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: (Pintos) Alarm Clock & Priority Scheduling
+title: <Pintos> Alarm Clock & Priority Scheduling
 key: 201804041
 modify_date: 2018-04-04
 picture_frame: shadow
