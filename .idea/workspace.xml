@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md" afterPath="$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="247">
-                <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <first_editor relative-caret-position="274">
+                <caret line="117" column="6" lean-forward="true" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -34,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-Markdown-정리.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1420">
+              <first_editor relative-caret-position="200">
                 <caret line="158" column="10" lean-forward="false" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
                 <folding />
               </first_editor>
@@ -273,12 +274,12 @@
       <workItem from="1521697056209" duration="2045000" />
       <workItem from="1521808679965" duration="663000" />
       <workItem from="1521877522287" duration="357000" />
-      <workItem from="1522818036401" duration="1811000" />
+      <workItem from="1522818036401" duration="2050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168646000" />
+    <option name="totallyTimeSpent" value="168885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -728,7 +729,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-01-15-Markdown-정리.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1420">
+          <first_editor relative-caret-position="200">
             <caret line="158" column="10" lean-forward="false" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
             <folding />
           </first_editor>
@@ -739,8 +740,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-04-04-pintos-alarm-clock-priority-scheduling.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <first_editor relative-caret-position="274">
+            <caret line="117" column="6" lean-forward="true" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
