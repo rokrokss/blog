@@ -62,7 +62,8 @@ sema->waiters 리스트를 우선도 정렬된 상태로 만들어야 하는데,
 ### condition 관련 부분
 
 cond_wait에서 cond->waiters에 push_back 하고 cond_signal에서 뽑아주는데, 여기서도 cond_signal에서 뽑아줄 때 list_max로 뽑아줌.
-*이 부분 내가 잘못 알았는데 cond->waiters의 element 1개에 해당되는 semaphore의 waiters(thread list)에는 thread가 1개씩만 있어서 마지막에 뽑는 부분을 list_front로 해도 된다고 함*
+
+**이 부분 내가 잘못 알았는데 cond->waiters의 element 1개에 해당되는 semaphore의 waiters(thread list)에는 thread가 1개씩만 있어서 마지막에 뽑는 부분을 list_front로 해도 된다고 함**
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-10.png)
 
@@ -114,3 +115,4 @@ curr->original_priority가 존재하지 않는 경우 donation 받지 않았으�
 
 original_priority가 생겼으니 thread_set_priority 함수도 조정 필요.
 
+끝!
