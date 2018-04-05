@@ -16,7 +16,7 @@ Alarm Clock과 Priority Scheduling 관련 test case를 통과하기 위한 내 i
 
 먼저 결과창
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-result.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-result.png)
 <!--more-->
 
 # Alarm Clock
@@ -25,28 +25,28 @@ Busy waiting -> wake up when time comes
 thread가 언제 일어나야 하는지 wakeup_tick에 저장하고 thread_block()
 sleep_list 만들어서 timer_interrupt 때마다 wake_up_threads()를 호출하여 sleep_list 확인하면서 thread_unblock()
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-01.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-01.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-02.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-02.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-03.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-03.png)
 
 # Priority Scheduling
 
 ## Scheduling 관련 함수
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-04.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-04.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-05.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-05.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-06.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-06.png)
 
 ready_list에 우선도 순으로 insert한다.
 thread_create()과 thread_set_priority(int new_priority)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-07.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-07.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-08.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-08.png)
 
 이거 추가해서 priority 체크 후 preemption해야 하면 바로 thread_yield()
 
@@ -57,7 +57,7 @@ thread_create()과 thread_set_priority(int new_priority)
 sema->waiters 리스트를 우선도 정렬된 상태로 만들어야 하는데, 나는 insert 해주는 sema->value가 0일 때 sema_down() 함수는 그대로 두고, 원래는 pop_front를 해주던 sema_up에서 list_max로 max_elem을 뽑고, list_remove 한 후에 해당 스레드를 unblock 해줬다.
 그리고, 이 경우에도 unblock으로 ready_list에 추가 되므로 thread_yield()가 따로 필요하다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-09.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-09.png)
 
 ### condition 관련 부분
 
@@ -65,16 +65,16 @@ cond_wait에서 cond->waiters에 push_back 하고 cond_signal에서 뽑아주는
 
 **이 부분 내가 잘못 알았는데 cond->waiters의 element 1개에 해당되는 semaphore의 waiters(thread list)에는 thread가 1개씩만 있어서 마지막에 뽑는 부분을 list_front로 해도 된다고 함**
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-10.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-10.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-11.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-11.png)
 
 ### lock 관련 부분
 
 lock_acquire(lock) 에서 lock 요구.
 lock->holder의 priority가 자신보다 낮을 경우 holder의 priority를 자신의 priority로 바꿔줌.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-12.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-12.png)
 
 그리고 바꾸는 동안
 enum intr_level old_level;
@@ -86,7 +86,7 @@ intr_set_level(old_level);
 thread->lock_wanted, lock->big_priority 추가하고
 중간에서 lock_donation(lock)을 불러 일련의 과정을 따로 쓰자
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-13.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-13.png)
 
 해당 lock의 holder가 없다면 donation 필요 없음.
 lock->big_priority 보다 현재 priority가 크다면 덮어쓰기.
@@ -101,9 +101,9 @@ holder가 사라지고 lock->semaphore를 sema_up 해줘야함
 그리고 lock_donation_payback()으로 바뀐 priority를 원래대로 돌려줌.
 lock_list가 thread가 가진 lock의 리스트이므로 일단 제거 후 lock_donation_payback()으로 들어가자
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-14.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-14.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-15.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-15.png)
 
 lock_donation_payback()에서는
 curr->original_priority가 존재하지 않는 경우 donation 받지 않았으므로 패스.
@@ -111,7 +111,7 @@ curr->original_priority가 존재하지 않는 경우 donation 받지 않았으�
 아니면, lock_list의 lock이 가진 가장 큰 big_priority와 현재 priority를 비교하여 original_priority보다 더 크면 그걸로 바꿈.
 그 이후 lock_release()로 돌아와 lock의 big_priority 수정.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1-16.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-16.png)
 
 original_priority가 생겼으니 thread_set_priority 함수도 조정 필요.
 
