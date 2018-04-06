@@ -2,8 +2,8 @@
 layout: post
 comments: true
 title: NLP 주요 학회 accepted papers
-key: 201803211
-modify_date: 2018-03-21
+key: 201804061
+modify_date: 2018-04-06
 picture_frame: shadow
 tags:
   - NLP
