@@ -45,7 +45,9 @@ process.c와 syscall.c를 중심으로 수정하면 되는데, 먼저 process.c
 - wait에서 기다리고 있는 sema_up
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj2/pintos-pj2-07.png)
+
 중략
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj2/pintos-pj2-08.png)
 - file 연 후에 deny_write 적용
 - argument_setup이란 새로운 함수가 stack에 argument 넣어줌
