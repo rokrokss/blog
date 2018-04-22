@@ -98,4 +98,10 @@ process.c와 syscall.c를 중심으로 수정하면 되는데, 먼저 process.c
 - thread.h에서 thread에 fd_list, fd_count 같은 것들 추가해 놓고 사용함.
 
 
+**끝!**
+
+그리고 내 pintos 코드는 Github에 올려 놓긴 했는데 아직 비공개고 수업 끝나면 공개로 전환할 예정.
+
+[https://github.com/q0115643/CS330_OS_Pintos](https://github.com/q0115643/CS330_OS_Pintos)
+
 
