@@ -29,7 +29,7 @@ process.c와 syscall.c를 중심으로 수정하면 되는데, 먼저 process.c
 
 - fn_copy, fn_copy2를 만들어가며 file name을 token으로 뽑아내 thread_create으로 전달한다.
 - token으로 file open해봐서 NULL이면 load error
-- thread_create하고 나서 sema_up(load_sema)를 불러 load가 끝났다고 signal 하는데, 이건 syscall의 system_exec에서 기다리는 중(여기가 child process 만드는 곳)
+- thread_create하고 나서 sema_up(load_sema)를 불러 load가 끝났다고 signal 하는데, 이건 syscall의 system_exec에서 기다리는 중.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj2/pintos-pj2-02.png)
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj2/pintos-pj2-03.png)
