@@ -14,10 +14,15 @@ tags:
 # [논문 요약] Learning to Parse and Translate Improves Neural Machine Translation(ACL 2017)
 
 Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho
+
 The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo, Japan
+
 {eriguchi, tsuruoka}@logos.t.u-tokyo.ac.jp
+
 New York University, New York, NY 10012, USA
+
 kyunghyun.cho@nyu.edu 
+
 
 <span style="color:red">(나한테 영어가 더 편한 단어는 영어로 씀)</span>
 
@@ -48,13 +53,17 @@ Vx(xi)는 i-th source word의 word vector를 나타내고 decoder는 target sent
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/2.png)
 
 여기서 y = (y1, …, yM), output으로 들어갈 수 있는 word들.
+
 conditional probability들은 아래와 같이 계산된다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/3.png)
 
 Wy는 word y의 output word vector.
+
 fdec는 LSTM/GRU에서 사용하는 recurrent activation function
+
 cj는 encoder의 hidden state sequence h를 이용하여 attention model이 계산한 time-dependent context vector.
+
 cj를 계산하는 과정은, 먼제 attention model이 current hidden state sj를 각 hidden states와 비교하여 scalar score beta i,j를 부여한다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/4.png)
@@ -70,26 +79,35 @@ cj를 계산하는 과정은, 먼제 attention model이 current hidden state sj�
 ## 3. Recurrent Neural Network Grammars
 
 RNNG는 probabilistic syntax-based language model.
+
 RNN과 달리 RNNG는 token과 tree-based composition을 모두 동시에 model에 때려박음.
+
 이렇게 하려면 (output) buffer와 stack, action history가 필요함, 이것들은 stack LSTM(sLSTM)<span style="color:blue">(Dyer et al., 2015)</span>을 사용하여 implement된다. each time, action sLSTM이 current hidden states of the buffer stack and action sLSTM을 기반으로 다음 action을 예측한다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/6.png)
 
 여기서 Wa는 action a의 vector.
+
 action이 shift라면 buffer의 첫번째 word가 stack으로 감.
+
 action이 reduce라면 top-two words in the stack이 partial tree를 만드는데 사용됨.
+
 추가로 action은 non-terminal symbol이 될수도 있으며 그러면 해당 symbol이 stack으로 push됨.
+
 hidden states of the buffer, stack, action sLSTM은 아래와 같이 update된다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/7.png)
 
 여기서 Vy와 Va는 target word와 action vector를 return하는 함수.
+
 stack sLSTM의 input vector rt는 아래와 같이 계산된다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/8.png)
 
 여기서 r^d와 r^p는 parent와 dependent phrases의 corresponding vectors.
+
 이 과정은 recursively, parse tree가 완성될 때까지 돌아간다. RNNG의 original paper는 constituency tree를 사용하지만 여기서는 dependency tree를 사용한다.
+
 complete sentence가 제공되면 buffer가 shifted words를 요약하고, RNNG가 generator 역할을 할 때 selected action이 shift일 경우 next word를 generate해준다. (buffer => recurrent language model) 마지막 부분 잘 이해안간다. 선행 논문이 있으니 설명을 대충한건가, 천천히 더 봐야겠음, 아마 아래쪽에서 이해될 듯.
 
 
@@ -144,6 +162,7 @@ y뿐만 아니라 a의 conditional probability도 maximize한다. 이 효과로,
 ### 5.1 Language Pairs and Corpora
 
 NMT+RNNG 모델을 이용해 Jp-En, Cs-En, De-En, Ru-En 네가지 쌍의 translation 해줌.
+
 End of Sentence에는 “EOS”, low-frequency words에는 “UNK” 붙여줌
 
 #### Ja
@@ -157,11 +176,17 @@ New Commentary v8을 이용함. noisy metacharacter는 remove하고 Moses<span s
 ### 5.2 Models, Learning and Inference
 
 RNN은 a single layer of LSTM units of 256 dimensions를 가짐.
+
 word vector는 256, action vector는 128 dimensions. computational overhead를 줄이기 위해 BlackOut<span style="color:blue">(Ji et al., 2015)</span>(with 2000 negative samples and alpha=0.4)을 사용. 
+
 BlackOut을 사용할 때, we shared the negative samples of each target word in a sentence in training time(?)<span style="color:blue">(Hashimoto and Tsuruoka, 2017)</span> for proposed NMT+RNNG, we share the target word vectors between the decoder(buffer) and the stack sLSTM.
+
 모든 initial weight은 [-0.1, 0.1]에서 uniform distribution을 따라 배정된다. bias vectors, weights of the softmax and BlackOut은 초기에 zero로 설정된다. LSTM과 sLSTM의 forget gate bias는 초기에 1로 설정된다. 128 사이즈의 minibatch를 이용한 stochastic gradient descent를 사용. learning rate는 1.0로 시작하여 devset의 perplexity increase(의도치 않은 결과, 아마 cost가 늘어날 때를 의미하는 듯)마다 반으로 준다.
+
 We clip the norm of the gradient<span style="color:blue">(Pascanu et al., 2012)</span> with the threshold set to 3.0 (2.0 for the baseline models on Ru-En and Cs-En to avoid NaN and Inf). <=모름
+
 앞에서 말한 perplexity increase 시에, learning rate를 반으로 줄이면서 해당 epoch 직전의 model을 reload한다.
+
 RNNG의 stack이 dependency parse tree의 vector를 compute하는데, parse tree가 가지는 “ROOT” node는 “EOS”로 한다. inference time에는 beam search를 사용하고 beam width는 devset performance를 기반으로 선택된다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/15.png)
