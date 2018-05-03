@@ -10,9 +10,6 @@ tags:
 
 > ACL 2017
 
-
-# [논문 요약] Learning to Parse and Translate Improves Neural Machine Translation(ACL 2017)
-
 Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho
 
 The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo, Japan
