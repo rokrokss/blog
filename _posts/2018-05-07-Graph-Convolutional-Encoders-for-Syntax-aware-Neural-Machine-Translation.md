@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Graph Convolutional Encoders  for Syntax-aware Neural Machine Translation
+title: 논문 요약&#58; Graph Convolutional Encoders for Syntax-aware Neural Machine Translation(EMNLP 2017)
 key: 201805061
 tags:
   - NLP
