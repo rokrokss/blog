@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="175">
+              <first_editor relative-caret-position="765">
                 <caret line="51" column="107" lean-forward="false" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
                 <folding />
               </first_editor>
@@ -285,12 +285,12 @@
       <workItem from="1524858856844" duration="2197000" />
       <workItem from="1525371461200" duration="1980000" />
       <workItem from="1525373767296" duration="488000" />
-      <workItem from="1525607159255" duration="3355000" />
+      <workItem from="1525607159255" duration="3493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183250000" />
+    <option name="totallyTimeSpent" value="183388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -764,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="175">
+          <first_editor relative-caret-position="765">
             <caret line="51" column="107" lean-forward="false" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
             <folding />
           </first_editor>

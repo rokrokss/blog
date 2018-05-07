@@ -35,6 +35,7 @@ graph-convolutional networks(GCNs)는 graph-structured data를 이용하기 위�
 ## 1. Introduction
 
 이제까지 NMT에 syntactic information을 결합시키지 못한 이유로 예상할 수 있는 한가지 이유로, structured information을 neural encoder로 넣어줄 간단하고 효과적인 방법의 부재가 예상된다.
+
 본 논문에서는 graph-convolutional networks (GCNs)<span style="color:blue">(Duvenaud et al., 2015; Defferrard et al., 2016; Kearnes et al., 2016; Kipf and Welling, 2016)</span>를 이용하여 그 문제를 해결하고 syntactic information을 NMT에 결합시킨다. 본 논문에서는 GCN의 한 version인 Syntactic GCNs로 syntactic dependency tree를 이용한다(Syntactic GCNs의 자세한 설명은 아래에서.) 
 
 요약하자면,
@@ -59,13 +60,16 @@ encoder는 source sentence를 input으로 sequence of hidden states를 만든다
 
 #### Recurrent.
 
-걍 RNN, BiRNN 설명임. 
+걍 RNN, BiRNN 설명임.
+
 RNN은 sequential data를 이용한다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/2.png)
 
 f는 LSTM이나 GRU를 이용함으로 만들어진 비선형함수.
+
 위 식을 이용해서 hidden state들이 계산된다.
+
 이전 words만 사용하지 않고 이후 words도 사용하기 위해 BiRNN이 사용된다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/3.png)
@@ -75,7 +79,9 @@ F: forward, B: backward
 #### Convolutional.
 
 CNN은 fixed-size window를 이용하여 특정 word의 local context를 이용한다.
+
 RNN에 비해 장점이 있다면 fast parallel computation이 가능하다.
+
 Layer를 늘리면 non-local context또한 포함하여 loss를 줄일 수 있다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/4.png)
@@ -95,6 +101,7 @@ xt는 word embedding, pt는 t-th position embedding.
 ### 2.1.2. Decoder
 
 decoder는 encoder가 만든 source sentence의 hidden states를 input으로 target sentence를 만든다. RNN with additional input ci로 만들어져 있는데, 여기서 ci는 context vector. ci는 attention mechanism을 통하여 each time step에 dynamically 계산된다.<span style="color:blue">(Bahdanau et al, 2015)</span>
+
 target word yi의 probability는 decoder RNN state, target word embedding, context vector를 이용하여 계산된다. 그리하여 이 model은 end-to-end maximum log likelihood를 이용하여 next target word given its context를 학습한다<span style="color:red">(이 부분은 이전 논문 요약글에 자세하게 나옴)</span>
 
 ## 2.2. Graph Convolutional Networks
@@ -104,15 +111,21 @@ target word yi의 probability는 decoder RNN state, target word embedding, conte
 GCN은 neighborhood of a nood를 vector로 encoding하여, graph 정보를 직접적으로 이용하는 multilayer neural network. 각각의 GCN layer에서는, 모든 node가 이웃 node의 정보를 받게 되어 있다, information이 graph edge를 따라 흐름. layer가 1개라면 node는 해당 node의 이웃 node의 정보만 받지만 layer가 늘어날수록 가까이 있는 node의 정보를 받는다. GCN layer 수를 조절하여 information travel distance를 regulate할 수 있다.
 
 Undirected graph G=(V, E)가 있다고 하자.
+
 V: set of vertices
+
 E: set of edges
+
 for all v, (v, v)는 E에 포함된다고 가정(모든 점은 자신과 연결됨)
+
 X가 d*n 차원의 행렬로, 모든 node의 정보(dimension d짜리 word embeddings)를 갖고 있다고 하자.
+
 1-layer GCN의 경우, output이 되는 hidden states는 아래와 같다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/6.png)
 
 W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activation function이다.
+
 요렇게 하면 GCN layer가 더 쌓일 때 recursive computation으로 아래와 같은 식이 나옴.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/7.png)
@@ -133,7 +146,9 @@ directionality를 이용하려면 incoming과 outgoing edge에 다른 weight mat
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/10.png)
 
 여기서 dir(u, v)는 (u, v)의 방향에 따라 다른 weight matrix를 선택한다.
+
 (Win for u-to-v, Wout for v-to-u, Wloop for v-to-v)
+
 요렇게 하면 이제 weight parameter가 이전의 3배나 있음.
 
 ### Labels.
@@ -141,16 +156,19 @@ directionality를 이용하려면 incoming과 outgoing edge에 다른 weight mat
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/11.png)
 
 이제 direction에 따라만 W가 바뀌는게 아닌 label과 direction의 combination에 따라 바뀜 => over-parametriztion.
+
 이를 방지하기 위해 W matrix는 direction에 따라서만 바뀌도록 하고 bias term이 label-specific하게 한다.
 
 ### Edge-wise gating
 
 Syntactic GCNs는 gates가 있어서 각 edge의 기여도를 줄이며 noisy할 경우 noise 조절할 수 있도록 한다. => error가 클 것 같은 edge 무시한다.
+
 그러기 위해 각 edge에서 아래처럼 scalar gate value를 계산한다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/12.png)
 
 sigma는 logistic sigmoid function.
+
 아래 둘은 gate를 위해 학습된 parameters
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/13.png)
@@ -163,7 +181,9 @@ sigma는 logistic sigmoid function.
 
 # 3. Graph Convolutional Encoders
 
-encoder는 기존 encoder structure에 GCN 얹어서 만들고 decoder는 <span style="color:blue">Bahdanau et al. (2015)</span> 따라서 만든다. 모든 곳에서 RNN unit으로는 GRU<span style="color:blue">(Cho et al., 2014b)</span>를 사용한다. 
+encoder는 기존 encoder structure에 GCN 얹어서 만들고 decoder는 <span style="color:blue">Bahdanau et al. (2015)</span> 따라서 만든다.
+
+모든 곳에서 RNN unit으로는 GRU<span style="color:blue">(Cho et al., 2014b)</span>를 사용한다. 
 
 encoder structure는 아래 세가지 모델로 실험하였다.
 
@@ -181,12 +201,19 @@ optimiztion을 쉽게 해주기 위해 GCN layer를 2개 이상 사용할 때 re
 # 4. Experiments
 
 Experiments는 <span style="color:blue">Bahdanau et al. (2015)</span>의 모델을 implement한 the Neural Monkey toolkit3 <span style="color:blue">(Helcl and Libovicky ́, 2017)</span>을 사용함. (https://github.com/ufal/neuralmonkey)
+
 Adam optimizer<span style="color:blue">(Kingma and Ba, 2015)</span> 사용함, learning rate은 0.001(CNN은 0.0002)
+
 Batch size는 80.
+
 dropout probability 0.2 in layers and edge dropout in GCNs.(https://github.com/bastings/neuralmonkey <= GCN 코드)
+
 training with 45 epochs.
+
 validation set에서 epoch마다 BLEU score 재고, highest validation BLEU model로 고른다.
+
 L2 regularisation with a value of 10^(-8).
+
 greedy decoder(매 time step마다 highest probability를 가진 output token을 고른다.)
 
 ## 4.1. Reordering artificial sequences
@@ -196,22 +223,31 @@ decoder에서 sequence 순서를 다시 맞춰야 함 <= edge를 이용한다.
 ### Data.
 
 vocabulary of 26 types.
+
 random sequences fo 3-10 tokens
+
 각 token은 label을 가지고(5개짜리 label set 중 1개) original predecessor를 가르킨다.
+
 또, 각 token이 5개짜리 ‘fake’ label set 중 1개를 가지고 arbitrary position을 가르키게 한다.
+
 sample 25,000 training & 1,000 validation sequences.
 
 ### Model.
 
 BiRNN + GCN model 사용.
+
 (a bidirectional GRU with a 1-later GCN on top)
+
 GRU units and GCN layer의 embedding에는 32, 64, 128 units 사용.
 
 ### Result.
 
 training 6 epochs.
+
 model은 permuted sequence를 다시 order 조정하게 만들도록 학습한다.
+
 validation BLEU가 99.2 달성.
+
 bias terms of gates의 평균 value는 아래와 같은 그래프를 만듬.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/16.png)
@@ -223,19 +259,25 @@ gate가 효과가 좋음을 확인 가능.
 #### Data.
 
 실험을 위해 En-De & En-Cs News Commentary v11 data from WMT16 translation task 이용.(http://www.statmt.org/wmt16/translation-task.html)
+
 validation set은 newstest2015, test set은 newstest2016.
 
 #### Pre-processing.
 
 English side(source side)의 corpora가 SyntaxNet(https://github.com/tensorflow/models/tree/master/syntaxnet)의 pre-trained Parsey McParseface model(The used dependency parses can be reproduced by using the syntaxnet/demo.sh shell script.)을 이용해 dependency tree로 tokenize&parse 된다.
+
 Czech & German side(target side)는 Moses tokenizer(https://github.com/moses-smt/mosesdecoder)를 이용해 tokenize된다.
+
 sentence pair 중 한 쪽이 50 words 이상이면 그 pair는 제외된다.
 
 #### Vocabularies.
 
 English side에서는 training set에서 4번 이상 등장하는 words 이용.
+
 Czech와 German side에서는 rare words와 합성어에 대처해주기 위해 <span style="color:blue">Sennrich et al. (2016b)</span>의 approach인 byte-pair encoding(BPE) 사용.
+
 <span style="color:red">(BPE 구조를 몰라서 나중에 해석하겠음.)</span>
+
 Given the size of our data set, and following <span style="color:blue">Wu et al. (2016)</span>, we use 8000 BPE merges to obtain robust frequencies for our subword units (16000 merges for full data experiment). Data set statistics are summarized in Table 1 and vocabulary sizes in Table 2. 
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/17.png)
@@ -243,14 +285,19 @@ Given the size of our data set, and following <span style="color:blue">Wu et al.
 #### Hyperparameters.
 
 256 units for word embeddings.
+
 512 units for GRUs(800 for En-De full data set experiment.)
+
 512 units(channels) for convolutional layers.
+
 GCN layer의 output dimensionality는 input과 똑같게 한다.
+
 GCN layer 2개일 때 가장 effective했음.
 
 #### Baseline.
 
 baseline은 encoder마다 정해 둠(BoW, CNN, BiRNN 3가지.)
+
 CNN에서 window size w=5
 
 #### Evaluation.
@@ -278,6 +325,7 @@ BLEU result<span style="color:blue">(Papineni et al., 2002)</span> using multi-b
 #### Discussion.
 
 GCN으로 인한 syntax-aware representation이 BLEU4 score의 improvement를 만듬(TER과 BEER도 마찬가지.)
+
 Consistent gains in terms of Kendall tau and BLEU1 indicate that improvements correlate with better word order and lexical/BPE selection, two phenomena that depend crucially on syntax.
 
 # 5. Related Work
@@ -287,7 +335,9 @@ Consistent gains in terms of Kendall tau and BLEU1 indicate that improvements co
 ### Syntactic features and/or constraints.
 
 <span style="color:blue">Sennrich and Haddow (2016)</span>는 POS-tags, lemmas, dependency labels를 network에 word-embedding과 함께 넣어줌.
+
 <span style="color:blue">Eriguchi et al. (2016)</span>은 HPSG parser로 sentence를 parse해 주고 Tree-LSTM으로 tree형식으로 encode해 준다.
+
 <span style="color:blue">Aharoni and Goldberg (2017)</span>는 linearized parse tree로 neural string-to-tree 모델을 제시함.
 
 ### Multi-task Learning.
