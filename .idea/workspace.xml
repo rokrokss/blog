@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md" afterPath="$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-04-논문요약-Learning-to-Parse-and-Translate-Improves-Neural-Machine-Translation-ACL-2017.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="95" lean-forward="false" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+              <first_editor relative-caret-position="140">
+                <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -34,8 +35,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="4080">
-                <caret line="272" column="50" lean-forward="false" selection-start-line="272" selection-start-column="50" selection-end-line="272" selection-end-column="50" />
+              <first_editor relative-caret-position="237">
+                <caret line="280" column="76" lean-forward="false" selection-start-line="280" selection-start-column="76" selection-end-line="280" selection-end-column="76" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -285,18 +286,18 @@
       <workItem from="1524858856844" duration="2197000" />
       <workItem from="1525371461200" duration="1980000" />
       <workItem from="1525373767296" duration="488000" />
-      <workItem from="1525607159255" duration="2896000" />
+      <workItem from="1525607159255" duration="3122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182791000" />
+    <option name="totallyTimeSpent" value="183017000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1003" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1019" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14765784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14529058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -753,8 +754,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-04-논문요약-Learning-to-Parse-and-Translate-Improves-Neural-Machine-Translation-ACL-2017.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="95" lean-forward="false" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <first_editor relative-caret-position="140">
+            <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -764,8 +765,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="4080">
-            <caret line="272" column="50" lean-forward="false" selection-start-line="272" selection-start-column="50" selection-end-line="272" selection-end-column="50" />
+          <first_editor relative-caret-position="237">
+            <caret line="280" column="76" lean-forward="false" selection-start-line="280" selection-start-column="76" selection-end-line="280" selection-end-column="76" />
             <folding />
           </first_editor>
           <second_editor />
