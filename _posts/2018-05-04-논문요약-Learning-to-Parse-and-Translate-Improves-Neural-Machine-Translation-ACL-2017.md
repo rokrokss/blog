@@ -162,7 +162,7 @@ NMT+RNNG 모델을 이용해 Jp-En, Cs-En, De-En, Ru-En 네가지 쌍의 transla
 
 End of Sentence에는 “EOS”, low-frequency words에는 “UNK” 붙여줌
 
-#### Ja
+#### Jp
 
 WAT’16 Jp-En translation task의 ASPEC corpus (“train1.txt”)를 사용하고, KyTea<span style="color:blue">(Neubig et al., 2011)</span>를 이용하여 tokenize함. training할 때는 corpus에서 길이가 50보다 작은 앞의 100K개의 sentence pair를 사용하고, vocabulary는 training corpus에서 두 번 이상 등장하는 단어들로 이루어짐. WAT’16의 data에서 “dev.txt”와 “test.txt”를 사용.
 
