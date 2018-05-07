@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Learning to Parse and Translate Improves Neural Machine Translation(ACL 2017)
+title: 논문 요약&#58; Learning to Parse and Translate Improves Neural Machine Translation
 key: 201805041
 tags:
   - NLP
