@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md" afterPath="$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="329">
-                <caret line="284" column="21" lean-forward="false" selection-start-line="284" selection-start-column="21" selection-end-line="284" selection-end-column="21" />
+              <first_editor relative-caret-position="4080">
+                <caret line="272" column="50" lean-forward="false" selection-start-line="272" selection-start-column="50" selection-end-line="272" selection-end-column="50" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -286,12 +285,12 @@
       <workItem from="1524858856844" duration="2197000" />
       <workItem from="1525371461200" duration="1980000" />
       <workItem from="1525373767296" duration="488000" />
-      <workItem from="1525607159255" duration="2659000" />
+      <workItem from="1525607159255" duration="2896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182554000" />
+    <option name="totallyTimeSpent" value="182791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1003" height="900" extended-state="6" />
@@ -765,8 +764,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-논문요약-Graph-Convolutional-Encoders-for-Syntax-aware-Neural-Machine-Translation-EMNLP-2017.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="329">
-            <caret line="284" column="21" lean-forward="false" selection-start-line="284" selection-start-column="21" selection-end-line="284" selection-end-column="21" />
+          <first_editor relative-caret-position="4080">
+            <caret line="272" column="50" lean-forward="false" selection-start-line="272" selection-start-column="50" selection-end-line="272" selection-end-column="50" />
             <folding />
           </first_editor>
           <second_editor />
