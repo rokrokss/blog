@@ -6,6 +6,7 @@ key: 201805061
 tags:
   - NLP
   - 논문
+  - EMNLP
 ---
 
 > EMNLP 2017
@@ -336,7 +337,7 @@ Consistent gains in terms of Kendall tau and BLEU1 indicate that improvements co
 
 <span style="color:blue">Sennrich and Haddow (2016)</span>는 POS-tags, lemmas, dependency labels를 network에 word-embedding과 함께 넣어줌.
 
-<span style="color:blue">Eriguchi et al. (2016)</span>은 HPSG parser로 sentence를 parse해 주고 Tree-LSTM으로 tree형식으로 encode해 준다.
+<span style="color:blue">Eriguchi et al. (206)</span>은 HPSG parser로 sentence를 parse해 주고 Tree-LSTM으로 tree형식으로 encode해 준다.
 
 <span style="color:blue">Aharoni and Goldberg (2017)</span>는 linearized parse tree로 neural string-to-tree 모델을 제시함.
 
