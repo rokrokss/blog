@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Graph Convolutional Encoders for Syntax-aware Neural Machine Translation (EMNLP 2017)
-key: 2018050601
+title: 논문 요약&#58; Graph Convolutional Encoders  for Syntax-aware Neural Machine Translation(EMNLP 2017)
+key: 201805061
 tags:
   - NLP
   - 논문
@@ -11,18 +11,19 @@ tags:
 > EMNLP 2017
 
 Joost Bastings, Ivan Titov, Wilker Aziz 
+
 Diego Marcheggiani, Khalil Sima’an 
+
 ILLC, University of Amsterdam, ILCC, University of Edinburgh {bastings, titov, w.aziz, marcheggiani, k.simaan}@uva.nl
 
 
 <span style="color:red">(나한테 영어가 더 편한 단어는 영어로 씀, NMT 관련 논문 요약이 처음이 아니니 traditional NMT model(16시즌의 state-of-the-art) 설명이 많이 생략될 것.)</span>
 
 <span style="color:red">
-코드
-	⁃	https://github.com/ufal/neuralmonkey
-	⁃	https://github.com/bastings/neuralmonkey
-	⁃	https://github.com/bastings/neuralmonkey/tree/emnlp_gcn
-</span>
+코드<br><t>
+	⁃	https://github.com/ufal/neuralmonkey<br><t>
+	⁃	https://github.com/bastings/neuralmonkey<br><t>
+	⁃	https://github.com/bastings/neuralmonkey/tree/emnlp_gcn<br><t>
 
 <!--more-->
 
@@ -34,7 +35,7 @@ graph-convolutional networks(GCNs)는 graph-structured data를 이용하기 위�
 ## 1. Introduction
 
 이제까지 NMT에 syntactic information을 결합시키지 못한 이유로 예상할 수 있는 한가지 이유로, structured information을 neural encoder로 넣어줄 간단하고 효과적인 방법의 부재가 예상된다.
-본 논문에서는 graph-convolutional networks (GCNs)(Duvenaud et al., 2015; Defferrard et al., 2016; Kearnes et al., 2016; Kipf and Welling, 2016)를 이용하여 그 문제를 해결하고 syntactic information을 NMT에 결합시킨다. 본 논문에서는 GCN의 한 version인 Syntactic GCNs로 syntactic dependency tree를 이용한다(Syntactic GCNs의 자세한 설명은 아래에서.) 
+본 논문에서는 graph-convolutional networks (GCNs)<span style="color:blue">(Duvenaud et al., 2015; Defferrard et al., 2016; Kearnes et al., 2016; Kipf and Welling, 2016)</span>를 이용하여 그 문제를 해결하고 syntactic information을 NMT에 결합시킨다. 본 논문에서는 GCN의 한 version인 Syntactic GCNs로 syntactic dependency tree를 이용한다(Syntactic GCNs의 자세한 설명은 아래에서.) 
 
 요약하자면,
 	⁃	introduce a method for incorporating structure into NMT using syntactic GCNs
@@ -46,7 +47,7 @@ graph-convolutional networks(GCNs)는 graph-structured data를 이용하기 위�
 
 ## 2.1. Neural Machine Translation
   
-NMT(Kalchbrenner and Blunsom, 2013; Sutskever et al., 2014; Cho et al., 2014b)는 parallel corpus를 이용하여 neural net을 train하고 target sentence given source sentence의 conditional probability를 계산한다.
+NMT<span style="color:blue">(Kalchbrenner and Blunsom, 2013; Sutskever et al., 2014; Cho et al., 2014b)</span>는 parallel corpus를 이용하여 neural net을 train하고 target sentence given source sentence의 conditional probability를 계산한다.
 
 또한, attention mechanism을 이용하여 decoder가 encoder에 따라 영향을 받으며 작동하게 한다.
 
@@ -84,14 +85,14 @@ xt는 word embedding, pt는 t-th position embedding.
 
 ### 2.1.2. Decoder
 
-decoder는 encoder가 만든 source sentence의 hidden states를 input으로 target sentence를 만든다. RNN with additional input ci로 만들어져 있는데, 여기서 ci는 context vector. ci는 attention mechanism을 통하여 each time step에 dynamically 계산된다.(Bahdanau et al, 2015)
-target word yi의 probability는 decoder RNN state, target word embedding, context vector를 이용하여 계산된다. 그리하여 이 model은 end-to-end maximum log likelihood를 이용하여 next target word given its context를 학습한다(이 부분은 이전 논문 요약글에 자세하게 나옴) 
+decoder는 encoder가 만든 source sentence의 hidden states를 input으로 target sentence를 만든다. RNN with additional input ci로 만들어져 있는데, 여기서 ci는 context vector. ci는 attention mechanism을 통하여 each time step에 dynamically 계산된다.<span style="color:blue">(Bahdanau et al, 2015)</span>
+target word yi의 probability는 decoder RNN state, target word embedding, context vector를 이용하여 계산된다. 그리하여 이 model은 end-to-end maximum log likelihood를 이용하여 next target word given its context를 학습한다<span style="color:red">(이 부분은 이전 논문 요약글에 자세하게 나옴)</span>
 
 ## 2.2. Graph Convolutional Networks
 
-이제 GCNs(Kipf and Welling, 2016)에 대하여 설명을 할텐데, 더욱 포괄적인 내용을 보려면 (Gilmer et al, 2017) 참고 요망.
+이제 GCNs<span style="color:blue">(Kipf and Welling, 2016)</span>에 대하여 설명을 할텐데, 더욱 포괄적인 내용을 보려면 <span style="color:blue">(Gilmer et al, 2017)</span> 참고 요망.
 
-GCN은  neighborhood of a nood를 vector로 encoding하여, graph 정보를 직접적으로 이용하는 multilayer neural network. 각각의 GCN layer에서는, 모든 node가 이웃 node의 정보를 받게 되어 있다, information이 graph edge를 따라 흐름. layer가 1개라면 node는 해당 node의 이웃 node의 정보만 받지만 layer가 늘어날수록 가까이 있는 node의 정보를 받는다. GCN layer 수를 조절하여 information travel distance를 regulate할 수 있다.
+GCN은 neighborhood of a nood를 vector로 encoding하여, graph 정보를 직접적으로 이용하는 multilayer neural network. 각각의 GCN layer에서는, 모든 node가 이웃 node의 정보를 받게 되어 있다, information이 graph edge를 따라 흐름. layer가 1개라면 node는 해당 node의 이웃 node의 정보만 받지만 layer가 늘어날수록 가까이 있는 node의 정보를 받는다. GCN layer 수를 조절하여 information travel distance를 regulate할 수 있다.
 
 Undirected graph G=(V, E)가 있다고 하자.
 V: set of vertices
@@ -108,7 +109,7 @@ W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activati
 
 ## 2.3. Syntactic GCNs
 
-Marcheggiani and Titov (2017)는 GCN이 directed, labeled graph에서 작동 가능하도록 발전시켰다. 이것을 이용하면 directionality와 edge label을 가진 linguistic structure(여기서는 dependency tree)를 GCN에 적용시킬 수 있다. 또한, edge-wise gates를 이용하여 model이 각 dependency edge의 기여도를 조절할 수 있다.
+<span style="color:blue">Marcheggiani and Titov (2017)</span>는 GCN이 directed, labeled graph에서 작동 가능하도록 발전시켰다. 이것을 이용하면 directionality와 edge label을 가진 linguistic structure(여기서는 dependency tree)를 GCN에 적용시킬 수 있다. 또한, edge-wise gates를 이용하여 model이 각 dependency edge의 기여도를 조절할 수 있다.
 
 ### Directionality.
 
@@ -140,25 +141,25 @@ sigma는 logistic sigmoid function.
 
 # 3. Graph Convolutional Encoders
 
-encoder는 기존 encoder structure에 GCN 얹어서 만들고 decoder는 Bahdanau et al. (2015) 따라서 만든다. 모든 곳에서 RNN unit으로는 GRU(Cho et al., 2014b)를 사용한다. 
+encoder는 기존 encoder structure에 GCN 얹어서 만들고 decoder는 <span style="color:blue">Bahdanau et al. (2015)</span> 따라서 만든다. 모든 곳에서 RNN unit으로는 GRU<span style="color:blue">(Cho et al., 2014b)</span>를 사용한다. 
 
 encoder structure는 아래 세가지 모델로 실험하였다.
 
-BoW + GCN.
+### BoW + GCN.
 
-Convolutional + GCN.
+### Convolutional + GCN.
 
-CNN은 Gehring et al. (2016)의 접근을 사용한다. window size는 5. 
+CNN은 <span style="color:blue">Gehring et al. (2016)</span>의 접근을 사용한다. window size는 5. 
 
-BiRNN + GCN.
+### BiRNN + GCN.
 
-optimiztion을 쉽게 해주기 위해 GCN layer를 2개 이상 사용할 때 residual connection(He et al., 2016)을 만듬.
+optimiztion을 쉽게 해주기 위해 GCN layer를 2개 이상 사용할 때 residual connection<span style="color:blue">(He et al., 2016)</span>을 만듬.
 
 
 # 4. Experiments
 
-Experiments는 Bahdanau et al. (2015)의 모델을 implement한 the Neural Monkey toolkit3 (Helcl and Libovicky ́, 2017)을 사용함. (https://github.com/ufal/neuralmonkey)
-Adam optimizer(Kingma and Ba, 2015) 사용함, learning rate은 0.001(CNN은 0.0002)
+Experiments는 <span style="color:blue">Bahdanau et al. (2015)</span>의 모델을 implement한 the Neural Monkey toolkit3 <span style="color:blue">(Helcl and Libovicky ́, 2017)</span>을 사용함. (https://github.com/ufal/neuralmonkey)
+Adam optimizer<span style="color:blue">(Kingma and Ba, 2015)</span> 사용함, learning rate은 0.001(CNN은 0.0002)
 Batch size는 80.
 dropout probability 0.2 in layers and edge dropout in GCNs.(https://github.com/bastings/neuralmonkey <= GCN 코드)
 training with 45 epochs.
@@ -168,9 +169,9 @@ greedy decoder(매 time step마다 highest probability를 가진 output token을
 
 ## 4.1. Reordering artificial sequences
 
-decoder에서 sequence 순서를 다시 맞춰야 함 <=edge를 이용한다.
+decoder에서 sequence 순서를 다시 맞춰야 함 <= edge를 이용한다.
 
-#### Data.
+### Data.
 
 vocabulary of 26 types.
 random sequences fo 3-10 tokens
@@ -178,13 +179,13 @@ random sequences fo 3-10 tokens
 또, 각 token이 5개짜리 ‘fake’ label set 중 1개를 가지고 arbitrary position을 가르키게 한다.
 sample 25,000 training & 1,000 validation sequences.
 
-#### Model.
+### Model.
 
 BiRNN + GCN model 사용.
 (a bidirectional GRU with a 1-later GCN on top)
 GRU units and GCN layer의 embedding에는 32, 64, 128 units 사용.
 
-#### Result.
+### Result.
 
 training 6 epochs.
 model은 permuted sequence를 다시 order 조정하게 만들도록 학습한다.
@@ -209,9 +210,9 @@ sentence pair 중 한 쪽이 50 words 이상이면 그 pair는 제외된다.
 #### Vocabularies.
 
 English side에서는 training set에서 4번 이상 등장하는 words 이용.
-Czech와 German side에서는 rare words와 합성어에 대처해주기 위해 Sennrich et al. (2016b)의 approach인 byte-pair encoding(BPE) 사용.
-(BPE 구조를 몰라서 나중에 해석하겠음.)
-Given the size of our data set, and following Wu et al. (2016), we use 8000 BPE merges to obtain robust frequencies for our subword units (16000 merges for full data experiment). Data set statistics are summarized in Table 1 and vocabulary sizes in Table 2. 
+Czech와 German side에서는 rare words와 합성어에 대처해주기 위해 <span style="color:blue">Sennrich et al. (2016b)</span>의 approach인 byte-pair encoding(BPE) 사용.
+<span style="color:red">(BPE 구조를 몰라서 나중에 해석하겠음.)</span>
+Given the size of our data set, and following <span style="color:blue">Wu et al. (2016)</span>, we use 8000 BPE merges to obtain robust frequencies for our subword units (16000 merges for full data experiment). Data set statistics are summarized in Table 1 and vocabulary sizes in Table 2. 
 
 #### Hyperparameters.
 
@@ -228,7 +229,7 @@ CNN에서 window size w=5
 
 #### Evaluation.
 
-BLEU result(Papineni et al., 2002) using multi-bleu랑 Kendal 타우 reordering scores.
+BLEU result<span style="color:blue">(Papineni et al., 2002)</span> using multi-bleu랑 Kendal 타우 reordering scores.
 
 ### 4.2.1. Results
 
@@ -255,25 +256,25 @@ Consistent gains in terms of Kendall tau and BLEU1 indicate that improvements co
 
 # 5. Related Work
 
-(아래 글은 17년도 당시의 최신 연구 정리하였다. 쭉 읽으면 도움되는데 번역하기는 귀찮음.)
+<span style="color:red">(아래 글은 17년도 당시의 최신 연구 정리하였다. 쭉 읽으면 도움되는데 번역하기는 귀찮음.)</span>
 
-#### Syntactic features and/or constraints.
+### Syntactic features and/or constraints.
 
-Sennrich and Haddow (2016)는 POS-tags, lemmas, dependency labels를 network에 word-embedding과 함께 넣어줌.
-Eriguchi et al. (2016)은 HPSG parser로 sentence를 parse해 주고 Tree-LSTM으로 tree형식으로 encode해 준다.
-Aharoni and Goldberg (2017)는 linearized parse tree로 neural string-to-tree 모델을 제시함.
+<span style="color:blue">Sennrich and Haddow (2016)</span>는 POS-tags, lemmas, dependency labels를 network에 word-embedding과 함께 넣어줌.
+<span style="color:blue">Eriguchi et al. (2016)</span>은 HPSG parser로 sentence를 parse해 주고 Tree-LSTM으로 tree형식으로 encode해 준다.
+<span style="color:blue">Aharoni and Goldberg (2017)</span>는 linearized parse tree로 neural string-to-tree 모델을 제시함.
 
-#### Multi-task Learning.
+### Multi-task Learning.
 
-Sharing NMT parameters with a syntactic parser is a popular approach to obtaining syntactically-aware representations. Luong et al. (2015a) predict linearized constituency parses as an additional task. (이게 지난 번 요약글=>)Eriguchi et al. (2017) multi-task with a target-side RNNG parser (Dyer et al., 2016) and improve on various language pairs with English on the target side. Nadejde et al. (2017) multi-task with CCG tagging, and also integrate syntax on the target side by predicting a sequence of words interleaved with CCG supertags. 
+Sharing NMT parameters with a syntactic parser is a popular approach to obtaining syntactically-aware representations. <span style="color:blue">Luong et al. (2015a)</span> predict linearized constituency parses as an additional task. <span style="color:red">(이게 지난 번 요약글=>)</span><span style="color:blue">Eriguchi et al. (2017)</span> multi-task with a target-side RNNG parser <span style="color:blue">(Dyer et al., 2016)</span> and improve on various language pairs with English on the target side. <span style="color:blue">Nadejde et al. (2017)</span> multi-task with CCG tagging, and also integrate syntax on the target side by predicting a sequence of words interleaved with CCG supertags. 
 
-#### Latent structure.
+### Latent structure.
 
-Hashimoto and Tsuruoka (2017) add a syntax-inspired encoder on top of a BiLSTM layer. They encode source words as a learned average of potential parents emulating a relaxed dependency tree. While their model is trained purely on translation data, they also experiment with pre-training the encoder using tree-bank annotation and report modest improvements on English-Japanese. Yogatama et al. (2016) introduce a model for language understanding and generation that composes words into sentences by inducing unlabeled binary bracketing trees. 
+<span style="color:blue">Hashimoto and Tsuruoka (2017)</span> add a syntax-inspired encoder on top of a BiLSTM layer. They encode source words as a learned average of potential parents emulating a relaxed dependency tree. While their model is trained purely on translation data, they also experiment with pre-training the encoder using tree-bank annotation and report modest improvements on English-Japanese. <span style="color:blue">Yogatama et al. (2016)</span> introduce a model for language understanding and generation that composes words into sentences by inducing unlabeled binary bracketing trees. 
 
-#### Convolutional encoders.
+### Convolutional encoders.
 
-Gehring et al. (2016) show that CNNs can be competitive to BiRNNs when used as encoders. To increase the receptive field of a word’s context they stack multiple CNN layers. Kalchbrenner et al. (2016) use convolution in both the encoder and the decoder; they make use of dilation to increase the receptive field. In contrast to both approaches, we use a GCN informed by dependency structure to increase it. Finally, Cho et al. (2014a) propose a recursive convolutional neural network which builds a tree out of the word leaf nodes, but which ends up compressing the source sentence in a single vector. 
+<span style="color:blue">Gehring et al. (2016)</span> show that CNNs can be competitive to BiRNNs when used as encoders. To increase the receptive field of a word’s context they stack multiple CNN layers. <span style="color:blue">Kalchbrenner et al. (2016)</span> use convolution in both the encoder and the decoder; they make use of dilation to increase the receptive field. In contrast to both approaches, we use a GCN informed by dependency structure to increase it. Finally, <span style="color:blue">Cho et al. (2014a)</span> propose a recursive convolutional neural network which builds a tree out of the word leaf nodes, but which ends up compressing the source sentence in a single vector. 
 
 
 # 6. Conclusion
@@ -281,7 +282,7 @@ Gehring et al. (2016) show that CNNs can be competitive to BiRNNs when used as e
 in future work we would like to go beyond syntax, by using semantic annotations such as SRL and AMR, and co-reference chains. 
 
 
-# References(내가 적은 것)
+# References(내가 적은 것만)
 
 David K Duvenaud, Dougal Maclaurin, Jorge Iparraguirre, Rafael Bombarell, Timothy Hirzel, Ala ́n Aspuru-Guzik, and Ryan P Adams. 2015. Convolutional networks on graphs for learning molecular fingerprints. In Advances in neural information processing systems, pages 2224–2232. 
 
