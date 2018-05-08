@@ -15,6 +15,8 @@ tags:
 15년이 별로 오래된 건 아니라고 생각했는데 확실히 ML이 지금 얼마나 빠르게 불타오르면서 연구되는지 알겠더라,
 최근 논문을 좀 본 사람들에게는 이제 지루하겠다.
 
+matjax 쓰고 싶은데 너무 복잡하다. 이번 학기 끝나고 부터 써야지.
+
 <span style="color:red">나한테 영어가 더 편한 표현은 영어로 씀. <br>읽으면서 15년 논문임을 고려해야 함.</span>
 
 <!--more-->
@@ -30,6 +32,7 @@ Text classification은 free-text documents에 predefined category를 부여하�
 반면에, 여러 연구는 convolutional networks (ConvNets)<span style="color:blue">[17][18]</span>을 제시하였고, 이는 computer vision부터 speech recognition and others에 이르기까지 raw signal에서 useful information을 추출하기 위한 좋은 성능을 냈다. 이전에 쓰였던 time-delay networks(TDNN)이 본래 sequential data를 다루는 CNN이라고 할 수 있다.<span style="color:blue">[1][31]</span>
 
 본 논문에서는, text를 raw signal로 받기 위해 character level model을 사용하고, 1-dimensional (temporal) ConvNet을 이용한다. 본 논문에서는 ConvNet이 text data를 다룰 수 있음을 실증하는 classification task만 실험하였다.
+
 Historically we know that ConvNets usually require large-scale datasets to work, therefore we also build several of them. An extensive set of comparisons is offered with traditional models and other deep learning models. 
 
 ConvNet을 text classification이나 NLP with large에 사용하는 것은 literature(문학)에 사용되었었는데, <span style="color:blue">[6][16]</span> or <span style="color:blue">[13]</span>을 통해 ConvNet이 directly, extracted syntactic or semantic structures 없이 distributed or discrete embedding of words에 사용될 수 있고, traditional model에 견줄만함을 보았다.
@@ -48,46 +51,75 @@ character-level feature를 사용한 related work에는, character-level n-grams
 ### 2.1. Key Modules
 
 main component는 temporal convolutional module(1-D convolution.)
+
 input function g(x)
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/1.png)
+
 discrete kernel function f(x)
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/2.png)
+
 convolution h(y) between f(x) and g(x) with stride d
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/3.png)
+
 then the whole computation with the layer is like below
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/4.png)
+
 c = k-d+1 is an offset constant.
+
 module은 kernel function fij들로 parameterize된다. <= weights
+
 input과 output도 gi(x), hj(y)로 set을 이룬다.
+
 여기서 gi, hj는 features.
+
 m, n are input and output feature size.
+
 hj(y)는 sum over gi(x)와 fij(x)의 convolution.
 
 <span style="color:red">복잡해 보일 수 있지만 matrix form으로 CNN 다룰 때 했던 computation 그대로다.</span>
 
 추가로, temporal(1-D) max-pooling 수행함.<span style="color:blue">[2]</span>
+
 discrete input function g(x)
-g(x) e [1, l] -> R
+
+g(x) (오른쪽으로 향한 삼지창) [1, l] => R
+
 max-pooling function h(y)
 ￼
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/5.png)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/6.png)
 ￼
 c = k-d+1 is an offset constant.
+
 pooling module은 ConvNet의 layer가 6까지도 깊어질 수 있게 한다.<span style="color:blue">[3]</span>
 
 non-linearity를 위해서 ReLU<span style="color:blue">[24]</span> 사용($$h(x)=max\left{0,x\right}$$).
+
 stochastic gradient descent(SGD) with minibatch of size 128 using momentum<span style="color:blue">[26][30]</span> 0.9 and initial step size 0.01 which is halved every 3 epochs for 10 times 사용.
+
 Implementation is done by Torch 7<span style="color:blue">[4]</span>
 
 ### 2.2. Character quantization
 
 model의 input으로는 encoding된 character의 sequence가 들어온다.
+
 input language의 size m을 특정함으로 one-hot-encoding할 수 있다.
+
 그러면 input인 sequence of characters는 sequence of m sized vectors with fixed length l0가 된다, l0를 넘는 character는 무시, alphabet에 포함되지 않는 characters는 all-zero vectors.
+
 quantization order는 backward로 하여 마지막으로 읽은 것들이 begin of the output에 가깝게 위치하도록 한다, making it easy for fully connected layers to associate weights with the latest reading.
 
 model의 alphabet은 총 70개의 character로 아래와 같다.
 ￼
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/7.png)
+
 + the new line character
+
 나중에 alphabet도 바꿔서 대소문자를 구분한 모델과 비교함.
 
 ### 2.3. Model Design
@@ -96,15 +128,23 @@ large feature와 small feature로 2개의 ConvNet을 구성했고, 모두 6개�
 
 2 ConvNets 디자인하였다, 1개는 large 1개는 small. 9 layer(6 conv layer + 3 fully-connected layers)
 ￼
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/8.png)
+
 input feature length is 1014.
+
 2 dropout modules<span style="color:blue">[10]</span> in between the 3 fully-connected layers to regularize, with probability of 0.5.
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/9.png)
+
 Gaussian distribution에 따라 weight initialization, (mean, std): (0, 0.02) for large, (0, 0.05) for small.
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/10.png)
+
 
 ### 2.4. Data Augmentation using Thesaurus
 
 test augmentation의 가장 좋은 방법은 human rephrases지만 현실적으로 불가능하고, 가능한 가장 자연스러운 방법은 word나 phrase를 synonym으로 대체하는 것이다.
+
 유의어는 온라인 영어사전인 English thesaurus에서 가져왔다. 여기에는 여러 유의어가 많이 쓰이는 순으로 정렬되어 제시되는데, 몇개의 단어를 바꿀것인지 또 몇번째 순위의 유의어로 바꿀것인지는 각각 0.5확률의 geometric distribution를 따르게 하였다.
 
 
@@ -124,6 +164,7 @@ classifier로는 multinomial logistic regression을 사용.
 
 * word-based CNN : pretrained word representation(word2vec using lookup table)을 사용했고 embedding size는 똑같이 300이다. 비교를 위해 char-CNN과 레이어 수나 output size는 같다.
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/12.png)
 ￼
 * LSTM : 역시 word-based이고 pretrained word2vec으로 300차원 embedding. 이 모델은 모든 LSTM cell에서 나온 값을 평균내어 feature vector로 삼고, 이를 가지고 multinomial logistic regression을 하였다.
 
@@ -135,15 +176,20 @@ classifier로는 multinomial logistic regression을 사용.
 ## 4. Large-scale Datasets and Results
 
 아래 table과 같이 dataset을 모음.
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/12.png)
+
 실험 결과는 다음과 같음, 결과로 나온 값은 testing error(빨강은 worst, 파랑은 best)
-￼
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/13.png)
+
 
 
 ## 5. Discussion
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/14.png)
 ￼
-아래 그림은 각 method별, 각 주제별 Char-CNN과의 오류율 차이%로 나타낸것. (양의 방향으로 막대가 긴 게 Char-CNN이 잘한것)
+위 그래프는 각 method별, 각 주제별 Char-CNN과의 오류율 차이%로 나타낸것. (양의 방향으로 막대가 긴 게 Char-CNN이 잘한것)
 
 * Character-level ConvNet is an effective method: word를 찾을 필요 없다는 점에서, 언어 데이터를 다른 데이터와 같은 방식으로 다룰 수 있다는 강점이 있다.
 * Dataset size에 따라 데이터 사이즈가 작을때에는 n-gram TFIDF가 여전히 잘했다. 그러나 데이터 scale이 많아질수록 char-CNN이 잘했다.
