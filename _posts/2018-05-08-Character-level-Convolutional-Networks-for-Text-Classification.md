@@ -12,8 +12,8 @@ tags:
 > NIPS 2015
 
 과제라서 했다.
-15년이 별로 오래된 건 아니라고 생각했는데 확실히 ML이 지금 얼마나 빠르게 불타오르면서 연구되는지 알겠더라,
-최근 논문을 좀 본 사람들에게는 이제 지루하겠다.
+15년이 별로 오래된 건 아니라고 생각했는데 확실히 ML이 지금 얼마나 빠르게 연구되는지 알겠더라,
+최근 논문을 좀 본 사람들에게는 지루하겠다.
 
 matjax 쓰고 싶은데 너무 복잡하다. 이번 학기 끝나고 부터 써야지.
 
@@ -46,7 +46,7 @@ character-level feature를 사용한 related work에는, character-level n-grams
 
 ## 2. Character-level Convolutional Networks
 
-사용할 structure의 design은 modular. gradient는 back-propagation[27]으로..최적화..당연한 얘기.
+사용할 structure의 design은 modular. gradient는 back-propagation<span style="color:blue">[27]</span>으로..최적화..당연한 얘기.
 
 ### 2.1. Key Modules
 
@@ -89,11 +89,11 @@ discrete input function g(x)
 g(x) (오른쪽으로 향한 삼지창) [1, l] => R
 
 max-pooling function h(y)
-￼
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/5.png)
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/6.png)
-￼
+
 c = k-d+1 is an offset constant.
 
 pooling module은 ConvNet의 layer가 6까지도 깊어질 수 있게 한다.<span style="color:blue">[3]</span>
@@ -115,7 +115,7 @@ input language의 size m을 특정함으로 one-hot-encoding할 수 있다.
 quantization order는 backward로 하여 마지막으로 읽은 것들이 begin of the output에 가깝게 위치하도록 한다, making it easy for fully connected layers to associate weights with the latest reading.
 
 model의 alphabet은 총 70개의 character로 아래와 같다.
-￼
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/7.png)
 
 + the new line character
@@ -127,7 +127,7 @@ model의 alphabet은 총 70개의 character로 아래와 같다.
 large feature와 small feature로 2개의 ConvNet을 구성했고, 모두 6개의 conv layer와 3개의 fully-connected layer가 있다. 3개의 fc 사이에는 정규화를 위해 2개의 dropout이 있고 dropout의 확률은 0.5이다. filter의 stride는 1, pooling은 non-overlapping을 하였으므로 stride는 3.
 
 2 ConvNets 디자인하였다, 1개는 large 1개는 small. 9 layer(6 conv layer + 3 fully-connected layers)
-￼
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/8.png)
 
 input feature length is 1014.
@@ -204,7 +204,7 @@ classifier로는 multinomial logistic regression을 사용.
 
 여러가지 condition에서 실험, character-level convolutional network를 이용한 text classification task에서의 효율을 실험적으로 얻어냈다.
 
-* In the future, we hope to apply character-level ConvNets for a broader range of language processing tasks especially when structured outputs are needed. *
+**In the future, we hope to apply character-level ConvNets for a broader range of language processing tasks especially when structured outputs are needed.**
 
 
 
