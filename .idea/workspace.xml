@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806796d9-6d30-47e7-84d8-2148424ce3de" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-05-09-만화-애니메이션-추천-리스트.md" afterPath="$PROJECT_DIR$/_posts/2018-05-09-만화-애니메이션-추천-리스트.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,13 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="2018-05-09-만화-애니메이션-추천-리스트.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-09-만화-애니메이션-추천-리스트.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="351">
-                <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <first_editor relative-caret-position="177">
+                <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -171,8 +172,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,12 +286,13 @@
       <workItem from="1525373767296" duration="488000" />
       <workItem from="1525607159255" duration="6079000" />
       <workItem from="1525790254407" duration="5793000" />
-      <workItem from="1525863784938" duration="1216000" />
+      <workItem from="1525863784938" duration="1748000" />
+      <workItem from="1525885316722" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192983000" />
+    <option name="totallyTimeSpent" value="193528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -574,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-321">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,8 +779,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-09-만화-애니메이션-추천-리스트.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="351">
-            <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <first_editor relative-caret-position="177">
+            <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
