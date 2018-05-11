@@ -169,7 +169,7 @@ WAT’16 Jp-En translation task의 ASPEC corpus (“train1.txt”)를 사용하�
 
 #### Cs, De and Ru
 
-New Commentary v8을 이용함. noisy metacharacter는 remove하고 Moses<span style="color:blue">(Koehn et al., 2007)</span>의 tokenizer를 사용하고 6번 이상 등장하는 token들로 각 언어의 vocabulary를 만든다, target-side인 En vocabulary에는 3번 이상 등장하는 token들로 이루어 짐. sentence pair 중 source나 target에 empty line을 포함하는 pair는 버리고(이런 게 있나봄) 길이가 50 이하인 sentence pair를 training으로 사용, “newstest2015”는 devset으로, “newstest2016”은 testset으로 사용한다.
+News Commentary v8을 이용함. noisy metacharacter는 remove하고 Moses<span style="color:blue">(Koehn et al., 2007)</span>의 tokenizer를 사용하고 6번 이상 등장하는 token들로 각 언어의 vocabulary를 만든다, target-side인 En vocabulary에는 3번 이상 등장하는 token들로 이루어 짐. sentence pair 중 source나 target에 empty line을 포함하는 pair는 버리고(이런 게 있나봄) 길이가 50 이하인 sentence pair를 training으로 사용, “newstest2015”는 devset으로, “newstest2016”은 testset으로 사용한다.
 
 ### 5.2 Models, Learning and Inference
 
