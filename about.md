@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 titles:
   en: About
   kr: 소개
