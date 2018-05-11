@@ -416,5 +416,3 @@ Neural machine translation with source-side latent graph parsing. CoRR, abs/1702
 Dani Yogatama, Phil Blunsom, Chris Dyer, Edward Grefenstette, and Wang Ling. 2016. Learning to compose words into sentences with reinforcement learning. CoRR, abs/1611.09100. 
 
 Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aa ̈ron van den Oord, Alex Graves, and Koray Kavukcuoglu. 2016. Neural machine translation in linear time. CoRR, abs/1610.10099. 
-
-

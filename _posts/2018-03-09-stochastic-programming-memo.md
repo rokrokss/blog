@@ -72,15 +72,3 @@ $$
 
 and, moreover, the two-stage problem can be formulated as one large linear programming problem
 (this is called the **deterministic equivalent** of the original problem).
-
-
-
-
-
-
-
-
-
-
-
-
