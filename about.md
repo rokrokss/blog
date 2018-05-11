@@ -9,10 +9,4 @@ titles:
 key: page-about
 ---
 
-안녕하세요.
-
-저의 생각들을 제 안에서만 한없이 맴돌게 하기도, 면전에서 스스럼없이 전하기도 힘든 일이라 느낍니다.
-
-부족함을 채우기 위해, 오롯이 존재하는 제 공간을 만드려 합니다.
-
-이곳에서는 일단은 전공 공부와, 제가 좋아하는 것들, 제 머릿속의 글을 적겠습니다.
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/about/공부짤.jpeg)
