@@ -27,14 +27,14 @@ nav_lists:
       zh-Hant: 關於
     url: /about.html
 
-# paths:
-#   base: /
-#   home: /
-#   all:  /all.html
-#   rss:  /feed.xml
+paths:
+   base: /
+   home: /
+   all:  /all.html
+   rss:  /feed.xml
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: q0115643/q0115643.github.io  #e.g. someone/someone.github.io
+repository: q0115643/my_blog  #e.g. someone/someone.github.io
 repository_tree: master  #e.g. master
 
 ## Language & timezone ##

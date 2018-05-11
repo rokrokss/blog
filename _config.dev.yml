@@ -36,7 +36,7 @@ paths:
   rss:  /feed.xml
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: someone/someone.github.io
+repository: q0115643/my_blog
 repository_tree: master
 
 ## Language & timezone ##
