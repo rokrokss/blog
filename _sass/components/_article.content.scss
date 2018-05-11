@@ -1,19 +1,19 @@
 .m-article-content {
   word-wrap: break-word;
   line-height: $article-line-height;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: $content-gap * 2 0 $content-gap * .5 0;
+  h1, h2, h3, h4, h5, h6, p,
+  hr, blockquote, figure, pre, .highlighter-rouge,
+  ul, ol, dl, table, .footnotes {
+    margin: 1rem 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem + .5rem;
   }
   h1,
   h2 {
     padding: 0 0 $base-font-size * .3 0;
-    border: 0 dashed $border-color;
-    border-bottom-width: 2px;
+    border: 0 solid $border-color-l;
+    border-bottom-width: 1px;
     margin-bottom: $content-gap;
   }
   p {
@@ -23,7 +23,6 @@
     padding: 0 0 0 $spacing-unit / 2;
     border: 0 solid $border-color;
     border-left-width: 4px;
-    margin: $content-gap 0;
     font-size: $small-font-size;
     color: $text-color-l;
     p {
@@ -57,7 +56,6 @@
     display: block;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    margin: $content-gap 0;
     border-radius: $code-font-size * .4;
     ;
     background-size: auto $code-font-size * $code-line-height * 2;
@@ -97,7 +95,7 @@
   }
   ul,
   ol {
-    margin: $content-gap 0 $content-gap $spacing-unit;
+    margin-left: 1.5rem;
     li {
       margin: 0;
       p {
@@ -106,9 +104,7 @@
     }
   }
   dl {
-    margin: $content-gap 0;
-    dt,
-    dd {
+    dt, dd {
       margin: 0;
       p {
         margin: 0;
@@ -126,12 +122,14 @@
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: $content-gap 0;
     border-collapse: collapse;
     th,
     td {
       border: 1px solid $border-color;
       padding: $base-font-size * .5;
+    }
+    th {
+      font-weight: $bold-font-weight;
     }
     thead,
     tbody {
@@ -142,8 +140,8 @@
     }
   }
   hr {
-    border: 0 dashed $border-color;
-    border-top-width: 2px;
+    border: 0 solid $border-color-l;
+    border-top-width: 1px;
     margin: $base-font-size 0;
   }
 }

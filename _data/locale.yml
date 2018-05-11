@@ -41,6 +41,20 @@ ARTICLE_DATE_FORMAT:
   zh-Hans: "%Y年 %m月%d日"
   zh-Hant: "%Y年 %m月%d日"
 
+PREVIOUS:
+  en:      "PREVIOUS"
+  kr:      "윗글"
+  zh:      "上篇"
+  zh-Hans: "上篇"
+  zh-Hant: "上篇"
+
+NEXT:
+  en:      "NEXT"
+  kr:      "아랫글"
+  zh:      "下篇"
+  zh-Hans: "下篇"
+  zh-Hant: "下篇"
+
 ARTICLE_LIST_DATE_FORMAT:
   en:      "%b %d"
   kr:      "%m월 %d일"
