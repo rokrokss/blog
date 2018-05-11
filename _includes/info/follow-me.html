@@ -67,12 +67,14 @@
         </div>
       </li>
     {%- endif -%}
+    {%- if site.author.email -%}
+      <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
+        <div class="round-button mail">
+          <a itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
+            <div class="icon">{%- include icon/mail.svg -%}</div>
+          </a>
+        </div>
+      </li>
+    {%- endif -%}
   </ul>
-  {%- if site.author.email -%}
-  {%- assign __locale = site.data.locale.EMAIL_ME -%}
-  {%- include snippets/locale-to-string.html -%}
-    <p class="email">
-      <a title="{{ __return }}" href="mailto:{{ site.author.email }}" target="_self">{{ site.author.email }}</a>
-    </p>
-  {%- endif -%}
 </div>
