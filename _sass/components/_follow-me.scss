@@ -38,6 +38,9 @@
       .douban {
         @include link-colors($text-color-1, $douban-color);
       }
+      .RSS {
+        @include link-colors($text-color-1, $RSS-color);
+      }
     }
   }
 }

@@ -56,11 +56,19 @@
       </li>
     {%- endif -%}
     {%- if site.author.email -%}
-      <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
-        <a class="floating-action-round-button douban" itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
-          <div class="icon">{%- include svg/icon/social/mail.svg -%}</div>
-        </a>
+    <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
+      <a class="floating-action-round-button mail" itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
+        <div class="icon">{%- include svg/icon/social/mail.svg -%}</div>
+      </a>
     </li>
     {%- endif -%}
+    {%- assign __path = site.paths.rss | default: site.data.variables.default.paths.rss -%}
+    {%- include snippets/get-nav-url.html -%}
+    {%- assign href = __return -%}
+    <li title="{{ __return | replace: '[NAME]', 'RSS' }}">
+      <a class="floating-action-round-button RSS" itemprop="sameAs" href="{{ href }}" target="_blank">
+        <div class="icon">{%- include svg/icon/social/rss.svg -%}</div>
+      </a>
+    </li>
   </ul>
 </div>

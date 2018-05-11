@@ -5,7 +5,6 @@ default:
     base: /
     home: /
     all:  /all.html
-    rss:  /feed.xml
   mathjax: false
   mathjax_autoNumber: false
   mermaid: false
