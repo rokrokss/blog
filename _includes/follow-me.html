@@ -56,12 +56,10 @@
       </li>
     {%- endif -%}
     {%- if site.author.email -%}
-    <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
-      <div class="round-button mail">
-        <a itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
+      <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
+        <a class="floating-action-round-button douban" itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
           <div class="icon">{%- include svg/icon/social/mail.svg -%}</div>
         </a>
-      </div>
     </li>
     {%- endif -%}
   </ul>
