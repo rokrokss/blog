@@ -7,7 +7,6 @@ modify_date: 2018-04-22
 picture_frame: shadow
 tags:
   - OS
-  - Pintos
 ---
 
 OS수업에서 Pintos 프로젝트를 진행 중이다.

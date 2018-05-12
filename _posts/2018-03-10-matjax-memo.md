@@ -2,7 +2,8 @@
 layout: post
 title: MathJax 유용한 정보
 key: 201803101
-tags: MathJax
+tags:
+  - 블로그
 mathjax: true
 ---
 
