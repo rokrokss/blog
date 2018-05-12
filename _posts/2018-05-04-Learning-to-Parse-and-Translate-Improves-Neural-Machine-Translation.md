@@ -13,6 +13,8 @@ tags:
 
 Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho
 
+<!--more-->
+
 The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo, Japan
 
 {eriguchi, tsuruoka}@logos.t.u-tokyo.ac.jp
@@ -25,8 +27,6 @@ kyunghyun.cho@nyu.edu
 <span style="color:red">(나한테 영어가 더 편한 단어는 영어로 씀)</span>
 
 <span style="color:red">코드: https://github.com/tempra28/nmtrnng</span>
-
-<!--more-->
 
 ## Abstract
 

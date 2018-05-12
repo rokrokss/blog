@@ -10,13 +10,14 @@ tags:
 ---
 # Stochastic programming?
 In the field of mathematical optimization, **stochastic programming**
+
+<!--more-->
+
 is a framework for modeling optimization problems that involves **uncertainty**.
 
 The goal here is to find some policy that is feasible for all
 (or almost all) the possible data instances and maximizes the expectation
 of some function of the decisions and the random variables.
-
-<!--more-->
 
 ## Two-stage problems
 The basic idea of two-stage stochastic programming is that (optimal)

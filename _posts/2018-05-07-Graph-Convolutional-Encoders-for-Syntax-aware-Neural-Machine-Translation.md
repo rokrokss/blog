@@ -13,6 +13,8 @@ tags:
 
 Joost Bastings, Ivan Titov, Wilker Aziz 
 
+<!--more-->
+
 Diego Marcheggiani, Khalil Sima’an 
 
 ILLC, University of Amsterdam, ILCC, University of Edinburgh
@@ -27,8 +29,6 @@ ILLC, University of Amsterdam, ILCC, University of Edinburgh
 	⁃	https://github.com/ufal/neuralmonkey<br><t>
 	⁃	https://github.com/bastings/neuralmonkey<br><t>
 	⁃	https://github.com/bastings/neuralmonkey/tree/emnlp_gcn<br><t>
-
-<!--more-->
 
 ## Abstract
 

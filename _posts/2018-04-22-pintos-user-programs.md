@@ -11,6 +11,9 @@ tags:
 ---
 
 OS수업에서 Pintos 프로젝트를 진행 중이다.
+
+<!--more-->
+
 User Programs 관련 test case를 통과하기 위한 내 implementation을 정리해 보겠다.
 
 이번 과제는 좀 복잡해서 작동원리를 이해하기 위한 순서로 code를 설명하면 답이 없으므로, 그냥 code만 가지고 보여주겠다.
@@ -18,8 +21,6 @@ User Programs 관련 test case를 통과하기 위한 내 implementation을 정�
 일단 결과창(test 76개 통과하는 그거 맞다. make check 후 make grade? 하면 이런 식으로 나옴.)
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj2/pintos-pj2-result.png)
-
-<!--more-->
 
 # process.c
 

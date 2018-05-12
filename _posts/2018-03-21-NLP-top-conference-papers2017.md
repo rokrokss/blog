@@ -12,6 +12,9 @@ tags:
 ## 참고 논문 리스트
 
 - [ACL2017](https://acl2017.wordpress.com/2017/04/05/accepted-papers-and-demonstrations/)
+
+<!--more-->
+
 - [EMNLP2017](http://emnlp2017.net/accepted-papers.html)
 
 
@@ -25,5 +28,3 @@ tags:
 - word2vec matrix factorization
 - [char RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [practical neural net for NLP](https://github.com/clab/dynet_tutorial_examples)
-
-<!--more-->

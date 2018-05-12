@@ -11,13 +11,15 @@ tags:
 ---
 
 OS수업에서 Pintos 프로젝트를 진행 중이다.
+
+<!--more-->
+
 Alarm Clock과 Priority Scheduling 관련 test case를 통과하기 위한 내 implementation을 정리해 보겠다.
 이해를 위해 다시 적기보다는 그냥 결과 기록용이니 설명은 조금씩만 적겠다.(원리 설명은 구글링하면 잘 나옴)
 
 먼저 결과창
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/pintos-pj1/pintos-pj1-result.png)
-<!--more-->
 
 # Alarm Clock
 
