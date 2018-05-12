@@ -90,7 +90,7 @@ mermaid: true
 chart: true
 
 ## Paginate ##
-paginate: 4
+paginate: 6
 paginate_path: /page:num
 
 ## Post excerpts ##
