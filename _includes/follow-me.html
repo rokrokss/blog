@@ -56,7 +56,9 @@
       </li>
     {%- endif -%}
     {%- if site.author.email -%}
-    <li title="{{ __return | replace: '[NAME]', 'Mail' }}">
+    {%- assign __locale = site.data.locale.EMAIL_ME -%}
+    {%- include snippets/locale-to-string.html -%}
+    <li title="{{ __return }}">
       <a class="floating-action-round-button mail" itemprop="sameAs" href="mailto:{{ site.author.email }}" target="_blank">
         <div class="icon">{%- include svg/icon/social/mail.svg -%}</div>
       </a>
@@ -65,6 +67,8 @@
     {%- assign __path = site.paths.rss | default: site.data.variables.default.paths.rss -%}
     {%- include snippets/get-nav-url.html -%}
     {%- assign href = __return -%}
+    {%- assign __locale = site.data.locale.FOLLOW_ME -%}
+    {%- include snippets/locale-to-string.html -%}
     <li title="{{ __return | replace: '[NAME]', 'RSS' }}">
       <a class="floating-action-round-button RSS" itemprop="sameAs" href="{{ href }}" target="_blank">
         <div class="icon">{%- include svg/icon/social/rss.svg -%}</div>
