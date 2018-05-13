@@ -16,4 +16,4 @@ key: page-about
 
 블로그를 만들었다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/about/공부짤.png){:width="300px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/about/공부짤.png){:width="300px"}
