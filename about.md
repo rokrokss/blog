@@ -10,4 +10,8 @@ titles:
 key: page-about
 ---
 
+때는 자기PR의 시대
+
+블로그를 만들었습니다.
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/about/공부짤.png){:width="300px"}
