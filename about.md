@@ -10,7 +10,7 @@ titles:
 key: page-about
 ---
 
-때는 자기PR의 시대
+때는 자기 PR의 시대
 
 블로그를 만들었습니다.
 
