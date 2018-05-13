@@ -46,7 +46,7 @@ graph-convolutional networks(GCNs)는 graph-structured data를 이용하기 위�
   
 NMT<span style="color:blue">(Kalchbrenner and Blunsom, 2013; Sutskever et al., 2014; Cho et al., 2014b)</span>는 parallel corpus를 이용하여 neural net을 train하고 target sentence given source sentence의 conditional probability를 계산한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/1.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/1.png)
 
 또한, attention mechanism을 이용하여 decoder가 encoder에 따라 영향을 받으며 작동하게 한다.
 
@@ -60,7 +60,7 @@ encoder는 source sentence를 input으로 sequence of hidden states를 만든다
 
 RNN은 sequential data를 이용한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/2.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/2.png)
 
 f는 LSTM이나 GRU를 이용함으로 만들어진 비선형함수.
 
@@ -68,7 +68,7 @@ f는 LSTM이나 GRU를 이용함으로 만들어진 비선형함수.
 
 이전 words만 사용하지 않고 이후 words도 사용하기 위해 BiRNN이 사용된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/3.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/3.png)
 
 F: forward, B: backward
 
@@ -80,7 +80,7 @@ RNN에 비해 장점이 있다면 fast parallel computation이 가능하다.
 
 Layer를 늘리면 non-local context또한 포함하여 loss를 줄일 수 있다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/4.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/4.png)
 
 f는 ReLU와 같은 함수가 결합된 비선형함수, w는 window size.
 
@@ -90,7 +90,7 @@ BoW에는 모든 word를 그의 word embedding으로 encode하고, position 정�
 
 There are different strategies for defining position embeddings, and in this paper we choose to learn a vector for each absolute word position up to a certain maximum length. 
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/5.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/5.png)
 
 xt는 word embedding, pt는 t-th position embedding.
 
@@ -118,17 +118,17 @@ X가 d*n 차원의 행렬로, 모든 node의 정보(dimension d짜리 word embed
 
 1-layer GCN의 경우, output이 되는 hidden states는 아래와 같다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/6.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/6.png)
 
 W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activation function이다.
 
 요렇게 하면 GCN layer가 더 쌓일 때 recursive computation으로 아래와 같은 식이 나옴.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/7.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/7.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/8.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/8.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/9.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/9.png)
 
 ## 2.3. Syntactic GCNs
 
@@ -139,7 +139,7 @@ W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activati
 directionality를 이용하려면 incoming과 outgoing edge에 다른 weight matrix가 적용되야 한다. dependency tree에서는 edge가 출발점의 dependents로 향하므로, outgoing edge를 head-to-dependent connection, incoming edge를 dependent-to-head connection으로 사용한다.
 이제 앞의 general GCN의 recursive computation을 아래처럼 수정할 수 있다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/10.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/10.png)
 
 여기서 dir(u, v)는 (u, v)의 방향에 따라 다른 weight matrix를 선택한다.
 
@@ -149,7 +149,7 @@ directionality를 이용하려면 incoming과 outgoing edge에 다른 weight mat
 
 ### Labels.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/11.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/11.png)
 
 이제 direction에 따라만 W가 바뀌는게 아닌 label과 direction의 combination에 따라 바뀜 => over-parametriztion.
 
@@ -161,19 +161,19 @@ Syntactic GCNs는 gates가 있어서 각 edge의 기여도를 줄이며 noisy할
 
 그러기 위해 각 edge에서 아래처럼 scalar gate value를 계산한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/12.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/12.png)
 
 sigma는 logistic sigmoid function.
 
 아래 둘은 gate를 위해 학습된 parameters
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/13.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/13.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/14.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/14.png)
 
 따라서 최종 computation은
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/15.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/15.png)
 
 # 3. Graph Convolutional Encoders
 
@@ -246,7 +246,7 @@ validation BLEU가 99.2 달성.
 
 bias terms of gates의 평균 value는 아래와 같은 그래프를 만듬.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/16.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/16.png)
 
 gate가 효과가 좋음을 확인 가능.
 
@@ -276,7 +276,7 @@ Czech와 German side에서는 rare words와 합성어에 대처해주기 위해 
 
 Given the size of our data set, and following <span style="color:blue">Wu et al. (2016)</span>, we use 8000 BPE merges to obtain robust frequencies for our subword units (16000 merges for full data experiment). Data set statistics are summarized in Table 1 and vocabulary sizes in Table 2. 
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/17.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/17.png)
 
 #### Hyperparameters.
 
@@ -304,19 +304,19 @@ BLEU result<span style="color:blue">(Papineni et al., 2002)</span> using multi-b
 
 #### En-Ge
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/18.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/18.png)
 
 #### En-Cz
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/19.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/19.png)
 
 #### Effect of GCN layers.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/20.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/20.png)
 
 #### Effect of sentence length.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Bastings-EMNLP2017/21.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Bastings-EMNLP2017/21.png)
 
 #### Discussion.
 

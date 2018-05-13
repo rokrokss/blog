@@ -55,19 +55,19 @@ main component는 temporal convolutional module(1-D convolution.)
 
 input function g(x)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/1.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/1.png)
 
 discrete kernel function f(x)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/2.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/2.png)
 
 convolution h(y) between f(x) and g(x) with stride d
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/3.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/3.png)
 
 then the whole computation with the layer is like below
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/4.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/4.png)
 
 c = k-d+1 is an offset constant.
 
@@ -91,9 +91,9 @@ g(x) (오른쪽으로 향한 삼지창) [1, l] => R
 
 max-pooling function h(y)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/5.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/5.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/6.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/6.png)
 
 c = k-d+1 is an offset constant.
 
@@ -117,7 +117,7 @@ quantization order는 backward로 하여 마지막으로 읽은 것들이 begin 
 
 model의 alphabet은 총 70개의 character로 아래와 같다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/7.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/7.png)
 
 + the new line character
 
@@ -129,17 +129,17 @@ large feature와 small feature로 2개의 ConvNet을 구성했고, 모두 6개�
 
 2 ConvNets 디자인하였다, 1개는 large 1개는 small. 9 layer(6 conv layer + 3 fully-connected layers)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/8.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/8.png)
 
 input feature length is 1014.
 
 2 dropout modules<span style="color:blue">[10]</span> in between the 3 fully-connected layers to regularize, with probability of 0.5.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/9.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/9.png)
 
 Gaussian distribution에 따라 weight initialization, (mean, std): (0, 0.02) for large, (0, 0.05) for small.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/10.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/10.png)
 
 
 ### 2.4. Data Augmentation using Thesaurus
@@ -165,7 +165,7 @@ classifier로는 multinomial logistic regression을 사용.
 
 * word-based CNN : pretrained word representation(word2vec using lookup table)을 사용했고 embedding size는 똑같이 300이다. 비교를 위해 char-CNN과 레이어 수나 output size는 같다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/12.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/12.png)
 ￼
 * LSTM : 역시 word-based이고 pretrained word2vec으로 300차원 embedding. 이 모델은 모든 LSTM cell에서 나온 값을 평균내어 feature vector로 삼고, 이를 가지고 multinomial logistic regression을 하였다.
 
@@ -178,17 +178,17 @@ classifier로는 multinomial logistic regression을 사용.
 
 아래 table과 같이 dataset을 모음.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/12.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/12.png)
 
 실험 결과는 다음과 같음, 결과로 나온 값은 testing error(빨강은 worst, 파랑은 best)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/13.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/13.png)
 
 
 
 ## 5. Discussion
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Zhang-NIPS2015/14.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-NIPS2015/14.png)
 ￼
 위 그래프는 각 method별, 각 주제별 Char-CNN과의 오류율 차이%로 나타낸것. (양의 방향으로 막대가 긴 게 Char-CNN이 잘한것)
 

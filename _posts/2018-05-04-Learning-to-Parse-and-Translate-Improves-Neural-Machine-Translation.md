@@ -35,17 +35,17 @@ RNNG를 이용해 NMT의 학습에 target sentence의 syntactic info 주입.
 encoder는 LSTM이나 GRU를 이용한 bidirectional RNN.
 먼저 source sentence를 sequence of words x=(x1, x2, …, xN) 구조로 읽고, encoder가 sequence of hidden states h=(h1, h2, …, hN) 구조로 반환한다. 각 hidden state hi 는 forward 와 backward RNN의 concatenation이므로 hi=[forward hi, backward hi]로 표현된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/1.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/1.png)
 
 Vx(xi)는 i-th source word의 word vector를 나타내고 decoder는 target sentence를 conditional recurrent language model로 표현해준다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/2.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/2.png)
 
 여기서 y = (y1, …, yM), output으로 들어갈 수 있는 word들.
 
 conditional probability들은 아래와 같이 계산된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/3.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/3.png)
 
 Wy는 word y의 output word vector.
 
@@ -55,11 +55,11 @@ cj는 encoder의 hidden state sequence h를 이용하여 attention model이 계�
 
 cj를 계산하는 과정은, 먼제 attention model이 current hidden state sj를 각 hidden states와 비교하여 scalar score beta i,j를 부여한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/4.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/4.png)
 
 그리고 normalize
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/5.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/5.png)
 
 그리고 time-dependent context vector는 위를 이용한 weighted sum으로 계산됨
 
@@ -73,7 +73,7 @@ RNN과 달리 RNNG는 token과 tree-based composition을 모두 동시에 model�
 
 이렇게 하려면 (output) buffer와 stack, action history가 필요함, 이것들은 stack LSTM(sLSTM)<span style="color:blue">(Dyer et al., 2015)</span>을 사용하여 implement된다. each time, action sLSTM이 current hidden states of the buffer stack and action sLSTM을 기반으로 다음 action을 예측한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/6.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/6.png)
 
 여기서 Wa는 action a의 vector.
 
@@ -85,13 +85,13 @@ action이 reduce라면 top-two words in the stack이 partial tree를 만드는�
 
 hidden states of the buffer, stack, action sLSTM은 아래와 같이 update된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/7.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/7.png)
 
 여기서 Vy와 Va는 target word와 action vector를 return하는 함수.
 
 stack sLSTM의 input vector rt는 아래와 같이 계산된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/8.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/8.png)
 
 여기서 r^d와 r^p는 parent와 dependent phrases의 corresponding vectors.
 
@@ -110,34 +110,34 @@ complete sentence가 제공되면 buffer가 shifted words를 요약하고, RNNG�
 
 아래 식 두개를 보면, buffer sLSTM과 translation decoder 모두 각각의 이전 hidden state을 input으로 가진다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/9.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/9.png)
 
 이전의, buffer의 hidden state를 나타낸 표현식 (5)을 아래의 hidden state of the decoder of the attention-based neural machine translation으로 바꾼다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/10.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/10.png)
 
 둘의 차이점은 translation decoder는 추가로 state ~sj-1을 고려한단 것인데, 위의 replacement를 수행한 뒤에는 NMT decoder도 RNNG의 action의 control안에 있게 되는데, j-th hidden state in Eq(3)이 shift action이 예측된 겅우에만 계산되므로 본 모델이 sequence of words and action with different length를 다 handle할 수 있다.
 
 다음으로, next word prediction of translation decoder를 RNNG의 generator가 해주게 한다. 
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/11.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/11.png)
 
 이 식(conditional distribution defined in translation decoder)에 따라 shift action이 예측되었을 때 output word를 만들어 준다.
 
 이젠 buffer sLSTM이 neural translation decoder로 대체됨. action sLSTM이 decoder의 hidden state를 input으로 가지고 action conditional distribution(Eq (4))을 계산하고, 이 모델이 바로 NMT+RNNG
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/12.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/12.png)
 
 
 #### Learning and Inference
 
 이제 NMT+RNNG model은 가능한 모든 translation과 parse(앞에서 만든 parse tree인 듯) pair의 conditional distribution을 계산해준다. 그 확률은 아래와 같음.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/13.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/13.png)
 
 이렇게 하면 NMT+RNNG model은 아래의 식을 object function으로 갖음.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/14.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/14.png)
 
 y뿐만 아니라 a의 conditional probability도 maximize한다. 이 효과로, 전체 translation model이 target language의 syntactic structure를 준수하는 방향으로 train되고, 결과적으로 train이 끝난 뒤 inference time에 RNNG의 stack과 action sLSTM을 제거해도 효과는 지속된다.
 
@@ -178,11 +178,11 @@ We clip the norm of the gradient<span style="color:blue">(Pascanu et al., 2012)<
 
 RNNG의 stack이 dependency parse tree의 vector를 compute하는데, parse tree가 가지는 “ROOT” node는 “EOS”로 한다. inference time에는 beam search를 사용하고 beam width는 devset performance를 기반으로 선택된다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/15.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/15.png)
 
 score 결과. statistical significance를 계산하기 위해서 bootstrap resampling method<span style="color:blue">(Koehn, 2004)</span> 사용, 십자가 마크는 significance cases with p<0.005
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/16.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/16.png)
 
 Jp-En test에서 RNNG 구성 요소 조절한 실험 결과.
 
@@ -196,7 +196,7 @@ Jp-En test에서 처럼 RNNG 모델의 구성요소 빼봤는데, 다 있을 때
 
 #### Generated Sentences with Parsed Actions
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/images/paper-summary/Cho-ACL2017/17.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cho-ACL2017/17.png)
 
 기본 NMT decoder가 만드는 translated sentence와 RNNG decoder의 parsing action으로 위 그림과 같은 dependency structure가 만들어 진다. translated sentence는 beam search를 이용하고, parsing actions는 greedy search를 이용한다. resulted dependency structure는 보통 맞지만, 위 그림의 “The”와 “transition”이 “pobj”가 아니어야 하는 것처럼 틀린 경우들도 있다.
 
