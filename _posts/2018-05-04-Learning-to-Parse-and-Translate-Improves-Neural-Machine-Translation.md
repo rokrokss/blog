@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Learning to Parse and Translate Improves Neural Machine Translation(ACL 2017)
+title: 논문 요약&#58; Learning to Parse and Translate Improves Neural Machine Translation
 key: 201805041
 tags:
   - NLP
@@ -11,7 +11,7 @@ tags:
 
 > ACL 2017
 
-RNNG를 이용해 NMT의 학습에 target sentence의 syntactic info 낑겨 넣기.
+RNNG를 이용해 NMT의 학습에 target sentence의 syntactic info 주입.
 
 <!--more-->
 

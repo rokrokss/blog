@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Character-level Convolutional Networks for Text Classification(NIPS 2015)
+title: 논문 요약&#58; Character-level Convolutional Networks for Text Classification
 key: 201805081
 tags:
   - NLP
@@ -11,7 +11,7 @@ tags:
 
 > NIPS 2015
 
-과제라서 했다. Character-level CNN 첫 적용 논문
+과제라서 했다. Character-level CNN 첫 적용 논문.
 
 <!--more-->
 
