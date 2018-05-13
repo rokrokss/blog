@@ -1,5 +1,5 @@
 .m-page-header {
-  background-color: $main-color-3;
+  background-color: $background-color;
   a {
     font-weight: map-get($base, font-weight);
     @include link-text-colors( $text-color-3, $main-color-1, $main-color-1);
