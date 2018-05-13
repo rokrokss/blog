@@ -11,7 +11,7 @@ tags:
 
 > NIPS 2015
 
-과제라서 했다.
+과제라서 했다. Character-level CNN 첫 적용 논문
 
 <!--more-->
 

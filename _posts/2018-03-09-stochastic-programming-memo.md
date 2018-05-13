@@ -8,10 +8,13 @@ picture_frame: shadow
 tags:
   - 수학
 ---
-# Stochastic programming?
-In the field of mathematical optimization, **stochastic programming**
+
+Multistage Stochastic Optimisation Problems 관련 논문 이해를 위해
 
 <!--more-->
+
+# Stochastic programming?
+In the field of mathematical optimization, **stochastic programming**
 
 is a framework for modeling optimization problems that involves **uncertainty**.
 

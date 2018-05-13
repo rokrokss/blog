@@ -9,11 +9,13 @@ tags:
   - NLP
 ---
 
+휴강하고 교수님께서 주신 링크들... 공부할 것들...
+
+<!--more-->
+
 ## 참고 논문 리스트
 
 - [ACL2017](https://acl2017.wordpress.com/2017/04/05/accepted-papers-and-demonstrations/)
-
-<!--more-->
 
 - [EMNLP2017](http://emnlp2017.net/accepted-papers.html)
 

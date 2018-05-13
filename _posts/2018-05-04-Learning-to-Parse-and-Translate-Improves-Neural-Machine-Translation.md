@@ -11,18 +11,9 @@ tags:
 
 > ACL 2017
 
-Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho
+RNNG를 이용해 NMT의 학습에 target sentence의 syntactic info 낑겨 넣기.
 
 <!--more-->
-
-The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo, Japan
-
-{eriguchi, tsuruoka}@logos.t.u-tokyo.ac.jp
-
-New York University, New York, NY 10012, USA
-
-kyunghyun.cho@nyu.edu 
-
 
 <span style="color:red">(나한테 영어가 더 편한 단어는 영어로 씀)</span>
 

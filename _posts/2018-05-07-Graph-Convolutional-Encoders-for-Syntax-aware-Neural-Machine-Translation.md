@@ -11,16 +11,9 @@ tags:
 
 > EMNLP 2017
 
-Joost Bastings, Ivan Titov, Wilker Aziz 
+GCN으로 NMT에 Syntactic info를 인위적으로 주입
 
 <!--more-->
-
-Diego Marcheggiani, Khalil Sima’an 
-
-ILLC, University of Amsterdam, ILCC, University of Edinburgh
-
-{bastings, titov, w.aziz, marcheggiani, k.simaan}@uva.nl
-
 
 <span style="color:red">(나한테 영어가 더 편한 단어는 영어로 씀, NMT 관련 논문 요약이 처음이 아니니 traditional NMT model(16시즌의 state-of-the-art) 설명이 많이 생략될 것.)</span>
 

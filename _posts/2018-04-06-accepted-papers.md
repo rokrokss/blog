@@ -9,11 +9,13 @@ tags:
   - NLP
 ---
 
+NLP 주요 학회 accepted papers 링크 모음.
+
+<!--more-->
+
 - AAAI
 
   - [AAAI all](https://www.aaai.org/Library/AAAI/aaai-library.php)
-
-<!--more-->
 
 - ICML
 
