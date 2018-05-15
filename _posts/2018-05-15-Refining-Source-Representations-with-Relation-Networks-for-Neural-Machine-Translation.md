@@ -12,7 +12,7 @@ tags:
 
 > 학회 불명
 
-과제라서 했다. Character-level CNN 첫 적용 논문.
+NMT에 Relation Network를 이용하여 RNN이 오래된 정보를 잊는 문제를 해결.
 
 <!--more-->
 
