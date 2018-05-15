@@ -68,13 +68,34 @@ $$r_{ik} = LRelu(W_{mlp1}c_ik + b_{mlp1})$$를 이용해 새로운 vector set $$
 
 $$r_i = \sum_{k=1}^l (r_{ik})$$를 이용하여 새로운 vector set $$r_1, r_2,..., r_l$$를 output으로 생성한다.
 
+#### Multi-Layer Perceptron(MLP) Layer
 
+GP Layer의 output이 MLP Layer로 들어간다.
 
+해당 MLP에서는 residual connection을 이용한다.
 
+## Datasets
 
+- IWSLT Data - 44K sentences from tourism and travel domain.
+- NIST Data - 1M Chinese-English parallel sentence pairs.
 
+## Models
 
+- MOSES - Open source translation system
+    http://www.statmt.org/moses/
+- NMT - Attention based NMT
+- NMT+ - NMT with improved decoder
+- TRANSFORMER - Google’s new NMT
+- RNMT+ - Relation Network integrated with NMT+
 
+## Evaluation Metric
 
+- case-insensitive 4-gram BLEU score
 
+## Observations
 
+sentence의 길이가 길어질수록(50 words을 넘어가면), RNMT가 성능이 더 좋아진다.
+
+Qualitative evaluation을 보면 RNMT+가 NMT+보다 word alignment를 더 잘 포착함을 알 수 있다.
+
+NMT에 사용되는 Layer가 RNN이 아닌 CNN이어도 long-term dependency를 포착하는 성능은 RN이 더 좋다.
