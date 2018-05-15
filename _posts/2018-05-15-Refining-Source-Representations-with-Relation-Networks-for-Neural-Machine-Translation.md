@@ -98,4 +98,4 @@ sentence의 길이가 길어질수록(50 words을 넘어가면), RNMT가 성능�
 
 Qualitative evaluation을 보면 RNMT+가 NMT+보다 word alignment를 더 잘 포착함을 알 수 있다.
 
-NMT에 사용되는 Layer가 RNN이 아닌 CNN이어도 long-term dependency를 포착하는 성능은 RN이 더 좋다.
+NMT에 사용되는 Layer가 RNN이 아닌 CNN이어도 long-term dependency를 포착하는 성능은 RNMT이 더 좋다.
