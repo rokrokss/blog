@@ -7,6 +7,7 @@ tags:
   - NLP
   - 논문
   - ACL
+  - NMT
 ---
 
 > ACL 2017

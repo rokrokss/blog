@@ -7,6 +7,7 @@ tags:
   - NLP
   - 논문
   - EMNLP
+  - NMT
 ---
 
 > EMNLP 2017
