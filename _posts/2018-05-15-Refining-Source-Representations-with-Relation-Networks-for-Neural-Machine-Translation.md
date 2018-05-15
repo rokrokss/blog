@@ -64,7 +64,7 @@ edge를 통해 정보가 흐르게 하여 각 node가 모든 node에게서 메�
 위는 굉장히 추상적인 표현이고 내부를 뜯어 보면, 모든 node를 나타내는 vector set $$c_1, c_2,..., c_l$$을 받았다면,
 그 vector들 간의 차를 이용해 edge를 나타내는 vector set $$c_{ik}$$들을 만든다.
 
-$$r_{ik} = LRelu(W_{mlp1}c_ik + b_{mlp1})$$를 이용해 새로운 vector set $$r_{ik}$$를 만들고,
+$$r_{ik} = LRelu(W_{mlp1}c_{ik} + b_{mlp1})$$를 이용해 새로운 vector set $$r_{ik}$$를 만들고,
 
 $$r_i = \sum_{k=1}^l (r_{ik})$$를 이용하여 새로운 vector set $$r_1, r_2,..., r_l$$를 output으로 생성한다.
 
