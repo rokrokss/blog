@@ -5,9 +5,9 @@ title: 논문 요약&#58; Graph Convolutional Encoders for Syntax-aware Neural M
 key: 201805061
 tags:
   - NLP
+  - NMT
   - 논문
   - EMNLP
-  - NMT
 ---
 
 > EMNLP 2017

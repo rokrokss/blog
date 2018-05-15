@@ -5,9 +5,9 @@ title: 논문 요약&#58; Learning to Parse and Translate Improves Neural Machin
 key: 201805041
 tags:
   - NLP
+  - NMT
   - 논문
   - ACL
-  - NMT
 ---
 
 > ACL 2017
