@@ -8,7 +8,6 @@ tags:
   - NMT
   - 논문
   - EMNLP
-  - 2017
 ---
 
 > EMNLP 2017

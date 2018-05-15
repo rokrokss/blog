@@ -7,7 +7,6 @@ tags:
   - NLP
   - 논문
   - NIPS
-  - 2015
 ---
 
 > NIPS 2015
