@@ -33,7 +33,7 @@ NMT는 word간의 관계를 직접적으로 명시하지 않는다.(GCN이나 RN
 
 RNN encoder-decoder는 현재 일반적인 NMT의 구조다. 헌데, RNN은 오래된 information을 잊는다.(RNN이 원래 이 성향을 띄게 design되긴 했다.)
 
-## Contibutions of the paper
+## Contributions
 
 word간의 관계(RN이 word의 위치 관계를 포착함)를 직접적으로 학습시킨다.
 
