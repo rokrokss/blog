@@ -16,7 +16,7 @@ local attention-based model과 global attention-based model 비교.
 
 <!--more-->
 
-**15년도 논문이다. 이제 attention은 기본.**
+**15년도 논문이다. 현재 [Vaswani et al.(2017)](https://arxiv.org/abs/1706.03762) 이 분은 CNN, RNN도 없애 버리셨다.**
 
 아래는 기존 NMT
 
@@ -84,7 +84,7 @@ $$p({ y }_{ t }|{ y }_{ <t },x)=softmax({ W }_{ s }{ \widetilde { h } }_{ t })$$
 
 Global Attention model은 $${c}_{t}$$를 뽑아낼 때, encoder의 모든 hidden state를 고려한다.
 이를 위해서는 alignment vector $${a}_{t}$$가 필요하다. $${a}_{t}$$는 source 문장의 timestep과 동일한 크기를 가진다.
-현재의 target hidden state $$h_{ t }$$와 source의 hidden state $${ \bar { h } }_{ t }$$를 비교하여 유도된다.
+현재의 target hidden state $$h_{ t }$$와 source hidden state $${ \bar { h } }_{ t }$$를 비교하여 유도된다.
 
 $${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })=\frac { exp(score({ h }-{ t },{ \bar { h } }_{ s })) }{ \sum _{ { s' } }^{ }{ exp(score({ h }_{ t },{ \bar { h } }_{ s' })) } } $$
 
