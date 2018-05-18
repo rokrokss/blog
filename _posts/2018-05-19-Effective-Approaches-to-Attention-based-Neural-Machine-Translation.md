@@ -175,21 +175,15 @@ case-sensitive BLEU
 - tokenized BLEU
 - NIST BLEU
 
-언어별로 자주 쓰이는 5만개 단어만 사용.
-
-1000개의 cell과 1000개의 차원을 가진 LSTM 사용.
-
-[-0.1,0.1]로 모수 initialize
-
-10 개의 epoch을 SGD 이용 학습
-
-learning rate를 1로 시작, 5 epoch 돈 뒤부터 이등분함.
-
-mini batch size 128
-
-gradient의 norm이 5 넘을 때마다 normalize
-
-dropout 모델의 경우, 12번의 epoch 돌고, 8 이후부터 learning rate 이등분.
+experimental setup
+- 언어별로 자주 쓰이는 5만개 단어만 사용.
+- 1000개의 cell과 1000개의 차원을 가진 LSTM 사용.
+- [-0.1,0.1]로 모수 initialize
+- 10 개의 epoch을 SGD 이용 학습
+- learning rate를 1로 시작, 5 epoch 돈 뒤부터 이등분함.
+- mini batch size 128
+- gradient의 norm이 5 넘을 때마다 normalize
+- dropout 모델의 경우, 12번의 epoch 돌고, 8 이후부터 learning rate 이등분.
 
 
 ## Observations
