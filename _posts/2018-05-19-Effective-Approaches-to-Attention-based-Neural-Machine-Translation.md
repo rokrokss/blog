@@ -194,5 +194,6 @@ dropout 모델의 경우, 12번의 epoch 돌고, 8 이후부터 learning rate �
 
 ## Observations
 
-WMT'14, WMT'15의 영어->독일어 번역에서 모두 state-of-the-art 달성,
-또한, attention-based NMT model이 긴 문장이나 이름을 번역해야 할 때 더 성능이 좋음을 볼 수 있다.
+* WMT'14, WMT'15의 영어->독일어 번역에서 모두 state-of-the-art 달성.
+
+* 또한, attention-based NMT model이 긴 문장이나 이름을 번역해야 할 때 더 성능이 좋음을 볼 수 있다.
