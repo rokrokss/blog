@@ -23,7 +23,7 @@ tags:
 저자는 Averaged Perceptron, HMM, CRFs, Bi-LSTMs+CRF, encoder-decoder model 실험했다.
 
 잘 들어맞았던 건 character-based RNN with Bi-LSTM+CRF,
-여기서 character-based LSTM vector 두 개는 pre-trained word embedding과 concatenate한 것.
+여기서 두 개의 character-based LSTM vector는 pre-trained word embedding과 concatenate한 것.
 
 그 이후 이 embedding이 1개의 word를 가르킨다하고 word-level Bi-LSTM + CRF layer를 사용한다.
 
