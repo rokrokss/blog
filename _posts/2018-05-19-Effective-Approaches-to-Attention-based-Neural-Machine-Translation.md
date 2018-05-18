@@ -8,6 +8,7 @@ tags:
   - NLP
   - NMT
   - 논문
+  - EMNLP
 ---
 
 > EMNLP 2015
