@@ -154,13 +154,45 @@ $${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })exp(-\frac { { (s- }{ p 
 하지만, 일반적인 machine training에서는 어느 단어가 번역이 완료되었는지 지속적으로 체크한다.
 따라서 과거의 alignment information이 지금의 alignment decision에 고려되게(jointly) 만들어야한다.
 
-이를 위하여 attentional vector $${ \widetilde { h } }_{ t }$$
-를 다음 시점의 input과 concat시켜서 넣어준다.
+**이를 위하여 attentional vector $${ \widetilde { h } }_{ t }$$
+를 다음 시점의 input과 concatenate시켜서 넣어준다.**
 
 이것의 목적은 다음 두가지이다.
 1. 이전의 alignment choice를 알게 하고 싶다.
 2. 수평&수직적으로 deep한 network를 만들고자한다.
 
 
+## Datasets
+
+* WMT'14 & WMT'15 translation tasks between English and German
+* newstest2013
+* newstest2014
+* newstest2015
+
+## Evaluation Metric
+
+case-sensitive BLEU
+- tokenized BLEU
+- NIST BLEU
+
+언어별로 자주 쓰이는 5만개 단어만 사용.
+
+1000개의 cell과 1000개의 차원을 가진 LSTM 사용.
+
+[-0.1,0.1]로 모수 initialize
+
+10 개의 epoch을 SGD 이용 학습
+
+learning rate를 1로 시작, 5 epoch 돈 뒤부터 이등분함.
+
+mini batch size 128
+
+gradient의 norm이 5 넘을 때마다 normalize
+
+dropout 모델의 경우, 12번의 epoch 돌고, 8 이후부터 learning rate 이등분.
 
 
+## Observations
+
+WMT'14, WMT'15의 영어->독일어 번역에서 모두 state-of-the-art 달성,
+또한, attention-based NMT model이 긴 문장이나 이름을 번역해야 할 때 더 성능이 좋음을 볼 수 있다.
