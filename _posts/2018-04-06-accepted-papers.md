@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: NLP 주요 학회 accepted papers
 key: 201804061
-modify_date: 2018-04-06
+modify_date: 2018-05-18
 picture_frame: shadow
 tags:
   - ML
@@ -45,3 +45,13 @@ NLP 주요 학회 accepted papers 링크 모음.
   - [ACL 2016](https://blog.csdn.net/GarfieldEr007/article/details/51684801)
 
   - [ACL 2017](https://acl2017.wordpress.com/2017/04/05/accepted-papers-and-demonstrations/)
+
+  - [ACL 2018](http://acl2018.org/conference/accepted-papers/)
+
+
+
+
+
+
+
+
