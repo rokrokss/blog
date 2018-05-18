@@ -83,7 +83,7 @@ $$p({ y }_{ t }|{ y }_{ <t },x)=softmax({ W }_{ s }{ \widetilde { h } }_{ t })$$
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/2.png){:width="400px"}
 
 Global Attention model은 $${c}_{t}$$를 뽑아낼 때, encoder의 모든 hidden state를 고려한다.
-이를 위해서는 alignment vector $${a}_{t}$$가 필요하다. $${a}_{t}$$는 source 문장의 timestep과 동일한 크기를 가진다.
+이를 위해서는 alignment vector $${a}_{t}$$가 필요하다. $${a}_{t}$$는 source side의 timestep 갯수와 동일한 크기를 가진다.
 현재의 target hidden state $$h_{ t }$$와 source hidden state $${ \bar { h } }_{ t }$$를 비교하여 유도된다.
 
 $${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })=\frac { exp(score({ h }-{ t },{ \bar { h } }_{ s })) }{ \sum _{ { s' } }^{ }{ exp(score({ h }_{ t },{ \bar { h } }_{ s' })) } } $$
@@ -92,33 +92,74 @@ score는 content-based 함수이며, 세 가지 방식으로 유도될 수 있�
 
 $$ score({ h }_{ t },{ \bar { h } }_{ s })=\begin{cases} { h }_{ t }^{ T }{ \bar { h } }_{ s } \\ { h }_{ t }^{ T }{ { W }_{ a }\bar { h } }_{ s } \\ { W }_{ a }[{ h }_{ t }^{ };{ \bar { h } }_{ s }] \end{cases}$$
 
-이들이 앞서 attention-based 모델을 만들 때는 location-based 함수를 사용했었다.
+이들이 앞서 attention-based 모델을 만들 때는 location-based 함수(아래)를 사용했었다.
 
 $${ a }_{ t }=softmax({ W }_{ a }{h}_{t})$$
+
 즉, alignment score를 target hidden state의 가중평균으로 만들었다.
-context vector $${c}_{t}$$는 source hidden state의 가중평균으로 만들어진다.
+이 후, context vector $${c}_{t}$$는 $${a}_{t}$$을 곱하는 source hidden state의 가중평균으로 만들어진다.
 
-위에서 구한 alignment vetcor를 이용한 가중평균
+위에서 구한 alignment vector를 이용한 가중평균
 이 논문의 모델은 기존에 [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)가 쓴 모델과 비슷하지만 차이가 있다.
-
 이 논문은 stacked LSTM layer의 맨 위층의 hidden state를 사용한다(encoder, decoder 모두)
 이와 달리 [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)는 bi-directional encoder의 hidden state와 non-stacked uni-directional decoder의 hidden state를 사용했다.
 그리하면 본 논문은 그보다 computational path가 단순하다.
-score를 구할 때, 이 논문은 세 가지를 시험했고, [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)는 한 가지(concatenate)만 사용하였다.
+score를 구할 때, 이 논문은 세 가지를 시험했고, [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)는 한 가지(concatenate, 세 번째)만 사용하였다.
 
 
 ### Local Attention
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/3.png){:width="400px"}
 
+global attention은 전체 source word를 attend했다.
+이는 resource가 많이 필요하고, 긴 문작 혹은 문맥을 해석하는 데에 비실용적이다.
+ex) 문단 혹은 글
 
+따라서 target 단어당, 일부의 source position만 보는 모델을 생각했다
+그것이 local attention이다.
+이 모델은 [Xu et al. (2015)](https://arxiv.org/abs/1502.03044)가 주장한 tradeoff between the soft and hard attention model에서 영감을 받았다.
+
+Soft attention은 global attention과 동일하다.
+input image의 모든 부분에 weight를 준다.
+Hard attention은 한 번에 attend할 input 이미지의 한 부분(patch)을 정한다.
+빠르지만, 미분불가하고 분산감소, 강화학습 등 복잡한 기술을 많이 사용해야한다.
+이 논문의 local attention은 문맥의 일부(window)만 고려하며 미분 가능하다
+soft attention보다 빠르며, hard attention보다 쉽다.
+방법은 아래와 같다.
+t시점의 target 단어에 대하여, aligned position $${p}_{t}$$를 정한다.
+$${c}_{t}$$는 $$[{p}_{t} - D, {p}_{t} + D]$$ 사이에 있는 source 단어들의 가중 평균이다.
+D는 실험적으로 정한다.
+따라서 이제 $${a}_{t}$$는 **고정된 크기(2D+1)**를 갖는다.
+
+**$${p}_{t}$$를 찾는데에는 두 가지 방법이 쓰였다.**
+1. Monotonic alignment(local-m)
+$${p}_{t}=t$$로 단순하게 생각.
+같은 위치에 있는 단어끼리 연관이 클 것이란 아이디어
+$${a}_{t}$$는 global attention 때와 동일한 방법으로 생성
+2. Predictive alignment
+
+$${ p }_{ t }=S\cdot sigmoid({ v }_{ p }^{ T } \ tanh({ W }_{ p }{ h }_{ t }))$$
+
+$${ W }_{ p }, { v }_{ p }$$ 는 학습되는 변수. S는 문장의 길이
+이에 따라, $${ p }_{ t }\in [0,S]$$ 가 도출된다.
+더불어, 해당 $${ p }_{ t }$$를 기준으로 gaussian적으로, 주변단어들이 의미를 가질 것이라 생각하여
+$${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })exp(-\frac { { (s- }{ p }_{ t })^{ 2 } }{ 2{ \sigma }^{ 2 } } )$$을 이용한다.
 
 
 ### Input-feeding Approach
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/4.png){:width="400px"}
 
+이 논문의 모델에서는, atttentional decision이 독립적으로 이뤄진다.
+하지만, 일반적인 machine training에서는 어느 단어가 번역이 완료되었는지 지속적으로 체크한다.
+따라서 과거의 alignment information이 지금의 alignment decision에 고려되게(jointly) 만들어야한다.
 
+이를 위하여 attentional vector $${ \widetilde { h } }_{ t }$$
+를 다음 시점의 input과 concat시켜서 넣어준다.
+
+이것의 목적은 다음 두가지이다.
+1. 이전의 alignment choice를 알게 하고 싶다.
+2. 수평&수직적으로 deep한 network를 만들고자한다.
 
 
 
