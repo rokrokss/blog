@@ -12,7 +12,7 @@ tags:
 
 > EMNLP 2015
 
-NMT에 Relation Network를 이용하여 RNN이 오래된 정보를 잊는 문제를 해결.
+local attention model과 global attention model 비교.
 
 <!--more-->
 
