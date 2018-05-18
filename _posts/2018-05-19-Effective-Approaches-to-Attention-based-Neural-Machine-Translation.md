@@ -12,7 +12,7 @@ tags:
 
 > EMNLP 2015
 
-local attention model과 global attention model 비교.
+local attention-based model과 global attention-based model 비교.
 
 <!--more-->
 
@@ -63,7 +63,15 @@ $$p({ y_j }|{ y }{ <j },s) = softmax(g({h}_{j}))$$
 
 ## Attention-based Models
 
-
+이 논문의 attention-based model은 global과 local로 크게 구분된다.
+둘의 차이는 모든 source position을 고려하는지의 여부이다.
+둘 다 stacked LSTM의 t번째 hidden state $${h}_{t}$$를 input으로 받는다.
+목적은 문맥 백터 $${c}_{t}$$를 뽑아내기 위함이다. $${c}_{t}$$는 target 단어 $${y}_{t}$$를 맞추는데에 필요한 source 쪽의 정보를 저장한다.
+두 개의 모델은 이러한 $${c}_{t}$$를 뽑아내는 방법에서의 차이이다.
+위 두 벡터를 concat하여 새로운 attentional hidden state vector $$\widetilde { h } $$를 뽑아낸다
+이를 이용하여 target 단어를 생성하는 과정은 아래와 같다.
+$${ \widetilde { h } }{ t }=tanh({ W }{ c }[c_{ t };h_{ t }])$$
+$$p({ y }{ t }|{ y }{ <t },x)=softmax({ W }{ s }{ \widetilde { h } }{ t })$$
 
 
 
