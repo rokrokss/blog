@@ -33,13 +33,13 @@ W2SP(Word to Stress Pattern)
 
 pre-trained word embedding은 improvement를 살짝만 가져다 줌.
 
-syllable이 space로 나뉘어 있으면 word structure를 잃으므로 word boundary marker를 만들어 놓고 실험한다.
-
+syllable이 space로 나뉘어 있으면 word structure를 잃으므로 WB(word boundary marker)를 만들어 놓고 실험한다.
 
 ## Results
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png){:width="500px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png)
 
+4B4V dataset에서는 Bi-LSTM+CRF+WB (S2S)가 제일 잘 나옴.
 
 
 
