@@ -17,6 +17,8 @@ local attention-based model과 global attention-based model 비교.
 
 <!--more-->
 
+[논문 링크](https://arxiv.org/abs/1508.04025)
+
 **15년도 논문이다. 현재 [Vaswani et al.(2017)](https://arxiv.org/abs/1706.03762) 이 분은 CNN, RNN도 없애 버리셨다.**
 
 아래는 기존 NMT
