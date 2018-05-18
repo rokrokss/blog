@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 논문 요약&#58; A Comparison of Feature-Based and Neural Scansion of Poetry
-key: 201805191
+key: 201805192
 tags:
   - ML
   - NLP
@@ -17,5 +17,13 @@ tags:
 <!--more-->
 
 [논문 링크](https://arxiv.org/abs/1711.00938)
+
+
+
+
+
+
+
+
 
 
