@@ -80,13 +80,43 @@ $$p({ y }_{ t }|{ y }_{ <t },x)=softmax({ W }_{ s }{ \widetilde { h } }_{ t })$$
 
 ### Global Attention
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/2.png){:width="400px"}
 
+Global Attention model은 $${c}_{t}$$를 뽑아낼 때, encoder의 모든 hidden state를 고려한다.
+이를 위해서는 alignment vector $${a}_{t}$$가 필요하다. $${a}_{t}$$는 source 문장의 timestep과 동일한 크기를 가진다.
+현재의 target hidden state $$h_{ t }$$와 source의 hidden state $${ \bar { h } }_{ t }$$를 비교하여 유도된다.
+
+$${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })=\frac { exp(score({ h }-{ t },{ \bar { h } }_{ s })) }{ \sum _{ { s' } }^{ }{ exp(score({ h }_{ t },{ \bar { h } }_{ s' })) } } $$
+
+score는 content-based 함수이며, 세 가지 방식으로 유도될 수 있다.
+
+$$ score({ h }_{ t },{ \bar { h } }_{ s })=\begin{cases} { h }_{ t }^{ T }{ \bar { h } }_{ s } \\ { h }_{ t }^{ T }{ { W }_{ a }\bar { h } }_{ s } \\ { W }_{ a }[{ h }_{ t }^{ };{ \bar { h } }_{ s }] \end{cases}$$
+
+이들이 앞서 attention-based 모델을 만들 때는 location-based 함수를 사용했었다.
+
+$${ a }_{ t }=softmax({ W }_{ a }{h}_{t})$$
+즉, alignment score를 target hidden state의 가중평균으로 만들었다.
+context vector $${c}_{t}$$는 source hidden state의 가중평균으로 만들어진다.
+
+위에서 구한 alignment vetcor를 이용한 가중평균
+이 논문의 모델은 기존에 [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)가 쓴 모델과 비슷하지만 차이가 있다.
+
+이 논문은 stacked LSTM layer의 맨 위층의 hidden state를 사용한다(encoder, decoder 모두)
+이와 달리 [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)는 bi-directional encoder의 hidden state와 non-stacked uni-directional decoder의 hidden state를 사용했다.
+그리하면 본 논문은 그보다 computational path가 단순하다.
+score를 구할 때, 이 논문은 세 가지를 시험했고, [Bahdanau et al. (2015)](https://arxiv.org/abs/1409.0473)는 한 가지(concatenate)만 사용하였다.
 
 
 ### Local Attention
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/3.png){:width="400px"}
 
 
+
+
+### Input-feeding Approach
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Luong-EMNLP2015/4.png){:width="400px"}
 
 
 
