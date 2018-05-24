@@ -16,3 +16,5 @@ tags:
 VINCULUM이라는 새로운 system을 개발하여 Entity Linking의 state-of-the-art를 갱신한다.
 
 <!--more-->
+
+존나 하기 싫다
