@@ -42,7 +42,7 @@ NLP 주요 학회 accepted papers 링크 모음.
 
   - [ACL 2015](http://acl2015.org/accepted_papers.html)
   
-  - [ACL 2016](https://blog.csdn.net/GarfieldEr007/article/details/51684801)
+  - [ACL 2016](http://mirror.aclweb.org/acl2016/indexa779.html?article_id=68)
 
   - [ACL 2017](https://acl2017.wordpress.com/2017/04/05/accepted-papers-and-demonstrations/)
 
