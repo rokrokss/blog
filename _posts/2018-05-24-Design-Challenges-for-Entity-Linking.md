@@ -106,7 +106,7 @@ correct boundary를 가진 wrong link는 precision과 recall을 깎아 내린다
 
 ### Named Entities, But of What Types?
 
-Person, Organization, Location, Misc, Geo-political entity, Geographical region 등 system간의 entity 분류가 다르고 어디가 정답인지 희미하다.
+Person, Organization, Location, Misc, Geo-political entity, Geographical region 등 system간의 entity 분류 방식이 각자 다르고 정답을 정할 수 없다.
 
 ### Can Mention Boundaries Overlap
 
