@@ -96,7 +96,7 @@ correct boundary를 가진 wrong link는 precision과 recall을 깎아 내린다
 
     예시: Adams and Platt are both injured and will miss England’s opening World Cup qualifier against Moldova on Sunday. (AIDA)
 
-여기서 World Cup은 KB:1998 FIFA World Cup 인가 KB:FIFA World Cup인가.
+여기서 World Cup은 KB:1998 FIFA World Cup 인가 KB:FIFA World Cup 인가.
 
 ### Metonymy
 
