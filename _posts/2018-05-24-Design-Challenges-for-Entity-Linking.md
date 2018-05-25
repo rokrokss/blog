@@ -110,7 +110,7 @@ Person, Organization, Location, Misc, Geo-political entity, Geographical region 
 
 ### Can Mention Boundaries Overlap
 
-    예시: Dorothy Byrne, a state coordinator for the Florida Green Party, said she had been in- undated with angry phone calls and e-mails from Democrats, but has yet to receive one regretful note from a Nader voter.
+    예시: Dorothy Byrne, a state coordinator for the Florida Green Party, said she had been in undated with angry phone calls and e-mails from Democrats, but has yet to receive one regretful note from a Nader voter.
 
 여기서 Green Party는 KB:Green Party of Florida 인가 KB:US Green Party 인가.
 
