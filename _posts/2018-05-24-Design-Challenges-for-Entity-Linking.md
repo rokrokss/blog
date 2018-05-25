@@ -28,7 +28,9 @@ Abstract랑 Introduction만 읽고 저자들이 개발했다는 VINCULUM이 대�
 
 EL은 information extraction의 중심 분야이다. entity를 인식하여 Knowledge Base(KB)에 link하는 일. 여기서 KB는 보통 Wikipedia를 많이 쓴다.
 
-예시: *JetBlue begins direct service between Barnstable Airport and JFK International.*
+
+    예시: JetBlue begins direct service between Barnstable Airport and JFK International.
+
 
 여기서 *“JetBlue”*는 *KB:JetBlue*로, *“Barnstable Airport”*는 *KB:Barnstable Municipal Airport*로, *“JFK International”*은 *KB:John F. Kennedy International Airport*로 link되어야 한다. 이 link들은 읽는 인간에게 semantic annotation을 줄 뿐만 아니라, machine에게도 마찬가지로 semantic knowledge를 습득시킬 수 있다.
 
@@ -54,32 +56,67 @@ Wikipedia에 없는 entity들. AIDA data는 비슷한 annotation으로 NIL entit
 
 당시 approach들이 사용하는 dataset의 sparsity를 보여 주는 표.
 
-## Evaluation Metrics
+## 당시 Evaluation Metrics
 
+Paper들이 사용하는 evaluation metric조자 저마다 차이를 가진다.
 
-### Bag-of-Concept F1 (ACE, MSNBC)
+### Bag-of-Concept F1
 
-### Micro Accuracy (TAC09, TAC10, TAC10T)
+ACE, MSNBC system이 사용한다.
 
-### TAC-KBP B^3 + F1 (TAC11, TAC12)
+gold bag of Wikipedia entities를 bag of system output entities와 비교한다.
+모든 mention이 잘못된 entity와 링크되어도 100% F1을 가질 수 있다.
 
-### NER-style F1 (AIDA)
+### Micro Accuracy
 
-Guidelines
+TAC09, TAC10, TAC10T system에서 사용한다.
 
-Entity Mention: Common or Named?
+mention중 맞는 link를 단순이 확률로 나타낸 것.
 
-How Specific Should Linked Entities Be?
+### TAC-KBP B^3 + F1
 
-Metonymy
+TAC11, TAC12 system에서 사용한다.
 
-Named Entities, But of What Types?
+### NER-style F1
 
-Can Mention Boundaries Overlap
+AIDA system에서 사용한다.
 
-VINCULUM, A Simple & Modular Linking Method
+CoNLL NER F1 evaluation과 비슷하다. link는 gold boundary와 linked entity가 맞을 때만 맞는 링크로 간주한다.
+correct boundary를 가진 wrong link는 precision과 recall을 깎아 내린다.
 
+## Guidelines
 
+### Entity Mention: Common or Named?
+
+    예시: In December 2008, Hoke was hired as the head football coach at San Diego State University. (Wikipedia)
+
+여기서 football은 KB:American football 인가 KB:College football 인가.
+
+### How Specific Should Linked Entities Be?
+
+    예시: Adams and Platt are both injured and will miss England’s opening World Cup qualifier against Moldova on Sunday. (AIDA)
+
+여기서 World Cup은 KB:1998 FIFA World Cup 인가 KB:FIFA World Cup인가.
+
+### Metonymy
+
+    예시: Moscow’s as yet undisclosed proposals on Chechnya’s political future have, meanwhile, been sent back to do the rounds of various government departments. (AIDA)
+
+여기서 Moscow는 KB:Government of Russia 인가 KB:Moscow(the city) 인가.
+
+### Named Entities, But of What Types?
+
+Person, Organization, Location, Misc, Geo-political entity, Geographical region 등 system간의 entity 분류가 다르고 어디가 정답인지 희미하다.
+
+### Can Mention Boundaries Overlap
+
+    예시: Dorothy Byrne, a state coordinator for the Florida Green Party, said she had been in- undated with angry phone calls and e-mails from Democrats, but has yet to receive one regretful note from a Nader voter.
+
+여기서 Green Party는 KB:Green Party of Florida 인가 KB:US Green Party 인가.
+
+## VINCULUM
+
+냉무
 
 
 
