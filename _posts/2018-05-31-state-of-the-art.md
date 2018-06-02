@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Machine Learning 분야의 state-of-the-art 모음 (자동 업로드)
+title: Machine Learning 분야의 state-of-the-art 모음 (자동 갱신)
 key: 201805311
 modify_date: 2018-05-31
 picture_frame: shadow
