@@ -10,12 +10,6 @@
     </div>
     <nav>
       <ul>
-        {%- assign __path = site.paths.home | default: site.data.variables.default.paths.home -%}
-        {%- include snippets/get-nav-url.html -%}
-        {%- assign href = __return -%}
-        {%- assign __locale = site.data.locale.NAV.HOME -%}
-        {%- include snippets/locale-to-string.html -%}
-        <li><a href="{{ href }}">{{ __return }}</a></li>
         {%- assign __path = site.paths.all | default: site.data.variables.default.paths.all -%}
         {%- include snippets/get-nav-url.html -%}
         {%- assign href = __return -%}
