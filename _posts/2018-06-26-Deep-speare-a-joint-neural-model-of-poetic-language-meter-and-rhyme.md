@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: 논문 요약&#58; Deep-speare&#58; A joint neural model of poetic language, meter and rhyme
+title: 논문 요약&#58; Deep-speare&#58; a Joint Neural Model of Poetic Language, Meter and Rhyme
 key: 201806261
 tags:
   - ML
