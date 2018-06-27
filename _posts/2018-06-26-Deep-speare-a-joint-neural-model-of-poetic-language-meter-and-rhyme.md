@@ -34,12 +34,18 @@ tags:
 
 ## Dataset
 
-여기서는 sonnet(셰익스피어가 유행시킨 시의 종류)만 취급하고,
+여기서는 sonnet(셰익스피어가 유행시킨 시의 종류, iambic pentameter stress pattern을 따름)만 취급하고,
 [Project Gutenberg](https://www.gutenberg.org/) 여기서 데이터셋을 추출했다. [GutenTag tool](https://pdfs.semanticscholar.org/487e/8b24427c2462b030fa4ab3095c360512c9fd.pdf)
 요거의 rule-based structural classification 기능으로 poem의 분류를 나눴다.
 
 ## Architecture
 
+1) language model, 2) pentameter model(iambic pentameter를 포착하기 위한),
+3) rhyme model, 이 세 component로 이루어진 joint model이다.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
+
+요렇게 생겼다.
 
 
 
