@@ -45,7 +45,23 @@ tags:
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
 
-요렇게 생겼다.
+요렇게 생겼다. 모든 component는 각자 sub-task를 수행하는 multitask learning으로 여기고 통째로 학습된다.
+
+### Language Model
+
+
+
+### Pentameter Model
+
+
+
+### Rhyme Model
+
+
+
+### Generation Procedure
+
+
 
 
 
