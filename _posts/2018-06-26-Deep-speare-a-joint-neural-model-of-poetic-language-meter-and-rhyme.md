@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: 논문 요약&#58; Deep-speare&#58; a Joint Neural Model of Poetic Language, Meter and Rhyme
 key: 201806261
+modify_date: 2018-06-27
 tags:
   - ML
   - NLP
@@ -52,8 +53,6 @@ tags:
 기본적으로 Bahdanau의 LSTM encoder-decoder with attention model을 사용한다.
 selective mechanism [(Zhou et al., 2017)](https://arxiv.org/abs/1704.07073) 또한 사용한다.
 
-**좀 복잡한데 지금 급한 과제가 있어서 나중에 다시 돌아오겠다.**
-
 ### Pentameter Model
 
 
@@ -65,7 +64,7 @@ selective mechanism [(Zhou et al., 2017)](https://arxiv.org/abs/1704.07073) 또�
 ### Generation Procedure
 
 
-
+**좀 복잡한데 지금 급한 과제가 있어서 나중에 다시 돌아오겠다.**
 
 
 
