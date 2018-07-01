@@ -14,7 +14,7 @@ tags:
 
 <!--more-->
 
-아직 안 읽어봤다. 일단 리스트부터 나열하는데 아무리봐도 개간지다.
+아직 안 읽어봤다. Neuro-Cognitive Resources를 마련하는 workshop, 대부분 데이터셋인 듯.
 
 ### [Linguistic and Neuro-Cognitive Resources](http://lrec-conf.org/workshops/lrec2018/W9/pdf/book_of_proceedings.pdf)
 
