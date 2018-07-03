@@ -19,6 +19,7 @@ tags:
 
 [논문 링크](https://arxiv.org/abs/1801.06146)
 
+## Introduction
 
 ## Contribution
 
@@ -29,6 +30,10 @@ tags:
 3. text classification에서 state-of-the-art 발라 버렸다.
 4. sample-efficient transfer learning과 extensive ablation analysis
 5. pretrained model들이 다른 곳에도 잘 쓰일 수 있게 했다.
+
+## Related work
+
+### Transfer learning in CV
 
 
 
