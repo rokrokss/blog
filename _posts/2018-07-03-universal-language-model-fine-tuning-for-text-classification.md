@@ -38,11 +38,14 @@ tags:
 general to task-specific transition으로 말할 수 있다.
 단순히 더 설명하자면, 주어진 task에 대하여 잘 학습된 모델이 필요할 때, 현재 task보다 더 general한 목적 하에 학습된 모델을 가지고 학습을 시작하는 것이다.
 여러 NLP task에서도 pre-trained word2vec을 사용하는 경우들과 같다. 다만 이 경우는 1st layer만 transfer된다고 볼 수 있다.
-원래는 CV에서도 모델의 1st layer만 학습된 feature들을 갖다 썼는데 요즘에는 여러 개를 갖다 쓰거나 뒤쪽 layer들도 학습된 걸로 가져다가 쓴다.
+원래는 CV에서도 모델의 1st layer만 학습된 feature들을 갖다 썼는데 요즘에는 여러 개를 fine-tuning하여 갖다 쓰거나 뒤쪽 layer들도 학습된 걸로 가져다가 쓴다.
 
 ### Hypercolumns
 
+다른 종류에 task에서 pre-trained된 embedding을 사용하는 것.
+CV 쪽에서는 hypercolumn이 end-to-end fine-tuning한테 져서 거의 안 쓴다.
 
+### Multi-task learning
 
 
 
