@@ -120,12 +120,19 @@ linear layer 두 개를 더 붙이고 마지막 softmax로 target class들에 �
 
 hidden state를 뽑아 올 때 중요 정보를 잃을 수 있다. 그러므로 위 계산처럼 각 time step의 hidden state를 concatenate한 H를 max-pool한 값과 min-pool한 값을 h와 concatenate하여 보내 준다.
 
+#### Gradual unfreezing
 
+모든 layer를 함께 fine-tuning하기보다, 다 얼려놓고 last layer부터 천천히 unfreeze한다.
 
+#### BPTT for Text Classification (BPT3C)
 
+Language model 학습에는 large input sequence에 유리한 Backpropagation through time (BPTT)을 이용한다.
 
+large document에 대해 classifier를 잘 fine-tuning하기 위서는 BPTT for Text Classification (BPT3C)을 이용한다.
+batch 사이즈를 정해두고, 각 batch의 시작마다 model의 hidden state를 이전 batch의 final state로 초기화해둔다.
+variable length backpropagation sequences도 사용한다. [(Merity et al., 2017a)](https://arxiv.org/pdf/1708.02182.pdf)
 
-
+#### Bidirectional language model
 
 
 
