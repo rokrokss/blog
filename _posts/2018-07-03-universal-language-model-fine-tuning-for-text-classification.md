@@ -171,6 +171,11 @@ LM을 좋은 걸 쓰면 이만큼 성능이 향상된다. 특히 데이터셋 �
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/8.png){:width="400px"}
 
+어떤 환경에서 뭐가 더 좋았고 어떻고 하는데 좀 길어서 본문 보는게 좋다.
+
+#### Classifier fine-tuning behavior
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/9.png){:width="400px"}
 
 
 
