@@ -144,6 +144,7 @@ CoVe [(McCann et al., 2017)](https://arxiv.org/pdf/1708.00107.pdf) 얘가 당시
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/5.png)
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/6.png){:width="350px"}
 
 
 
