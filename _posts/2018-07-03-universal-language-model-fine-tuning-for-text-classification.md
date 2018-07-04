@@ -86,7 +86,7 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 ### General-domain LM pretraining
 
 [Wikitext-103](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset) 데이터 위에서 pre-train한다.
-가장 오래 걸리지만 한 번하면 다신 안 해도 된다.
+가장 오래 걸리지만 한 번하면 다시 안 해도 된다.
 
 ### Target task LM fine-tuning
 
@@ -112,7 +112,13 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 
 이제 classifier에 맞추어 fine-tuning을 해야 한다.
 
+linear layer 두 개를 더 붙이고 마지막 softmax로 target class들에 해당하는 확률이 나오도록 한다.
 
+#### Concat pooling
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/3.png){:width="350px"}
+
+hidden state를 뽑아 올 때 중요 정보를 잃을 수 있다. 그러므로 위 계산처럼 각 time step의 hidden state를 concatenate한 H를 max-pool한 값과 min-pool한 값을 h와 concatenate하여 보내 준다.
 
 
 
