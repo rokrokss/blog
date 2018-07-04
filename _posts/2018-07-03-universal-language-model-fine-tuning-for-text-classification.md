@@ -136,6 +136,7 @@ variable length backpropagation sequences도 사용한다. [(Merity et al., 2017
 
 모든 실험에서 forward LM, backward LM 둘 다 학습시키고 fine-tuning에서도 각 LM에서 BPT3C을 따로 쓰고 classifier prediction도 따로 구해 평균낸다.
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/4.png)
 
 
 
