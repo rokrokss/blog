@@ -72,9 +72,16 @@ NLP에서도 [QA에 이용한다던가,](https://arxiv.org/pdf/1702.02171.pdf) [
 language model을 fine-tuning하여 좋은 성능을 내려면 수백만 개 이상의 document가 필요하다.
 하지만 본 논문의 ULMFiT은 다 해결하고 small dataset으로 state-of-the-art 달성함.
 
-## Universal Language Model Fine-tuning
+## Universal Language Model Fine-tuning (ULMFiT)
+
+Language modeling은 NLP task의 가장 기본적은 source task이다. 본 논문에서는 pre-trained된 language model을 classification에 맞춰 fine-tuning한다.
+language modeling을 학습시키면서 특정한 또 다른 task, syntactic dependency처럼 특정 feature에 sensitive하게 모델을 짤 수도 있겠지만 그 부분은 future work로 열어두었다.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/1.png)
+
+모델은 위와 같다. 3-layer LSTM으로 되어 있고, 1) 먼저 general-domain corpus에 맞추어 pre-train되고, 2) 전체 language model이 target task를 위해 주어진 data에 맞추어 discriminative fine-tuning과 slanted triangular learning rates를 이용하여 fine-tuning되고, 3) classifier가 gradual unfreezing, discriminative fine-tuning, slanted triangular learning rates를 이용하며 fine-tuning된다.
+
+
 
 
 
