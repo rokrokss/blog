@@ -177,8 +177,30 @@ LM을 좋은 걸 쓰면 이만큼 성능이 향상된다. 특히 데이터셋 �
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/9.png){:width="400px"}
 
+아까 Target task classifier fine-tuning 에서 이것저것 테크닉을 써줬는데 그런거 안하고 그냥 다 한꺼번에 학습시키면 저렇게 성능이 안 좋다.
+
+#### Impact of bidirectionality
+
+bidirectionality를 이용해서 forward LM, backward LM의 결과를 평균내는 편이 성능을 0.5-0.7은 상향시킨다.
 
 
+## Discussion
+
+- 영어가 아니면 데이터셋이 상당히 부족한데 이 연구가 많이 도움될 것이다.
+- labeled data가 별로 없는 경우도 연구가 많이 도움될 것이다.
+- language modeling이 multi-task learning이나 다른 feature를 직접적으로 포착하게 하면 도움이 될 수 있다.
+- classification이 아닌 다른 task에 적용시켜볼 수 있다.
+
+## Conclusion
+
+
+We have proposed ULMFiT, an effective and extremely sample-efficient transfer learning method that can be applied to any NLP task. We have also proposed several novel fine-tuning techniques that in conjunction prevent catastrophic forgetting and enable robust learning across a diverse range of tasks. Our method significantly outperformed existing transfer learning techniques and the state-of-the-art on six representative text classification tasks. We hope that our results will catalyze new developments in transfer learning for NLP.
+
+Conclusion은 원문으로.
+
+<br>
+
+**끝!**
 
 
 
