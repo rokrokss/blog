@@ -56,7 +56,9 @@ objective function을 디자인할 때 좀 힘듬.
 pre-trained된 모델을 가져다가 쓸 때 목적이 다르다해도, 비슷해서 약간 변화시켜서 현재 task를 위해 사용할 수 있을 때, 그 모델을 변화시키고 필요한 부분은 (정교하게) training 시키는 것을 말한다.
 예를 들어, (개, 고양이) 두 개의 카테고리로 사진을 분류해야 한다고 치자. VGG16 모델이 사진을 1000개의 카테고리로 분류하게 학습되어 있다면 그걸 가지고 와서 bottleneck feature가 나오는 부분에서 짤라서 거기다가 affine layer 하나 장착시켜서 그 부분만 학습시키면 목적에 맞는 모델을 만들 수 있다.
 
-
+NLP에서도 [QA에 이용한다던가,](https://arxiv.org/pdf/1702.02171.pdf) [distantly supervised sentiment analysis에 이용한다던가](http://www.aclweb.org/anthology/S15-2079) 해봤지만 관계가 직접적으로 없는 모델에서는 실패하며,
+language model을 fine-tuning하여 좋은 성능을 내려면 수백만 개 이상의 document가 필요하다.
+하지만 본 논문의 ULMFiT은 다 해결함.
 
 
 
