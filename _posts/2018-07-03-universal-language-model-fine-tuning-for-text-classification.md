@@ -31,6 +31,8 @@ NLP task에서는 지금까지 transfer learning이 CV에서만큼 성공적이�
 
 그래서 이분들이 등장했다. Universal Language Model Fine-tuning (ULMFiT) 으로 정복하고 구원.
 
+
+
 ## Contribution
 
 1. Universal Language Model Fine-tuning (ULMFiT) 방법을 제시하여 Vision 쪽에서의 transfer learning과
@@ -69,6 +71,8 @@ pre-trained된 모델을 가져다가 쓸 때 목적이 다르다해도, 비슷�
 NLP에서도 [QA에 이용한다던가,](https://arxiv.org/pdf/1702.02171.pdf) [distantly supervised sentiment analysis에 이용한다던가](http://www.aclweb.org/anthology/S15-2079) 해봤지만 관계가 직접적으로 없는 모델에서는 실패하며,
 language model을 fine-tuning하여 좋은 성능을 내려면 수백만 개 이상의 document가 필요하다.
 하지만 본 논문의 ULMFiT은 다 해결하고 small dataset으로 state-of-the-art 달성함.
+
+## Universal Language Model Fine-tuning
 
 
 
