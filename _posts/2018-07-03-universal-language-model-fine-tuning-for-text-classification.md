@@ -103,11 +103,14 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 
 #### Slanted triangular learning rates
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/2.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/2.png){:width="450px"}
 
+빠르고 효율적으로 gradient descent가 이루어지려면 learning rate의 in-train 조절이 필요한데,
+여기서는 위 그래프와 같이 변화시킨다. 이것이 slanted triangular learning rates (STLR)이다.
 
 ### Target task classifier fine-tuning
 
+이제 classifier에 맞추어 fine-tuning을 해야 한다.
 
 
 
