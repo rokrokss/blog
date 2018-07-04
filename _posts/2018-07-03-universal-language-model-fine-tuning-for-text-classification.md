@@ -196,7 +196,9 @@ bidirectionality를 이용해서 forward LM, backward LM의 결과를 평균내�
 
 We have proposed ULMFiT, an effective and extremely sample-efficient transfer learning method that can be applied to any NLP task. We have also proposed several novel fine-tuning techniques that in conjunction prevent catastrophic forgetting and enable robust learning across a diverse range of tasks. Our method significantly outperformed existing transfer learning techniques and the state-of-the-art on six representative text classification tasks. We hope that our results will catalyze new developments in transfer learning for NLP.
 
-Conclusion은 원문으로.
+<br>
+
+*힘들다... Conclusion은 원문으로...*
 
 <br>
 
