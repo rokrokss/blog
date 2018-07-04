@@ -99,9 +99,11 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 [Yosinski et al., 2014](https://pdfs.semanticscholar.org/a981/0fc4c6baacc3d262e73dd44bdcbbb0db034e.pdf)에 의하면 각각의 layer가 서로 다른 type의 정보를 가진다고 한다.
 
 그러므로 각 layer마다 서로 다른 learning rate를 적용한다.
+저자는 실험적으로 마지막 layer의 learning rate를 정하고 1칸씩 앞으로 갈수록 learning rate가 2.6으로 나눈 값으로 설정하는 것이 성능이 좋다고 했다.
 
 #### Slanted triangular learning rates
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/2.png)
 
 
 ### Target task classifier fine-tuning
