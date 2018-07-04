@@ -47,11 +47,20 @@ CV 쪽에서는 hypercolumn이 end-to-end fine-tuning한테 져서 거의 안 �
 
 ### Multi-task learning
 
-main task model에 다른 language modeling objective를 joint하게 결합시켜서 학습시키는 것.
+main task model에 다른 language modeling objective를 결합해서 학습시키는 것. (ex. 기계번역 model에 syntactic parsing 기능을 넣어 놓고 objective function을 잘 짜기)
 얘네는 pre-trained된 걸 쓰는 건 아니고 매번 scratch부터 다시 학습된다.
 objective function을 디자인할 때 좀 힘듬.
 
 ### Fine-tuning
+
+
+
+
+
+
+
+
+
 
 
 
