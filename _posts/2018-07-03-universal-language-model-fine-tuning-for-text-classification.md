@@ -136,18 +136,40 @@ variable length backpropagation sequences도 사용한다. [(Merity et al., 2017
 
 모든 실험에서 forward LM, backward LM 둘 다 학습시키고 fine-tuning에서도 각 LM에서 BPT3C을 따로 쓰고 classifier prediction도 따로 구해 평균낸다.
 
-## Results
+## Results and Analysis
+
+### Results
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/4.png)
 
-CoVe [(McCann et al., 2017)](https://arxiv.org/pdf/1708.00107.pdf) 얘가 당시 state-of-the-art transfer learning method 였단다. 저거보다 좋은 성능을 냈다.
+CoVe [(McCann et al., 2017)](https://arxiv.org/pdf/1708.00107.pdf) 얘가 당시 state-of-the-art transfer learning method 였단다.
+
+### Analysis
+
+#### Low-shot learning
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/5.png)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/6.png){:width="350px"}
+IMDb와 AG 데이터셋이서는 supervised ULMFiT가 example 100개만 가지고서도 10배 20배의 데이터로 scratch부터 학습된 모델만큼의 성능을 낸다.
 
+general-domain LM pretraining이 빛을 발하는 순간이다. 작은 데이터셋으로도 좋은 성능을 얻을 수 있다.
+여기에 unlabeled example (50k for IMDb, 100k for AG)를 semi-supervised learning에 사용할 수 있다면 50배 100배 많은 데이터셋을 가진 scratch부터의 모델의 성능을 낼 수 있다.
 
+#### Impact of pretraining
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/6.png){:width="400px"}
+
+pretraining이 작은 데이터셋에서 강점을 가졌지만 Table 4를 보면 큰 데이터셋에서도 성능 향상을 가진다.
+
+#### Impact of LM quality
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/7.png){:width="400px"}
+
+LM을 좋은 걸 쓰면 이만큼 성능이 향상된다. 특히 데이터셋 크기가 작을 때는 더 중요하다.
+
+#### Impact of classifier fine-tuning
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/8.png){:width="400px"}
 
 
 
