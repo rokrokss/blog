@@ -81,6 +81,17 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 
 모델은 위와 같다. 3-layer LSTM으로 되어 있고, 1) 먼저 general-domain corpus에 맞추어 pre-train되고, 2) 전체 language model이 target task를 위해 주어진 data에 맞추어 discriminative fine-tuning과 slanted triangular learning rates를 이용하여 fine-tuning되고, 3) classifier가 gradual unfreezing, discriminative fine-tuning, slanted triangular learning rates를 이용하며 fine-tuning된다.
 
+여기서 language modeling을 위해서는 기본적으로 당시 state-of-the-art인 [AWD-LSTM](https://arxiv.org/pdf/1708.02182.pdf)을 사용한다.
+
+### General-domain LM pretraining
+
+Wikitext-103 데이터 위에서 pre-train한다.
+가장 오래 걸리지만 한 번하면 다신 안 해도 된다.
+
+### Target task LM fine-tuning
+
+### Target task classifier fine-tuning
+
 
 
 
