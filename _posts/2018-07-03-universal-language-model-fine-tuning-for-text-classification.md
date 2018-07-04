@@ -85,10 +85,24 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 
 ### General-domain LM pretraining
 
-Wikitext-103 데이터 위에서 pre-train한다.
+[Wikitext-103](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset) 데이터 위에서 pre-train한다.
 가장 오래 걸리지만 한 번하면 다신 안 해도 된다.
 
 ### Target task LM fine-tuning
+
+이제 pretrained general-domain LM이 주어진 상태이다.
+그대로 가져다가 target task의 data에서 학습시키는데,
+여기서 discriminative fine-tuning, slanted triangular learning rates 두 가지 새로운 테크닉이 있다.
+
+#### Discriminative fine-tuning
+
+[Yosinski et al., 2014](https://pdfs.semanticscholar.org/a981/0fc4c6baacc3d262e73dd44bdcbbb0db034e.pdf)에 의하면 각각의 layer가 서로 다른 type의 정보를 가진다고 한다.
+
+그러므로 각 layer마다 서로 다른 learning rate를 적용한다.
+
+#### Slanted triangular learning rates
+
+
 
 ### Target task classifier fine-tuning
 
