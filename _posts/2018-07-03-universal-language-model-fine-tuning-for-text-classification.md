@@ -74,6 +74,7 @@ language model을 fine-tuning하여 좋은 성능을 내려면 수백만 개 이
 
 ## Universal Language Model Fine-tuning
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Howard-ACL2018/1.png)
 
 
 
