@@ -50,6 +50,10 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 [Bedi et al. (2015)](https://www.nature.com/articles/npjschz201530.pdf)가 사용한 convex-hall classifier를 이용한다고 한다. ~~네이쳐...~~
 뒤에도 읽어 보니까 이 논문이 핵심 base paper인 것 같다.
 
+<br>
+
+*convex-hall 들어보기만 했지 제대로 공부한 적은 없다... 이 저자가 원래 neural net 조립해서 쓰기보다 수학적 증명을 많이 쓰면서 논문을 쓰는데 그 성향이 나온 듯.*
+
 ## Results
 
 metaphorical token은 조현병 있는 사람들이 6.3%, 없는 사람들이 5.2%로 갯수 차이가 좀 있다.
