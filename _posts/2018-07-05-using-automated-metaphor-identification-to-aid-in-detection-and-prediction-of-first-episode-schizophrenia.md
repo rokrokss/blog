@@ -55,7 +55,7 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 metaphorical token은 조현병 있는 사람들이 6.3%, 없는 사람들이 5.2%로 갯수 차이가 좀 있다.
 남녀 차이는 별로 없었다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png){:width="500px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png){:width="430px"}
 
 아까 구한 Met, SentTok, SentPhr, CohTok, CohPhr 다섯가지 feature말고도 여기서 이것저것 해놨는데 각 feature 1개씩만 classification에 사용했을 때 결과가 위 표와 같다.
 
