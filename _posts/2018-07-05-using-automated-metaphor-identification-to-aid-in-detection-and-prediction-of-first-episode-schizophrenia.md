@@ -20,8 +20,7 @@ Metaphor Identification으로 조현병 진단하기.
 
 ## Introduction
 
-transfer learning은 computer vision 연구에 큰 영향을 끼쳤다. object detection, classification, segmentation 등등
-fine-tuned model을 안 쓰는게 거의 없다.
+token-level metaphor detection을 이용하여 조헌병을 진단한다. metaphor detection 모델은 [(Do Dinh and Gurevych, 2016)](http://www.aclweb.org/anthology/W16-1104) 요걸 사용했다.
 
 
 
