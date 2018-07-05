@@ -59,7 +59,7 @@ metaphorical token은 조현병 있는 사람들이 6.3%, 없는 사람들이 5.
 
 아까 구한 Met, SentTok, SentPhr, CohTok, CohPhr 다섯가지 feature말고도 여기서 이것저것 해놨는데 각 feature 1개씩만 classification에 사용했을 때 결과가 위 표와 같다.
 
-## 코멘트
+## 소감
 
 내용이 많은 논문은 아니었다. 사실 EMNLP에 뽑할만한가 잘 모르겠다.
 
