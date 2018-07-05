@@ -37,9 +37,18 @@ input은 300-dim Word2Vec skip-gram negative sampling word embedding으로 POS-t
 sentiment analysis가 emotional language의 disturbance를 포착할 수 있다는 가정하에 이 feature들을 추출하여 사용한다.
 [(Socher et al., 2012)](https://ai.stanford.edu/~ang/papers/emnlp12-SemanticCompositionalityRecursiveMatrixVectorSpaces.pdf)의 Recursive Neural Tensor Network sentiment analysis algorithm으로 sentiment를 1 (very negative) ~ 5 (very positive) 이렇게 token별, phrase별로 점수를 매긴다.
 
+그리고 sentiment coherence 또한 계산하는데,
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/1.png){:width="400px"}
 
+요렇게 한다. s를 token별, phrase별 sentiment score로 해주면 token별, phrase별 sentiment coherence를 구할 수 있다.
 
+이제 SentTok, SentPhr, CohTok, CohPhr 이렇게 4개의 feature를 가진다.
+
+## Classification Algorithms
+
+[Bedi et al. (2015)](https://www.nature.com/articles/npjschz201530.pdf)가 사용한 convex-hall classifier를 이용한다고 한다. ~~네이쳐...~~
+뒤에도 읽어 보니까 이 논문이 핵심 base paper인 것 같다.
 
 
 
