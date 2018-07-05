@@ -39,7 +39,7 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 
 그리고 sentiment coherence 또한 계산하는데,
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/1.png){:width="400px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/1.png){:width="160px"}
 
 요렇게 한다. s를 token별, phrase별 sentiment score로 해주면 token별, phrase별 sentiment coherence를 구할 수 있다.
 
@@ -49,6 +49,8 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 
 [Bedi et al. (2015)](https://www.nature.com/articles/npjschz201530.pdf)가 사용한 convex-hall classifier를 이용한다고 한다. ~~네이쳐...~~
 뒤에도 읽어 보니까 이 논문이 핵심 base paper인 것 같다.
+
+## Results
 
 
 
