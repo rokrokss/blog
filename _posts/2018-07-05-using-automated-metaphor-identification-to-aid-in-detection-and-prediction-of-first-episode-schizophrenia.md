@@ -27,11 +27,15 @@ token-level metaphor detection을 이용하여 조헌병을 진단한다. metaph
 
 ### Metaphoricity
 
+input은 300-dim Word2Vec skip-gram negative sampling word embedding으로 POS-tag 정보를 one-hot encoding으로 추가하고, 앞 2 token, 뒤 2 token과 함께 concatenate되어 들어간다.
+이후 affine layer가 10개 있고 각 activation function은 tanh, output은 softmax로 token마다 literal인지 metaphorical인지 classify해준다.
 
+이 모델은 VU Amsterdam Metaphor Corpus (VUAMC)로 학습된다. 
 
 ### Sentiment
 
-
+sentiment analysis가 emotional language의 disturbance를 포착할 수 있다는 가정하에 이 feature들을 추출하여 사용한다.
+[(Socher et al., 2012)](https://ai.stanford.edu/~ang/papers/emnlp12-SemanticCompositionalityRecursiveMatrixVectorSpaces.pdf)의 Recursive Neural Tensor Network sentiment analysis algorithm으로 sentiment를 1 (very negative) ~ 5 (very positive) 이렇게 token별, phrase별로 점수를 매긴다.
 
 
 
