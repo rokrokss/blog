@@ -57,8 +57,18 @@ metaphorical token은 조현병 있는 사람들이 6.3%, 없는 사람들이 5.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png){:width="350px"}
 
+아까 구한 Met, SentTok, SentPhr, CohTok, CohPhr 다섯가지 feature말고도 여기서 이것저것 해놨는데 각 feature 1개씩만 classification에 사용했을 때 결과가 위 표와 같다.
 
+## 코멘트
 
+내용이 많은 논문은 아니었다. 사실 EMNLP에 뽑할만한가 잘 모르겠다.
+
+내가 불만족스러웠던 건 조현병은 metphor를 이상하게 쓴다고 할 수도 있겠지 원래 심한 조현병 환자는 사용하는 단어의 배열이 지리멸렬하여 의사소통이 힘들다.
+현재 metaphor detection의 기본적인 원리가 단어들이 원래 쓰여야 할 장소가 아닌 곳에서 관련이 크지 않은 다른 단어와 쓰이는 것을 포착하여 metaphorical phrase라 하는 것이기 때문에 위의 문제가 덩달아 해결된게 아닐까 싶다.
+
+<br>
+
+**끝!**
 
 
 
