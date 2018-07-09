@@ -10,7 +10,7 @@ tags:
   - 논문
 ---
 
-Sentiment 관련 연구를 파보자, 사실 지금 Sentiment Analysis에 Metaphor 관련 연구를 응용하는 목표로 공부하고 있어서 Sentiment 아니어도 내가 보고 싶은 논문들이다.
+Sentiment 관련 연구를 파보자, 지금 Sentiment Analysis에 Metaphor 관련 연구를 응용하는 목표로 공부하고 있어서 Sentiment 아니어도 내가 보고 싶은 논문들이다.
 
 <!--more-->
 
