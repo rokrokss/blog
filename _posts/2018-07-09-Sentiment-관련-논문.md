@@ -21,6 +21,14 @@ Sentiment 관련 연구를 파보자!
 
 [논문 링크](https://www.cse.iitb.ac.in/~pb/papers/acl18-cross-domain-sentiment.pdf)
 
+Cross-domain sentiment analysis, target domain이 unlabeled일 때 label된 source domain을 갖다가 어찌저찌 이용하는 것.
+domain이 변할 때 word의 opinion이 바뀌는 경우가 많은데 (positive or negative 기준으로), 여기서 중요하게 여긴 것은, 원래 opinion을 유지하는 word는 cross-domain analysis로 사용할 수 있다는 점이다.
+예를 들어 *unpredictable*은 movie domain에서는 positive지만 automobile domain에서는 negative다.
+
+요러니 labeled domain에 학습된 supervised algorithm들은 unlabeled domain을 위한 일반화된 feature를 제공해주기 힘들고, cross-domain performance가 나빠진다.
+
+
+
 ##### Learning Domain-Sensitive and Sentiment-Aware Word Embeddings
 
 [논문 링크](https://arxiv.org/pdf/1805.03801.pdf)
