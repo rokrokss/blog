@@ -10,7 +10,7 @@ tags:
   - 논문
 ---
 
-Sentiment 관련 연구를 파보자!
+Sentiment 관련 연구를 파보자, 사실 지금 Sentiment Analysis에 Metaphor 관련 연구를 응용하는 목표로 공부하고 있어서 Sentiment 아니어도 내가 보고 싶은 논문들이다.
 
 <!--more-->
 
@@ -25,7 +25,7 @@ Cross-domain sentiment analysis, target domain이 unlabeled일 때 label된 sour
 domain이 변할 때 word의 opinion이 바뀌는 경우가 많은데 (positive or negative 기준으로), 여기서 중요하게 여긴 것은, 원래 opinion을 유지하는 word는 cross-domain analysis로 사용할 수 있다는 점이다.
 예를 들어 *unpredictable*은 movie domain에서는 positive지만 automobile domain에서는 negative다.
 
-요러니 labeled domain에 학습된 supervised algorithm들은 unlabeled domain을 위한 일반화된 feature를 제공해주기 힘들고, cross-domain performance가 나빠진다.
+요러니 labeled domain에 학습된 supervised algorithm들은 unlabeled domain을 위한 일반화된 feature를 제공해 주기 힘들고, cross-domain performance가 나빠진다.
 
 
 
