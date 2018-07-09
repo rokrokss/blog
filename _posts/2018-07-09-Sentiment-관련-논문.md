@@ -49,6 +49,10 @@ domain이 변할 때 word의 opinion이 바뀌는 경우가 많은데 (positive 
 
 [논문 링크](https://arxiv.org/pdf/1806.04346.pdf)
 
+##### Efficient Large-Scale Neural Domain Classification with Personalized Attention
+
+[논문 링크](https://arxiv.org/pdf/1804.08065.pdf)
+
 
 ### EMNLP 2017
 
