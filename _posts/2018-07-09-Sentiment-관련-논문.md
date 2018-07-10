@@ -26,6 +26,9 @@ domain이 변할 때 word의 opinion이 바뀌는 경우가 많은데 (positive 
 예를 들어 *unpredictable*은 movie domain에서는 positive지만 automobile domain에서는 negative다.
 
 요러니 labeled domain에 학습된 supervised algorithm들은 unlabeled domain을 위한 일반화된 feature를 제공해 주기 힘들고, cross-domain performance가 나빠진다.
+$${\chi}^2$$ test는 annotated corpus에서 word의 significance와 polarity를 파악하는데 쓰인다.
+본 논문에서는 words의 context vector의 $${\chi}^2$$ test와 cosine-similarity를 이용하여 domain들에서의 **Significant Consistent Polarity (SCP)**를 계산한다.
+
 
 
 
