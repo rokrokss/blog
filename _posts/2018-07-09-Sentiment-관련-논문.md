@@ -36,11 +36,15 @@ SCP 계산한 다음 Ensemble-based Cross-domain Adaptation Algorithm이란 걸 
 [논문 링크](https://arxiv.org/pdf/1805.03801.pdf)
 
 앞 논문과 같은 문제를 다룬다. words의 sentiment representation이 domain-sensitive하다는 것.
-
+본 논문에서는 domain-sensitive와 sentiment-aware를 전부 학습하고 sentiment semantics와 domain specificity of words를 jointly modeling한다.
+본 모델은 domain-common embedding과 domain-specific embedding을 동시에 만들어 낸다. word2vec의 변형이 사용됨.
 
 ##### Unpaired Sentiment-to-Sentiment Translation: A Cycled Reinforcement Learning Approach
 
 [논문 링크](https://arxiv.org/pdf/1805.05181.pdf)
+
+Sentiment-to-Sentiment Translation은 sentence의 내용을 유지한 채 sentiment를 바꾸는 것이다.
+이거는 지금 내가 강화학습을 잘 몰라서... 일단 딴거부터...
 
 ##### Cross-Domain Sentiment Classification with Target Domain Specific Information
 
