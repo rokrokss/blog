@@ -50,22 +50,33 @@ Sentiment-to-Sentiment Translation은 sentence의 내용을 유지한 채 sentim
 
 [논문 링크](http://jkx.fudan.edu.cn/~qzhang/paper/acl2018.pdf)
 
+domain adaptation 관련 논문 많이도 쏟아져 나왔다. domain-invariant, domain-specific embedding 뽑고 classifier를 얘네 둘 각각에 대해 학습시키고 이리저리 한다.
+
 ##### Domain Adapted Word Embeddings for Improved Sentiment Classification
 
 [논문 링크](https://arxiv.org/pdf/1805.04576.pdf)
+
+generic embedding과 domain specific embedding을 합쳐 Domain Adapted Word Embedding 만듬.
+Canonical Correlation Analysis (CCA)를 사용함.
 
 ##### Exploiting Document Knowledge for Aspect-level Sentiment Classification
 
 [논문 링크](https://arxiv.org/pdf/1806.04346.pdf)
 
+기본적인 LSTM+ATT sentiment classification에서 document-level과 aspect-level로 multi-task learning.
+
 ##### Efficient Large-Scale Neural Domain Classification with Personalized Attention
 
 [논문 링크](https://arxiv.org/pdf/1804.08065.pdf)
+
+classification에서 아주 큰 domain에서 personalized attention을 이용하는건데 (아마존에서 냈다.) 이건 패스.
 
 ##### Domain Adaptation with Adversarial Training and Graph Embeddings
 
 [논문 링크](https://arxiv.org/pdf/1805.05151.pdf)
 
+자연재해에 대한 sns post 데이터셋 두 개 (earthquake, flood)를 이용해서 하나는 labeled와 unlabeled data 전부, 하나는 unlabeled data만 이용한다.
+adversarial training을 통한 후자의 dataset에서의 adaptation.
 
 ### EMNLP 2017
 
