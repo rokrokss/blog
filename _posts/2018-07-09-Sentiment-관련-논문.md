@@ -88,10 +88,14 @@ adversarial training을 통한 후자의 dataset에서의 adaptation.
 
 [논문 링크](http://aclweb.org/anthology/D17-1056)
 
+word2vec 같은 pre-trained word vector를 가지고 sentiment를 기준으로 더 부합하도록 조정한다.
+
+sentiment score의 사전인 sentiment lexicon을 이용하는데, target word에 대해 cosine similarity로 나온 word set을 sentiment score 기준으로 re-ranking한다.
+높은 rank의 words는 더 큰 weight을 부여받는다. 요렇게 하면 words가 sentiment가 비슷한 것끼리 가깝게, 다른 것끼리 멀게 refine된다. 
+
 ##### A Cognition Based Attention Model for Sentiment Analysis
 
 [논문 링크](https://pdfs.semanticscholar.org/3fe4/fde24fab5795f01fea7dffa9dc42cabced60.pdf)
-
 
 ### ACL 2017
 
