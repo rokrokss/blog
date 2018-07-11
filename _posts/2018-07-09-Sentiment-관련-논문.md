@@ -97,6 +97,8 @@ sentiment score의 사전인 sentiment lexicon을 이용하는데, target word�
 
 [논문 링크](https://pdfs.semanticscholar.org/3fe4/fde24fab5795f01fea7dffa9dc42cabced60.pdf)
 
+eye-tracking data 썼음.
+
 ### ACL 2017
 
 ##### Active Sentiment Domain Adaptation
