@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 논문 요약&#58; Densely Connected Convolutional Networks
-key: 201807052
+key: 201807111
 tags:
   - ML
   - CV
