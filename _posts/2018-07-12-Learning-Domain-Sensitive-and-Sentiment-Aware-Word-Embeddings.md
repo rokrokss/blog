@@ -49,7 +49,7 @@ $$p({w_t}|w)=\sum_{k \in \{0,1\}} p({w_t}|w, {z_w}=k)p({z_w}=k)$$
 
 
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Huang-CVPR2017/1.png){:width="500px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="500px"}
 
 
 
