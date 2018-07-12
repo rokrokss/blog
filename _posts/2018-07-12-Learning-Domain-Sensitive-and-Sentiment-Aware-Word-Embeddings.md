@@ -29,8 +29,15 @@ Sentiment Analysis를 위한 Domain adaptation
 
 이전의 시도들에서는 domain 간 common feature를 찾아 이용했었지만 본 논문에서는 domain-common & domain-specific embedding을 모두 사용한다.
 
+본 논문과 같이 multiple domain을 고려한 word embedding을 학습하는 논문들도 있는데, 대부분은 여러 domain에서 분리된 embedding을 학습시킨다.
+그 이후 frequency-based statistical measure로 pivot words를 골라서 각 embedding space를 연결해 준다.
+본 논문에서는 domain-common words는 sentiment information과 context words를 이용하여 결정된다.
 
 ## Model
+
+
+
+
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Huang-CVPR2017/1.png){:width="500px"}
 
