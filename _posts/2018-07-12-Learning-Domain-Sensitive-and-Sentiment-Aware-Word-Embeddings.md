@@ -33,9 +33,19 @@ Sentiment Analysis를 위한 Domain adaptation
 그 이후 frequency-based statistical measure로 pivot words를 골라서 각 embedding space를 연결해 준다.
 본 논문에서는 domain-common words는 sentiment information과 context words를 이용하여 결정된다.
 
-## Model
+## Model, DSE
 
+DSE (**D**omain-sensitive and **S**entiment-aware word **E**mbeddings) 라고 부른단다.
 
+multiple domain 환경에서 가능한데 논문에서는 일단 2개의 domain 위에서 설명하였고 그 이상의 경우에서 어떻게 적용하는지 소개해 놓았다.
+
+각 word $$w$$에 대해 latent variable $$z_w$$를 부여, $${z_w}=1$$이면 $$w$$는 common, 아니면 $$w$$는 domain p나 q에 specific.
+
+원하는 모델을 얻기 위해 word2vec에 변형을 시키는데 먼저 skip-gram의 단어 $$w$$일 때 주변 단어 $$w_t$$의 확률 식이 아래와 같다.
+
+$$p({w_t}|w)=\sum_{k \in \{0,1\}} p({w_t}|w, {z_w}=k)p({z_w}=k)$$
+
+위 식이 핵심이다. 원래는 $$z_w$$ 관련 항 없이 $$w$$에 대한 $$w_t$$가 되어야 하는데 $$z_w$$ dependent하게 만들었다.
 
 
 
