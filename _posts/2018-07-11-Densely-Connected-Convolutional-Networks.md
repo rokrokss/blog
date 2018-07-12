@@ -24,12 +24,14 @@ Resnet 관련된 내용은 설명 안하겠음.
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Huang-CVPR2017/1.png){:width="500px"}
 
-기본적으로 Resnet에 skip-connection은 다다음 layer의 아웃풋에만 연결됐는데 그 폭을 넓힌 것이다.
 
-CNN이 쭉 이어질 때, layer마다 사이즈가 달라도 된다. 다른 사이즈일 경우 skip-connection의 정보를 전달할 수 없으므로 블록 단위로 나누고 한 블록에서 사이즈를 맞춰준다.
+기본적으로 Resnet에 skip-connection은 다다음 layer의 아웃풋에만 연결됐는데 그 폭을 넓힌 것이다.
 
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Huang-CVPR2017/2.png){:width="800px"}
+
+
+CNN이 쭉 이어질 때, layer마다 사이즈가 달라도 된다. 다른 사이즈일 경우 skip-connection의 정보를 전달할 수 없으므로 블록 단위로 나누고 한 블록에서 사이즈를 맞춰준다.
 
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Huang-CVPR2017/3.png){:width="800px"}
