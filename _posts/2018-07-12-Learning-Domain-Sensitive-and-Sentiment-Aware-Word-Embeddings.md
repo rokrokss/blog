@@ -92,6 +92,12 @@ $$p(y_w=1|w, z_w=0)=
 \end{cases}
 $$
 
+### Inference Algorithm
+
+domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM negative sampling을 사용하는데.......
+
+
+
 ## Results
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="800px"}
