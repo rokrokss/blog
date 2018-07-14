@@ -98,7 +98,7 @@ domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM negative samplin
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="450px"}
 
-논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 본문을 보는 것을 추천...
+논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 논문을 직접 보는 것을 추천...
 
 <br>
 
