@@ -96,13 +96,24 @@ $$
 
 domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM negative sampling을 사용하는데.......
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="450px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
 
 논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 논문을 직접 보는 것을 추천...
 
 <br>
 
 **참고로 domain이 3개 이상일 경우 $$z_w$$의 확률분포를 Bernoulli에서 Multinomial로 바꾸면 된다.**
+
+## Experiment
+
+Amazon 제품 리뷰 데이터에서 제품 카테고리 별로 나눈 걸로 여러 도메인 데이터가 있다고 친다.
+books(B), DVDs(D), electronics(E), kitchen appliances(K), 총 4가지 데이터셋을 이용한다.
+
+text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative review로 본다.
+
+<br>
+
+이 논문 너무 어렵다... 5페이지에 무슨 짓을 해 놓은 건지..
 
 ## Results
 
