@@ -96,11 +96,17 @@ $$
 
 domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM negative sampling을 사용하는데.......
 
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="450px"}
 
+논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 본문을 보는 것을 추천...
+
+<br>
+
+**참고로 domain이 3개 이상일 경우 $$z_w$$의 확률분포를 Bernoulli에서 Multinomial로 바꾸면 된다.**
 
 ## Results
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="800px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
 
 
 
