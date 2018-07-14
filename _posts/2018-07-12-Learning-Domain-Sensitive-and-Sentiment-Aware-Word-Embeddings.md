@@ -45,11 +45,13 @@ multiple domain 환경에서 가능한데 논문에서는 일단 2개의 domain 
 
 $$p({w_t}|w)=\sum_{k \in \{0,1\}} p({w_t}|w, {z_w}=k)p({z_w}=k)$$
 
-위 식이 핵심이다. 원래는 $$z_w$$ 관련 항 없이 $$w$$에 대한 $$w_t$$가 되어야 하는데 $$z_w$$ dependent하게 만들었다.
+**위 식이 핵심이다.** 원래는 $$z_w$$ 관련 항 없이 $$w$$에 대한 $$w_t$$가 되어야 하는데 $$z_w$$ dependent하게 만들었다.
 
 
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="500px"}
+## Results
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="800px"}
 
 
 
