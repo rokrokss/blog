@@ -51,7 +51,25 @@ $$p({w_t}|w)=\sum_{k \in \{0,1\}} p({w_t}|w, {z_w}=k)p({z_w}=k)$$
 
 그렇다면 $$z_w=1$$, 즉 $$w$$가 domain-common word일 경우, 아래와 같은 식을 얻을 수 있다.
 
-$$p({w_t}|w, z_w=1)= \frac{exp(U_w^c \cdot V_{w_t})}{\sum_{w^ \prime \in \Lambda} exp(U_w^c \cdot V_{w_ \prime })}$$
+$$p({w_t}|w, z_w=1)= \frac{exp(U_w^c \cdot V_{w_t})}{\sum_{w^ \prime \in \Lambda} exp(U_w^c \cdot V_{w^ \prime })}$$
+
+요렇게 된다. 여기서 중요한 건 $$U_w^c$$가 바로 word2vec에서 word vector로 쓰이는 부분과 같은 역할을 하는 것.
+word $$w$$가 domain-common일 때의 word embedding이 된다.
+
+$$z_w=0$$, 즉 $$w$$가 domain-specific word일 경우, 아래와 같은 식을 얻을 수 있다.
+
+$$p({w_t}|w, z_w=0)= 
+\begin{cases}
+\frac{exp(U_w^p \cdot V_{w_t})}{\sum_{w^ \prime \in \Lambda} exp(U_w^p \cdot V_{w^ \prime })},  & \text{if $w \in D^p$} \\
+\frac{exp(U_w^q \cdot V_{w_t})}{\sum_{w^ \prime \in \Lambda} exp(U_w^q \cdot V_{w^ \prime })},  & \text{if $w \in D^q$}
+\end{cases}
+$$
+
+여기서 $$D^p$$와 $$D^q$$는 각각 p 도메인과 q 도메인을 말한다. $$U_w^p$$는 p 도메인에 대하여 domain-specific인 $$w$$의 word vector가 된다.
+
+### Exploiting Sentiment Information
+
+
 
 ## Results
 
