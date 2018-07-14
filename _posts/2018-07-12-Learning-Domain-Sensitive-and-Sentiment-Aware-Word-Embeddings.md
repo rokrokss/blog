@@ -69,7 +69,28 @@ $$
 
 ### Exploiting Sentiment Information
 
+앞까지는 word vector의 확률 분포를 정의한 것이었다. 근데 그 식들이 사용되려면 $$z_w$$, 즉 domain-commonality가 필요하다.
 
+아직 단어의 polarity (positive or negative) 를 안 써줬다. 걔네까지 이용해서 모델을 만들고 EM method로 $$z_w$$를 구한다. 먼저 polarity $$y_w$$를 도입하면,
+
+$$p({y_w}|w)=\sum_{k \in \{0,1\}} p({y_w}|w, z_w=k)p(z_w=k)$$
+
+$$z_w=1$$일 경우 $$w$$는 domain-common word이고,
+
+$$p(y_w=1|w, z_w=1)=\sigma (U_w^c \cdot s)$$
+
+여기서 $$\sigma (\cdot)$$은 sigmoid 함수를 의미한다. $$s$$는 $$d$$차원을 가진 sentiment-boundary vector.
+
+$$p(y_w=0|w, z_w=1)=1-p(y_w=1|w, z_w=1)$$
+
+만약 $$w$$가 domain-specific word일 경우,
+
+$$p(y_w=1|w, z_w=0)=
+\begin{cases}
+\sigma (U_w^p \cdot s),  & \text{if $w \in D^p$} \\
+\sigma (U_w^q \cdot s),  & \text{if $w \in D^q$}
+\end{cases}
+$$
 
 ## Results
 
