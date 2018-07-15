@@ -140,26 +140,3 @@ text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative revi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
