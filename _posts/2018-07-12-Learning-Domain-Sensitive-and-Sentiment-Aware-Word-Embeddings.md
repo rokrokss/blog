@@ -113,7 +113,7 @@ text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative revi
 
 <br>
 
-이 논문 너무 어렵다... 5페이지에 무슨 짓을 해 놓은 건지..
+이 논문 어렵다... 5페이지에 무슨 짓을 해 놓은 건지..
 
 ## Results
 
