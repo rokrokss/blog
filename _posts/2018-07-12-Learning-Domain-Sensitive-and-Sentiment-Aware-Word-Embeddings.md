@@ -111,10 +111,6 @@ books(B), DVDs(D), electronics(E), kitchen appliances(K), 총 4가지 데이터�
 
 text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative review로 본다.
 
-<br>
-
-이 논문 어렵다... 5페이지에 무슨 짓을 해 놓은 건지..
-
 ## Results
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
