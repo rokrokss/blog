@@ -48,7 +48,7 @@ Sentiment-to-Sentiment Translation은 sentence의 내용을 유지한 채 sentim
 
 ##### Cross-Domain Sentiment Classification with Target Domain Specific Information
 
-[논문 링크](http://jkx.fudan.edu.cn/~qzhang/paper/acl2018.pdf)
+[논문 링크](http://aclweb.org/anthology/P18-1233)
 
 domain adaptation 관련 논문 많이도 쏟아져 나왔다. domain-invariant, domain-specific embedding 뽑고 classifier를 얘네 둘 각각에 대해 학습시키고 이리저리 한다.
 
