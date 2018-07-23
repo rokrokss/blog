@@ -94,7 +94,7 @@ $$
 
 ### Inference Algorithm
 
-domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM negative sampling을 사용하는데.......
+domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM 알고리즘을 사용하는데.......
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
 
