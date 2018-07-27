@@ -8,6 +8,7 @@ picture_frame: shadow
 tags:
   - ML
   - NLP
+  - 논문
 ---
 
 NLP 주요 학회 accepted papers 링크 모음.
