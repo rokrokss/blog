@@ -13,7 +13,7 @@ tags:
 
 > ACL 2018
 
-unsupervised metaphor detection과 더불어 metaphor feature를 이용해 NMT task에서 성능 향상을 만들었다.
+WordNet을 사용하는 unsupervised metaphor detection과 더불어 metaphor phrase의 literal word를 추측, 교체하여 NMT task에서 성능 향상을 만들었다.
 
 <!--more-->
 
