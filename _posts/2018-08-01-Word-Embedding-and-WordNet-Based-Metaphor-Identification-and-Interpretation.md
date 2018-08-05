@@ -17,7 +17,12 @@ WordNet을 사용하는 unsupervised metaphor detection과 더불어 metaphor ph
 
 <!--more-->
 
-.
+[논문 링크](http://aclweb.org/anthology/P18-1113)
+
+## Model
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Mao-ACL2018/1.png){:width="800px"}
+
 
 
 
