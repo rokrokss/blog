@@ -13,7 +13,7 @@ tags:
 
 > ACL 2018
 
-.
+unsupervised metaphor detection과 더불어 metaphor feature를 이용해 NMT task에서 성능 향상을 만들었다.
 
 <!--more-->
 
