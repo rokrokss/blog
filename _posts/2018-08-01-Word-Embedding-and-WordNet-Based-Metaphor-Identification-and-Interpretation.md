@@ -45,7 +45,7 @@ Metaphor Detection task를 수행하는 연구는 많이 되어있다. 이제 Me
 2. input sentence를 가지고 각 word를 target word로 설정, 주변을 context로 설정한다. target word를 WordNet에 넣어서 hypernym과 synonym들을 구하여 candidate word set W를 만든다.
 3. context vector는 context word들을 평균내어 구하고, word set W 중에서 context vector와 가장 similar한 word를 best fit word로 정한다.
 4. best fit word와 기존 target word의 similarity를 구하여, 특정 역치 이상이면 literal, 아니면 metaphorical word로 정한다.
-5. 위 4번 과정까지고 metaphor detection인데, metaphorical word들을 best fit word로 교체하여 NMT task에 이용한다.
+5. 위 4번 과정까지가 metaphor detection인데, 이후 metaphorical word들을 best fit word로 교체하여 NMT task에 이용한다.
 
 ## 소감
 
