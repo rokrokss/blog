@@ -51,7 +51,6 @@ Metaphor Detection task를 수행하는 연구는 많이 되어있다. 이제 Me
 
 WordNet을 이용하는 과정이 특별하다.
 아직까지 deep하게 논의되어야 할 점이 굉장히 많지만 Machine Learning Approach들이 원체 인간 본연의 process를 재구현하는 것이었는데, NLP task에 대해 인간은 본래 사전을 아주 많이 사용하는데도 WordNet을 활용하는 시도가 현재는 그리 많지 않다.
-생각나는 것이 많지만 혼자 간직해봐야겠다.
 
 
 
