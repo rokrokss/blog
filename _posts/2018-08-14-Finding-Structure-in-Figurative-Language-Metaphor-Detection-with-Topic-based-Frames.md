@@ -23,7 +23,8 @@ tags:
 
 metaphor frame templates using a semi-supervised bootstrapping approach on an unlabeled corpus?
 
-
+The goal of our work is to lay a computational foundation for detection of such switches
+so that social strategies regarding metaphor use in interaction can be accomplished as follow-up work.
 
 
 
