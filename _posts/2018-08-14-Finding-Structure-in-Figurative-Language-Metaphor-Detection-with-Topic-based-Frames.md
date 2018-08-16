@@ -21,7 +21,7 @@ tags:
 
 ## Introduction
 
-metaphor frame templates using a semi- supervised bootstrapping approach on an unlabeled corpus?
+metaphor frame templates using a semi-supervised bootstrapping approach on an unlabeled corpus?
 
 
 
