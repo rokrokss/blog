@@ -39,7 +39,7 @@ NLP task에서는 지금까지 transfer learning이 CV에서만큼 성공적이�
 같은 효과를 NLP task에서 보일 수 있게 했다.
 2. fine-tuning을 위한 discriminative fine-tuning, slanted triangular learning rates, gradual unfreezing,
 세 가지 새로운 효율적인 technique을 제시했다.
-3. text classification에서 state-of-the-art 발라 버렸다.
+3. text classification에서 state-of-the-art
 4. sample-efficient transfer learning과 extensive ablation analysis
 5. pretrained model들이 다른 곳에도 잘 쓰일 수 있게 했다.
 
