@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: NLP 주요 학회 accepted papers
+title: ML 주요 학회 accepted papers
 key: 201804061
 modify_date: 2018-05-18
 picture_frame: shadow
@@ -11,7 +11,7 @@ tags:
   - 논문
 ---
 
-NLP 주요 학회 accepted papers 링크 모음.
+ML 주요 학회 accepted papers 링크 모음.
 
 <!--more-->
 
