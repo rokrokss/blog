@@ -32,23 +32,23 @@
     </ul>
 	{%- endif -%}
   <div class="other-wrapper">
-    {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class -%}
-      {%- assign __locale = site.data.locale.VIEWS } -%}
-      {%- include snippets/locale-to-string.html -%}
-      <div class="view-wrapper">
-        {{ __return }} <i class="far fa-eye"></i><span class="article-view" data-page-key="{{ cur_page.key }}">0</span>회
-      </div>
-    {%- endif -%}
     <div class="date-wrapper">
       {%- assign __locale = site.data.locale.ARTICLE_DATE_FORMAT } -%}
       {%- include snippets/locale-to-string.html -%}
       {%- if post -%}
-        <span class="article-meta">{{ post.date | date: __return }}</span>
+      <i class="far fa-calendar-alt"></i>
+      <span class="article-meta">{{ post.date | date: __return }}</span>
       {%- elsif page -%}
-        <time class="article-meta" datetime="{{ page.date | date_to_xmlschema }}"
-          itemprop="datePublished">{{ page.date | date: __return }}
-        </time>
+      <i class="far fa-calendar-alt"></i>
+      <time class="article-meta" datetime="{{ page.date | date_to_xmlschema }}"
+            itemprop="datePublished">{{ page.date | date: __return }}
+      </time>
       {%- endif -%}
     </div>
+    {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class -%}
+      <div class="view-wrapper">
+        <i class="far fa-eye"></i> <span class="article-view" data-page-key="{{ cur_page.key }}">0</span>회
+      </div>
+    {%- endif -%}
   </div>
 </div>
