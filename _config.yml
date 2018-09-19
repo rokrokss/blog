@@ -190,5 +190,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-
-theme: jekyll-text-theme
