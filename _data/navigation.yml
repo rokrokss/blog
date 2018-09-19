@@ -17,3 +17,9 @@ header:
       zh-Hans:  关于
       zh-Hant:  關於
     url:        /about.html
+
+layouts:
+- title: Layouts
+  children:
+  - title:  무제1 - 2018/09
+    url:    /writings/무제1.html
