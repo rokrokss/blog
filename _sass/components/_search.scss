@@ -83,7 +83,7 @@
 }
 .search__header {
   margin-top: 1.5rem;
-  font-size: map-get($base, font-size-h1);
+  font-size: map-get($base, font-size-h2);
   font-weight: map-get($base, font-weight-bold);
   color: $text-color-d;
   @include media-breakpoint-down(md) {

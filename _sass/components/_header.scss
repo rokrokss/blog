@@ -49,18 +49,18 @@
 
 .header__brand {
   & > svg {
-    width: map-get($base, font-size-h4) * 1.6;
-    height: map-get($base, font-size-h4) * 1.6;
+    width: map-get($base, font-size-h2) * 1.6;
+    height: map-get($base, font-size-h2) * 1.6;
     margin-right: .8rem;
     vertical-align: middle;
     @include media-breakpoint-down(md) {
-      width: map-get($base, font-size-h4) * 1.2;
-      height: map-get($base, font-size-h4) * 1.2;
+      width: map-get($base, font-size-h2) * 1.2;
+      height: map-get($base, font-size-h2) * 1.2;
     }
   }
   & > a {
     display: inline-block;
-    font-size: map-get($base, font-size-h4);
+    font-size: map-get($base, font-size-h2);
     @include media-breakpoint-down(md) {
       font-size: map-get($base, font-size-h4-small);
     }
