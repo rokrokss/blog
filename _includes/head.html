@@ -49,3 +49,7 @@
 {%- include snippets/prepend-baseurl.html -%}
 <meta name="msapplication-square70x70logo" content="{{ __return }}">
 <meta name="msapplication-TileColor" content="#eeeeee">
+
+{%- include snippets/get-sources.html -%}
+{%- assign _sources = __return -%}
+<link rel="stylesheet" href="{{ _sources.font_awesome }}" >
