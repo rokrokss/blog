@@ -1,5 +1,9 @@
 header:
   - titles:
+      en:       Writings
+      kr:       습작
+    url:      /writings.html
+  - titles:
       en:       Archive
       kr:       아카이브
       zh:       归档

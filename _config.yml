@@ -170,6 +170,15 @@ exclude:
   - /test
   - /vendor
 
+collections_dir:
+collections:
+  docs:
+    output: true
+  page:
+    output: true
+  articles:
+    output: true
+
 defaults:
   - scope:
       path: ""
@@ -177,6 +186,7 @@ defaults:
     values:
       layout: article
       license: true
+      category: post
       aside:
         toc: true
       show_edit_on_github: true
