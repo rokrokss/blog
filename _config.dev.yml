@@ -55,6 +55,7 @@ repository_tree: master
 paths:
   base: /
   home: /
+  pieces: /pieces.html
   all:  /all.html
   rss:  /feed.xml
 
