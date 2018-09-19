@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: Stochastic programming 메모
 key: 201803091

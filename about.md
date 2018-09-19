@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 comments: true
 titles:
   en: About

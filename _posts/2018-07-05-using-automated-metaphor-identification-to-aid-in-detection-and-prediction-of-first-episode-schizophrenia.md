@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: 논문 요약&#58; Using Automated Metaphor Identification to Aid in Detection and Prediction of First-Episode Schizophrenia
 key: 201807051

@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: Machine Learning 분야의 state-of-the-art 모음 (자동 갱신)
 key: 201805311

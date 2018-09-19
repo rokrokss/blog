@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: 논문 요약&#58; Character-level Convolutional Networks for Text Classification
 key: 201805081

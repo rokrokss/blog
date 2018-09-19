@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: 논문 요약&#58; A Comparison of Feature-Based and Neural Scansion of Poetry
 key: 201805192

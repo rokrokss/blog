@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: Sentiment 관련 논문 리스트업
 key: 201807091

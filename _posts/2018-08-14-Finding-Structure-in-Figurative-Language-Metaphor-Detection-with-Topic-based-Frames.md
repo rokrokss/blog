@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: 논문 요약&#58; Finding Structure in Figurative Language&#58; Metaphor Detection with Topic-based Frames
 key: 201808141

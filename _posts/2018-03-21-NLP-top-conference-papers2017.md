@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: NLP (KAIST 18S CS574) 관련 링크
 key: 201803211

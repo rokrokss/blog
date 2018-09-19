@@ -5,9 +5,6 @@ NAV:
     zh:      "主页"
     zh-Hans: "主页"
     zh-Hant: "主頁"
-  PIECES:
-    en:      "Pieces"
-    kr:      "습작"
   ALL:
     en:      "Archive"
     kr:      "아카이브"
@@ -22,15 +19,29 @@ NAV:
     zh-Hant: "RSS"
 
 READMORE:
-  en:      "Click to read more ..."
+  en:      "Read more"
   kr:      "더 보기..."
-  zh:      "点我阅读更多..."
-  zh-Hans: "点我阅读更多..."
-  zh-Hant: "「點我閱讀更多」"
+  zh:      "阅读更多"
+  zh-Hans: "阅读更多"
+  zh-Hant: "閱讀更多"
+
+SEARCH:
+  en:      "Search"
+  kr:      "찾기"
+  zh:      "搜索"
+  zh-Hans: "搜索"
+  zh-Hant: "搜索"
+
+CANCEL:
+  en:      "Cancel"
+  kr:      "취소"
+  zh:      "取消"
+  zh-Hans: "取消"
+  zh-Hant: "取消"
 
 VIEWS:
   en:      "views"
-  kr:      "조회수"
+  kr:      "회"
   zh:      "阅读"
   zh-Hans: "阅读"
   zh-Hant: "閱讀"
@@ -84,19 +95,12 @@ LICENSE_ANNOUNCE:
   zh-Hans: "本文遵守 [LICENSE] 许可协议。"
   zh-Hant: "本文遵守 [LICENSE] 許可協議。"
 
-LICENSE_INTRO:
-  en:
-  kr:
-  zh:      "欢迎转载，转载需注明出处，且禁止用于商业目的。"
-  zh-Hans: "欢迎转载，转载需注明出处，且禁止用于商业目的。"
-  zh-Hant: "歡迎轉載，轉載需註明出處，且禁止用於商業目的。"
-
 POST_ON_GITHUB:
-  en:      "View this POST on Github."
-  kr:      "Github에서 보기"
-  zh:      "在 Github 上查阅此文。"
-  zh-Hans: "在 Github 上查阅此文。"
-  zh-Hant: "在 Github 上查閱此文。"
+  en:      "Edit on Github"
+  kr:      "Github에서 수정"
+  zh:      "在 Github 上修改"
+  zh-Hans: "在 Github 上修改"
+  zh-Hant: "在 Github 上修改"
 
 FOLLOW_ME:
   en:      "Follow me on [NAME]."

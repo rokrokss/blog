@@ -2,40 +2,37 @@
  * Site Info
  */
 
-.m-page-footer {
-  @include flexbox;
+.footer {
+  @include flexbox();
   @include align-items(center);
   height: map-get($layout, footer-height);
-  margin-top: - map-get($layout, footer-height);
-  background-color: $background-color;
+  background: $footer-background;
   p {
-    color: $text-color-3;
+    color: $footer-text-color;
   }
   a {
-    @include link-text-colors ( $text-color-3, $main-color-1, $main-color-1);
+    @include link-colors ($footer-text-color, $main-color-1);
   }
   .site-info {
+    margin: 1rem auto 0 auto;
+    font-size: map-get($base, font-size-xs);
     text-align: center;
-    font-size: map-get($base, font-size-tiny);
-    margin: 0 auto;
-  }
-  .name-box{
-    margin-top: 0.35em;
-    font-size: map-get($base, font-size-h3);
-    font-weight: map_get($base, font-weight-bold);
-    color: $text-color-d;
-  }
-  .name {
-    display: inline-block;
-  }
-  .site-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: map-get($base, font-size-h3) * 1.08;
-    height: map-get($base, font-size-h3) * 1.08;
-    &>svg {
-      width: 100%;
-      height: 100%;
+    .menu {
+      line-height: map-get($base, line-height-xs);
+      & > * {
+        &:not(:last-child) {
+          @include split-line(right, default, $footer-text-color);
+          padding-right: .3rem;
+          margin-right: .3rem;
+        }
+      }
     }
+  }
+}
+.footer__author-links {
+  @include overflow(auto);
+  .author-links {
+    padding-top: 1rem;
+    text-align: center;
   }
 }

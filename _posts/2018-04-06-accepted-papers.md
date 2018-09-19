@@ -1,5 +1,4 @@
 ---
-layout: post
 comments: true
 title: ML 주요 학회 accepted papers
 key: 201804061
