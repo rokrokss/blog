@@ -5,6 +5,9 @@ NAV:
     zh:      "主页"
     zh-Hans: "主页"
     zh-Hant: "主頁"
+  PIECES:
+    en:      "Pieces"
+    kr:      "습작"
   ALL:
     en:      "Archive"
     kr:      "아카이브"
