@@ -29,6 +29,8 @@ ML 주요 학회 accepted papers 링크 모음.
   - [NIPS 2016](https://nips.cc/Conferences/2016/AcceptedPapers)
 
   - [NIPS 2017](https://nips.cc/Conferences/2017/Schedule?type=Poster)
+  
+  - [NIPS 2018](https://nips.cc/Conferences/2018/Schedule?type=Poster)
 
 - CVPR
 
