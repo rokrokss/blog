@@ -55,6 +55,15 @@ ML 주요 학회 accepted papers 링크 모음.
   - [EMNLP 2016](https://www.aclweb.org/mirror/emnlp2016/accepted-papers.html)
 
   - [EMNLP 2017](http://emnlp2017.net/accepted-papers.html)
+  
+  - EMNLP 2018 [LONG](http://emnlp2018.org/program/accepted/long-papers), [SHORT](http://emnlp2018.org/program/accepted/short-papers)
+
+- NAACL
+
+  - [NAACL 2016](http://naacl.org/naacl-hlt-2016/accepted_papers.html)
+  
+  - [NAACL 2018](https://naacl2018.wordpress.com/2018/03/02/list-of-accepted-papers/)
+  
 
 
 
