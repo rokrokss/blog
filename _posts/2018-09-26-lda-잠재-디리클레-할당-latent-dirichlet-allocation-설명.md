@@ -111,9 +111,9 @@ LDA의 과정을 먼저 간략하게 설명하자면,
 
 여기서 디리클레 분포의 이점이 나타납니다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/3.png){:width="250px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/3.png){:width="220px"}
 
-간략히 보자면 우리는 위와 같은 식을 반복하여 사용합니다. likelihood가 다항 분포를 따르는 상황에, Posterior를 관측하여 Prior를 거듭 갱신시켜야 하는데
+간략히 보자면 우리는 위와 같은 식을 반복하여 사용합니다. likelihood가 다항 분포를 따르는 상황에, Posterior를 최대로 하는 Prior를 구해 거듭 갱신시켜야 하는데
 이 과정에서 Prior와 Posterior가 동일한 분포를 따르면 작업이 쉬워집니다. 그때 Prior와 Posterior의 분포를 Likelihood의 Conjugate Prior라고 부릅니다.
 
 **다항 분포의 Conjugate Prior가 바로 디리클레 분포입니다.**
