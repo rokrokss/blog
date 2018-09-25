@@ -109,8 +109,18 @@ LDA의 과정을 먼저 간략하게 설명하자면,
 결국, 단어를 차례차례 관측하며 단어의 토픽 분포 $$z_{d,n}$$를 갱신하고 그 때마다 $$\Theta, \Phi$$의 디리클레 분포를 갱신하는 과정을 거치는 것입니다.
 
 
+여기서 디리클레 분포의 이점이 나타납니다.
 
-실제로 $$p({z}|{w})$$를 최대로 하는 $$z$$를 찾는 과정 중 하나로 깁스 샘플링을 사용합니다.
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/3.png){:width="200px"}
+
+간략히 보자면 우리는 위와 같은 식을 반복하여 사용합니다. likelihood가 다항 분포를 따르는 상황에, Posterior를 관측하여 Prior를 거듭 갱신시켜야 하는데
+이 과정에서 Prior와 Posterior가 동일한 분포를 따르면 작업이 쉬워집니다. 그때 Prior와 Posterior의 분포를 Likelihood의 Conjugate Prior라고 부릅니다.
+
+**다항 분포의 Conjugate Prior가 바로 디리클레 분포입니다.**
+
+<br>
+
+이제 실제로 $$p({z}|{w})$$를 최대로 하는 $$z$$를 찾는 과정 중 하나로 깁스 샘플링을 사용합니다.
 (다른 방법으로는 Variational Inference도 있습니다.)
 
 
