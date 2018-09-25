@@ -23,7 +23,7 @@ Attention Mechanism만 알고 있다면 별로 어렵지 않습니다. 먼저 [�
 보면, 저 논문의 HAN 모델은 Word -> Sentence -> Document의 계층 구조를 가진 Attentive 모델이었습니다.
  
 여기서는 예를 "Section"을 가진, 예를 들어 일반적인 논문과 같은 Document에 적용한, Word -> Section -> Document의 계층 구조의 Attentive Model을 고안한 것입니다.
-다만, 여기서는 classification이 아닌 summary generation에 응용하였습니다.
+다만, 여기서는 Classification이 아닌 Summarization Task에 응용하였습니다.
  
 ## Model
  
