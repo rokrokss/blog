@@ -152,14 +152,25 @@ $$z_{-i}$$는 $$i$$번째 단어의 토픽 정보를 제외한 모든 단어의 
 
 거인들이 행한 수식 정리를 거치면 다음과 같은 식을 얻게 됩니다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/4.png){:width="500px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/4.png){:width="360px"}
 
 <br>
-$$d$$번째 문서에 속하는 $$i$$번째 단어가 토픽 $$j$$에 속할 확률은 $$d$$번째 문서가 $$k$$번째 토픽과 맺고 있는 연관성 정도과 $$d$$번째 문서의 $$n$$번째 단어($$w_{d,n}$$)가 $$k$$번째 토픽과 맺고 있는 연관성 정도의 곱에 비례한다는 것입니다.
+위 식은 $$d$$번째 문서의 $$i$$번째 단어 $$w$$의 토픽이 $$j$$일 확률은 다음의 두 가지에 영향을 받는다는 것을 뜻합니다.
 
+- 토픽 $$j$$에 할당된 전체 단어 중에서 해당 단어의 점유율이 높을수록 $$j$$일 확률이 크다.
+- $$i$$가 속한 문서 내 다른 단어가 토픽 $$j$$에 많이 할당되었을수록 $$j$$일 확률이 크다.
 
-**투비컨티뉴드**
+### 나머지 튜닝
 
+위 식 이후로도 유도를 더 해야하는 과정도 있습니다.
+
+여기서 더 자세하게 설명하기 보다는 연구의 경우 최신 논문에서 발전시키거나, 코딩이 필요할 경우 이미 있는 코드와 그 도큐먼트로 분석하는 것이 좋을거라 생각합니다.
+
+## 참고 사이트
+
+- http://www.4four.us/article/2014/10/lda-parameter-estimation
+- https://bab2min.tistory.com/569?category=673750
+- https://ratsgo.github.io/from%20frequency%20to%20semantics/2017/06/01/LDA/
 
 
 
