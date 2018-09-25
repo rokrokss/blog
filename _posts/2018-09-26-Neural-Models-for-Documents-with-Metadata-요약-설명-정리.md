@@ -19,4 +19,12 @@ tags:
  
 ## Introduction
  
-.
+여기서 말하는 non-textual attributes in metadata
+
+- author
+- timestamp
+- rating
+- ideology
+- and more
+
+으 너무 어려움 ㄹㅇ
