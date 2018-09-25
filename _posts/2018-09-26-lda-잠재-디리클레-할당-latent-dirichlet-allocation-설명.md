@@ -96,7 +96,7 @@ LDA는 Topic Modeling의 한 기법으로, 토픽별 단어의 분포와 문서�
 
 하이퍼파라미터인 $$\alpha, \beta$$와 관찰 가능한 유일한 변수인 $$w_{d,n}$$을 이용하여 나머지 변수들을 모두 추정해야 합니다.
 
-$$\alpha$$은 대게 0.1, $$\beta$$는 대게 0.001로 잡습니다. 이 값이 1에 가까워질수록 문서에 많은 토픽이 포함되고, 토픽에 많은 단어가 포함되게 됩니다.
+$$\alpha$$은 대게 0.1, $$\beta$$는 대게 0.001로 잡습니다.
 
 <br>
 LDA의 과정을 먼저 간략하게 설명하자면,
@@ -111,7 +111,7 @@ LDA의 과정을 먼저 간략하게 설명하자면,
 
 여기서 디리클레 분포의 이점이 나타납니다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/3.png){:width="220px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/3.png){:width="210px"}
 
 간략히 보자면 우리는 위와 같은 식을 반복하여 사용합니다. likelihood가 다항 분포를 따르는 상황에, Posterior를 최대로 하는 Prior를 구해 거듭 갱신시켜야 하는데
 이 과정에서 Prior와 Posterior가 동일한 분포를 따르면 작업이 쉬워집니다. 그때 Prior와 Posterior의 분포를 Likelihood의 Conjugate Prior라고 부릅니다.
@@ -126,11 +126,17 @@ LDA의 과정을 먼저 간략하게 설명하자면,
 
 ## 깁스 샘플링
 
+깁스 샘플링(Gibbs Sampling)
+
 이리저리
 
 $$
 p({ z }_{d, i }=j|{ z }_{ -i },w)=\frac { { n }_{ d,k }+{ \alpha  }_{ k } }{ \sum _{ i=1 }^{ K }{ ({ n }_{ d,i }+{ \alpha  }_{ i }) }  } \times \frac { { v }_{ k,{ w }_{ d,n } }+{ \beta  }_{ { w }_{ d,n } } }{ \sum _{ i=1 }^{ V }{ { v }_{ k,j }+{ \beta  }_{ j } }  }=AB
 $$
+
+<br>
+
+문서 $$d$$에 속하는 어떤 단어 $$m$$이 토픽 $$j$$에 속할 확률은 토픽 $$j$$에 속하는 모든 단어 중에서 단어 m이 차지하는 비중과 문서 d에 속하는 모든 토픽 중 토픽 j가 차지하는 비중의 곱에 비례한다
 
 **투비컨티뉴드**
 
