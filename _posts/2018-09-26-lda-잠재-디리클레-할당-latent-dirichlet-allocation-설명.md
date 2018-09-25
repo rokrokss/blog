@@ -64,9 +64,39 @@ $$
 
 <br>
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/1.png){:width="750px"}
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/1.png){:width="700px"}
 
 <br>
 
 LDA는 Topic Modeling의 한 기법으로, 토픽별 단어의 분포와 문서별 토픽의 분포를 모두 추정해 냅니다.
+
+<br>
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/LDA/2.png){:width="700px"}
+
+<br>
+
+전체적으로 위와 같은 구조를 가집니다.
+
+$$D$$ : 문서 총 갯수
+
+$$K$$ : 토픽의 총 갯수
+
+$$N$$ : $$d$$번째 문서의 총 단어 갯수
+
+$$w_{d,n}$$ : $$d$$번째 문서의 $$n$$번째 단어
+
+$$\alpha, \beta$$ : hyperparameters
+
+$$\Phi$$ : 토픽당 단어 분포
+
+$$\Theta$$ : 문서당 토픽 분포
+
+$$z_{d,n}$$ : 해당 단어의 토픽 분포
+
+<br>
+
+
+
+
 
