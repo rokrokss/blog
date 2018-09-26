@@ -11,12 +11,11 @@ tags:
 
 > EMNLP 2017
  
-.
+논문의 text에 TASK, PROCESS, MATERIAL 태깅하기.
 
 <!--more-->
  
 [논문 링크](http://aclweb.org/anthology/D17-1279)
  
-## Introduction
- 
-여기서 말하는 
+- graph-based label propagation scheme to estimate the posterior probabilities of unlabeled data
+- confidence-aware data selection

@@ -28,3 +28,8 @@ tags:
 - and more
 
 으 너무 어려움 ㄹㅇ
+
+covariates: features which influences text (as in SAGE).
+
+labels: features which to be predicted along with text (as in SLDA).
+
