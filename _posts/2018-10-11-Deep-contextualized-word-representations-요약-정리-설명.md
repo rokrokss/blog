@@ -21,7 +21,7 @@ tags:
 
 ## BiLM
 
-BiLM (Bidirectional Language Model)
+**BiLM (Bidirectional Language Model)**
 
 우리가 많이 쓰는 Language model은 대표적으로 Word2Vec이 있습니다.
 그 Word2Vec에서는 기본적으로 Fully connected layer를 이용하여 단어의 등장을 예측하게 학습시킵니다.
@@ -46,7 +46,7 @@ BiLM의 경우 context를 지니고 inference되는 벡터를 사용하므로 �
  
 ## ELMo
 
-ELMo (Embeddings from Language Model)
+**ELMo (Embeddings from Language Model)**
 
 기본적으로 모델의 structure는 deep-BiLM을 학습시키지만,
 본 논문에서의 키포인트는, 마지막 레이어의 hidden state만 사용하는 것이 아닌,
@@ -88,8 +88,10 @@ BiLM의 기본 구조가 context-dependent함으로 생기는 이점과, 타 모
 그래서 기억이 났는데 [Yosinski et al., 2014](https://pdfs.semanticscholar.org/a981/0fc4c6baacc3d262e73dd44bdcbbb0db034e.pdf)에
 의하면 각각의 layer가 서로 다른 type의 정보를 가진다고 합니다.
 
-우리는 단어벡터를 빈칸 채우기 방식으로만 학습합니다. 어떤 position의 단어가 무엇인지 예측하는 방식으로요. 근데 실상 그 단어벡터들을 이용한 task는 그렇지 않죠.
-classification, tagging, NMT 등 아주 다양하고 word inference에 국한되지 않습니다. 이 부분에 괴리가 있다고 생각하는데, BiLM을 그냥 사용하면 맨 위 레이어의 정보만을 갖는 것인데,
+우리는 단어벡터를 빈칸 채우기 방식으로만 학습합니다. 어떤 position의 단어가 무엇인지 예측하는 방식으로요.
+근데 실상 그 단어벡터들을 이용한 task는 그렇지 않죠.
+classification, tagging, NMT 등 아주 다양하고 word inference에 국한되지 않습니다. 이 부분에 괴리가 있다고 생각합니다.
+BiLM을 그냥 사용하면 맨 위 레이어의 정보만을 갖는 것인데,
 어짜피 BiLM이 학습된 목적과 적용될 Task가 다르기 때문에 BiLM이 학습되면서 만든 정보들을 모두 가져다가 쓰는 것이 더 좋게 되는 것 같습니다.
 
 <br>
