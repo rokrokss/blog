@@ -64,7 +64,7 @@ $$
 | $$task$$ | 걍 우리가 이후에 하려는 task
 | $$k$$ | time-step
 | $$\gamma^{task}$$ | hyper-parameter, 왜 존재하는지는 바로 뒤에 설명.
-| $$s_j^{task}$$ | softmax-normalized weight입니다. 레이어마다의 weight이긴 한데 어떻게 했다는 거죠?
+| $$s_j^{task}$$ | softmax-normalized weight입니다. 레이어마다의 weight.
 | $$h_{k,j}^{LM}$$ | 우리 모델의 j번째 레이어, k번째 단어에서 나온 hidden state.
 |---
 
@@ -75,8 +75,10 @@ $$
 GloVe 단어벡터와 ELMo를 concatenate해서 사용합니다. 본 논문에서도 저런 식으로 사용하라고 하긴 합니다.
 그 때 ELMo의 weight이라고 보시면 됩니다.
 
-$$s_j^{task}$$는 레이어마다 정해지는 weight이긴 한데 softmax-normalized라는 말이 이해가 안가서 지금 저자 매튜한테 메일 보내놨습니다.
-제가 이해하게 되면 수정하겠습니다.
+~~$$s_j^{task}$$는 레이어마다 정해지는 weight이긴 한데 softmax-normalized라는 말이 이해가 안가서 지금 저자 매튜한테 메일 보내놨습니다. 제가 이해하게 되면 수정하겠습니다.~~
+
+레이어마다 나온 hidden state를 linear combination하는 과정은 Task 모델에 포함시켜 학습되게 합니다!
+
 
 # 코멘트
 
