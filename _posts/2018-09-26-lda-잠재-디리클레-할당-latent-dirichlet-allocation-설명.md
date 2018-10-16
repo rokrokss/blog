@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-[논문도 있다.](http://delivery.acm.org/10.1145/950000/944937/3-993-blei.pdf?ip=143.248.242.199&id=944937&acc=OPEN&key=0EC22F8658578FE1%2E7500FBAD1E9579D9%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1533546683_ec4e0e5c9ea38aaacf7b8d563467672f)
+[논문도 있다.](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
 
 <br>
 
