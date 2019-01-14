@@ -27,3 +27,11 @@ Jupyter Notebook 작업물 이쁘게 전달하기
 
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/2.png){:width="800px"}
 
+3. create gist를 누르고 나오는 페이지의 주소가 https://gist.github.com/깃헙아이디/asdfnj32412hiofehwqiof 요런 식으로 맨 뒤에 asdfnj32412hiofehwqiof 처럼 긴 코드가 붙는다. 이걸 복사한다.
+
+4. http://nbviewer.jupyter.org/ 에 접속해 아래 빈칸에 코드를 붙여넣고 Go!를 누른다.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/3.png){:width="800px"}
+
+이제 우리의 Jupyter Notebook 파일이 이렇게 이쁘게 웹으로 올라간다. 보여주고 싶은 상대방에게 링크만 보내주면 된다.
+
