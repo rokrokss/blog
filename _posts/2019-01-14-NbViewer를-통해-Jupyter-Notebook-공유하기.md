@@ -19,6 +19,11 @@ Jupyter Notebook 작업물 이쁘게 전달하기
 
 절차는 다음과 같다.
 
-1. https://gist.github.com/ 에 접속한다.
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/1.png){:width="500px"}
+1. https://gist.github.com/ 에 접속한다. (Filename에는 원하는 파일 이름.ipynb, 내용은 ipynb 파일의 raw source를 복붙해야 한다.)
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/1.png){:width="800px"}
+
+2. ipynb 파일을 텍스트 편집기로 열어 raw source를 복사하던가, GitHub에 올려놓았다면 해당 파일 페이지 상단의 Raw 버튼을 눌러 source를 복사하고, 빈칸에 넣는다.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/2.png){:width="800px"}
 
