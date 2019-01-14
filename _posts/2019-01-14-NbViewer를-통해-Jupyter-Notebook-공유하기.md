@@ -7,7 +7,7 @@ tags:
   - ML
 ---
 
-Jupyter Notebook 작업물 이쁘게 전달하기
+Jupyter Notebook 작업물 이쁘게 보여주기
 
 <!--more-->
 
