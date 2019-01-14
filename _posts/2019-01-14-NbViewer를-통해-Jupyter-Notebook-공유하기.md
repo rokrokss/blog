@@ -16,12 +16,14 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/0.png){:width="500px"}
+&nbsp;&nbsp;&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/0.png){:width="400px"}
 
 <br>
 
 그래서 그 ipynb 파일을 그대로 결과물로 보여주고 싶은데, Google Colab으로 등록하거나, GitHub에 파일을 올려도 내가 로컬에서 보는 것만큼 정갈하지가 않더라.
 그럴 때, **NbViewer**를 사용하면 된다.
+
+<br>
 
 절차는 다음과 같다.
 
