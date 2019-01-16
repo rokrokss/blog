@@ -59,4 +59,4 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 이제 우리의 Jupyter Notebook 파일이 이쁘게 웹으로 올라간다. 보여주고 싶은 상대방에게 링크만 보내주면 된다.
 
-URL 단축을 위해 Google URL Shortener(https://goo.gl/)의 도움을 받는 것도 좋다.
+URL 단축을 위해 Bitly URL Shortener(https://bitly.com/)를 사용하는 것도 좋다.
