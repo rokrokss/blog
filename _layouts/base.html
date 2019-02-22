@@ -16,8 +16,10 @@ layout: none
     {%- include scripts/variables.html -%}
   </head>
   <body>
-    {%- include ad-header.html -%}
     <div class="root" data-is-touch="false">
+      <div class="layout--home">
+        {%- include ad-header.html -%}
+      </div>
       {{ content }}
     </div>
     <script>{%- include scripts/common.js -%}</script>
