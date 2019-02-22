@@ -22,7 +22,11 @@ ngrok을 이용하여 간단하게 모바일로 접속하자
     python3 manage.py runserver 8000
     ./ngrok http 8000
 
+<br>
+
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/django/ngrok/0.png){:width="500px"}
+
+<br>
 
 ngrok.io로 끝나는 주소가 보입니다.
 
