@@ -33,3 +33,7 @@ ngrok.io로 끝나는 주소가 보입니다.
 그 주소를 통해 접속을 하면 되는데, 먼저 settings.py의 ALLOWED_HOSTS에 해당 주소를 추가합니다.
 
     ALLOWED_HOSTS = ['~~~~.ngrok.io']
+
+헌데, 이렇게 하면 ngrok을 재실행할 때마다 ALLOWED_HOSTS에 등록해야하는 url이 변하므로 아래와 같이 합니다.
+
+    ALLOWED_HOSTS = ['*']
