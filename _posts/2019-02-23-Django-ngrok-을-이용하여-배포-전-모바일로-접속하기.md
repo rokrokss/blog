@@ -19,7 +19,7 @@ ngrok을 이용하여 간단하게 모바일로 접속하자
 
 해당 경로에서 서버 가동 후 ngrok을 아래 명령어로 실행합니다.
 
-    python3 manage.py runserver 8000
+    python manage.py runserver 8000
     ./ngrok http 8000
 
 <br>
