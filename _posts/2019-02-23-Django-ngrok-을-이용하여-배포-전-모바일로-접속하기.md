@@ -15,12 +15,10 @@ ngrok을 이용하여 간단하게 모바일로 접속하자
 
 먼저 ngrok을 다운로드합니다.
 
-압축을 풀고, ngrok 실행파일을 manage.py 파일이 있는 폴더로 옮깁니다.
-
-해당 경로에서 서버 가동 후 ngrok을 아래 명령어로 실행합니다.
+장고 서버 가동 후 ngrok을 아래 명령어로 실행합니다.
 
     python manage.py runserver 8000
-    ./ngrok http 8000
+    ./path/to/ngrok http 8000
 
 <br>
 
