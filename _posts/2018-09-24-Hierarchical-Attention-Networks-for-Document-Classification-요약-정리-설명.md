@@ -39,4 +39,4 @@ Word -> Sentence -> Document 순서로 계층에 따른 Attention Network
 ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Yang-NAACL2016/2.png){:width="700px"}
 
 
-빠진 수식들은 [이 글](http://rokrokss.com/post/2018/05/19/Effective-Approaches-to-Attention-based-Neural-Machine-Translation.html)과 [논문](https://www.cs.cmu.edu/~hovy/papers/16HLT-hierarchical-attention-networks.pdf)을 참고 바랍니닷.
+빠진 수식들은 [이 글](https://rokrokss.com/post/2018/05/19/Effective-Approaches-to-Attention-based-Neural-Machine-Translation.html)과 [논문](https://www.cs.cmu.edu/~hovy/papers/16HLT-hierarchical-attention-networks.pdf)을 참고 바랍니닷.

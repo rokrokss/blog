@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : http://rokrokss.com # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://rokrokss.com # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : IMROK
 description: > # this means to ignore newlines until "Language & timezone"
@@ -36,7 +36,7 @@ timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_tim
 author:
   type      : person # "person" (default), "organization"
   name      : 김형록
-  url       : http://rokrokss.com
+  url       : https://rokrokss.com
   avatar    : # path or url of avatar image
   bio       :
   email     : hyungrok.kim@kaist.ac.kr
