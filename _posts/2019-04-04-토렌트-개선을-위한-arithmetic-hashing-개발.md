@@ -61,5 +61,16 @@ Arithmetic Hashing 구조를 각각 만들고 성능을 비교했습니다.
 
 Evaluation 방법은, 500개의 node가 있다고 가정하여 각 key마다 위치를 계산해 어떤 node로 배정되는지 구해 각 노드의 key 갯수를 구하고, 그 표준편차를 비교했습니다.
 
+![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hashing/0.png)
 
+key 길이가 짧은 brown corpus에서의 결과
 
+<br>
+
+![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hashing/1.png)
+
+key 길이가 긴 2gram corpus에서의 결과
+
+<br>
+짧은 key에 대해서는 Markov Chain이 우세하나 key가 길어질수록(2단어 이상) RNN이 더 좋은 성능을 보여주며
+실험 설계에 부합하는 유의미한 결과가 나왔고 Encoding된 key를 Decoding으로 다시 찾는 실험도 잘 통과하며 성공적이었습니다.
