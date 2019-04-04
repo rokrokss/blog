@@ -55,7 +55,9 @@ Arithmetic Hash 구조를 각각 만들고 성능을 비교했습니다.
 
 ## 결과
 
-[Evaluation](https://nbviewer.jupyter.org/gist/q0115643/d5e2aee3089cca8f64791285eda23ba7)
+[Evaluation link](https://nbviewer.jupyter.org/gist/q0115643/d5e2aee3089cca8f64791285eda23ba7)
+
+(Zipf 그래프 대부분의 x축이 iteration, y축이 loss로 되어있는데, 이는 저의 실수이며 실제로 x축은 node, y축은 해당 노드에 배치된 token의 갯수입니다.)
 
 <br>
 
