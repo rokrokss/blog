@@ -18,5 +18,5 @@ header:
       zh-Hant:  關於
     url:        /about.html
   - titles:
-      en:       Resume
-    url:        /resume.html
+      en:       CV
+    url:        /cv.html
