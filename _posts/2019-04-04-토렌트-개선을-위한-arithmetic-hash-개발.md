@@ -36,7 +36,7 @@ SHA-1 알고리즘을 통해 20바이트의 info_hash를 만들어 내고 이것
 ## 개선 방향
 
 만약 우리가 토렌트의 해시값을 디코딩하여 원래의 key값을 구할 수 있다면, 우리는 단순 검색으로 우리가 원하는 토렌트를 콕 집어 찾아낼 수 있을 것입니다.
-그렇게 하기 위해서 제안되는 것이 바로 Arithmetic Hashing입니다. 인코딩(해싱)된 값이 균등 분포를 위해 어느 노드에 위치해야 하는지 디코딩이 가능한 계산 방법을 이용하는 것입니다.
+그렇게 하기 위해서 제안되는 것이 바로 Arithmetic Hash입니다. 인코딩(해싱)된 값이 균등 분포를 위해 어느 노드에 위치해야 하는지 디코딩이 가능한 계산 방법을 이용하는 것입니다.
 
 <br>
 
@@ -51,7 +51,7 @@ apple은 ``[0, 0.1]`` 만큼의 공간이 배당되고, ``(beginning) a``((begin
 
 이 부분의 선행논문으로 3-order Markov Chain을 이용하여 접근한 논문이 있었습니다. 하지만 Markov Chain은 order가 한정되어 key가 길어질수록 
 성능이 떨어지게 됩니다. 그래서 본 연구에서는 RNN(LSTM)을 이용해 문제를 해결합니다. brown corpus, 그리고 key가 길 때를 위한 2gram corpus를 이용해 Markov Chain과 RNN을 이용한
-Arithmetic Hashing 구조를 각각 만들고 성능을 비교했습니다.
+Arithmetic Hash 구조를 각각 만들고 성능을 비교했습니다.
 
 ## 결과
 
@@ -61,13 +61,13 @@ Arithmetic Hashing 구조를 각각 만들고 성능을 비교했습니다.
 
 Evaluation 방법은, 500개의 node가 있다고 가정하여 각 key마다 위치를 계산해 어떤 node로 배정되는지 구해 각 노드의 key 갯수를 구하고, 그 표준편차를 비교했습니다.
 
-![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hashing/0.png)
+![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hash/0.png)
 
 key 길이가 짧은 brown corpus에서의 결과
 
 <br>
 
-![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hashing/1.png)
+![](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/arithmetic-hash/1.png)
 
 key 길이가 긴 2gram corpus에서의 결과
 
