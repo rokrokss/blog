@@ -1,5 +1,6 @@
 ---
 layout: page
+comment: false
 key: page-about
 ---
 

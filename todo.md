@@ -1,6 +1,6 @@
 ---
-layout: article
-comments: false
+layout: page
+comment: false
 key: page-todo
 ---
 
