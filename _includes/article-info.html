@@ -67,13 +67,6 @@
             </li>
           {%- endif -%}
 
-          {%- if _pageview -%}
-            {%- if site.pageview.provider -%}
-              {%- include snippets/locale-to-string.html locale=site.data.locale.VIEWS -%}
-              {%- assign _locale_views = __return -%}
-              <li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="{{ include.article.key }}">0</span> {{ _locale_views }}</li>
-            {%- endif -%}
-          {%- endif -%}
         </ul>
       {%- endif -%}
 
