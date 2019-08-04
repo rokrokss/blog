@@ -6,7 +6,9 @@ key: page-todo
 
 - Gatsby로 블로그 이관하기
 
-- VR 환경 웹 브라우저 조사하기
+- Microservice Architecture
 
-- Progressive Web Apps 파악하기
+- Java/Kotlin, C# 공부
+
+- ASP.NET, Spring Framework 공부
 
