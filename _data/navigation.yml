@@ -7,14 +7,6 @@ header:
       zh-Hant:  歸檔
     url:        /archive.html
   - titles:
-      en:       Writings
-      kr:       글짓
-    url:      /writings.html
-  - titles:
-      en:       Todo
-      kr:       할일
-    url:      /todo.html
-  - titles:
       en:       About
       kr:       소개
       zh:       关于
