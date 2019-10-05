@@ -3,4 +3,4 @@ _site
 .jekyll-metadata
 .idea
 *.swp
-
+node_modules
