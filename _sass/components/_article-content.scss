@@ -2,7 +2,7 @@
   line-height: map-get($base, line-height-lg);
   word-wrap: break-word;
   @include block-elements() {
-    margin: map-get($base, vertical-space-sm) 0;
+    margin: map-get($base, vertical-space) 0;
   }
   @include heading-elements() {
     position: relative;
