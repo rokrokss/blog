@@ -55,14 +55,14 @@ LAST_UPDATED:
 
 PREVIOUS:
   en:      "PREVIOUS"
-  kr:      "윗글"
+  kr:      "아랫글"
   zh:      "上篇"
   zh-Hans: "上篇"
   zh-Hant: "上篇"
 
 NEXT:
   en:      "NEXT"
-  kr:      "아랫글"
+  kr:      "윗글"
   zh:      "下篇"
   zh-Hans: "下篇"
   zh-Hant: "下篇"
