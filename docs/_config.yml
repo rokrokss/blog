@@ -101,7 +101,7 @@ paginate_path: /test/page:num # don't change this unless for special need
 
 ## => Sources
 ##############################
-sources: bootcdn # bootcdn (default), unpkg
+sources: unpkg # bootcdn (default), unpkg
 
 
 ## => Comments
