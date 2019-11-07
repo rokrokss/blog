@@ -119,7 +119,7 @@ Go는 타 생태계를 이용할 때의 흔한 함정에 빠지는 것을 방지
 
 ### Go is much easier to learn than Java or C#.
 
-빠른 습득이 가능합니다. 근본적으로 복잡한 구조의 프로그램은 프로젝트가 지지부진할 때 매니저는 사람을 더 뽑아 해결하려 하지만 해결되지 않습니다.
+빠른 습득이 가능합니다. 근본적으로 복잡한 구조의 프로그램은 프로젝트가 지지부진할 때 매니저는 사람을 더 뽑아 해결하려 하지만 아쉽게도 사람이 늘어도 해결되지 않습니다.
 
 ### The Go community regards as anti-patterns many abstractions regularly employed by Java / C#.
 
