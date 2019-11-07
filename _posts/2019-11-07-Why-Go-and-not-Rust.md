@@ -95,6 +95,13 @@ Rust도 마찬가지로 웹서비스 개발에 적절한 언어입니다. 하지
 
 전체 사용자 수나, 다루는 데이터의 크기에 대해 말하는 것이 아닙니다. 정의하자면 **범위(scope)**와 **과정(proces)**에 관한 것입니다.
 
+### Enterprise software always has a big scope.
+
+기업소프트웨어는 도메인이 넓거나, 도메인은 좁지만 무지막지하게 복잡하거나, 혹은 둘 다일 수 있습니다.
+그러한 소프트웨어를 만들 때, 비기술적인 문제가 대부분의 기술적인 문제보다 중요하게 여겨지는 경우가 빈번합니다.
+
+### To unravel complex domains you need a well-structured process.
+
 
 
 *작성 중*
