@@ -36,7 +36,7 @@ tags:
 
 위 이야기는 실화가 아닙니다. 하지만 Rust 팬덤 사이에는 타인을 구원하고자 Rust를 집요하게 어필하는, 과도하게 흥분한 몇몇 회원이 있다는 것은 많이들 알고 있는 사실입니다.
 그것은 Rust의 잘못이 아닙니다. 성공적인 프로젝트는 언제나 삐뚫어진 팔로워를 동반합니다. 이는 피할 수 없습니다. 그 주변 모든 사람들이 이 Rust 광신도와 대면해야하며,
-특히 Go 개발자들은 Go와 Rust의 messaging 유사성으로 비교 대상으로 더 자주 언급됩니다.
+특히 Go 개발자들은 Go와 Rust의 messaging의 유사성 때문에 비교 대상으로 더 자주 언급됩니다.
 
 **Go is fast, but Rust is faster.**
 
@@ -113,7 +113,7 @@ Rust도 마찬가지로 웹서비스 개발에 적절한 언어입니다. 하지
 
 <br>
 
-## GO IS ABOUT SUPPRESSING COMPLEXITY AT SCALE
+## GO IS ABOUT SURPRESSING COMPLEXITY AT SCALE
 
 Go는 타 생태계를 이용할 때의 흔한 함정에 빠지는 것을 방지합니다.
 
@@ -123,7 +123,7 @@ Go는 타 생태계를 이용할 때의 흔한 함정에 빠지는 것을 방지
 
 ### The Go community regards as anti-patterns many abstractions regularly employed by Java / C#.
 
-IoC 컨테이너, OOP 상속과 같은 패턴을 배제합니다. 예를 들어 variable은 두 레벨에서만 다뤄지고, 동시성 제어 모델은 CSP 하나만이 이용됩니다. Java/C#의 경우 이해가 어려운 복잡한 문제에 빠지는 것을 방지합니다. 
+IoC 컨테이너, OOP 상속과 같은 패턴을 배제합니다. 예를 들어 variable은 두 레벨에서만 다뤄지고, 동시성 제어 모델은 CSP 하나만이 이용됩니다. Java/C#의 경우처럼 이해가 어려운 복잡한 문제에 빠지는 것을 방지합니다. 
 
 ### The Go compiler is fast.
 
@@ -150,7 +150,7 @@ Go는 Java/C#보다 빠르며, Java/C#보다 메모리 관리 측면에서 뛰�
 
 Go는 더 좋은 Java/C#이며, Rust는 그렇지 않습니다. 엔터프라이즈 소프트웨어 개발에 Go가 가져올 수 있는 장점이 가비지컬렉터을 없애며 생산성을 떨어뜨리는 것보다 큼은 자명합니다.
 
-Rust는 더 좋은 C++입니다. 만약 당신도 Go가 더 좋은 C라고 들었다면 그것은 옳지 않습니다. 내장된 가비지컬렉터와 런타임이 있는 언어는 절대 C와 비교될 수 없습니다. 그리고, Rust도 C++과 비교해야 합니다. C가 아닙니다.
+Rust는 더 좋은 C++입니다. 만약 당신도 Go가 더 좋은 C라고 들었다면 그것은 옳지 않습니다. 내장된 가비지컬렉터와 런타임이 있는 언어는 절대 C와 비교될 수 없습니다. 그리고, Rust도 C가 아닌 C++과 비교되어야 합니다.
 [더 좋은 C가 궁금하시면 Zig에 대해 알아보세요.](https://kristoff.it/blog/what-is-zig-comptime/)
 
 마지막으로 우리의 이야기로 돌아가서, "Why not Rust" 질문은 위와 같은 예시로 반박할 수 있습니다. 다만, 본인의 아이덴티티를 하나의 언어에 한정하지 맙시다. Rustacean이나 Gopher같은 단어는 브랜딩을 강화하기 위해 만들어진 마케팅 도구에 불과합니다.
