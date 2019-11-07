@@ -119,6 +119,21 @@ Rust도 마찬가지로 웹서비스 개발에 적절한 언어입니다. 하지
 
 ## GO IS ABOUT SUPPRESSING COMPLEXITY AT SCALE
 
+Go는 타 생태계를 이용할 때 흔한 함정에 빠지는 것을 방지합니다.
+
+### Go is much easier to learn than Java or C#.
+
+
+
+### The Go community regards as anti-patterns many abstractions regularly employed by Java / C#.
+
+
+
+### The Go compiler is fast.
+
+
+
+# In conclusion
 
 
 *작성 중*
