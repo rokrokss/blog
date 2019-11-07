@@ -102,6 +102,7 @@ Rust도 마찬가지로 웹서비스 개발에 적절한 언어입니다. 하지
 
 ### To unravel complex domains you need a well-structured process.
 
+우리는 도메인 전문가, 분석가, 이해관계자들이 확인할 수 있는 프로세스가 필요합니다. 당신과 같은 기술자는 해당 도메인에 대해 이해가 완벽하지 않은 경우가 많습니다.
 
 
 *작성 중*
