@@ -49,11 +49,7 @@ tags:
 Go 개발자가 보기에는 약간 사기당한 기분이 들 수도 있습니다. 반면에, Python 개발자들은 이런 Rust에 장점에 전혀 흔들리지 않습니다.
 그들은 Python이 많은 방면에서 느리고 비효율적으로 작동하는 언어임을 압니다. 하지만 Python의 역할은 "쉽게 코딩하고 퍼포먼스가 중요한 영역은 C를 이용하는 것"(make the code easy to write and offload to C when performance matters)임을 인지하고 있죠.
 
-<br>
-
 *Go는 어떨까요?*
-
-<br>
 
 # Go is very good for writing services
 
