@@ -123,7 +123,7 @@ split stack
 growable stack
 
 - O(N) cost per function call
-- amortized
+- **amortized**
 - worst case: grow stack for short goroutine
 
 Penalizing cheap operation a bit < penalizing expensive operation significantly
