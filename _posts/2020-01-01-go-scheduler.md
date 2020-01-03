@@ -7,7 +7,7 @@ tags:
   - Go
 ---
 
-[Dmitry Vyukov의 발표 영상](https://youtu.be/-K11rY57K7k)을 요약했다.
+[Dmitry Vyukov의 발표 영상](https://youtu.be/-K11rY57K7k)을 요약한 글이다.
 
 <!--more-->
 
@@ -18,8 +18,31 @@ Java thread의 갯수는 아무리 많아도 수만을 넘지 못하지만, Goro
 
 > [소스코드](https://github.com/golang/go/blob/master/src/runtime/proc.go)
 
-run queue로 관리
-channel이 런타임에 제어되고 channel마다 wait queue가 따로 있으므로 전체적인 wait queue는 필요없음
+
+## M:P:N threading
+
+.Net이나 Java와 같은 환경에서 특별히 최적화되지 않은 user thread는 kernel thread와 1:1 매핑된다. 하지만, Go의 개발자들은 고루틴을 백만 개 이상 안정적으로 스케일하길 원했고,
+M:N 매핑(정확히는 M:P:N)을 사용했다.
+
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/go/mpn_threading.png)
+
+고루틴과 커널스레드가 1:1 매핑이 아니므로, 실행가능 상태인 고루틴이 보관될 큐가 필요한데, Go는 **스레드가 아닌** 프로세서 객체마다 존재하는 Local Run Queue, 그리고 Global Run Queue를 구현했다.
+채널이 런타임에 제어되고 채널마다 Wait Queue가 따로 있으므로 전체적인 Wait Queue는 추가로 필요하지 않다. 네트워크 응답 대기 상태인 고루틴은 Network Poller가 관리한다.
+
+## Poll order
+
+"다음 순서"에 실행될 고루틴은 어떻게 고를까?
+
+프로세서가 선택할 수 있는 고루틴은 여러 종류가 있다.
+
+- Local Run Queue
+- Global Run Queue
+- Invoke Network poller
+- Work Stealing (다른 프로세서의 Local Run Queue에서 고루틴을 가져오는 것)
+
+
+
+
 system call 실행한 고루틴은 스레드가 해제되고, 기다리다가 반환 값이 왔을 때 run queue로 들어감
 
 scalable?
