@@ -1,0 +1,8 @@
+.article__content {
+    iframe {
+        width: 100%;
+        height: 30vh;
+    }    
+    @media(min-width: 500px) { iframe { height: 40vh; } }
+    @media(min-width: 800px) { iframe { height: 472.5px; } }
+} 
