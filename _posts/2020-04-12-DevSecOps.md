@@ -7,7 +7,7 @@ tags:
   - DevOps
 ---
 
-두서 없는 글
+DevSecOps 개념에 대해 정리해보자.
 
 <!--more-->
 
