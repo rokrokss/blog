@@ -70,7 +70,7 @@ allowfullscreen
 [Istio의 security documentation](https://istio.io/docs/concepts/security/)만 보아도 mTLS, zero-trusted network, authorization policies 등 MSA의 보안 이슈를 막아줄 기능을 제공한다.
 그리고 결국 핵심은 envoy를 통한 full observability라고 생각한다.
 
-다만, 과연 sidecar가 network 측면의 정보만 가진 구조로 궁극적인 시스템을 구현하는지에 대해서는 아직 의문이 든다.
+다만, 보안 부분과는 별 관련이 없지만 과연 sidecar가 network 측면의 정보만 가진 구조로 궁극적인 시스템을 구현하는지에 대해서는 아직 의문이 든다.
 network feature 뿐 아니라 application capability까지 제공하는 구조가 얼마나 효과적일지, 개인적으로 [Dapr](https://github.com/dapr/dapr)의 stable 버전이 나오는 시점에 어떤 변화가 있을지 궁금하다.
 
 ## 결론
