@@ -62,7 +62,7 @@ allowfullscreen
 
 ## Service Mesh!?
 
-![text](https://d33wubrfki0l68.cloudfront.net/1369cff9a50c46b58834dbfc302a6cda35548adf/e8abc/images/blog/2018-06-05-11-ways-not-to-get-hacked/service-mesh-@sebiwicb.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/devsecops/0.png)
 
 (블로그에는 언급한 적이 없지만 여기저기서 서비스메쉬 언급을 굉장히 많이 하고 다닌다...)
 
@@ -75,7 +75,7 @@ network feature 뿐 아니라 application capability까지 제공하는 구조�
 
 ## 결론
 
-![text](https://www.viva64.com/media/docx/blog/0710_DevOps_vs_DevSecOps/image1_thm_intoblank_1200x630.png)
+![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/devsecops/1.png)
 
 DevOps와 크게 다른 점은 없다. 기존의 DevOps 프로세스를 Secure하게 전달하자!
 
