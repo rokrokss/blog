@@ -289,7 +289,7 @@ resource "vault_token_auth_backend_role" "tfc" {
 간단히 설명하자면 vault provider는 입력된 토큰을 그대로 사용하지 않고 해당 토큰으로 TTL이 20분인 child token을 만들어서 리소스 생성에 사용한다.
 그렇다보니 `vault_token`이 입력된 토큰의 손자 토큰이 되고 20분이 지나면 `tfc_vault_token`은 자신의 TTL과 상관없이 revoke된다.
 
-periodic token을 만들어서 무기한으로 사용하려면 아직 terraform을 이용해선 해답이 없다.
+periodic token을 만들어서 무기한으로 사용하려면 terraform을 이용해선 아직 해답이 없다.
 
 `$ vault token create -role=terraform-cloud`
 
