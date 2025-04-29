@@ -4,7 +4,7 @@ title: 논문 요약&#58; Deep-speare&#58; a Joint Neural Model of Poetic Langua
 key: 201806261
 modify_date: 2018-06-27
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - ACL

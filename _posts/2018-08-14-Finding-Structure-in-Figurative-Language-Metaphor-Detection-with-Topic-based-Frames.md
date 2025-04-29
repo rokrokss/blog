@@ -4,7 +4,7 @@ title: 논문 요약&#58; Finding Structure in Figurative Language&#58; Metaphor
 key: 201808141
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - SIGDIAL

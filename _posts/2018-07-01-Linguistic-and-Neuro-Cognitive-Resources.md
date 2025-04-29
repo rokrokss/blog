@@ -4,7 +4,7 @@ title: 1st Workshop on Linguistic and Neuro-Cognitive Resources (LiNCR) 정리
 key: 201807011
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
 ---

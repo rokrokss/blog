@@ -4,7 +4,7 @@ title: LDA(Latent Dirichlet Allocation)가 무엇이냐
 key: 201809260
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
 ---
 

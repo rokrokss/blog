@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Neural Metaphor Detecting with CNN-LSTM Model
 key: 201807052
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - NAACL

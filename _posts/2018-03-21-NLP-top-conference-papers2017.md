@@ -5,7 +5,7 @@ key: 201803211
 modify_date: 2018-03-21
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
 ---
 

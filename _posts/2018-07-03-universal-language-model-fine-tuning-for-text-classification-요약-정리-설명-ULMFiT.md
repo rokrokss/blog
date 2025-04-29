@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Universal Language Model Fine-tuning for Text Classification
 key: 201807031
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - ACL

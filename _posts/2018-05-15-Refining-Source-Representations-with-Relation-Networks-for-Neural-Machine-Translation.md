@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Refining Source Representations with Relation Networks for Neural Machine Translation
 key: 201805151
 tags:
-  - ML
+  - AI
   - NLP
   - NMT
   - 논문

@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Hierarchical Attention Networks for Document Classification
 key: 201809240
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - NAACL

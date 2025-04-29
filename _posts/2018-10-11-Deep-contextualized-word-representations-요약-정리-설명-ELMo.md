@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Deep Contextualized Word Representations
 key: 201810110
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - ICLR

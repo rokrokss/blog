@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Convolutional Neural Networks for Sentence Classification
 key: 201806161
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - EMNLP

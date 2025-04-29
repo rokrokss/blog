@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Densely Connected Convolutional Networks
 key: 201807111
 tags:
-  - ML
+  - AI
   - CV
   - 논문
   - CVPR

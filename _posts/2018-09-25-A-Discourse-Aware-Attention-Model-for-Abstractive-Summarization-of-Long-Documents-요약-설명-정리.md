@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents
 key: 201809250
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - NAACL

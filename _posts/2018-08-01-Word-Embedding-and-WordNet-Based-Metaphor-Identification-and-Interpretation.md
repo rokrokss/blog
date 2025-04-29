@@ -4,7 +4,7 @@ title: 논문 요약&#58; Word Embedding and WordNet Based Metaphor Identificati
 key: 201808011
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - ACL

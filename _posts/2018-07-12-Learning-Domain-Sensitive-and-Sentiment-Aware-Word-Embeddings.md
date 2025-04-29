@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Learning Domain-Sensitive and Sentiment-Aware Word Embeddings
 key: 201807121
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
   - ACL

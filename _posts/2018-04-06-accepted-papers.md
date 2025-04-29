@@ -5,7 +5,7 @@ key: 201804061
 modify_date: 2018-05-18
 picture_frame: shadow
 tags:
-  - ML
+  - AI
   - NLP
   - 논문
 ---

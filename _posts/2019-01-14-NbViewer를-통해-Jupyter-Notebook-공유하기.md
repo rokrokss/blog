@@ -4,7 +4,7 @@ title: NbViewer를 통해 Jupyter Notebook 공유하기
 key: 201901140
 picture_frame: shadow
 tags:
-  - ML
+  - etc
 ---
 
 Jupyter Notebook 작업물 이쁘게 보여주기

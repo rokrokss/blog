@@ -3,7 +3,7 @@ comments: true
 title: 논문 요약&#58; Design Challenges for Entity Linking
 key: 201805241
 tags:
-  - ML
+  - AI
   - NLP
   - EL
   - 논문
