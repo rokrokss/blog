@@ -310,4 +310,4 @@ tags:
 
 # 개발자 구직 에이전트?
 
-핸즈온으로 찹찹ai라는 웹을 개발했다. [다음 글](https://rokrokss.com/post/2025/05/13/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0-%EC%B6%94%EC%B2%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%B0%B9%EC%B0%B9-chapchap.html)에서 볼 수 있다.
+핸즈온으로 "찹찹"이라는 웹을 개발했다. [다음 글](https://rokrokss.com/post/2025/05/13/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0-%EC%B6%94%EC%B2%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%B0%B9%EC%B0%B9-chapchap.html)에서 볼 수 있다.
