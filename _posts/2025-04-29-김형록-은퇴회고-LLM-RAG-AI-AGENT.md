@@ -1,6 +1,6 @@
 ---
 comments: true
-title: 개발자 은퇴 회고, LLM 공부, 구직 에이전트 개발기 (미완)
+title: 개발자 은퇴 회고, LLM 공부, 구직 에이전트 개발기
 key: 202504290
 picture_frame: shadow
 tags:
