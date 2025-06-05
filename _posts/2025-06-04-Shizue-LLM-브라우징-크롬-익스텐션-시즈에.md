@@ -25,9 +25,16 @@ tags:
 
 &nbsp;&nbsp;물론 LLM 기반으로 브라우징 UX를 개선하는 익스텐션은 이미 시장에 여럿 나와 있다. 대충 훑어본 결과, 이름만 다를 뿐 비슷한 기능 구성을 갖추고 있었다. 주된 유입 요인은 ChatGPT보다 낮은 가격, 탭 전환 없이 사용하는 사이드패널 UI, 콘텐츠 요약 기능 정도다. 부가기능들이 많긴 한데, 대부분 사용자의 시간을 절약해 주는 기능은 아니었다. 주요 익스텐션은 사용자 본인의 API 키를 이용해서 구독 없이도 기본적인 기능을 제공하는데, 페이지 요약과 대조 번역 같은 기능은 유료 플랜으로 묶어 두었다. 구조를 상상했을 때 개발 환경을 잘 잡아두면 금방 구현 가능한 것들이라고 생각했다. 그렇게 직접 개발을 하다 보면 사용자 활동 시퀀스 데이터를 활용해 뾰족한 기능도 만들 수 있을 것이라 생각하지만(결론부터 말하자면) 아직 거기까지 나아가지는 못했다.
 
-이름은 시즈에. 닌텐도 동물의숲에서 주인공을 돕는 비서 캐릭터 여울이의 본명을 사용했다.
+이름은 `시즈에`. 닌텐도 동물의숲에서 주인공을 돕는 비서 캐릭터 여울이의 본명을 사용했다.
 
 ## 시즈에의 기능
 > https://github.com/rokrokss/shizue
 
+![A](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/chat.gif)
+
+![B](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/summarize.gif)
+
+![C](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/translate.gif)
+
+![D](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/darkmode.gif)
 
