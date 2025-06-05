@@ -30,11 +30,19 @@ tags:
 ## 시즈에의 기능
 > https://github.com/rokrokss/shizue
 
-![A](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/chat.gif)
+### 사이드 패널의 채팅
 
-![B](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/summarize.gif)
+![채팅](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/chat.gif)
 
-![C](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/translate.gif)
+### 원 클릭 페이지 요약
 
-![D](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/darkmode.gif)
+![요약](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/summarize.gif)
+
+### 대조번역
+
+![대조번역](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/translate.gif)
+
+### 다크모드
+
+![다크모드](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/darkmode.gif)
 
