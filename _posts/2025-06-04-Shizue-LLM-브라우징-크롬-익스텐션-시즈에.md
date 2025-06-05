@@ -74,6 +74,8 @@ builder.io 블로그에서 오버레이 메뉴를 색상 반전시키는 걸 보
 
 ### 기술스택
 
+모든 코드는 https://github.com/rokrokss/shizue 에서 볼 수 있다.
+
 - 프레임워크: WXT, React, vite
 - 상태관리: Jotai, Dexie
 - LLM 호출: LangChain
