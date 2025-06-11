@@ -67,7 +67,7 @@ tags:
 
 이후 나는 배치 처리와 컴포넌트 큐, 번역 캐시를 적용해 성능과 안정성을 높였다.
 
-### AI 자막
+### AI 자막 (unreleased)
 
 ![유튜브자막](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/youtube.gif)
 
