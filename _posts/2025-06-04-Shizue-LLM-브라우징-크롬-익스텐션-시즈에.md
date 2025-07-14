@@ -77,6 +77,10 @@ tags:
 
 ![PDF번역](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/pdf.gif)
 
+아래는 번역 결과물이다.
+
+![PDF번역결과](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/pdf_result.png)
+
 [BabelDOC](https://github.com/funstory-ai/BabelDOC)이라는 라이브러리를 사용하면 PDF 파일을 기존 구조를 보존하면서 번역한 새로운 파일을 만들 수 있다. 처음에는 서버 없이 구현하고 싶었지만, 자바스크립트 진영에는 이만큼 해주는 오픈소스가 없었다. WASM을 이용해 파이썬을 실행하는 것도 CPython 디펜던시 때문에 한계가 있었다. 결국 서버를 띄워서 해결했는데, OCR 등으로 기본적으로 요구하는 리소스가 꽤 커서 아키텍처를 분리했다. 큐잉해주는 API 서버와 번역 서버를 분리하여, 번역은 GCP의 서버리스 서비스로 구현했다. 주머니 사정상 콜드스타트를 감당해야 한다. 보안상 사용자의 API 키를 요청에 실을 수 없어서 내 토큰으로 동작한다.
 
 ### 다크모드
