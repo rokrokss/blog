@@ -31,7 +31,6 @@ tags:
 
 
 ## 시즈에의 기능
-> https://github.com/rokrokss/shizue
 
 기능 설명은 이미지로 대신하고, 개발 과정에 대한 기록을 남긴다.
 
