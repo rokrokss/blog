@@ -22,7 +22,7 @@ url     : https://rokrokss.com # the base hostname & protocol for your site e.g.
 baseurl : # does not include hostname
 title   : ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
-  ROKROKSS
+  AI, 프로그래밍, 그리고 기술에 대한 생각을 기록하는 김형록(rokrokss)의 개발 블로그입니다. 머신러닝, 자연어처리, 웹 개발 등의 주제를 다룹니다.
 
 
 ## => Language and Timezone

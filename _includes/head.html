@@ -2,11 +2,57 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+<!-- Performance optimization -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://disqus.com">
+<link rel="dns-prefetch" href="https://c.disquscdn.com">
+
 {%- include snippets/get-article-title.html article=page -%}
-<title>{{ site.title }}</title>
+<title>{%- if __return != blank -%}{{ __return | strip_html | strip | truncate: 60 }} | {{ site.title }}{%- else -%}{{ site.title }} | {{ site.description }}{%- endif -%}</title>
 
 <meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+{%- if page.tags -%}
+<meta name="keywords" content="{{ page.tags | join: ', ' }}">
+{%- endif -%}
+<meta name="author" content="{%- if site.author.name -%}{{ site.author.name }}{%- else -%}{{ site.title }}{%- endif -%}">
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="{%- if page.layout == 'article' -%}article{%- else -%}website{%- endif -%}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="{%- if __return != blank -%}{{ __return | strip_html | strip | truncate: 60 }}{%- else -%}{{ site.title }}{%- endif -%}">
+<meta property="og:description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+<meta property="og:url" content="{%- include snippets/page-url.html -%}">
+<meta property="og:site_name" content="{{ site.title }}">
+{%- if page.image -%}
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+{%- elsif site.author.avatar -%}
+<meta property="og:image" content="{{ site.author.avatar | absolute_url }}">
+{%- endif -%}
+{%- if page.date -%}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- endif -%}
+{%- if page.modify_date -%}
+<meta property="article:modified_time" content="{{ page.modify_date | date_to_xmlschema }}">
+{%- endif -%}
+{%- if site.author.name -%}
+<meta property="article:author" content="{{ site.author.name }}">
+{%- endif -%}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+{%- if site.author.twitter -%}
+<meta name="twitter:site" content="@{{ site.author.twitter }}">
+<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{%- endif -%}
+<meta name="twitter:title" content="{%- if __return != blank -%}{{ __return | strip_html | strip | truncate: 60 }}{%- else -%}{{ site.title }}{%- endif -%}">
+<meta name="twitter:description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+{%- if page.image -%}
+<meta name="twitter:image" content="{{ page.image | absolute_url }}">
+{%- elsif site.author.avatar -%}
+<meta name="twitter:image" content="{{ site.author.avatar | absolute_url }}">
+{%- endif -%}
 
 {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
 {%- include snippets/get-nav-url.html path=_paths_rss -%}
@@ -27,3 +73,94 @@
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
+
+<!-- Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {%- if page.layout == 'article' -%}
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{%- include snippets/page-url.html -%}"
+  },
+  "headline": "{%- if __return != blank -%}{{ __return | strip_html | strip | truncate: 110 | jsonify }}{%- else -%}{{ site.title | jsonify }}{%- endif -%}",
+  "description": "{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 | jsonify }}{%- else -%}{{ site.description | jsonify }}{%- endif -%}",
+  {%- if page.image -%}
+  "image": "{{ page.image | absolute_url }}",
+  {%- endif -%}
+  {%- if page.date -%}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {%- endif -%}
+  {%- if page.modify_date -%}
+  "dateModified": "{{ page.modify_date | date_to_xmlschema }}",
+  {%- elsif page.date -%}
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  {%- endif -%}
+  "author": {
+    "@type": "Person",
+    "name": "{%- if site.author.name -%}{{ site.author.name }}{%- else -%}{{ site.title }}{%- endif -%}",
+    {%- if site.author.url -%}
+    "url": "{{ site.author.url }}",
+    {%- endif -%}
+    {%- if site.author.email -%}
+    "email": "{{ site.author.email }}",
+    {%- endif -%}
+    "sameAs": [
+      {%- assign social_count = 0 -%}
+      {%- if site.author.facebook -%}
+        {%- if social_count > 0 -%},{%- endif -%}
+        "https://www.facebook.com/{{ site.author.facebook }}"
+        {%- assign social_count = social_count | plus: 1 -%}
+      {%- endif -%}
+      {%- if site.author.twitter -%}
+        {%- if social_count > 0 -%},{%- endif -%}
+        "https://twitter.com/{{ site.author.twitter }}"
+        {%- assign social_count = social_count | plus: 1 -%}
+      {%- endif -%}
+      {%- if site.author.linkedin -%}
+        {%- if social_count > 0 -%},{%- endif -%}
+        "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+        {%- assign social_count = social_count | plus: 1 -%}
+      {%- endif -%}
+      {%- if site.author.github -%}
+        {%- if social_count > 0 -%},{%- endif -%}
+        "https://github.com/{{ site.author.github }}"
+      {%- endif -%}
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    {%- if site.author.avatar -%}
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.author.avatar | absolute_url }}"
+    }
+    {%- endif -%}
+  }
+  {%- else -%}
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  {%- if site.author -%}
+  "author": {
+    "@type": "Person",
+    "name": "{%- if site.author.name -%}{{ site.author.name }}{%- else -%}{{ site.title }}{%- endif -%}",
+    {%- if site.author.url -%}
+    "url": "{{ site.author.url }}",
+    {%- endif -%}
+    {%- if site.author.email -%}
+    "email": "{{ site.author.email }}"
+    {%- endif -%}
+  },
+  {%- endif -%}
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/search.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+  {%- endif -%}
+}
+</script>

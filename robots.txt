@@ -1,0 +1,49 @@
+# robots.txt for https://rokrokss.com
+User-agent: *
+Allow: /
+
+# Disallow directories that don't need to be indexed
+Disallow: /docs/
+Disallow: /test/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+# Allow crawling of CSS and JS files
+Allow: /assets/*.css
+Allow: /assets/*.js
+Allow: /assets/images/
+
+# Sitemap location
+Sitemap: https://rokrokss.com/sitemap.xml
+
+# Crawl-delay for bots that support it
+Crawl-delay: 1
+
+# Special rules for specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
