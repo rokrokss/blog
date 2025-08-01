@@ -19,7 +19,7 @@
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://rokrokss.com # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
+baseurl : / # does not include hostname
 title   : ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
   AI, 프로그래밍, 그리고 기술에 대한 생각을 기록하는 김형록(rokrokss)의 개발 블로그입니다. 머신러닝, 자연어처리, 웹 개발 등의 주제를 다룹니다.
@@ -172,7 +172,7 @@ exclude:
   - /test
   - /vendor
 
-collections_dir:
+
 collections:
   docs:
     output: true
