@@ -24,8 +24,8 @@ title   : ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
   ROKROKSS
 
-google_analytics:
-  id: G-4RE2T2DVVR
+# google_analytics:
+#   id: G-4RE2T2DVVR  # 주석 처리: analytics.google.tracking_id 사용
 
 ## => Language and Timezone
 ##############################
@@ -140,11 +140,11 @@ pageview:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : G-4RE2T2DVVR # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
