@@ -27,7 +27,7 @@ TFC를 사용할 경우 리모트머신이 하드코딩된 static credential 혹
 
 # Vault
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/tfc/0.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/tfc/0.png)
 
 AWS credential을 코드에 직접 넣어서 인증하게 만드는 것은 당연히 피해야한다.
 그렇다면 환경변수로 AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY를 주입해서 사용해야할까, 이 부분에서 Vault를 이용하면 이를 피할 수 있다.
@@ -38,7 +38,7 @@ AWS credential을 코드에 직접 넣어서 인증하게 만드는 것은 당�
 
 이왕 정리하는 김에 평소에 긴가민가했던 부분을 좀 적으려합니다. 도움이 되는 내용이 아닐 수도 있으니 필요 없다면 내려서 구현 내용을 확인바랍니다(어감이 너무 세서 존댓말 혼용...)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/tfc/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/tfc/1.png)
 
 공식페이지에서 Architecture overview 느낌으로 보여주는 그래프인데 여기 나오는 키워드 그대로 설명하진 않는다. 설명하기에는 복잡한데 굳이 자세한 아키텍쳐를 첨부한 느낌이다. 공식 설명은 이보다 좀 더 개념적으로 이루어져 있다.
 
@@ -69,11 +69,11 @@ Vault의 핵심인 Security Model.
 
 ### Key Rotation
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/tfc/2.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/tfc/2.png)
 
 Vault server는 *sealed* 상태로 실행된다. [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) 알고리즘을 사용하여 n개의 unseal key를 생성하며 k개의 key를 제공해야만 내부적으로 master key를 얻어 unsealed 상태로 전환할 수 있다. 그리고 이 master key는 backend와의 traffic을 암호화하는 encryption key를 암호화한다. 이를 통해 unseal key를 분산시켜 관리하면 특정 key가 노출되어도 unseal을 할 수 없다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/tfc/3.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/tfc/3.png)
 
 - Shamir's Secret Sharing
   - 간단하게 설명하자면 k-1차 함수 f(x)가 있을때 f(x)가 어떤 함수인지 알아내기 위해서는 k개의 점이 필요하며, k개의 점이 있다면 f(0)를 구할 수 있는 원리를 이용한 것이다. k보다 큰 n개의 좌표는 unseal key, f(0)는 master key에 대응된다.

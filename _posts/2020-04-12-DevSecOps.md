@@ -62,7 +62,7 @@ allowfullscreen
 
 ## Service Mesh!?
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/devsecops/0.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/0.png)
 
 (블로그에는 언급한 적이 없지만 여기저기서 서비스메쉬 언급을 굉장히 많이 하고 다닌다...)
 
@@ -75,7 +75,7 @@ network feature 뿐 아니라 application capability까지 제공하는 구조�
 
 ## 결론
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/devsecops/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/1.png)
 
 DevOps와 크게 다른 점은 없다. 기존의 DevOps 프로세스를 Secure하게 전달하자!
 

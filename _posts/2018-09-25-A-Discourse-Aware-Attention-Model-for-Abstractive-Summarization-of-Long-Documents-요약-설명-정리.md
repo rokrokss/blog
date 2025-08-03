@@ -27,10 +27,10 @@ Attention Mechanism만 알고 있다면 별로 어렵지 않습니다. 먼저 [�
  
 ## Model
  
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cohan-NAACL2018/1.png){:width="500px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/1.png){:width="500px"}
  
 ## Result
  
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Cohan-NAACL2018/2.png){:width="400px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/2.png){:width="400px"}
  
 빠진 수식들은 [본 논문](https://arxiv.org/pdf/1804.05685.pdf)을 보시기 바랍니닷.

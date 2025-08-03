@@ -43,7 +43,7 @@ tags:
 - 모델 성능을 평가하기 위한 라벨링 작업이 비싸다.
 
 #### 해결방법
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/0.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/0.png)
 - 메타데이터가 부족한 플레이리스트는 LLM 큐레이터 모델이 첫 15곡을 기반으로 상세설명을 생성한다.
     - 이는 30B 모델을 파인튜닝해 사용함. 에디터 플레이리스트와 설명이 존재하는 플레이리스트 데이터를 이용함.
 - LLM 라벨러 모델을 통해 학습데이터를 생성했다.
@@ -57,7 +57,7 @@ tags:
 
 ### 참고: LLM-as-Judge
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/1.png)
 *https://eugeneyan.com/writing/llm-evaluators*
 
 
@@ -95,7 +95,7 @@ tags:
 
 #### 해결방법
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/2.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/2.png)
 
 - 분석적 질문을 SQL 코드로 변환해주는 모델을 만들었다.
 - 테이블을 찾는 것조차 시간이 많이 걸리기 때문에 RAG를 통해 테이블을 특정해주는 구조로 만들었다.
@@ -121,7 +121,7 @@ tags:
 
 #### 해결방법
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/3.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/3.png)
 
 - Snoflake Cortex라는 합성 데이터(Synthetic Data) 생성을 위한 LLM 기반 파이프라인을 도입한다.
 - 기존 모델이 추론용 LLM에게 재질문을 하거나 슬랙 등의 API 호출을 할 수 있도록 만든다.(이 부분은 설명하지 않고 넘어갔다.)
@@ -131,7 +131,7 @@ tags:
 
 ### 참고: 합성 데이터 생성
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/4.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/4.png)
 - 흐릿해서 잘 안보이는데, 결과적으로 만들어진 정형 데이터는 Question, Answer, code_example, reference로 이루어진다.
 - 합성데이터 생성은 snowflake cortex로 처리한다. 도큐먼트를 살펴보면 snowflake는 관리형 DB를 가지고 있는 장점을 이용해 SQL 인터페이스로 LLM발 데이터 생성과 적재를 제공한다.
 - 이 데이터에 대한 사람의 검증과정과 재현 가능성을 강조하는데, 이 부분은 직접 구현한 툴로 해결했다고 한다.
@@ -149,7 +149,7 @@ tags:
 ### 숏폼 영상 추천 시스템
 > https://dan.naver.com/24/sessions/624
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/5.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/5.png)
 
 - 새로운 서비스이기에 콜드스타트 문제가 있다.
 - 기존에는 사용자의 검색 이력을 형태소 분석, 클립의 키워드와 카테고리 기반 매칭했는데, 이를 LLM 기반으로 개선했다.
@@ -175,31 +175,31 @@ tags:
 <summary>펼치기</summary>
 
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/6.png" alt="네이버 DAN24 슬라이드 1" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/6.png" alt="네이버 DAN24 슬라이드 1" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/7.png" alt="네이버 DAN24 슬라이드 2" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/7.png" alt="네이버 DAN24 슬라이드 2" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/8.png" alt="네이버 DAN24 슬라이드 3" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/8.png" alt="네이버 DAN24 슬라이드 3" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/9.png" alt="네이버 DAN24 슬라이드 4" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/9.png" alt="네이버 DAN24 슬라이드 4" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/10.png" alt="네이버 DAN24 슬라이드 5" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/10.png" alt="네이버 DAN24 슬라이드 5" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/11.png" alt="네이버 DAN24 슬라이드 6" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/11.png" alt="네이버 DAN24 슬라이드 6" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/12.png" alt="네이버 DAN24 슬라이드 7" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/12.png" alt="네이버 DAN24 슬라이드 7" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/13.png" alt="네이버 DAN24 슬라이드 8" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/13.png" alt="네이버 DAN24 슬라이드 8" style="max-width: 100%; height: auto;">
 </figure>
 <figure>
-  <img src="https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/14.png" alt="네이버 DAN24 슬라이드 9" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/14.png" alt="네이버 DAN24 슬라이드 9" style="max-width: 100%; height: auto;">
 </figure>
 
 </details>
@@ -216,13 +216,13 @@ tags:
 
 #### 해결방법
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/15.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/15.png)
 
 1. 유사컨텐츠 로직
   - 판매글 이미지와 임베딩과 텍스트 임베딩을 Pinecone에서 클러스터링하고, 클러스터 사이즈에 기반하여 유사도가 높은 글은 알림을 받는다.
   - 언급된 "파인콘 내부 로직에 따른 클러스터링"이 무엇인지 확실히는 모르겠으나 아마도 파인콘이 제공하는 유사도 검색을 그렇게 표현한 것 같다. 파인콘 Q&A 에이전트에 따르면 클러스터와 그래프 인덱싱이 모두 사용된 혼합형 알고리즘을 직접 개발해서 사용한다고 한다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/16.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/16.png)
 
 2. Zero-Shot with Auto-Generated Prompt를 통한 분류
   - 신고된 글 중 Positive 100개와 Negative 100개 게시글을 프롬프트에 전달해 특징을 추출한다.
@@ -230,10 +230,10 @@ tags:
 
 #### 성과
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/17.png)
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/18.png)
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/19.png)
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/20.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/17.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/18.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/19.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/20.png)
 
 - 유사컨텐츠 로직으로 선제적인 모니터링 가능
 - Zero-Shot with Auto-Generated Prompt를 통해 적은 라벨링 데이터로 패턴 탐지 가능
@@ -243,7 +243,7 @@ tags:
 
 ### 참고: HNSW 인덱스에 insert할 때 벌어지는 일
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/21.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/21.png)
 *https://towardsdatascience.com/similarity-search-part-4-hierarchical-navigable-small-world-hnsw-2aad4fe87d37/?ref=pangyoalto.com*
 
 1. 새 백터 생성, 레벨 랜덤 결정
@@ -264,16 +264,16 @@ tags:
 ### 동네업체 추천 서비스
 > https://medium.com/daangn/rag를-활용한-검색-서비스-만들기-211930ec74a1
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/22.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/22.png)
 
 #### 문제점
 - "용달", "동물병원" 등 업체가 동네생활 상위 검색어인데, 유저들은 이를 생활 게시물을 살펴보고 직접 취합해야하는 과정을 거쳐야 한다.
 
 #### 해결방법
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/23.png)
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/24.png)
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/25.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/23.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/24.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/25.png)
 
 - 게시글을 OpenAI API를 통해 임베딩 후, 댓글과 함께 ES에 저장한다.
 - 검색이 발생하면 검색어를 같은 API로 임베딩 후 ANN을 통해 유사도 검색을 수행한다. 이 때 메트릭은 코사인 유사도다.
@@ -286,7 +286,7 @@ tags:
 ### LLM을 통한 게시글 피쳐 추출과 추천
 > https://medium.com/daangn/당근에서-llm-활용하기-76131ecebce1
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/26.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/26.png)
 
 1. 중고판매글에서 판매 아이템의 브랜드, 사이즈, 세부 카테고리를 추출하여 추천에 사용
 2. 장소 언급은 있지만 장소 태깅이 안된 글에서 "언급된 장소" 추출
@@ -300,7 +300,7 @@ tags:
 ### 고객지원 에이전트 시스템
 > https://medium.com/daangn/지금의-방식이-최선일까-ai로-임팩트를-바꾸는-당근-운영실-289e6c1ba987
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/llm/27.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/llm/27.png)
 
 - 구조 설명이 목적인 글이 아니라서 각 단계가 어떻게 구현되었는지는 알 수 없다. 글만 봤을 때는 [dify.ai](https://youtu.be/A0w9JAUZwbk?si=Wi7xzRX_BKyV49cv)와 유사한 툴을 구현하고 있는 것 같다.
 - Vessl AI의 예시와 유사하지만 서포트 케이스와 고객의 데이터의 분류가 다양하기 때문에, 다양한 데이터 소스를 두고 있고, [Agentic RAG](https://youtu.be/0z9_MhcYvcY?si=6S1VrLKGHgPxAy3D)의 구조도 포한하고 있는 것으로 보인다.

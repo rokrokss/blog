@@ -50,13 +50,13 @@ author:
   weibo     :
   douban    :
   linkedin  :
-  github    : rokrokss/my_blog
+  github    : rokrokss/blog
   npm       :
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: rokrokss/my_blog
+repository: rokrokss/blog
 repository_tree: master
 
 

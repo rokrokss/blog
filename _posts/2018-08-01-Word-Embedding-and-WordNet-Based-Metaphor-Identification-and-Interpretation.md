@@ -36,7 +36,7 @@ Metaphor Detection task를 수행하는 연구는 많이 되어있다. 이제 Me
 
 ## Model
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Mao-ACL2018/1.png){:width="400px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Mao-ACL2018/1.png){:width="400px"}
 
 <br>
 

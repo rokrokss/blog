@@ -31,9 +31,9 @@ The corpus contains 11,038 books in 16 different genres
 
 https://www.smashwords.com
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Jang-SIGDIAL2017/1.png){:width="600px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Jang-SIGDIAL2017/1.png){:width="600px"}
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Jang-SIGDIAL2017/2.png){:width="300px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Jang-SIGDIAL2017/2.png){:width="300px"}
 
 
 

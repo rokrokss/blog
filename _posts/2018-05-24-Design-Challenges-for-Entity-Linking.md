@@ -51,7 +51,7 @@ Wikipedia에 없는 entity들. AIDA data는 비슷한 annotation으로 NIL entit
 
 ## Datasets
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Ling-TACL2015/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Ling-TACL2015/1.png)
 
 당시 approach들이 사용하는 dataset의 sparsity를 보여 주는 표.
 

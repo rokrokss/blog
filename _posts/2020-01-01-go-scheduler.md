@@ -24,7 +24,7 @@ Java thread의 갯수는 아무리 많아도 수만을 넘지 못하지만, Goro
 .Net이나 Java와 같은 환경에서 특별히 최적화되지 않은 user thread는 kernel thread와 1:1 매핑된다. 하지만, Go의 개발자들은 고루틴을 백만 개 이상 안정적으로 스케일하길 원했고,
 M:N 매핑(정확히는 M:P:N)을 사용했다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/go/mpn_threading.PNG)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/go/mpn_threading.PNG)
 
 고루틴과 커널스레드가 1:1 매핑이 아니므로, 실행가능 상태인 고루틴이 보관될 큐가 필요한데, Go는 **스레드가 아닌** 프로세서 객체마다 존재하는 **Local Run Queue**(이하 LRQ), 그리고 **Global Run Queue**(이하 GRQ)를 구현했다.
 채널이 런타임에 제어되고 채널마다 Wait Queue가 따로 있으므로 전체적인 Wait Queue는 추가로 필요하지 않다. 네트워크 응답 대기 상태인 고루틴은 **Network Poller**가 관리한다.

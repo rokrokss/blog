@@ -95,7 +95,7 @@ $$
 
 domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM 알고리즘을 사용하는데.......
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
 
 논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 논문을 직접 보는 것을 추천...
 
@@ -112,7 +112,7 @@ text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative revi
 
 ## Results
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
 
 
 

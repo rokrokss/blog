@@ -38,7 +38,7 @@ tags:
 
 ### 사이드패널의 채팅
 
-![채팅](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/chat.gif)
+![채팅](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/chat.gif)
 
 웹 익스텐션은 익스텐션 전용의 key-value 로컬스토리지를 사용할 수 있고, 추가로 indexDB라는 인덱싱과 ACID 트랜잭션이 지원되는 데이터 스토리지가 있다. 설정용 상태 관리에는 로컬스토리지를 사용하고, 채팅 스레드와 메시지에는 indexDB를 사용했다.
 
@@ -46,13 +46,13 @@ tags:
 
 ### 원 클릭 페이지 요약
 
-![요약](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/summarize.gif)
+![요약](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/summarize.gif)
 
 대화 스레드와 메시지가 저장되는 indexDB는 오버레이 메뉴에서 접근할 수 없다. 사이드패널이 열릴 때 행할 액션 타입과 페이지 데이터를 로컬스토리지에 저장하여, 열릴 때마다 초기화되는 사이드패널이 페이지 요약을 트리거할 수 있도록 했다. 이미 채팅 중인 상황이라면 현재 스레드에서 요약이 실행되도록 이벤트 트리거를 구성했다.
 
 ### 대조번역
 
-![대조번역](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/translate.gif)
+![대조번역](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/translate.gif)
 
 커스텀 웹 컴포넌트와 스크롤 리스너, 현재 스크린 내의 번역 대상 컴포넌트를 감지하는 DOM 순회 알고리즘을 통한 초안을 전 직장 동료인 [@gompu123](https://github.com/gompu123)님께서 구현해주셨다. 근황 얘기할 겸 만들고 있던 걸 공유드렸더니, 본인도 월 1.5만 원 내고 크롬 익스텐션을 쓰고 있었다고, 직접 만들어 보겠다고 해주셨다.
 
@@ -60,23 +60,23 @@ tags:
 
 ### 실시간 AI 자막
 
-![유튜브자막](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/youtube.gif)
+![유튜브자막](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/youtube.gif)
 
 유튜브 영상에 기존 자막이 존재할 때, 원하는 언어로 LLM 번역 자막을 실시간으로 생성하여 보여준다. 사용자가 느끼는 레이턴시을 줄이기 위해 자막을 청크 단위로 나누고, 영상의 어느 부분으로 이동하든 그 시점부터 우선적으로 번역되도록 구성했다. 또한 자막을 여러 줄로 출력할 수 있도록 레이아웃 설정 기능을 추가했다.
 
 ### PDF 파일 번역
 
-![PDF번역](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/pdf.gif)
+![PDF번역](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/pdf.gif)
 
 아래는 번역 결과물이다.
 
-![PDF번역결과](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/pdf_result.png)
+![PDF번역결과](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/pdf_result.png)
 
 [BabelDOC](https://github.com/funstory-ai/BabelDOC)이라는 라이브러리를 사용하면 PDF 파일을 기존 구조를 보존하면서 번역한 새로운 파일을 만들 수 있다. 처음에는 서버 없이 구현하고 싶었지만, 자바스크립트 진영에는 이만큼 해주는 오픈소스가 없었다. WASM을 이용해 파이썬을 실행하는 것도 CPython 디펜던시 때문에 한계가 있었다. 결국 서버를 띄워서 해결했는데, OCR 등으로 기본적으로 요구하는 리소스가 꽤 커서 아키텍처를 분리했다. 큐잉해주는 API 서버와 번역 서버를 분리하여, 번역은 GCP의 서버리스 서비스로 구현했다. 주머니 사정상 콜드스타트를 감당해야 한다. 보안상 사용자의 API 키를 요청에 실을 수 없어서 내 토큰으로 동작한다.
 
 ### 다크모드
 
-![다크모드](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/shizue/darkmode.gif)
+![다크모드](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/shizue/darkmode.gif)
 
 builder.io 블로그에서 오버레이 메뉴를 색상 반전시키는 걸 보고 같은 방식을 적극 활용했다. 추후에는 컬러 팔레트로 주요 색상 리스트를 모듈화해서 커스텀 테마를 제공하고 싶다.
 

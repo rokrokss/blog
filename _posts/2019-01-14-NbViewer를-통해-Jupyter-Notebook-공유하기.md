@@ -15,7 +15,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/0.png){:width="400px"}
+&nbsp;&nbsp;&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/0.png){:width="400px"}
 
 <br>
 
@@ -32,7 +32,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/1.png){:width="700px"}
+&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/1.png){:width="700px"}
 
 <br>
 
@@ -40,7 +40,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/2.png){:width="700px"}
+&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/2.png){:width="700px"}
 
 <br>
 
@@ -52,7 +52,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/nbviewer/3.png){:width="700px"}
+&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/3.png){:width="700px"}
 
 <br>
 

@@ -21,7 +21,7 @@ NMT에 Relation Network를 이용하여 RNN이 오래된 정보를 잊는 문제
 
 [논문 링크](https://arxiv.org/abs/1709.03980)
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Zhang-2017/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Zhang-2017/1.png)
 
 ## Introduction
 

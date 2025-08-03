@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-![vibetunnel](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/vibetunnel/0.png)
+![vibetunnel](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/vibetunnel/0.png)
 
 간단하게 말하면 컴퓨터의 터미널을 웹으로 컨트롤 할 수 있도록 로컬에 띄우고, cloudflared를 통해 외부 접근을 열어서 폰으로 접근하는 방식입니다.
 
@@ -33,3 +33,5 @@ vibetunnel 앱에서 세션을 생성하고, 해당 URL을 모바일로 접근�
 ## 사용
 
 혼밥하면서 클로드코드에게 일시키는 바이브코더가 됩니다.
+
+*최근 업데이트 이후 vibetunnel의 사용성이 매우 안 좋아졌다. 일단 기다려 보는 중...*

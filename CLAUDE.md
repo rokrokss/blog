@@ -136,12 +136,12 @@ The site uses these Jekyll plugins (via github-pages gem):
 
 Images are stored in `assets/images/` with subdirectories for different content:
 - Blog post images: Referenced using GitHub raw URLs
-- Example: `![alt text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/folder/image.png)`
+- Example: `![alt text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/folder/image.png)`
 
 ## Deployment Considerations
 
 - The site is configured for GitHub Pages deployment
-- Repository: `rokrokss/my_blog` (master branch)
+- Repository: `rokrokss/blog` (master branch)
 - CNAME file contains custom domain: rokrokss.com
 - Excluded files from build: docs/, test/, node_modules/, screenshots/
 

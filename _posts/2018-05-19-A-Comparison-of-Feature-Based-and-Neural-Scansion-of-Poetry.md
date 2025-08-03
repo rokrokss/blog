@@ -36,7 +36,7 @@ syllable이 space로 나뉘어 있으면 word structure를 잃으므로 WB(word 
 
 ## Results
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png)
 
 4B4V dataset에서는 Bi-LSTM+CRF+WB (S2S)가 제일 잘 나옴.
 

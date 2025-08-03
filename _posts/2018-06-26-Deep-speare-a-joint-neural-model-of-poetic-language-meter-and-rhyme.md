@@ -43,7 +43,7 @@ tags:
 1) language model, 2) pentameter model(iambic pentameter를 포착하기 위한),
 3) rhyme model, 이 세 component로 이루어진 joint model이다.
 
-![text](https://raw.githubusercontent.com/q0115643/my_blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
+![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
 
 요렇게 생겼다. 모든 component는 각자 sub-task를 수행하는 multitask learning으로 여기고 통째로 학습된다.
 
