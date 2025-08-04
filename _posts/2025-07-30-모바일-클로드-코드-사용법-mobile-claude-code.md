@@ -137,29 +137,14 @@ set -g mouse on
 set -g history-limit 50000
 set -g escape-time 0
 setw -g mode-keys vi
-```
-
-# iOS에서 Ctrl 조작 편의
-
-```
-set -g prefix C-a
+set -g prefix C-a # iOS에서 Ctrl 조작 편의
 unbind C-b
 bind C-a send-prefix
-```
-
-# 창 분할 단축키 단순화
-
-```
-unbind '"'
+unbind '"' # 창 분할 단축키 단순화
 unbind %
 bind - split-window -v
 bind | split-window -h
-```
-
-# 256color/Truecolor
-
-```
-set -g default-terminal "tmux-256color"
+set -g default-terminal "tmux-256color" # 256color/Truecolor
 set -ga terminal-overrides ",xterm-256color:RGB"
 ```
 
