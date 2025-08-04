@@ -61,34 +61,39 @@ vibetunnel 방식에서 웹뷰 품질 이슈가 심각해서 더 나은 방법�
 #### 원격 로그인(SSH) 켜기
 - **GUI 방법**: 시스템 설정 → 일반 → 공유 → 원격 로그인 On
 - **CLI 방법**:
-```bash
+- 
+```
 sudo systemsetup -setremotelogin on
 ```
 
 #### tmux 설치
-```bash
+
+```
 brew install tmux
 ```
 
 #### (권장) 공개키 인증만 허용
 `/etc/ssh/sshd_config`에 아래 설정 확인 후 재시작:
 
-```bash
+```
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
 
 재시작 명령:
-```bash
+
+```
 sudo launchctl kickstart -k system/com.openssh.sshd
 ```
+
 ### 2) Tailscale 연결
 
 1. 맥·아이폰에서 Tailscale 로그인
 2. Connected 상태 유지
 
 맥에서 Tailscale IP 확인:
-```bash
+
+```
 tailscale ip -4    # 예: 100.86.12.34
 ```
 
@@ -101,7 +106,8 @@ tailscale ip -4    # 예: 100.86.12.34
 2. **Public key** 복사
 
 #### 맥에 공개키 등록
-```bash
+
+```
 mkdir -p ~/.ssh && chmod 700 ~/.ssh
 nano ~/.ssh/authorized_keys   # 공개키 한 줄 붙여넣기
 chmod 600 ~/.ssh/authorized_keys
@@ -115,41 +121,54 @@ chmod 600 ~/.ssh/authorized_keys
 
 #### (강추) Startup Command 설정
 아래 명령을 Startup Command에 입력:
-```bash
+
+```
 tmux attach -t main || tmux new -s main
 ```
+
 → 접속할 때마다 기존 세션에 자동 접속하거나 없으면 새로 생성
 
 ### 4) tmux 미니 설정 (모바일 친화적)
 
 `~/.tmux.conf` 파일 생성:
 
-```tmux
+```
 set -g mouse on
 set -g history-limit 50000
 set -g escape-time 0
 setw -g mode-keys vi
+```
 
 # iOS에서 Ctrl 조작 편의
+
+```
 set -g prefix C-a
 unbind C-b
 bind C-a send-prefix
+```
 
 # 창 분할 단축키 단순화
+
+```
 unbind '"'
 unbind %
 bind - split-window -v
 bind | split-window -h
+```
 
 # 256color/Truecolor
+
+```
 set -g default-terminal "tmux-256color"
 set -ga terminal-overrides ",xterm-256color:RGB"
 ```
 
 설정 적용:
-```bash
+
+```
 tmux source-file ~/.tmux.conf
 ```
+
 또는 세션 재생성
 
 ## 사용 흐름
