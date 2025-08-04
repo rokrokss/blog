@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-# 1: vibetunnel + cloudflared
+# vibetunnel + cloudflared
 
 ![vibetunnel](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/vibetunnel/0.png)
 
@@ -34,7 +34,7 @@ SSH와 근본적으로 같지만 웹뷰에 맞춘 줄바꿈과 세션 관리 메
 
 > ⚠️ **주의**: 최근 업데이트 이후 vibetunnel의 사용성이 매우 안 좋아졌습니다.
 
-# 2: tailscale + termius
+# tailscale + termius
 
 ![terminus](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/vibetunnel/1.jpeg)
 
