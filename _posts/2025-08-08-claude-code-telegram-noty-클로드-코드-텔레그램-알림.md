@@ -1,7 +1,7 @@
 ---
 comments: true
 title: Claude Code 텔레그램으로 알림 받기
-key: 202507300
+key: 202508080
 picture_frame: shadow
 tags:
   - AI
