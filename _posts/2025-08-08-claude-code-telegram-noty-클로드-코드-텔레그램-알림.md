@@ -16,7 +16,7 @@ Claude Code가 작업할 때마다 실시간으로 텔레그램 알림을 받는
 
 Claude Code는 강력하지만 장시간 작업 시 진행 상황을 파악하기 어려운 경우가 있습니다. 특히 대규모 리팩토링이나 복잡한 디버깅 작업 중에는 "지금 뭐하고 있는지", "멈춘 건 아닌지" 궁금할 때가 많습니다.
 
-Claude Code Telegram Notification Hook은 이런 상황을 위한 간단한 솔루션입니다. Claude Code의 모든 작업을 텔레그램으로 실시간 알림받을 수 있습니다.
+Claude Code Telegram Notification Hook은 이런 상황을 위한 간단한 솔루션입니다. Go로 구현된 경량 바이너리가 Claude Code의 모든 작업을 텔레그램으로 실시간 알림받을 수 있게 해줍니다.
 
 ## 설치
 
@@ -25,7 +25,7 @@ Claude Code Telegram Notification Hook은 이런 상황을 위한 간단한 솔�
 | 도구 | 용도 | 비용 |
 |------|------|------|
 | **텔레그램** | 알림 수신 | 무료 |
-| **Python 3** | Hook 스크립트 실행 | 무료 |
+| **Go 1.20+** | 바이너리 빌드 (선택사항) | 무료 |
 | **Claude Code** | AI 코딩 도구 | 구독 필요 |
 
 ### 1단계: 텔레그램 봇 생성
@@ -59,11 +59,15 @@ cd claude-code-telegram-notify-hook
 export CC_HOOK_TELEGRAM_BOT_TOKEN="your_bot_token"
 export CC_HOOK_TELEGRAM_CHAT_ID="your_chat_id"
 
+# Go 바이너리 빌드 (선택사항 - 미리 빌드된 바이너리 포함)
+cd .claude/hooks
+./build.sh
+
 # Hook 파일 복사
 cp -r .claude ~/.claude
 
-# 실행 권한 부여
-chmod +x ~/.claude/hooks/notification.py
+# 실행 권한 부여 (바이너리 사용 시)
+chmod +x ~/.claude/hooks/notification-bin
 ```
 
 ### 4단계: 작동 확인
@@ -90,6 +94,10 @@ Claude Code가 작업할 때마다 다음과 같은 형식의 알림을 받습�
 ```
 
 ## 주요 기능
+
+### 작동 원리
+
+Claude Code Hook 트리거 → Go 바이너리가 이벤트 읽기 → 텔레그램으로 포맷된 메시지 전송
 
 ### 지원 이벤트
 
@@ -131,22 +139,17 @@ export CC_HOOK_TELEGRAM_CHAT_ID="your_chat_id"
 
 ### 필터링 커스터마이징
 
-특정 이벤트만 알림받으려면 `notification.py` 수정:
-
-```python
-# 예: 파일 작업만 알림
-if event_type in ['FileEdit', 'FileCreate', 'FileDelete']:
-    send_telegram_message(message)
-```
+특정 이벤트만 알림받으려면 Go 코드를 수정하여 재빌드하거나, 바이너리 대신 스크립트를 사용할 수 있습니다.
 
 ## 문제 해결
 
 | 문제 | 해결 방법 |
 |------|-----------|
 | **알림이 오지 않음** | 토큰/ID 확인, 봇과 대화 시작 여부 확인 |
-| **권한 오류** | `chmod +x ~/.claude/hooks/notification.py` 실행 |
+| **권한 오류** | `chmod +x ~/.claude/hooks/notification-bin` 실행 |
 | **토큰 오류** | 토큰을 정확히 복사했는지 확인 (대소문자 구분) |
-| **그룹 채팅 실패** | 음수 Chat ID 사용, 봇 관리자 권한 확인 |
+| **그룹 채팅 실패** | 음수 Chat ID 사용 (예: `-1001234567890`), 봇 관리자 권한 확인 |
+| **빌드 실패** | Go 1.20+ 설치 확인, `go mod tidy` 실행 |
 
 ## 보안 주의사항
 
