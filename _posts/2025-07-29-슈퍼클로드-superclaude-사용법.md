@@ -211,21 +211,6 @@ python3 -m SuperClaude install
 
 더 자세한 설치 방법은 [설치 가이드](https://github.com/rokrokss/SuperClaude-doc-kr/blob/main/installation-guide-ko.md)를 참조하세요.
 
-## 🤝 기여하기
-
-이 번역 프로젝트에 기여하고 싶으시다면:
-- 🐛 **오타나 번역 오류 신고**
-- 📝 **번역 개선 제안**
-- 🔄 **최신 문서 업데이트 번역**
-
-## 📄 라이선스
-
-이 번역 프로젝트는 원본 SuperClaude 프로젝트와 동일한 MIT 라이선스를 따릅니다.
-
----
-
-**원본 제작자**: SuperClaude 개발팀  
-**번역**: 한국 개발자 커뮤니티를 위한 번역 프로젝트
 
 ---
 
