@@ -15,4 +15,3 @@ tags:
 - https://www.buildwithclaude.com/browse
 - https://www.aitmpl.com/
 - https://github.com/wshobson/agents
-- https://github.com/VoltAgent/awesome-claude-code-subagents
