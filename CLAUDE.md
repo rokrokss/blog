@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll-based blog built on the TeXt Theme framework. The blog is hosted at https://rokrokss.com and uses GitHub Pages for deployment.
+This is a Jekyll-based blog built on the TeXt Theme framework. The blog is hosted at https://kimhyungrok.com and uses GitHub Pages for deployment.
 
 ## Common Development Commands
 
@@ -142,7 +142,7 @@ Images are stored in `assets/images/` with subdirectories for different content:
 
 - The site is configured for GitHub Pages deployment
 - Repository: `rokrokss/blog` (master branch)
-- CNAME file contains custom domain: rokrokss.com
+- CNAME file contains custom domain: kimhyungrok.com
 - Excluded files from build: docs/, test/, node_modules/, screenshots/
 
 ## Analytics and Comments

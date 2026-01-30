@@ -36,7 +36,7 @@ global attention model은 모든 source word에 attended되고, local attention 
 
 ## Neural Machine Translation
 
-[Attention-based NMT를 설명했던 포스트](http://rokrokss.com/2018/05/04/Learning-to-Parse-and-Translate-Improves-Neural-Machine-Translation.html#2-neural-machine-translation)
+[Attention-based NMT를 설명했던 포스트](http://kimhyungrok.com/2018/05/04/Learning-to-Parse-and-Translate-Improves-Neural-Machine-Translation.html#2-neural-machine-translation)
 
 NMT는 encoder와 decoder로 구성되며 조건부확률 $${p(y|x)}$$ 를 모델링하는 뉴럴넷이다.
 식은 아래와 같다.

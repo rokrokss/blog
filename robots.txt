@@ -1,4 +1,4 @@
-# robots.txt for https://rokrokss.com
+# robots.txt for https://kimhyungrok.com
 User-agent: *
 Allow: /
 
@@ -14,7 +14,7 @@ Allow: /assets/*.js
 Allow: /assets/images/
 
 # Sitemap location
-Sitemap: https://rokrokss.com/sitemap.xml
+Sitemap: https://kimhyungrok.com/sitemap.xml
 
 # Crawl-delay for bots that support it
 Crawl-delay: 1

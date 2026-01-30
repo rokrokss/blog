@@ -13,14 +13,13 @@
 
 # config file for development,  DELETE IT IF YOU WANT.
 
-
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://rokrokss.com # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
-title   : ROKROKSS
+url: https://kimhyungrok.com # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: # does not include hostname
+title: ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
   ROKROKSS
 
@@ -32,41 +31,37 @@ description: > # this means to ignore newlines until "Language & timezone"
 lang: kr # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
 timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
-
 ## => Author and Social
 ##############################
 author:
-  type      : person # "person" (default), "organization"
-  name      : 김형록
-  url       : https://rokrokss.com
-  avatar    : /assets/apple-touch-icon.png
+  type: person # "person" (default), "organization"
+  name: 김형록
+  url: https://kimhyungrok.com
+  avatar: /assets/apple-touch-icon.png
   bio: >
     TeXt Theme for development.
-  email     : 1
-  facebook  : 1
-  twitter   : 1
+  email: 1
+  facebook: 1
+  twitter: 1
   googleplus: 1
-  weibo     : 1
-  douban    : 1
-  linkedin  : 1
-  github    : 1
-  npm       : 1
-
+  weibo: 1
+  douban: 1
+  linkedin: 1
+  github: 1
+  npm: 1
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
 repository: rokrokss/blog
 repository_tree: master
 
-
 ## => Paths
 ##############################
 paths:
-  root    : # title link url, "/" (default)
-  home    : /test/ # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
-  rss     : # "/feed.xml" (default)
-
+  root: # title link url, "/" (default)
+  home: /test/ # home layout url, "/" (default)
+  archive: # "/archive.html" (default)
+  rss: # "/feed.xml" (default)
 
 ## => Post
 ##############################
@@ -80,7 +75,6 @@ license: CC-BY-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 toc:
   selectors: "h1,h2,h3,h4,h5,h6" # "h1,h2,h3" (default)
 
-
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
@@ -93,17 +87,14 @@ mermaid: true # false (default), true
 ## Chart
 chart: true # false (default), true
 
-
 ## => Paginate
 ##############################
 paginate: 4
 paginate_path: /test/page:num # don't change this unless for special need
 
-
 ## => Sources
 ##############################
 sources: unpkg # bootcdn (default), unpkg
-
 
 ## => Comments
 ##############################
@@ -117,13 +108,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
+    clientID: # GitHub Application Client ID
     clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    repository: # GitHub repo
+    owner: # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
-
 
 ## => Pageview
 ##############################
@@ -132,10 +122,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
-
+    app_id: # LeanCloud App id
+    app_key: # LeanCloud App key
+    app_class: # LeanCloud App class
 
 ## => Analytics
 ##############################
@@ -144,15 +133,14 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : G-4RE2T2DVVR # Google Analytics id for the site
+    tracking_id: G-4RE2T2DVVR # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
-
 
 ## => Build
 ##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
+markdown: kramdown
+highlighter: rouge
+permalink: date
 
 exclude:
   - CHANGELOG.md
@@ -223,7 +211,6 @@ defaults:
       lang: zh
       show_edit_on_github: true
       show_date: false
-
 
 ## => Plugins
 ##############################

@@ -11,16 +11,13 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-
-
-
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://rokrokss.com # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : / # does not include hostname
-title   : ROKROKSS
+url: https://kimhyungrok.com # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: / # does not include hostname
+title: ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
   AI, 프로그래밍, 그리고 기술에 대한 생각을 기록하는 김형록(rokrokss)의 개발 블로그입니다. 머신러닝, 자연어처리, 웹 개발 등의 주제를 다룹니다.
 
@@ -32,40 +29,36 @@ description: > # this means to ignore newlines until "Language & timezone"
 lang: kr # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
 timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
-
 ## => Author and Social
 ##############################
 author:
-  type      : person # "person" (default), "organization"
-  name      : 김형록
-  url       : https://rokrokss.com
-  avatar    : # path or url of avatar image
-  bio       :
-  email     : q0115643@gmail.com
-  facebook  : 100004915320124 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : rokrokssss # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  type: person # "person" (default), "organization"
+  name: 김형록
+  url: https://kimhyungrok.com
+  avatar: # path or url of avatar image
+  bio:
+  email: q0115643@gmail.com
+  facebook: 100004915320124 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter: rokrokssss # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
-  linkedin  : rokrokss # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name/
-  github    : rokrokss # "user_name" the last part of your profile url, e.g. https://github.com/user_name
-  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
-
+  weibo: # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  douban: # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
+  linkedin: rokrokss # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name/
+  github: rokrokss # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm: # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
 repository: rokrokss/blog
 repository_tree: master
 
-
 ## => Paths
 ##############################
 paths:
-  root    : # title link url, "/" (default)
-  home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
-  rss     : # "/feed.xml" (default)
-
+  root: # title link url, "/" (default)
+  home: # home layout url, "/" (default)
+  archive: # "/archive.html" (default)
+  rss: # "/feed.xml" (default)
 
 ## => Post
 ##############################
@@ -80,7 +73,6 @@ license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4
 toc:
   selectors: "h1,h2,h3" # "h1,h2,h3" (default)
 
-
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
@@ -93,17 +85,14 @@ mermaid: true # false (default), true
 ## Chart
 chart: true # false (default), true
 
-
 ## => Paginate
 ##############################
 paginate: 5
 paginate_path: /page:num # don't change this unless for special need
 
-
 ## => Sources
 ##############################
 sources: unpkg # bootcdn (default), unpkg
-
 
 ## => Comments
 ##############################
@@ -122,8 +111,7 @@ comments:
     #repository  : # GitHub repo
     #owner       : # GitHub repo owner
     #admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
-
+    # - your GitHub Id
 
 ## => Pageview
 ##############################
@@ -132,10 +120,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : gg2EhhsosMcQOBEApofBaScO-gzGzoHsz # LeanCloud App id
-    app_key   : H1s5eqBlwLcHWuma9D8lFajn # LeanCloud App key
-    app_class : rokrok # LeanCloud App class
-
+    app_id: gg2EhhsosMcQOBEApofBaScO-gzGzoHsz # LeanCloud App id
+    app_key: H1s5eqBlwLcHWuma9D8lFajn # LeanCloud App key
+    app_class: rokrok # LeanCloud App class
 
 ## => Analytics
 ##############################
@@ -144,15 +131,14 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : G-4RE2T2DVVR # Google Analytics id for the site
+    tracking_id: G-4RE2T2DVVR # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
-
 
 ## => Build
 ##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
+markdown: kramdown
+highlighter: rouge
+permalink: date
 
 exclude:
   - CHANGELOG.md
@@ -171,7 +157,6 @@ exclude:
   - /screenshots
   - /test
   - /vendor
-
 
 collections:
   docs:
@@ -193,7 +178,6 @@ defaults:
         toc: true
       show_edit_on_github: true
       pageview: true
-
 
 ## => Plugins
 ##############################
