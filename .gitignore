@@ -10,3 +10,14 @@ vendor/bundle/
 .codex
 .claude
 .mcp.json
+
+# Private portfolio: local authoring and PDF submission only.
+/portfolio.html
+/_data/portfolio.json
+/_layouts/portfolio.html
+/assets/css/portfolio.css
+/assets/js/portfolio.js
+/assets/images/portfolio/
+/tools/portfolio-diagrams.py
+/portfolio*.pdf
+/exports/portfolio/
