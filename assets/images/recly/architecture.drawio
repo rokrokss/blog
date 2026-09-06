@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="recly-architecture" name="Recly Architecture">
+    <mxGraphModel dx="1480" dy="1030" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1480" pageHeight="1030" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0" y="0" width="1480" height="1030" />
+        </mxCell>
+        <mxCell id="3" value="RECLY / ARCHITECTURE" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="38" width="300" height="19.5" />
+        </mxCell>
+        <mxCell id="4" value="Recly 아키텍처" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=34;fontColor=#172B4D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="65" width="544" height="44.2" />
+        </mxCell>
+        <mxCell id="5" value="녹음 파일을 Drive에 올리고 전사한 뒤, 평소 쓰는 AI에서 활용하는 구조" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="116" width="779" height="24.7" />
+        </mxCell>
+        <mxCell id="6" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5F8FC;strokeColor=#D8E2F0;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="175" width="900" height="565" />
+        </mxCell>
+        <mxCell id="7" value="01   사용자 기기 · Recly 앱" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#244F88;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="64" y="190" width="399" height="24.7" />
+        </mxCell>
+        <mxCell id="8" value="자체 백엔드 없이 실행 · 워치의 녹음은 짝지은 폰이 이어서 처리" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="64" y="221" width="576" height="20.8" />
+        </mxCell>
+        <mxCell id="9" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#D8DFEA;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="264" width="225" height="143" />
+        </mxCell>
+        <mxCell id="10" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23356AB5%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%2219%22%20y%3D%222%22%20width%3D%2218%22%20height%3D%2212%22%20rx%3D%223%22%2F%3E%3Crect%20x%3D%2219%22%20y%3D%2242%22%20width%3D%2218%22%20height%3D%2212%22%20rx%3D%223%22%2F%3E%3Crect%20x%3D%2210%22%20y%3D%2212%22%20width%3D%2236%22%20height%3D%2232%22%20rx%3D%229%22%2F%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2228%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="83" y="281" width="56" height="56" />
+        </mxCell>
+        <mxCell id="11" value="워치" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#172B4D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="150" y="286" width="240" height="27.3" />
+        </mxCell>
+        <mxCell id="12" value="Galaxy Watch · Apple Watch" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="83" y="340" width="416" height="20.8" />
+        </mxCell>
+        <mxCell id="13" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#D8DFEA;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="375" y="264" width="245" height="143" />
+        </mxCell>
+        <mxCell id="14" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23356AB5%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%2213%22%20y%3D%223%22%20width%3D%2230%22%20height%3D%2250%22%20rx%3D%226%22%2F%3E%3Cpath%20d%3D%22M23%209h10M25%2046h6%22%2F%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2228%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="393" y="281" width="56" height="56" />
+        </mxCell>
+        <mxCell id="15" value="폰" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#172B4D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="460" y="286" width="240" height="27.3" />
+        </mxCell>
+        <mxCell id="16" value="Android · iPhone" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="393" y="340" width="256" height="20.8" />
+        </mxCell>
+        <mxCell id="17" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#D8DFEA;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="665" y="264" width="245" height="143" />
+        </mxCell>
+        <mxCell id="18" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23356AB5%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%227%22%20width%3D%2250%22%20height%3D%2233%22%20rx%3D%224%22%2F%3E%3Cpath%20d%3D%22M28%2040v10M16%2050h24M17%2024h4l3-7%205%2015%204-11h6%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="683" y="281" width="56" height="56" />
+        </mxCell>
+        <mxCell id="19" value="데스크톱" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#172B4D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="286" width="240" height="27.3" />
+        </mxCell>
+        <mxCell id="20" value="macOS · Windows" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="683" y="340" width="240" height="20.8" />
+        </mxCell>
+        <mxCell id="21" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#356AB5;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="290" y="320" />
+            <mxPoint as="targetPoint" x="375" y="320" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="파일 전달" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#356AB5;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="212.0" y="288" width="240" height="18.2" />
+        </mxCell>
+        <mxCell id="23" value="검증·ACK" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="212.0" y="331" width="240" height="16.900000000000002" />
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#356AB5;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="498" y="407" />
+            <mxPoint as="targetPoint" x="498" y="461" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#356AB5;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="788" y="407" />
+            <mxPoint as="targetPoint" x="788" y="461" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#9DB9E0;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="461" width="845" height="210" />
+        </mxCell>
+        <mxCell id="27" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23356AB5%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%2212%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%225%22%2F%3E%3Cpath%20d%3D%22M21%202v10M35%202v10M21%2044v10M35%2044v10M2%2021h10M2%2035h10M44%2021h10M44%2035h10M21%2023l-4%205%204%205M35%2023l4%205-4%205%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="480" width="56" height="56" />
+        </mxCell>
+        <mxCell id="28" value="Kotlin Multiplatform · 공통 코어" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#172B4D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="159" y="485" width="644" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="29" value="각 폰·데스크톱에 포함되어 실행되는 라이브러리" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="159" y="520" width="425" height="22.1" />
+        </mxCell>
+        <mxCell id="30" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EFF5FC;strokeColor=#EFF5FC;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="87" y="558" width="248" height="88" />
+        </mxCell>
+        <mxCell id="31" value="워크플로우 실행" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#244F88;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="102" y="571" width="240" height="23.400000000000002" />
+        </mxCell>
+        <mxCell id="32" value="업로드 → 선택적 전사·웹훅" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="102" y="604" width="240" height="19.5" />
+        </mxCell>
+        <mxCell id="33" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EFF5FC;strokeColor=#EFF5FC;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="354" y="558" width="248" height="88" />
+        </mxCell>
+        <mxCell id="34" value="작업 큐 · 상태 저장" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#244F88;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="369" y="571" width="240" height="23.400000000000002" />
+        </mxCell>
+        <mxCell id="35" value="SQLDelight · 실패 단계 재시도" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="369" y="604" width="330" height="19.5" />
+        </mxCell>
+        <mxCell id="36" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EFF5FC;strokeColor=#EFF5FC;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="621" y="558" width="267" height="88" />
+        </mxCell>
+        <mxCell id="37" value="외부 서비스 어댑터" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#244F88;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="636" y="571" width="240" height="23.400000000000002" />
+        </mxCell>
+        <mxCell id="38" value="Drive · 전사 제공자 · 웹훅" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="636" y="604" width="285" height="19.5" />
+        </mxCell>
+        <mxCell id="39" value="플랫폼별 구현: 오디오 캡처 · 워치 전송 · OS 스케줄러 · 인증 · UI" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="694" width="688" height="20.8" />
+        </mxCell>
+        <mxCell id="40" value="02   사용자가 연결한 서비스" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#276E5A;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="985" y="190" width="323" height="24.7" />
+        </mxCell>
+        <mxCell id="41" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5FAF7;strokeColor=#C8DFD3;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="985" y="264" width="450" height="140" />
+        </mxCell>
+        <mxCell id="42" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23368369%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M20%205h16l17%2030-8%2014H11L3%2035z%22%2F%3E%3Cpath%20d%3D%22M20%205l17%2030H3M36%205L11%2049M37%2035l8%2014%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1003" y="282" width="56" height="56" />
+        </mxCell>
+        <mxCell id="43" value="Google Drive" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#225A48;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1076" y="287" width="276" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="44" value="원본 오디오 · 메타데이터 · 전사 결과" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#476C5F;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="335" width="374" height="22.1" />
+        </mxCell>
+        <mxCell id="45" value="사용자 계정의 파일 저장소" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="364" width="240" height="19.5" />
+        </mxCell>
+        <mxCell id="46" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5FAF7;strokeColor=#C8DFD3;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="985" y="461" width="450" height="140" />
+        </mxCell>
+        <mxCell id="47" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23368369%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M5%2023v10M14%2015v26M23%207v42M32%2018v20M41%2012v32M50%2022v12%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1003" y="479" width="56" height="56" />
+        </mxCell>
+        <mxCell id="48" value="전사 API" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#225A48;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1076" y="484" width="240" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="49" value="오디오 전송 ↔ 전사 결과" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#476C5F;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="532" width="240" height="22.1" />
+        </mxCell>
+        <mxCell id="50" value="선택한 제공자 · 사용자 API 키" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="561" width="285" height="19.5" />
+        </mxCell>
+        <mxCell id="51" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F5FAF7;strokeColor=#C8DFD3;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="985" y="635" width="450" height="140" />
+        </mxCell>
+        <mxCell id="52" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23368369%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2237%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2237%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2213%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M15%2037l13-24M28%2013l12%2024M15%2037h25%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1003" y="653" width="56" height="56" />
+        </mxCell>
+        <mxCell id="53" value="웹훅" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#225A48;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1076" y="658" width="240" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="54" value="메타데이터 · Drive 링크 전달" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#476C5F;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="706" width="323" height="22.1" />
+        </mxCell>
+        <mxCell id="55" value="선택적 후속 자동화" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="735" width="240" height="19.5" />
+        </mxCell>
+        <mxCell id="56" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#368369;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="910" y="495" />
+            <mxPoint as="targetPoint" x="985" y="334" />
+            <Array as="points">
+              <mxPoint x="958" y="495" />
+              <mxPoint x="958" y="334" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57" value="파일 저장" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#368369;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="828" y="435" width="240" height="18.2" />
+        </mxCell>
+        <mxCell id="58" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=block;strokeColor=#368369;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="910" y="531" />
+            <mxPoint as="targetPoint" x="985" y="531" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#368369;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="910" y="613" />
+            <mxPoint as="targetPoint" x="985" y="705" />
+            <Array as="points">
+              <mxPoint x="963" y="613" />
+              <mxPoint x="963" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="60" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF7FF;strokeColor=#DBD0EE;strokeWidth=1.5;dashed=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="809" width="1395" height="162" />
+        </mxCell>
+        <mxCell id="61" value="03   사용자의 AI · Recly 밖에서 활용" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#72549D;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="824" width="486" height="23.400000000000002" />
+        </mxCell>
+        <mxCell id="62" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%238764B2%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M28%203l6%2018%2019%207-19%207-6%2018-7-18-18-7%2018-7z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="68" y="870" width="56" height="56" />
+        </mxCell>
+        <mxCell id="63" value="평소 쓰는 AI" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#5C3F83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="140" y="872" width="240" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="64" value="Claude · ChatGPT · Codex 등" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#75638F;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="140" y="907" width="442" height="22.1" />
+        </mxCell>
+        <mxCell id="65" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#8764B2;strokeWidth=2;dashed=0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="475" y="902" />
+            <mxPoint as="targetPoint" x="590" y="902" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="66" value="스킬·지침" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#8764B2;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="412.0" y="869" width="240" height="18.2" />
+        </mxCell>
+        <mxCell id="67" value="" style="shape=image;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%238764B2%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%203h23l10%2011v39H12zM35%203v12h10M20%2025h17M20%2034h17M20%2043h10%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="616" y="873" width="56" height="56" />
+        </mxCell>
+        <mxCell id="68" value="회의록 · 결정 기록 · 후속 작업" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#5C3F83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="688" y="873" width="437" height="29.900000000000002" />
+        </mxCell>
+        <mxCell id="69" value="사용자의 형식과 작업 맥락에 맞춰 Notion 등에 정리" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#75638F;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="688" y="908" width="527" height="22.1" />
+        </mxCell>
+        <mxCell id="70" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#8764B2;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1435" y="335" />
+            <mxPoint as="targetPoint" x="350" y="865" />
+            <Array as="points">
+              <mxPoint x="1455" y="335" />
+              <mxPoint x="1455" y="793" />
+              <mxPoint x="350" y="793" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71" value="AI가 Drive의 전사 결과를 읽음" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#8764B2;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="635" y="772" width="280" height="18.2" />
+        </mxCell>
+        <mxCell id="72" value="실선: 파일·API 처리     점선: 선택적 연동 / 외부 AI 활용" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="990" width="585" height="19.5" />
+        </mxCell>
+        <mxCell id="73" value="전사는 업로드 이후 실행 · 요약은 앱 밖에서" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontColor=#61728B;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="941" y="990" width="375" height="19.5" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

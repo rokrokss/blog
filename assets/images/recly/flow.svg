@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Press record on your watch, your phone, or your Mac or Windows PC. A watch hands off to the phone; the phone or the PC uploads to your Google Drive and transcribes with your own key. Then anything, with your own AI.">
+  <!-- README hero: the path from a press to your own AI. Same palette as icon.svg
+       (ground #F7F7F5, surface #FFFFFF, ink #111111, record #DA1E28) so it reads the same on
+       GitHub's light and dark pages. Fonts are the system stack: GitHub serves this as an <img>. -->
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.6" fill="#888884" opacity="0.28"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111111"/>
+    </marker>
+    <style>
+      .t  { font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; fill: #111111; }
+      .title { font-size: 18px; font-weight: 700; }
+      .sub   { font-size: 14px; fill: #6B6B68; }
+      .band  { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; fill: #6B6B68; }
+      .note  { font-size: 13px; fill: #6B6B68; }
+      .ink   { fill: none; stroke: #111111; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .node  { fill: #FFFFFF; stroke: #111111; stroke-width: 2.5; }
+      .wire  { fill: none; stroke: #111111; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" rx="20" fill="#F7F7F5"/>
+  <rect width="1200" height="480" rx="20" fill="url(#dots)"/>
+
+  <!-- bands: what Recly does, what is yours -->
+  <g class="t band">
+    <line x1="40" y1="64" x2="850" y2="64" stroke="#111111" stroke-width="1.5"/>
+    <line x1="40" y1="58" x2="40" y2="70" stroke="#111111" stroke-width="1.5"/>
+    <line x1="850" y1="58" x2="850" y2="70" stroke="#111111" stroke-width="1.5"/>
+    <rect x="270" y="52" width="350" height="24" fill="#F7F7F5"/>
+    <text x="445" y="69" text-anchor="middle">Recly · one press, then automatic</text>
+
+    <line x1="880" y1="64" x2="1130" y2="64" stroke="#111111" stroke-width="1.5"/>
+    <line x1="880" y1="58" x2="880" y2="70" stroke="#111111" stroke-width="1.5"/>
+    <line x1="1130" y1="58" x2="1130" y2="70" stroke="#111111" stroke-width="1.5"/>
+    <rect x="920" y="52" width="170" height="24" fill="#F7F7F5"/>
+    <text x="1005" y="69" text-anchor="middle">Yours · just ask</text>
+  </g>
+
+  <!-- wires: watch → phone → Drive → AI, and the desktop straight into Drive -->
+  <line class="wire" x1="290" y1="175" x2="318" y2="175"/>
+  <line class="wire" x1="570" y1="175" x2="598" y2="175"/>
+  <line class="wire" x1="850" y1="175" x2="878" y2="175"/>
+  <path class="wire" d="M290,355 H725 V254"/>
+
+  <!-- 1a · watch -->
+  <g transform="translate(40,100)">
+    <rect width="250" height="150" rx="12" class="node"/>
+    <g transform="translate(101,16)">
+      <rect x="14" y="0" width="20" height="9" rx="2" class="ink"/>
+      <rect x="14" y="43" width="20" height="9" rx="2" class="ink"/>
+      <rect x="4" y="9" width="40" height="34" rx="9" class="ink"/>
+      <rect x="18" y="20" width="12" height="12" rx="2" fill="#DA1E28"/>
+    </g>
+    <text class="t title" x="125" y="98" text-anchor="middle">Press record</text>
+    <text class="t sub" x="125" y="124" text-anchor="middle">on the watch you already wear</text>
+  </g>
+
+  <!-- 1b · desktop -->
+  <g transform="translate(40,280)">
+    <rect width="250" height="150" rx="12" class="node"/>
+    <g transform="translate(93,18)">
+      <rect x="0" y="0" width="64" height="40" rx="5" class="ink"/>
+      <line x1="20" y1="52" x2="44" y2="52" class="ink"/>
+      <line x1="32" y1="40" x2="32" y2="52" class="ink"/>
+      <rect x="26" y="14" width="12" height="12" rx="2" fill="#DA1E28"/>
+    </g>
+    <text class="t title" x="125" y="98" text-anchor="middle">Or record a meeting</text>
+    <text class="t sub" x="125" y="124" text-anchor="middle">Mac or Windows PC, both sides</text>
+  </g>
+
+  <!-- 2 · phone -->
+  <g transform="translate(320,100)">
+    <rect width="250" height="150" rx="12" class="node"/>
+    <g transform="translate(110,14)">
+      <rect x="0" y="0" width="30" height="54" rx="6" class="ink"/>
+      <line x1="11" y1="6" x2="19" y2="6" class="ink"/>
+      <rect x="9" y="19" width="12" height="12" rx="2" fill="#DA1E28"/>
+      <circle cx="15" cy="46" r="1.8" fill="#111111"/>
+    </g>
+    <text class="t title" x="125" y="98" text-anchor="middle">Hands off to your phone</text>
+    <text class="t sub" x="125" y="124" text-anchor="middle">by itself, or press record here instead</text>
+  </g>
+
+  <!-- 3 · drive + transcript -->
+  <g transform="translate(600,100)">
+    <rect width="250" height="150" rx="12" class="node"/>
+    <g transform="translate(81,14)">
+      <path d="M14,44 h34 a12,12 0 0 0 1,-24 a16,16 0 0 0 -31,-4 a11,11 0 0 0 -4,28 z" class="ink"/>
+      <g transform="translate(52,6)">
+        <path d="M0,0 h22 l12,12 v38 h-34 z" fill="#FFFFFF" class="ink"/>
+        <path d="M22,0 v12 h12" class="ink"/>
+        <line x1="8" y1="24" x2="26" y2="24" class="ink"/>
+        <line x1="8" y1="33" x2="26" y2="33" class="ink"/>
+        <line x1="8" y1="42" x2="19" y2="42" class="ink"/>
+      </g>
+    </g>
+    <text class="t title" x="125" y="98" text-anchor="middle">Uploads and transcribes</text>
+    <text class="t sub" x="125" y="124" text-anchor="middle">by itself, into your Google Drive</text>
+  </g>
+
+  <!-- 4 · your AI -->
+  <g transform="translate(880,100)">
+    <rect width="250" height="150" rx="12" fill="#FFFFFF" stroke="#DA1E28" stroke-width="2.5"/>
+    <g transform="translate(97,12)">
+      <path d="M28,0 c2,14 8,20 22,22 c-14,2 -20,8 -22,22 c-2,-14 -8,-20 -22,-22 c14,-2 20,-8 22,-22 z" fill="#DA1E28"/>
+      <path d="M8,34 c1,7 4,10 11,11 c-7,1 -10,4 -11,11 c-1,-7 -4,-10 -11,-11 c7,-1 10,-4 11,-11 z" fill="#DA1E28"/>
+    </g>
+    <text class="t title" x="125" y="98" text-anchor="middle">Anything, with your own AI</text>
+    <text class="t sub" x="125" y="124" text-anchor="middle">Claude, ChatGPT or Codex reads it</text>
+  </g>
+
+  <g class="t note" text-anchor="middle" style="font-size:14px">
+    <text x="845" y="406">Your Drive, your speech-to-text key, your AI.</text>
+    <text x="845" y="428">No Recly server anywhere on this path.</text>
+  </g>
+</svg>

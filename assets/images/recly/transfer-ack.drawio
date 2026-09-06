@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="transfer-ack" name="워치의 원본을 삭제하는 조건">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="960" pageHeight="650" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" vertex="1" value="" style="rounded=0;arcSize=15;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="0" y="0" width="960" height="650" />
+        </mxCell>
+        <mxCell id="3" parent="1" vertex="1" value="워치의 원본을 삭제하는 조건" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=28;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="17" width="420" height="35.0" />
+        </mxCell>
+        <mxCell id="4" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#EFF5FC;strokeColor=#D2E0F0;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="95" y="78" width="240" height="54" />
+        </mxCell>
+        <mxCell id="5" parent="1" vertex="1" value="워치" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontColor=#356AB5;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="135.0" y="90" width="160" height="27.5" />
+        </mxCell>
+        <mxCell id="6" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F0F8F3;strokeColor=#D0E4D6;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="595" y="78" width="240" height="54" />
+        </mxCell>
+        <mxCell id="7" parent="1" vertex="1" value="폰" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontColor=#26765C;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="635.0" y="90" width="160" height="27.5" />
+        </mxCell>
+        <mxCell id="8" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=none;endFill=1;strokeColor=#62758B;strokeWidth=2;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="133" />
+            <mxPoint as="targetPoint" x="215" y="547" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=none;endFill=1;strokeColor=#62758B;strokeWidth=2;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="715" y="133" />
+            <mxPoint as="targetPoint" x="715" y="547" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#356AB5;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="178" />
+            <mxPoint as="targetPoint" x="715" y="178" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" vertex="1" value="오디오 파트 전송" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#23364F;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="374.5" y="145" width="171" height="23.75" />
+        </mxCell>
+        <mxCell id="12" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#D7E0EB;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="585" y="191" width="260" height="46" />
+        </mxCell>
+        <mxCell id="13" parent="1" vertex="1" value="SHA-256 검증" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="625.0" y="203" width="180" height="22.5" />
+        </mxCell>
+        <mxCell id="14" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#26765C;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="715" y="267" />
+            <mxPoint as="targetPoint" x="215" y="267" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" parent="1" vertex="1" value="파트 ACK" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#23364F;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="380.0" y="234" width="160" height="23.75" />
+        </mxCell>
+        <mxCell id="16" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#FFF8E9;strokeColor=#ECD8A9;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="90" y="282" width="250" height="45" />
+        </mxCell>
+        <mxCell id="17" parent="1" vertex="1" value="파일은 계속 보관" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#926719;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="134.0" y="293" width="162" height="22.5" />
+        </mxCell>
+        <mxCell id="18" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#356AB5;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="215" y="353" />
+            <mxPoint as="targetPoint" x="715" y="353" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" vertex="1" value="메타데이터 전송" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#23364F;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="380.0" y="320" width="160" height="23.75" />
+        </mxCell>
+        <mxCell id="20" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#D7E0EB;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="555" y="370" width="320" height="84" />
+        </mxCell>
+        <mxCell id="21" parent="1" vertex="1" value="메타데이터·녹음 등록 처리" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="596.0" y="384" width="238" height="21.25" />
+        </mxCell>
+        <mxCell id="22" parent="1" vertex="1" value="작업 큐 등록 처리 → 실행기 깨우기" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="545.0" y="414" width="340" height="21.25" />
+        </mxCell>
+        <mxCell id="23" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#26765C;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="715" y="484" />
+            <mxPoint as="targetPoint" x="215" y="484" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" parent="1" vertex="1" value="최종 ACK · ok:true" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="308.0" y="452" width="304" height="23.75" />
+        </mxCell>
+        <mxCell id="25" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F0F8F3;strokeColor=#C8DED0;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="90" y="505" width="250" height="45" />
+        </mxCell>
+        <mxCell id="26" parent="1" vertex="1" value="워치의 원본 삭제" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#26765C;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="134.0" y="516" width="162" height="22.5" />
+        </mxCell>
+        <mxCell id="27" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#FFF8E9;strokeColor=#F1E2BD;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="30" y="581" width="900" height="44" />
+        </mxCell>
+        <mxCell id="28" parent="1" vertex="1" value="최종 ACK가 없으면 원본을 남겨 두고 재전송한다." style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#926719;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="228.0" y="592" width="504" height="22.5" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

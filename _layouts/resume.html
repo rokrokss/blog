@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }}</title>
+    <meta name="description" content="{{ page.description | escape }}">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+  </head>
+  <body>
+    {% assign resume = site.data.resume %}
+    <main id="resume">
+      <article class="box" aria-label="{{ resume.name | escape }} 이력서">
+        <div class="wrap">
+          <header>
+            <div class="page-title">
+              <h1>{{ resume.name | escape }}</h1>
+              <p class="occupation">{{ resume.occupation | escape }}</p>
+            </div>
+            <nav class="contact" aria-label="연락처 및 프로필">
+              <div class="contact-details">
+                {% for contact in resume.contacts %}
+                {% unless contact.icon %}<a class="contact-text" href="{{ contact.url | escape }}" target="_blank" rel="noopener noreferrer">{{ contact.label | escape }}</a>{% endunless %}
+                {% endfor %}
+              </div>
+              <div class="contact-socials">
+                {% for contact in resume.contacts %}
+                {% if contact.icon %}
+                <a class="contact-icon" href="{{ contact.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ contact.label | escape }} (새 탭)">
+                  <span class="contact-icon-glyph" aria-hidden="true">
+                    {% case contact.icon %}
+                    {% when 'github' %}{% include svg/icon/social/github.svg %}
+                    {% when 'linkedin' %}{% include svg/icon/social/linkedin.svg %}
+                    {% endcase %}
+                  </span>
+                  <span class="contact-tooltip" aria-hidden="true">{{ contact.label | escape }}</span>
+                </a>
+                {% endif %}
+                {% endfor %}
+              </div>
+            </nav>
+          </header>
+          {% for section in resume.sections %}
+          <section{% if section.heading %} aria-labelledby="{{ section.id | escape }}"{% endif %}>
+            {% if section.heading %}<h2 id="{{ section.id | escape }}">{{ section.heading | escape }}</h2>{% endif %}
+            {% if section.body %}<p class="summary">{{ section.body | escape }}</p>{% endif %}
+            {% include resume-points.html points=section.points %}
+            {% for entry in section.subsections %}
+            <div class="entry{% if entry.continuation %} continuation{% endif %}">
+              {% if entry.company %}<h3 class="company">{% if entry.logo %}<img class="entry-logo" src="{{ entry.logo | relative_url }}" alt="" width="100" height="100">{% endif %}{{ entry.company | escape }}</h3>{% endif %}
+              {% if entry.companyNote %}<p class="company-note">{{ entry.companyNote | escape }}</p>{% endif %}
+              {% if entry.heading %}
+              <div class="heading-line">
+                <h3 class="role">{% if entry.logo and entry.company == nil %}<img class="entry-logo" src="{{ entry.logo | relative_url }}" alt="" width="100" height="100">{% endif %}{{ entry.heading.label | escape }}</h3>
+                <p class="period">{{ entry.heading.startdate | escape }}{% if entry.heading.enddate %} — {{ entry.heading.enddate | escape }}{% elsif entry.heading.ongoing %} — 현재{% endif %}</p>
+              </div>
+              {% endif %}
+              {% if entry.note %}<p class="entry-note">{{ entry.note | escape }}</p>{% endif %}
+              {% for degree in entry.degrees %}<p>{{ degree | escape }}</p>{% endfor %}
+              {% include resume-points.html points=entry.points %}
+              {% if entry.links %}
+              <p class="entry-links">{% for link in entry.links %}<a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }}<span aria-hidden="true"> ↗</span></a>{% endfor %}</p>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </section>
+          {% endfor %}
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

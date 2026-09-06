@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="upload-resume" name="업로드가 중간에 끊기면">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="960" pageHeight="510" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" vertex="1" value="" style="rounded=0;arcSize=15;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="0" y="0" width="960" height="510" />
+        </mxCell>
+        <mxCell id="3" parent="1" vertex="1" value="업로드가 중간에 끊기면" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=28;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="17" width="336" height="35.0" />
+        </mxCell>
+        <mxCell id="4" parent="1" vertex="1" value="두 번째 파트를 전송하다 503 응답을 받은 테스트 사례" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#62758B;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="60" width="558" height="22.5" />
+        </mxCell>
+        <mxCell id="5" parent="1" vertex="1" value="첫 실행" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#B74C4C;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="169" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="6" parent="1" vertex="1" value="재실행" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#26765C;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="342" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="7" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F6F8FB;strokeColor=#D9E1EB;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="180" y="144" width="226" height="86" />
+        </mxCell>
+        <mxCell id="8" parent="1" vertex="1" value="파트 1" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="213.0" y="158" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="9" parent="1" vertex="1" value="업로드 완료" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#62758B;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="213.0" y="194" width="160" height="20.0" />
+        </mxCell>
+        <mxCell id="10" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#62758B;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="406" y="187" />
+            <mxPoint as="targetPoint" x="436" y="187" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#FFF7F6;strokeColor=#EDD0CD;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="442" y="144" width="226" height="86" />
+        </mxCell>
+        <mxCell id="12" parent="1" vertex="1" value="파트 2" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="475.0" y="158" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="13" parent="1" vertex="1" value="청크 전송 중 503" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#B74C4C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="467.0" y="194" width="176" height="20.0" />
+        </mxCell>
+        <mxCell id="14" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#62758B;strokeWidth=2;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="668" y="187" />
+            <mxPoint as="targetPoint" x="698" y="187" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F6F8FB;strokeColor=#D9E1EB;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="704" y="144" width="226" height="86" />
+        </mxCell>
+        <mxCell id="16" parent="1" vertex="1" value="메타데이터" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="737.0" y="158" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="17" parent="1" vertex="1" value="아직 업로드하지 않음" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#62758B;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="729.0" y="194" width="176" height="20.0" />
+        </mxCell>
+        <mxCell id="18" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#356AB5;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="555" y="230" />
+            <mxPoint as="targetPoint" x="555" y="290" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" vertex="1" value="세션 주소·오프셋 저장" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#356AB5;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="572" y="252" width="192" height="20.0" />
+        </mxCell>
+        <mxCell id="20" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F0F8F3;strokeColor=#CADFD3;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="180" y="317" width="226" height="86" />
+        </mxCell>
+        <mxCell id="21" parent="1" vertex="1" value="파트 1" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="213.0" y="331" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="22" parent="1" vertex="1" value="기존 파일 확인 → 건너뜀" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="181.0" y="367" width="224" height="20.0" />
+        </mxCell>
+        <mxCell id="23" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#26765C;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="406" y="360" />
+            <mxPoint as="targetPoint" x="436" y="360" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F0F8F3;strokeColor=#CADFD3;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="442" y="317" width="226" height="86" />
+        </mxCell>
+        <mxCell id="25" parent="1" vertex="1" value="파트 2" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="475.0" y="331" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="26" parent="1" vertex="1" value="세션 조회 → 이어서 업로드" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="435.0" y="367" width="240" height="20.0" />
+        </mxCell>
+        <mxCell id="27" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#26765C;strokeWidth=2;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="668" y="360" />
+            <mxPoint as="targetPoint" x="698" y="360" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" parent="1" vertex="1" value="" style="rounded=1;arcSize=15;fillColor=#F0F8F3;strokeColor=#CADFD3;strokeWidth=1.5;">
+          <mxGeometry as="geometry" x="704" y="317" width="226" height="86" />
+        </mxCell>
+        <mxCell id="29" parent="1" vertex="1" value="메타데이터" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#23364F;fontStyle=1;spacing=0;">
+          <mxGeometry as="geometry" x="737.0" y="331" width="160" height="26.25" />
+        </mxCell>
+        <mxCell id="30" parent="1" vertex="1" value="파트 완료 후 업로드" style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#26765C;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="729.0" y="367" width="176" height="20.0" />
+        </mxCell>
+        <mxCell id="31" parent="1" vertex="1" value="별도 경우: 세션이 만료되면 새로 시작하고, 원격 폴더가 사라졌으면 다시 만든다." style="text;html=0;whiteSpace=nowrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontColor=#62758B;fontStyle=0;spacing=0;">
+          <mxGeometry as="geometry" x="30" y="453" width="765" height="21.25" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

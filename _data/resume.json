@@ -1,0 +1,468 @@
+{
+  "name": "김형록",
+  "occupation": "Software Engineer",
+  "contacts": [
+    {
+      "label": "https://kimhyungrok.com",
+      "url": "https://kimhyungrok.com"
+    },
+    {
+      "label": "q0115643@gmail.com",
+      "url": "mailto:q0115643@gmail.com"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/rokrokss"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/rokrokss/"
+    }
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "body": "주도적인 문제 정의와 AI 기반 해결에 강점을 가진 개발자입니다. 조직에 필요한 다양한 역할을 수행하며 플랫폼 엔지니어링 전반에 탄탄한 배경을 쌓았습니다. 개인과 팀이 건강한 문화를 갖고 함께 성장하는 것을 중요하게 생각합니다."
+    },
+    {
+      "id": "experience",
+      "heading": "경력",
+      "subsections": [
+        {
+          "company": "NEXPACE",
+          "companyNote": "NEXON의 아부다비 블록체인 자회사",
+          "heading": {
+            "label": "AX Engineer (겸직, AX TF 조직 리드)",
+            "startdate": "2025.11",
+            "ongoing": true
+          },
+          "points": [
+            {
+              "text": "비봇: 중앙화된 사내 범용 Slack Agent 개발",
+              "children": [
+                {
+                  "text": "구성원별 AI 활용 격차와 정보 탐색·공유 비용을 줄이기 위해, Slack 스레드에서 사내 문서·코드·논의를 함께 탐색하는 업무 접점 구축"
+                },
+                {
+                  "text": "Claude Agent SDK로 초기 서버를 구현하고 MCP·스킬을 연동해 사내 지식 탐색, 오류 로그 분석·수정 MR 작성 흐름 구현 및 시연"
+                }
+              ]
+            },
+            {
+              "text": "개인화 업무용 Agent Harness 표준화 및 복수 팀 온보딩",
+              "children": [
+                {
+                  "text": "중앙 서버의 자격증명 집중과 사용자별 개인화 요구에 대응해, 개인 권한으로 사내 도구를 사용하는 Claude Code 기반 공통 환경으로 전환"
+                },
+                {
+                  "text": "온보딩 스킬로 도구 연동 절차를 표준화하고, 사람·프로젝트·저장소별 Markdown 업무 지식과 memsearch 기반 세션 기록 구성 자동화"
+                },
+                {
+                  "text": "Claude Channels 기반 Slack ↔ 로컬 Claude Code 양방향 채팅 MCP 서버 구현"
+                },
+                {
+                  "text": "개발팀·프로덕션팀의 도구 설정과 업무별 활용을 지원하고 복수 팀 온보딩 진행"
+                }
+              ]
+            },
+            {
+              "text": "사내 Skill Marketplace 구축 및 현업 구성원의 업무 스킬 제작·공유 지원",
+              "children": [
+                {
+                  "text": "공통 에이전트 환경과 도메인별 스킬을 분리해 선택 설치·확장 구조를 만들고, 현업 구성원의 회의록·프로덕션 업무 스킬 제작·공유 지원"
+                },
+                {
+                  "text": "GitLab·Slack·스프린트 활동을 종합해 데일리 초안 작성과 업무 실행 계획으로 이어지는 스킬 개발"
+                }
+              ]
+            },
+            {
+              "text": "ADGM 법규 수집 파이프라인 및 조문 인용 기반 사전 검토 에이전트 개발",
+              "children": [
+                {
+                  "text": "법규 포털 수집·메타데이터 매핑·Markdown 변환·문서 분할·상호참조 해석으로 624개 문서의 검색 데이터셋 구성"
+                },
+                {
+                  "text": "파일 검색과 조문·정의·상호참조의 반복 탐색으로 ADGM 규정과 원문 근거를 포함한 제품 검토 초안 생성"
+                }
+              ]
+            },
+            {
+              "text": "Rundeck·ArgoCD MCP 기반 개발·검증 환경 배포 자동화 에이전트 개발",
+              "children": [
+                {
+                  "text": "서비스·환경·버전 입력에 따라 Helm·ArgoCD 또는 Rundeck을 선택하고, 도구별 서비스명 매핑과 배포 후 상태 확인 자동화"
+                }
+              ]
+            },
+            {
+              "text": "CI의 LLM 호출 추적을 위한 Bifrost Gateway 도입·평가",
+              "children": [
+                {
+                  "text": "프로젝트·MR·파이프라인별 메타데이터를 전달하는 호출 경로와 게이트웨이 중심의 자격증명 관리 구성"
+                },
+                {
+                  "text": "CI의 504 오류 대응 과정에서 게이트웨이 경유 경로를 Bedrock 직결로 원복해 작업 정상화"
+                }
+              ]
+            },
+            {
+              "text": "AWS Bedrock·Claude Code 기반 코드 리뷰·릴리즈 노트 CI 파이프라인 구축",
+              "children": [
+                {
+                  "text": "MR 생성 시 코드 리뷰·요약을 실행하고, 태그 간 변경 사항으로 릴리즈 노트를 생성하는 공통 CI 템플릿 구성"
+                },
+                {
+                  "text": "기존 건당 5–10분의 릴리즈 노트 수기 작성 단계를 CI Job 실행으로 자동화"
+                }
+              ]
+            },
+            {
+              "text": "외부 바이브코더 대상 게임잼 지원을 위한 빌더 CLI 및 마켓플레이스 웹 개발"
+            }
+          ],
+          "logo": "/assets/images/resume/nexpace.jpg"
+        },
+        {
+          "continuation": true,
+          "heading": {
+            "label": "Software Engineer (겸직, Blockchain Infrastructure)",
+            "startdate": "2025.09",
+            "ongoing": true
+          },
+          "points": [
+            {
+              "text": "블록체인 서비스 통합 모니터링·장애 조사 플랫폼 be-monitor 개발",
+              "children": [
+                {
+                  "text": "RPC·Kafka 처리·Warp 전달 등 장애 원인을 구분하기 위해 Datadog·PLEX·Snowflake와 실행 상태를 대시보드·알림·이슈 이력으로 연결"
+                },
+                {
+                  "text": "수집·알림 판정·전달 책임을 분리하고, 수집 실패·데이터 신선도와 이슈 상태를 관리해 관측 실패를 정상으로 오인하지 않도록 설계"
+                },
+                {
+                  "text": "Claude Agent SDK·Bedrock 기반 비동기 조사 에이전트를 연결하고, EvidenceSnapshot·실행 이력·콜백 검증으로 조사 근거와 결과 추적"
+                }
+              ]
+            },
+            {
+              "text": "생성형 AI 기반 숏폼 게임 UGC 플랫폼 MSU Arcade 기획 및 내부 프로토타입 개발",
+              "children": [
+                {
+                  "text": "MapleStory IP를 활용한 자연어 게임 생성·수정, 미리보기, 버전 이력·롤백과 스와이프형 플레이 흐름 구현"
+                },
+                {
+                  "text": "생성 시간·토큰 비용 실험을 통해 작업 분리·템플릿·에셋 재사용 중심의 비용 개선 방향 도출"
+                }
+              ]
+            },
+            {
+              "text": "블록체인 트랜잭션 오케스트레이션 플랫폼 및 인바운드 프록시 게이트웨이 개발",
+              "children": [
+                {
+                  "text": "서명 검증, 마켓 매칭·집행, KYC·국가 제한, 수수료 정산, 크로스체인 전송 통합 관리"
+                }
+              ]
+            },
+            {
+              "text": "토큰 가격 수집·제공 서비스 안정화 및 WebSocket API 확장",
+              "children": [
+                {
+                  "text": "Kafka 장애 시에도 가격 서비스가 정상 동작하도록 리팩토링하고, WebSocket API에 가격 변동률 제공 기능 추가"
+                }
+              ]
+            },
+            {
+              "text": "NFT 콜라보 이벤트 구매 로직 및 EIP-712 서명 검증 개발"
+            },
+            {
+              "text": "RPC 클라이언트 안정화 및 로깅 고도화 등 서비스 안정성 개선 주도"
+            },
+            {
+              "text": "Monad 밸리데이터 노드 구축 및 운영"
+            }
+          ]
+        },
+        {
+          "company": "Self-employed",
+          "heading": {
+            "label": "Freelance Software Engineer",
+            "startdate": "2025.05",
+            "enddate": "2025.09"
+          },
+          "points": [
+            {
+              "text": "대형 외식 프랜차이즈 대상 LangGraph 기반 채팅 주문 시스템 개발"
+            },
+            {
+              "text": "Google Maps Platform 기반 여행 가이드 채팅 서비스 개발"
+            },
+            {
+              "text": "Puppeteer 기반 커머스 자동화 개인 프로젝트"
+            }
+          ]
+        },
+        {
+          "company": "Toss (Viva Republica)",
+          "heading": {
+            "label": "Data Engineer (MLOps)",
+            "startdate": "2021.10",
+            "enddate": "2024.04"
+          },
+          "points": [
+            {
+              "text": "온프레미스 Kubernetes·GPU 기반 ML 플랫폼 개발 및 운영",
+              "children": [
+                {
+                  "text": "GPU 자원 낭비 방지를 위한 Ray Cluster 기반 ML 인프라 프로토타입 개발"
+                },
+                {
+                  "text": "Airflow·MLflow·Ray Cluster를 활용한 오프라인 CVR 모델 서빙 파이프라인 개발"
+                },
+                {
+                  "text": "Ray Serve 기반 신용평가 서비스 개발 및 운영"
+                }
+              ]
+            },
+            {
+              "text": "ML 서비스의 피처 실시간 연산을 위한 Spark Streaming on Kubernetes 구성"
+            },
+            {
+              "text": "테스트 및 코드 리뷰 프로세스를 위한 Airflow DAG용 CI/CD 파이프라인 구현"
+            },
+            {
+              "text": "유사도 검색 및 대규모 임베딩 관리를 위한 Milvus 벡터 데이터베이스 운영"
+            }
+          ],
+          "logo": "/assets/images/resume/toss.jpg"
+        },
+        {
+          "continuation": true,
+          "heading": {
+            "label": "DevOps Engineer",
+            "startdate": "2020.07",
+            "enddate": "2021.10"
+          },
+          "points": [
+            {
+              "text": "12M+ MAU 트래픽을 위한 고가용성 Active-Active Kubernetes 클러스터 운영 및 지속적인 최적화"
+            },
+            {
+              "text": "Istio 기반 트래픽 전반 모니터링·최적화·이슈 대응 및 mTLS를 통한 보안 강화"
+            },
+            {
+              "text": "금융 규제에 맞춘 Zero Trust 환경의 운영 생산성 및 호출 제한 구조 개발"
+            },
+            {
+              "text": "Kotlin·Spring 및 React 기반 인하우스 운영 도구 개발, CI/CD·편의 기능·클러스터 안정화 기능 구현"
+            },
+            {
+              "text": "HashiCorp Vault 기반 고가용성 KMS 구축"
+            },
+            {
+              "text": "EKS 중심의 AWS 개발 환경 운영"
+            },
+            {
+              "text": "Ansible·Kubespray 기반 온프레미스 Kubernetes 클러스터 구축 및 최적화"
+            },
+            {
+              "text": "ArgoCD·Vault·OPA 기반 GitOps 워크플로우 적용 및 토스 기술 컨퍼런스 발표",
+              "children": [
+                {
+                  "text": "<a href=\"https://youtu.be/gF1wfTCDyI8?si=pd6SalW-_y4kpLb7\" target=\"_blank\" rel=\"noopener noreferrer\"><img class=\"entry-logo\" src=\"/assets/images/resume/youtube.svg\" alt=\"YouTube\" width=\"24\" height=\"17\">SLASH 21 — 실수 없이 안전하게 쿠버네티스 운영하기</a>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": "PUBG Corporation",
+          "heading": {
+            "label": "DevOps Engineer (New State Mobile)",
+            "startdate": "2020.02",
+            "enddate": "2020.07"
+          },
+          "points": [
+            {
+              "text": "신규 프로젝트를 위한 AWS 서비스 인프라 및 개발 환경 구성"
+            },
+            {
+              "text": "Prometheus·Thanos·Kafka·ELK 스택을 이용한 모니터링 및 로깅 환경 구성"
+            },
+            {
+              "text": "ArgoCD·Slack 기반 CI/CD 환경 구성"
+            }
+          ],
+          "logo": "/assets/images/resume/pubg.jpg"
+        },
+        {
+          "continuation": true,
+          "heading": {
+            "label": "Full-Stack Engineer (PUBG Lite)",
+            "startdate": "2019.06",
+            "enddate": "2020.01"
+          },
+          "points": [
+            {
+              "text": "Angular·.NET 기반 계정 레벨 시스템, 음성 카드 기능 개발 및 상점 리팩토링"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "heading": "개인 프로젝트",
+      "subsections": [
+        {
+          "heading": {
+            "label": "녹음·전사 자동화 앱 · Recly",
+            "startdate": "2026년 9월"
+          },
+          "points": [
+            {
+              "text": "녹음·전사 자동화 앱 Recly 개발"
+            }
+          ],
+          "links": [
+            {
+              "label": "GitHub · recly",
+              "url": "https://github.com/rokrokss/recly"
+            },
+            {
+              "label": "서비스 개발기",
+              "url": "https://kimhyungrok.com/post/2026/09/06/recly.html"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "label": "LLM 기반 크롬 익스텐션 · 시즈에",
+            "startdate": "2025년 중순"
+          },
+          "points": [
+            {
+              "text": "LLM 기반 브라우징 크롬 익스텐션 개발"
+            }
+          ],
+          "links": [
+            {
+              "label": "Chrome Web Store · 시즈에",
+              "url": "https://chromewebstore.google.com/detail/mpcbgfkoholfgapcgcmfjobnfcbnfanm?utm_source=resume"
+            },
+            {
+              "label": "GitHub · shizue",
+              "url": "https://github.com/rokrokss/shizue"
+            },
+            {
+              "label": "서비스 개발기",
+              "url": "https://kimhyungrok.com/post/2025/06/04/Shizue-LLM-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%ED%81%AC%EB%A1%AC-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EC%8B%9C%EC%A6%88%EC%97%90.html"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "label": "구직 서비스 · 찹찹",
+            "startdate": "2025년 중순"
+          },
+          "points": [
+            {
+              "text": "LangGraph·pgvector 기반 구직 서비스 개발"
+            }
+          ],
+          "links": [
+            {
+              "label": "GitHub · chapchap",
+              "url": "https://github.com/rokrokss/chapchap"
+            },
+            {
+              "label": "서비스 개발기",
+              "url": "https://kimhyungrok.com/post/2025/05/13/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0-%EC%B6%94%EC%B2%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%B0%B9%EC%B0%B9-chapchap.html"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "label": "드롭시핑 커머스 자동화 플랫폼",
+            "startdate": "2022년 말"
+          },
+          "points": [
+            {
+              "text": "Puppeteer 클러스터 기반 커머스 자동화 플랫폼 개발"
+            }
+          ],
+          "links": [
+            {
+              "label": "GitHub · chorock",
+              "url": "https://github.com/rokrokss/chorock"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "label": "기술 블로그"
+          },
+          "links": [
+            {
+              "label": "kimhyungrok.com",
+              "url": "https://kimhyungrok.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "heading": "학력",
+      "subsections": [
+        {
+          "heading": {
+            "label": "KAIST",
+            "startdate": "2014",
+            "enddate": "2025"
+          },
+          "degrees": [
+            "Bachelor of Engineering in Computer Science, Minor in Industrial Design"
+          ],
+          "logo": "/assets/images/resume/kaist.jpg"
+        }
+      ]
+    },
+    {
+      "id": "certifications",
+      "heading": "자격증",
+      "subsections": [
+        {
+          "heading": {
+            "label": "CKA: Certified Kubernetes Administrator",
+            "startdate": "Apr 2020"
+          },
+          "note": "Issued by The Linux Foundation",
+          "links": [
+            {
+              "label": "자격증 확인",
+              "url": "https://www.credly.com/badges/6c8521aa-d599-43e8-a40e-f4c769efaf71/linked_in_profile"
+            }
+          ],
+          "logo": "/assets/images/resume/linux-foundation.jpg"
+        },
+        {
+          "heading": {
+            "label": "AWS Certified Developer – Associate",
+            "startdate": "Mar 2020"
+          },
+          "note": "Issued by Amazon Web Services Training and Certification",
+          "links": [
+            {
+              "label": "자격증 확인",
+              "url": "https://www.credly.com/badges/ccd25954-f0da-43e7-9f51-994be3268132/linked_in_profile"
+            }
+          ],
+          "logo": "/assets/images/resume/aws.jpg"
+        }
+      ]
+    }
+  ]
+}

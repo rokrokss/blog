@@ -1,0 +1,10 @@
+{% if include.points and include.points.size > 0 %}
+<ul>
+  {% for point in include.points %}
+  <li>
+    {{ point.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+    {% if point.children %}{% include resume-points.html points=point.children %}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
