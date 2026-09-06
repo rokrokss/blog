@@ -1,0 +1,27 @@
+---
+---
+@charset "utf-8";
+@import "skins/dark";
+// Keep the blog's coral identity in a softer, readable dark palette.
+$main-color-1: #ff7c82;
+$text-color-1: #17191e;
+$main-color-3: #272b33;
+$text-color-3: #e1e4eb;
+$background-color: #17191e;
+$text-color-d: #f1f3f7;
+$text-color: #d5d9e2;
+$text-color-l: #a1a8b7;
+$header-text-color: $text-color;
+$header-background: $background-color;
+$footer-text-color: $text-color-l;
+$footer-background: $background-color;
+$border-color: #424751;
+$border-color-l: #2d323c;
+$select-color: rgba($main-color-1, .3);
+@import "skins/highlight/tomorrow-night";
+@import "theme";
+@import "components/theme-toggle";
+
+.header__brand > svg { opacity: .85; filter: invert(1); }
+
+html { color-scheme: dark; background: $background-color; }

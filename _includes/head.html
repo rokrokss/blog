@@ -68,7 +68,9 @@
 <!-- end favicon -->
 
 {%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
-<link rel="stylesheet" href="{{ __return }}">
+<link id="theme-light" rel="stylesheet" href="{{ __return }}">
+<link id="theme-dark" rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
+<script>{%- include scripts/theme.js -%}</script>
 
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}

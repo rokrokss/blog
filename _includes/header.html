@@ -15,7 +15,8 @@
             <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
           {%- endif -%}
         </div>
-        <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
+        <button class="button button--secondary button--circle search-button js-search-toggle" aria-label="검색"><i class="fas fa-search" aria-hidden="true"></i></button>
+        {%- include theme-toggle.html -%}
       </div>
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
@@ -43,7 +44,8 @@
               </li>
             {%- endif -%}
           {%- endfor -%}
-          <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
+          <li><button class="button button--secondary button--circle search-button js-search-toggle" aria-label="검색"><i class="fas fa-search" aria-hidden="true"></i></button></li>
+          <li class="navigation__theme">{%- include theme-toggle.html -%}</li>
         </ul>
       </nav>
       {%- endif -%}
