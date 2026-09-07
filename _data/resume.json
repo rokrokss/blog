@@ -40,13 +40,13 @@
           },
           "points": [
             {
-              "text": "비봇: 중앙화된 사내 범용 Slack Agent 개발",
+              "text": "중앙화된 사내 범용 Slack Agent 개발",
               "children": [
                 {
                   "text": "사내 정보 탐색·공유 비용 절감을 위한 Slack 스레드 기반 문서·코드·논의 통합 검색 환경 구축"
                 },
                 {
-                  "text": "Claude Agent SDK 기반 서버·MCP·스킬 연동 및 오류 로그 분석·수정 MR 작성 기능 구현"
+                  "text": "Claude Agent SDK 기반 서버·MCP·스킬 연동 및 이슈 분석·수정 기능 구현"
                 }
               ]
             },
@@ -54,7 +54,7 @@
               "text": "개인화 업무용 Agent Harness 표준화 및 복수 팀 온보딩",
               "children": [
                 {
-                  "text": "자격증명 집중 해소와 사용자별 개인화를 위한 Claude Code 기반 개인 권한 실행 환경으로 전환"
+                  "text": "중앙화된 에이전트의 자격증명 집중 해소와 사용자별 개인화를 위한 Claude Code·Codex 기반 개인 권한 실행 환경으로 전환"
                 },
                 {
                   "text": "온보딩 스킬 기반 도구 연동 표준화 및 Markdown·memsearch 기반 업무 지식·세션 기록 구성 자동화"
@@ -64,44 +64,20 @@
                 },
                 {
                   "text": "개발팀·프로덕션팀 대상 도구 설정·업무 활용 지원 및 온보딩"
-                }
-              ]
-            },
-            {
-              "text": "사내 Skill Marketplace 구축 및 현업 구성원의 업무 스킬 제작·공유 지원",
-              "children": [
-                {
-                  "text": "공통 Agent Harness·업무별 스킬의 선택 설치 구조 설계 및 현업의 회의록·프로덕션 스킬 제작·공유 지원"
                 },
                 {
-                  "text": "GitLab·Slack·스프린트 활동 기반 데일리 초안·업무 실행 계획 생성 스킬 개발"
+                  "text": "Rundeck·ArgoCD MCP 기반 개발·검증 환경 배포 자동화"
                 }
               ]
             },
             {
-              "text": "ADGM 법규 수집 파이프라인 및 조문 인용 기반 사전 검토 에이전트 개발",
+              "text": "아부다비 금융특구(ADGM) 법규 수집 파이프라인 및 법률 사전 검토 에이전트 개발",
               "children": [
                 {
-                  "text": "ADGM 법규의 장·절 단위 구조화 및 메타데이터·문서 간 참조 기반 검색 데이터셋 구축"
+                  "text": "ADGM 법규의 장·절 단위 구조화 및 검색 데이터셋 구축"
                 },
                 {
-                  "text": "fff MCP 기반 반복 키워드 검색·관련 조문 탐색 및 원문 인용 검토 초안 생성"
-                }
-              ]
-            },
-            {
-              "text": "Rundeck·ArgoCD MCP 기반 개발·검증 환경 배포 자동화 에이전트 개발",
-              "children": [
-                {
-                  "text": "서비스·환경·버전별 배포 실행 및 상태 확인 자동화(Helm·ArgoCD·Rundeck)"
-                }
-              ]
-            },
-            {
-              "text": "AWS Bedrock·Claude Code 기반 코드 리뷰·릴리즈 노트 CI 파이프라인 구축",
-              "children": [
-                {
-                  "text": "MR 생성 시 자동 리뷰·요약 및 태그 간 변경 기반 릴리즈 노트 생성용 공통 CI 템플릿 구축"
+                  "text": "fff MCP 기반 반복 키워드 검색 및 원문 인용 검토 초안 생성"
                 }
               ]
             },
@@ -115,6 +91,9 @@
                   "text": "GitHub·GitLab 스킬의 탐색·등록·승인·설치 통계를 제공하는 웹 마켓플레이스 개발"
                 }
               ]
+            },
+            {
+              "text": "AWS Bedrock·Claude Code 기반 코드 리뷰 CI 파이프라인 구축"
             }
           ],
           "logo": "/assets/images/resume/nexpace.jpg"
@@ -134,10 +113,7 @@
                   "text": "RPC·Kafka·토큰전송 장애 지점 추적을 위한 Datadog·OpenSearch·Snowflake 기반 통합 대시보드·알림·이슈 이력 구축"
                 },
                 {
-                  "text": "수집·알림 판정·전달 책임 분리 및 데이터 신선도 기반 상태 판정으로 수집 실패의 정상 오인 방지"
-                },
-                {
-                  "text": "Claude Agent SDK·Bedrock 기반 비동기 장애 조사 에이전트 개발. 조사 근거 스냅샷 보존 및 실행 이력 대조를 통한 결과 정합성 검증"
+                  "text": "Claude Agent SDK·Bedrock 기반 비동기 장애 조사 에이전트 개발, 이슈 분석 및 대응 자동화"
                 }
               ]
             },
@@ -145,10 +121,13 @@
               "text": "생성형 AI 기반 숏폼 게임 UGC 플랫폼 MSU Arcade 기획 및 내부 프로토타입 개발",
               "children": [
                 {
-                  "text": "MapleStory IP 기반 자연어 게임 생성·수정, 미리보기·버전 이력·롤백 및 스와이프형 플레이 구현"
+                  "text": "관련 제품 리서치 및 프로젝트 기획, 구현 후 정식 서비스 전환으로 채택"
                 },
                 {
-                  "text": "생성 시간·토큰 비용 실험을 통해 작업 분리·템플릿·에셋 재사용 중심의 비용 개선 방향 도출"
+                  "text": "MapleStory IP 기반 자연어 게임 생성·수정, 스와이프형 플레이 구현"
+                },
+                {
+                  "text": "게임 장르별 템플릿과 MapleStory 에셋을 활용한 단계별 게임 생성·검증 흐름 구현"
                 }
               ]
             },
