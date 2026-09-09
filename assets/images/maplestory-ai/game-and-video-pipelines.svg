@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" role="img" aria-labelledby="title desc">
+  <title id="title">주황버섯을 게임과 영상에 넣는 두 경로</title>
+  <desc id="desc">위쪽은 fal MCP로 Meshy를 호출해 컨셉 이미지에서 3D 메시를 만들고 게임 엔진에서 입력과 충돌을 연결하는 경로다. 아래쪽은 Blender에서 동선과 카메라를 정한 참조 영상에 컨셉 이미지를 더해, ComfyUI의 Seedance 또는 별도의 Genjutsu Motion Transfer 경로로 영상을 만드는 구성 예시다.</desc>
+  <defs>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#356ab5"/></marker>
+    <marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8764b2"/></marker>
+  </defs>
+  <g font-family="Arial, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <rect width="1040" height="760" rx="20" fill="#fff"/>
+    <text x="32" y="48" font-size="28" font-weight="700" fill="#172b4d">주황버섯을 게임과 영상에 넣는 두 경로</text>
+    <text x="32" y="82" font-size="20" fill="#61728b">fal MCP로 생성한 형상과 Blender로 만든 움직임의 활용</text>
+    <rect x="24" y="108" width="992" height="244" rx="18" fill="#f5f8fc" stroke="#d8e2f0" stroke-width="2"/>
+    <text x="46" y="147" font-size="22" font-weight="700" fill="#244f88">01  게임에 넣을 3D 모델</text>
+    <g fill="#fff" stroke="#b9cce5" stroke-width="2">
+      <rect x="46" y="173" width="183" height="104" rx="14"/>
+      <rect x="280" y="173" width="194" height="104" rx="14"/>
+      <rect x="525" y="173" width="213" height="104" rx="14"/>
+      <rect x="789" y="173" width="203" height="104" rx="14" fill="#edf7f1" stroke="#c8dfd3"/>
+    </g>
+    <g font-size="24" font-weight="700" fill="#172b4d" text-anchor="middle">
+      <text x="137" y="214">컨셉 이미지</text>
+      <text x="377" y="214">Meshy</text>
+      <text x="631" y="214">3D 메시</text>
+      <text x="890" y="214" fill="#276e5a">게임 엔진</text>
+    </g>
+    <g font-size="19" fill="#61728b" text-anchor="middle">
+      <text x="137" y="246">주황버섯의 외형</text>
+      <text x="377" y="246">fal MCP로 호출</text>
+      <text x="631" y="246">GLB 등으로 전달</text>
+      <text x="890" y="246">입력·충돌·게임 로직</text>
+    </g>
+    <g fill="none" stroke="#356ab5" stroke-width="2.5" marker-end="url(#blue)">
+      <path d="M229 225H277"/>
+      <path d="M474 225H522"/>
+      <path d="M738 225H786"/>
+    </g>
+    <text x="46" y="318" font-size="20" fill="#61728b">주황버섯의 Meshy·Tripo·Hunyuan 결과를 눈으로 비교한 뒤 Meshy를 선택했다</text>
+    <rect x="24" y="374" width="992" height="350" rx="18" fill="#faf7ff" stroke="#dbd0ee" stroke-width="2"/>
+    <text x="46" y="413" font-size="22" font-weight="700" fill="#72549d">02  3D로 동선과 구도를 정한 뒤 영상 생성·변환</text>
+    <g fill="#fff" stroke="#cbbbdf" stroke-width="2">
+      <rect x="46" y="479" width="183" height="116" rx="14"/>
+      <rect x="280" y="479" width="194" height="116" rx="14"/>
+      <rect x="525" y="451" width="252" height="76" rx="12"/>
+      <rect x="525" y="547" width="252" height="76" rx="12"/>
+      <rect x="828" y="479" width="164" height="116" rx="14" fill="#f0e9f8"/>
+    </g>
+    <g font-size="24" font-weight="700" fill="#172b4d" text-anchor="middle">
+      <text x="137" y="515">Blender</text>
+      <text x="377" y="515">참조 영상</text>
+      <text x="651" y="482" font-size="23">ComfyUI → Seedance</text>
+      <text x="651" y="578" font-size="23">Higgsfield Genjutsu</text>
+      <text x="910" y="528" fill="#5c3f83">완성 영상</text>
+    </g>
+    <g font-size="19" fill="#75638f" text-anchor="middle">
+      <text x="137" y="547">단순한 3D 형상</text>
+      <text x="137" y="573">동선·카메라</text>
+      <text x="377" y="547">렌더링한 움직임</text>
+      <text x="377" y="573">+ 컨셉 이미지</text>
+      <text x="651" y="509">노드 그래프로 생성 연결</text>
+      <text x="651" y="605">Motion Transfer</text>
+      <text x="910" y="562">컷신·콘셉트 영상</text>
+    </g>
+    <g fill="none" stroke="#8764b2" stroke-width="2.5" marker-end="url(#purple)">
+      <path d="M229 537H277"/>
+      <path d="M474 537H499V489H522"/>
+      <path d="M474 537H499V585H522"/>
+      <path d="M777 489H801V527H825"/>
+      <path d="M777 585H801V547H825"/>
+    </g>
+    <text x="46" y="667" font-size="20" fill="#75638f">동선·카메라 → Blender 렌더 영상 / 주황버섯의 외형 → 컨셉 이미지</text>
+    <text x="46" y="698" font-size="18" fill="#75638f">아래 두 경로는 공식 기능을 바탕으로 구성한 예시이며, 이번 실험에서 직접 실행한 결과가 아니다.</text>
+  </g>
+</svg>
