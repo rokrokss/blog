@@ -4,7 +4,7 @@ title: '“메이플스토리 만들어줘”: Astra, Fable, Meshy AI'
 key: 202609090
 permalink: /post/2026/09/09/make-maplestory-with-ai.html
 picture_frame: shadow
-excerpt: 같은 요청으로 Astra와 Fable의 2D 게임을 비교하고, fal MCP에서 선택한 Meshy로 3D로 바꿔봤다.
+excerpt: Astra와 Fable에 같은 요청을 해봤다. 
 image: /assets/images/maplestory-ai/astra-meshy-3d.jpg
 tags:
   - AI
