@@ -8,8 +8,7 @@ excerpt: 같은 요청으로 Astra와 Fable의 2D 게임을 비교하고, fal MC
 image: /assets/images/maplestory-ai/astra-meshy-3d.jpg
 tags:
   - AI
-  - Codex
-  - Game Development
+  - LLM
   - Prototyping
 mathjax: false
 mermaid: false
