@@ -1,6 +1,9 @@
 ---
 comments: true
-title: Why Go and not Rust?
+title: "Why Go and not Rust?"
+image_alt: "Why Go and not Rust? — 글 공유 카드"
+image: "/assets/images/social/2019110701.png"
+description: "Loris Cro의 Why Go and not Rust?를 한국어로 옮겼습니다. 서비스와 기업용 소프트웨어 개발에서 Go의 단순함, 동시성, 도구와 컴파일 속도를 평가한 글입니다."
 key: 2019110701
 picture_frame: shadow
 tags:
@@ -140,7 +143,7 @@ Go는 Java/C#보다 빠르며, Java/C#보다 메모리 관리 측면에서 뛰�
 개인적으로 `await`의 사용이 항상 **잘못된 것**으로 보이는 것이 놀라울 따름입니다. 일반적인 비동기 C# 어플리케이션이 얼마나 뒤틀려있을지 상상해보세요.
 실제로 ASP.NET의 표면적인 이유없이 일어나는 데드락 문제는 전혀 드물지 않습니다.
 
-![t](https://kristoff.it/static/aa7feb8568c2376bb953e0d7383bfafc/8ff1e/1*JrvDmC-KS7iL2Aexb-lskA.png)
+![C# 비동기 처리에서 교착 상태가 발생하는 예시](https://kristoff.it/static/aa7feb8568c2376bb953e0d7383bfafc/8ff1e/1*JrvDmC-KS7iL2Aexb-lskA.png)
 
 위 이미지는 [이 블로그 글](https://medium.com/rubrikkgroup/understanding-async-avoiding-deadlocks-e41f8f2c6f5d)에서 따왔으며, 해당 포스트는 C#의 동시성 제어가 완전하지 않은 무수히 많은 경우에 대해 설명하는 글입니다.
 

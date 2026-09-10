@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; A Comparison of Feature-Based and Neural Scansion of Poetry
+title: "논문 요약: A Comparison of Feature-Based and Neural Scansion of Poetry"
+image: "/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png"
+description: "시의 운율을 분석하는 feature 기반 모델과 신경망 모델을 비교한 논문 메모입니다. Scansion 모델의 구성과 영어·스페인어 시를 대상으로 한 평가 결과를 정리합니다."
 key: 201805192
 tags:
   - AI
   - NLP
   - 논문
   - RANLP
+image_alt: "영어·스페인어 시 운율 분석에서 특징 기반 모델과 신경망의 오류율 비교"
 ---
 
 > RANLP 2015
@@ -36,7 +39,7 @@ syllable이 space로 나뉘어 있으면 word structure를 잃으므로 WB(word 
 
 ## Results
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png)
+![영어·스페인어 시 운율 분석에서 특징 기반 모델과 신경망의 오류율 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Agirrezabal-RANLP2017/1.png)
 
 4B4V dataset에서는 Bi-LSTM+CRF+WB (S2S)가 제일 잘 나옴.
 

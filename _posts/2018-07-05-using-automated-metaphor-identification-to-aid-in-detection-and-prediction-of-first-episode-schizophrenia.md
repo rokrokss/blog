@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Using Automated Metaphor Identification to Aid in Detection and Prediction of First-Episode Schizophrenia
+title: "논문 요약: Using Automated Metaphor Identification to Aid in Detection and Prediction of First-Episode Schizophrenia"
+image: "/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png"
+description: "자동 은유 식별을 조현병 첫 발병 탐지·예측에 활용한 연구를 요약합니다. 은유·감성 특징과 분류 모델, 데이터셋 평가 결과를 살펴보는 논문 학습 기록입니다."
 key: 201807051
 tags:
   - AI
   - NLP
   - 논문
   - EMNLP
+image_alt: "조현병 첫 발병 데이터셋에서 특징별 분류 F1·정확도 비교"
 ---
 
 > EMNLP 2017
@@ -38,7 +41,7 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 
 그리고 sentiment coherence 또한 계산하는데,
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/1.png){:width="160px"}
+![인접 문장 감성 점수의 평균 변화량을 계산하는 식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/1.png){:width="160px"}
 
 요렇게 한다. s를 token별, phrase별 sentiment score로 해주면 token별, phrase별 sentiment coherence를 구할 수 있다.
 
@@ -58,7 +61,7 @@ sentiment analysis가 emotional language의 disturbance를 포착할 수 있다�
 metaphorical token은 조현병 있는 사람들이 6.3%, 없는 사람들이 5.2%로 갯수 차이가 좀 있다.
 남녀 차이는 별로 없었다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png){:width="430px"}
+![조현병 첫 발병 데이터셋에서 특징별 분류 F1·정확도 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Gutierrez-EMNLP2017/2.png){:width="430px"}
 
 아까 구한 Met, SentTok, SentPhr, CohTok, CohPhr 다섯가지 feature말고도 여기서 이것저것 해놨는데 각 feature 1개씩만 classification에 사용했을 때 결과가 위 표와 같다.
 

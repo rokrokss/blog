@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Universal Language Model Fine-tuning for Text Classification
+title: "논문 요약: Universal Language Model Fine-tuning for Text Classification"
+image: "/assets/images/paper-summary/Howard-ACL2018/1.png"
+description: "ULMFiT 논문의 텍스트 분류 전이학습 방법을 정리합니다. 언어 모델 사전학습부터 도메인·분류기 미세조정, 학습률 조절과 점진적 동결 해제까지 살펴봅니다."
 key: 201807031
 tags:
   - AI
   - NLP
   - 논문
   - ACL
+image_alt: "ULMFiT의 언어 모델 사전학습·도메인 미세조정·분류기 학습 단계"
 ---
 
 > ACL 2018
@@ -76,7 +79,7 @@ language model을 fine-tuning하여 좋은 성능을 내려면 수백만 개 이
 Language modeling은 NLP task의 가장 기본적은 source task이다. 본 논문에서는 pre-trained된 language model을 classification에 맞춰 fine-tuning한다.
 language modeling을 학습시키면서 특정한 또 다른 task, syntactic dependency처럼 특정 feature에 sensitive하게 모델을 짤 수도 있겠지만 그 부분은 future work로 열어두었다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/1.png)
+![ULMFiT의 언어 모델 사전학습·도메인 미세조정·분류기 학습 단계](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/1.png)
 
 모델은 위와 같다. 3-layer LSTM으로 되어 있고, 1) 먼저 general-domain corpus에 맞추어 pre-train되고, 2) 전체 language model이 target task를 위해 주어진 data에 맞추어 discriminative fine-tuning과 slanted triangular learning rates를 이용하여 fine-tuning되고, 3) classifier가 gradual unfreezing, discriminative fine-tuning, slanted triangular learning rates를 이용하며 fine-tuning된다.
 
@@ -102,7 +105,7 @@ language modeling을 학습시키면서 특정한 또 다른 task, syntactic dep
 
 #### Slanted triangular learning rates
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/2.png){:width="450px"}
+![ULMFiT의 slanted triangular learning rate 스케줄](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/2.png){:width="450px"}
 
 빠르고 효율적으로 gradient descent가 이루어지려면 learning rate의 in-train 조절이 필요한데,
 여기서는 위 그래프와 같이 변화시킨다. 이것이 slanted triangular learning rates (STLR)이다.
@@ -115,7 +118,7 @@ linear layer 두 개를 더 붙이고 마지막 softmax로 target class들에 �
 
 #### Concat pooling
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/3.png){:width="350px"}
+![마지막 상태·최대 풀링·평균 풀링을 연결하는 ULMFiT 문서 표현](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/3.png){:width="350px"}
 
 hidden state를 뽑아 올 때 중요 정보를 잃을 수 있다. 그러므로 위 계산처럼 각 time step의 hidden state를 concatenate한 H를 max-pool한 값과 min-pool한 값을 h와 concatenate하여 보내 준다.
 
@@ -139,7 +142,7 @@ variable length backpropagation sequences도 사용한다. [(Merity et al., 2017
 
 ### Results
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/4.png)
+![ULMFiT와 기존 텍스트 분류 모델의 데이터셋별 오류율 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/4.png)
 
 CoVe [(McCann et al., 2017)](https://arxiv.org/pdf/1708.00107.pdf) 얘가 당시 state-of-the-art transfer learning method 였단다.
 
@@ -147,7 +150,7 @@ CoVe [(McCann et al., 2017)](https://arxiv.org/pdf/1708.00107.pdf) 얘가 당시
 
 #### Low-shot learning
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/5.png)
+![라벨 데이터 수에 따른 ULMFiT와 처음부터 학습한 모델의 검증 오류율](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/5.png)
 
 IMDb와 AG 데이터셋이서는 supervised ULMFiT가 example 100개만 가지고서도 10배 20배의 데이터로 scratch부터 학습된 모델만큼의 성능을 낸다.
 
@@ -156,25 +159,25 @@ general-domain LM pretraining이 빛을 발하는 순간이다. 작은 데이터
 
 #### Impact of pretraining
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/6.png){:width="400px"}
+![언어 모델 사전학습 유무에 따른 ULMFiT 분류 오류율](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/6.png){:width="400px"}
 
 pretraining이 작은 데이터셋에서 강점을 가졌지만 Table 4를 보면 큰 데이터셋에서도 성능 향상을 가진다.
 
 #### Impact of LM quality
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/7.png){:width="400px"}
+![기본 언어 모델과 AWD-LSTM 사용 시 ULMFiT 오류율 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/7.png){:width="400px"}
 
 LM을 좋은 걸 쓰면 이만큼 성능이 향상된다. 특히 데이터셋 크기가 작을 때는 더 중요하다.
 
 #### Impact of classifier fine-tuning
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/8.png){:width="400px"}
+![ULMFiT 분류기의 미세조정 방법별 검증 오류율 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/8.png){:width="400px"}
 
 어떤 환경에서 뭐가 더 좋았고 어떻고 하는데 좀 길어서 본문 보는게 좋다.
 
 #### Classifier fine-tuning behavior
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/9.png){:width="400px"}
+![학습 반복에 따른 ULMFiT와 전체 레이어 동시 미세조정의 오류 곡선](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Howard-ACL2018/9.png){:width="400px"}
 
 아까 Target task classifier fine-tuning 에서 이것저것 테크닉을 써줬는데 그런거 안하고 그냥 다 한꺼번에 학습시키면 저렇게 성능이 안 좋다.
 

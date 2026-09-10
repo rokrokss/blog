@@ -1,6 +1,9 @@
 ---
 comments: true
-title: 논문 요약&#58; Deep Contextualized Word Representations
+title: "논문 요약: Deep Contextualized Word Representations"
+image_alt: "논문 요약: Deep Contextualized Word Representations — 글 공유 카드"
+image: "/assets/images/social/201810110.png"
+description: "ELMo의 문맥 기반 단어 표현을 정리합니다. 양방향 언어 모델의 여러 레이어를 가중합해 같은 단어도 문맥에 따라 다른 벡터로 표현하는 방법을 살펴봅니다."
 key: 201810110
 tags:
   - AI

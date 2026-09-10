@@ -1,6 +1,8 @@
 ---
 comments: true
-title: 논문 요약&#58; Word Embedding and WordNet Based Metaphor Identification and Interpretation
+title: "논문 요약: Word Embedding and WordNet Based Metaphor Identification and Interpretation"
+image: "/assets/images/paper-summary/Mao-ACL2018/1.png"
+description: "단어 임베딩과 WordNet으로 은유를 식별·해석하는 논문을 정리합니다. 문맥에 맞는 문자적 표현을 찾는 비지도 방법과 기계 번역에 활용하는 아이디어를 살펴봅니다."
 key: 201808011
 picture_frame: shadow
 tags:
@@ -8,6 +10,7 @@ tags:
   - NLP
   - 논문
   - ACL
+image_alt: "단어 임베딩과 WordNet 후보 단어로 은유 표현을 판별하는 흐름"
 ---
 
 > ACL 2018
@@ -36,7 +39,7 @@ Metaphor Detection task를 수행하는 연구는 많이 되어있다. 이제 Me
 
 ## Model
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Mao-ACL2018/1.png){:width="400px"}
+![단어 임베딩과 WordNet 후보 단어로 은유 표현을 판별하는 흐름](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Mao-ACL2018/1.png){:width="400px"}
 
 <br>
 

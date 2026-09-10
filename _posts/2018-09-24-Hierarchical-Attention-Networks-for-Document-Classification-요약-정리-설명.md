@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Hierarchical Attention Networks for Document Classification
+title: "논문 요약: Hierarchical Attention Networks for Document Classification"
+image: "/assets/images/paper-summary/Yang-NAACL2016/1.png"
+description: "문서 분류를 위한 Hierarchical Attention Networks 논문을 요약합니다. 단어에서 문장, 문장에서 문서로 이어지는 계층적 인코딩과 attention 구조를 살펴봅니다."
 key: 201809240
 tags:
   - AI
   - NLP
   - 논문
   - NAACL
+image_alt: "단어 attention과 문장 attention을 쌓은 HAN 문서 분류 모델"
 ---
 
 > NAACL 2016
@@ -26,7 +29,7 @@ Word -> Sentence -> Document 순서로 계층에 따른 Attention Network
 
 ## Hierarchical Attention Networks (HAN)
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Yang-NAACL2016/1.png){:width="500px"}
+![단어 attention과 문장 attention을 쌓은 HAN 문서 분류 모델](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Yang-NAACL2016/1.png){:width="500px"}
 
 - Word Embedding으로 Word2Vec를 사용합니다.
 - RNN 구조로는 Bidirectional GRU를 사용합니다.
@@ -36,7 +39,7 @@ Word -> Sentence -> Document 순서로 계층에 따른 Attention Network
 
 ## Result
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Yang-NAACL2016/2.png){:width="700px"}
+![문서 분류 데이터셋별 HAN과 기존 모델의 정확도 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Yang-NAACL2016/2.png){:width="700px"}
 
 
 빠진 수식들은 [이 글](https://kimhyungrok.com/post/2018/05/19/Effective-Approaches-to-Attention-based-Neural-Machine-Translation.html)과 [논문](https://www.cs.cmu.edu/~hovy/papers/16HLT-hierarchical-attention-networks.pdf)을 참고 바랍니닷.

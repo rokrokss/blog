@@ -18,6 +18,8 @@ highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "t
 url: https://kimhyungrok.com # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: "" # root domain; a trailing slash produces protocol-relative asset URLs
 title: ROKROKSS
+image: /assets/images/social/site.png
+image_alt: 김형록의 개발 블로그 — ROKROKSS
 description: > # this means to ignore newlines until "Language & timezone"
   AI, 프로그래밍, 그리고 기술에 대한 생각을 기록하는 김형록(rokrokss)의 개발 블로그입니다. 머신러닝, 자연어처리, 웹 개발 등의 주제를 다룹니다.
 
@@ -34,9 +36,9 @@ timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_tim
 author:
   type: person # "person" (default), "organization"
   name: 김형록
-  url: https://kimhyungrok.com
+  url: https://kimhyungrok.com/about.html
   avatar: # path or url of avatar image
-  bio:
+  bio: AI와 플랫폼을 만드는 소프트웨어 엔지니어입니다.
   email: q0115643@gmail.com
   facebook: # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter: # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -156,6 +158,7 @@ exclude:
   - /node_modules
   - /screenshots
   - /test
+  - /tools
   - /vendor
 
 collections:
@@ -172,6 +175,7 @@ defaults:
       type: posts
     values:
       layout: article
+      show_author_profile: true
       license: true
       category: post
       aside:
@@ -185,4 +189,5 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jemoji

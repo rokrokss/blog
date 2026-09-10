@@ -3,6 +3,7 @@
   "version": "2.2.0",
   "description": "A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.",
   "scripts": {
+    "check:seo": "python3 tools/check-seo.py",
     "build": "bash tools/jekyll.sh build",
     "serve": "bash tools/jekyll.sh serve -H 127.0.0.1",
     "default": "bash tools/jekyll.sh serve -H 127.0.0.1 -t",

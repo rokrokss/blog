@@ -1,6 +1,9 @@
 ---
 comments: true
-title: Stochastic programming 메모
+title: "Stochastic programming 메모"
+image_alt: "Stochastic programming 메모 — 글 공유 카드"
+image: "/assets/images/social/201803091.png"
+description: "불확실성이 있는 최적화 문제를 다루는 stochastic programming 학습 메모입니다. 2단계 확률 최적화의 목적함수, 의사결정 시점, 분포 가정과 이산화를 정리합니다."
 key: 201803091
 modify_date: 2018-03-10
 picture_frame: shadow

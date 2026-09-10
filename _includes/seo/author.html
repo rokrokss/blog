@@ -1,0 +1,28 @@
+{
+  "@type": {% if _seo_author.type == 'organization' %}"Organization"{% else %}"Person"{% endif %},
+  "@id": {{ _seo_author.url | default: site.url | absolute_url | append: '#author' | jsonify }},
+  "name": {{ _seo_author.name | default: site.title | jsonify | replace: '<', '\u003c' }}
+  {%- if _seo_author.url -%},
+  "url": {{ _seo_author.url | absolute_url | jsonify }}
+  {%- endif -%}
+  {%- if _seo_author.bio -%},
+  "description": {{ _seo_author.bio | normalize_whitespace | jsonify | replace: '<', '\u003c' }}
+  {%- endif -%},
+  "sameAs": [
+    {%- assign _seo_social_count = 0 -%}
+    {%- assign _seo_social_names = 'github,linkedin,twitter,facebook' | split: ',' -%}
+    {%- for _seo_social_name in _seo_social_names -%}
+      {%- if _seo_author[_seo_social_name] -%}
+        {%- case _seo_social_name -%}
+          {%- when 'github' -%}{%- assign _seo_social_base = 'https://github.com/' -%}
+          {%- when 'linkedin' -%}{%- assign _seo_social_base = 'https://www.linkedin.com/in/' -%}
+          {%- when 'twitter' -%}{%- assign _seo_social_base = 'https://twitter.com/' -%}
+          {%- when 'facebook' -%}{%- assign _seo_social_base = 'https://www.facebook.com/' -%}
+        {%- endcase -%}
+        {%- if _seo_social_count > 0 -%},{%- endif -%}
+        {{ _seo_author[_seo_social_name] | prepend: _seo_social_base | jsonify }}
+        {%- assign _seo_social_count = _seo_social_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}

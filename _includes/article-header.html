@@ -43,5 +43,5 @@
 {%- endif -%}
 
 {%- if include.semantic != false -%}
-  <meta itemprop="headline" content="{{ _article_title }}">
+  <meta itemprop="headline" content="{{ _article_title | strip_html | escape }}">
 {%- endif -%}

@@ -1,6 +1,9 @@
 ---
 comments: true
-title: Machine Learning 분야의 state-of-the-art 모음 (자동 갱신)
+title: "Machine Learning 분야의 state-of-the-art 모음 (자동 갱신)"
+image_alt: "Machine Learning 분야의 state-of-the-art 모음 (자동 갱신) — 글 공유 카드"
+image: "/assets/images/social/201805311.png"
+description: "머신러닝과 자연어처리 분야의 과제별 최고 성능을 찾아볼 수 있는 외부 자료 링크 모음입니다. 논문을 읽으며 성능 비교 자료를 찾기 위해 남긴 북마크입니다."
 key: 201805311
 modify_date: 2018-05-31
 picture_frame: shadow

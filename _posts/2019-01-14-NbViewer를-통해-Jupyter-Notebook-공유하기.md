@@ -1,10 +1,13 @@
 ---
 comments: true
-title: NbViewer를 통해 Jupyter Notebook 공유하기
+title: "NbViewer를 통해 Jupyter Notebook 공유하기"
+image: "/assets/images/nbviewer/3.png"
+description: "Jupyter Notebook을 nbviewer로 공유하는 방법을 정리합니다. GitHub Gist에 노트북을 올리고 공개 URL을 nbviewer에 입력해 읽기 좋은 결과를 만드는 과정입니다."
 key: 201901140
 picture_frame: shadow
 tags:
   - etc
+image_alt: "노트북 URL을 입력하는 nbviewer 홈페이지"
 ---
 
 Jupyter Notebook 작업물 이쁘게 보여주기
@@ -15,7 +18,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/0.png){:width="400px"}
+&nbsp;&nbsp;&nbsp;&nbsp; ![Jupyter nbviewer 로고](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/0.png){:width="400px"}
 
 <br>
 
@@ -32,7 +35,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/1.png){:width="700px"}
+&nbsp;&nbsp; ![Jupyter Notebook 파일을 입력하는 GitHub Gist 생성 화면](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/1.png){:width="700px"}
 
 <br>
 
@@ -40,7 +43,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/2.png){:width="700px"}
+&nbsp;&nbsp; ![Gist에 업로드한 노트북의 Raw 링크 위치](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/2.png){:width="700px"}
 
 <br>
 
@@ -52,7 +55,7 @@ Jupyter Notebook 작업물 이쁘게 보여주기
 
 <br>
 
-&nbsp;&nbsp; ![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/3.png){:width="700px"}
+&nbsp;&nbsp; ![노트북 URL을 입력하는 nbviewer 홈페이지](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/nbviewer/3.png){:width="700px"}
 
 <br>
 

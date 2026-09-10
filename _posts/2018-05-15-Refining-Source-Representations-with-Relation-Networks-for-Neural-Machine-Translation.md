@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Refining Source Representations with Relation Networks for Neural Machine Translation
+title: "논문 요약: Refining Source Representations with Relation Networks for Neural Machine Translation"
+image: "/assets/images/paper-summary/Zhang-2017/1.png"
+description: "신경망 기계 번역의 소스 표현을 Relation Network로 보완하는 논문을 정리합니다. RNN의 정보 보존 한계, 단어 간 관계를 반영하는 구조와 번역 실험을 다룹니다."
 key: 201805151
 tags:
   - AI
   - NLP
   - NMT
   - 논문
+image_alt: "NMT 인코더의 단어 관계를 반영하는 Relation Network와 그래프 전파 구조"
 ---
 
 > 학회불명 2018
@@ -21,7 +24,7 @@ NMT에 Relation Network를 이용하여 RNN이 오래된 정보를 잊는 문제
 
 [논문 링크](https://arxiv.org/abs/1709.03980)
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Zhang-2017/1.png)
+![NMT 인코더의 단어 관계를 반영하는 Relation Network와 그래프 전파 구조](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Zhang-2017/1.png)
 
 ## Introduction
 

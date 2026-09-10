@@ -1,6 +1,9 @@
 ---
 comments: true
-title: Sentiment 관련 논문 리스트업
+title: "Sentiment 관련 논문 리스트업"
+image_alt: "Sentiment 관련 논문 리스트업 — 글 공유 카드"
+image: "/assets/images/social/201807091.png"
+description: "감성 분석과 은유 연구를 공부하며 모은 논문 링크입니다. ACL 2018, EMNLP 2017, ACL 2017의 관련 연구를 학회별로 정리했습니다."
 key: 201807091
 picture_frame: shadow
 tags:

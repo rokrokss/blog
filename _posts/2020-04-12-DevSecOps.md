@@ -1,10 +1,13 @@
 ---
 comments: true
-title: DevSecOps
+title: "DevSecOps"
+image: "/assets/images/devsecops/1.png"
+description: "DevSecOps의 개념과 DevOps와의 관계를 정리합니다. 개발·배포 과정에 보안을 통합하는 관점에서 Security as Code와 서비스 메시 활용을 살펴봅니다."
 key: 202004120
 picture_frame: shadow
 tags:
   - DevOps
+image_alt: "DevOps의 개발·운영·배포 과정에 보안을 더한 DevSecOps 비교"
 ---
 
 DevSecOps 개념에 대해 정리해보자.
@@ -62,7 +65,7 @@ allowfullscreen
 
 ## Service Mesh!?
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/0.png)
+![서비스 메시 등 기술 유행을 풍자한 만화](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/0.png)
 
 (블로그에는 언급한 적이 없지만 여기저기서 서비스메쉬 언급을 굉장히 많이 하고 다닌다...)
 
@@ -75,7 +78,7 @@ network feature 뿐 아니라 application capability까지 제공하는 구조�
 
 ## 결론
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/1.png)
+![DevOps의 개발·운영·배포 과정에 보안을 더한 DevSecOps 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/devsecops/1.png)
 
 DevOps와 크게 다른 점은 없다. 기존의 DevOps 프로세스를 Secure하게 전달하자!
 

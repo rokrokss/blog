@@ -1,6 +1,8 @@
 ---
 comments: true
-title: 논문 요약&#58; Deep-speare&#58; a Joint Neural Model of Poetic Language, Meter and Rhyme
+title: "논문 요약: Deep-speare: a Joint Neural Model of Poetic Language, Meter and Rhyme"
+image: "/assets/images/paper-summary/Lau-ACL2018/1.png"
+description: "Deep-speare 논문의 시 생성 모델을 정리합니다. 언어 모델, 오보격 운율 모델, 각운 모델을 함께 학습하는 구조와 데이터셋, 시를 생성하는 절차를 살펴봅니다."
 key: 201806261
 modify_date: 2018-06-27
 tags:
@@ -8,6 +10,7 @@ tags:
   - NLP
   - 논문
   - ACL
+image_alt: "Deep-speare의 언어·오보격·각운 모델을 결합한 시 생성 구조"
 ---
 
 > ACL 2018
@@ -43,7 +46,7 @@ tags:
 1) language model, 2) pentameter model(iambic pentameter를 포착하기 위한),
 3) rhyme model, 이 세 component로 이루어진 joint model이다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
+![Deep-speare의 언어·오보격·각운 모델을 결합한 시 생성 구조](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Lau-ACL2018/1.png)
 
 요렇게 생겼다. 모든 component는 각자 sub-task를 수행하는 multitask learning으로 여기고 통째로 학습된다.
 

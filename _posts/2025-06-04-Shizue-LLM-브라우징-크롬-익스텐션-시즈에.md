@@ -1,12 +1,15 @@
 ---
 comments: true
-title: LLM 크롬 익스텐션 "시즈에" 만들기
+title: "LLM 크롬 익스텐션 \"시즈에\" 만들기"
+image: "/assets/images/shizue/chat.gif"
+description: "LLM 크롬 익스텐션 시즈에의 개발기입니다. 웹페이지와 대화하는 사이드패널, 요약·대조번역, 실시간 AI 자막, PDF 번역과 다크모드 기능을 소개합니다."
 key: 202506040
 picture_frame: shadow
 tags:
   - AI
   - LLM
   - Prototyping
+image_alt: "시즈에의 웹페이지 대화 기능 시연"
 ---
 
 *크롬 웹스토어에 게시됐습니다.*

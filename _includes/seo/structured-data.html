@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {% if _seo_is_article %}"BlogPosting"{% elsif page.key == 'page-about' %}"ProfilePage"{% elsif page.url == '/' %}"WebSite"{% else %}"WebPage"{% endif %},
+  "@id": {{ _seo_url | jsonify }},
+  "url": {{ _seo_url | jsonify }},
+  "name": {% if page.url == '/' %}{{ site.title | jsonify | replace: '<', '\u003c' }}{% else %}{{ _seo_title | jsonify | replace: '<', '\u003c' }}{% endif %},
+  "description": {{ _seo_description | jsonify | replace: '<', '\u003c' }}
+  {%- if page.image or site.image -%},
+  "image": {{ _seo_image | jsonify }}
+  {%- endif -%}
+  {%- if _seo_is_article -%},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ _seo_url | jsonify }}},
+  "headline": {{ _seo_title | jsonify | replace: '<', '\u003c' }}
+    {%- if page.date -%},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}
+    {%- endif -%}
+    {%- if page.modify_date -%},
+  "dateModified": {{ page.modify_date | date_to_xmlschema | jsonify }}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if page.key == 'page-about' -%},
+  "mainEntity": {% include seo/author.html %}
+  {%- else -%},
+  "author": {% include seo/author.html %}
+  {%- endif -%},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify | replace: '<', '\u003c' }},
+    "url": {{ site.url | jsonify }}
+    {%- if site.author.avatar -%},
+    "logo": {"@type": "ImageObject", "url": {{ site.author.avatar | absolute_url | jsonify }}}
+    {%- endif -%}
+  }
+}
+</script>

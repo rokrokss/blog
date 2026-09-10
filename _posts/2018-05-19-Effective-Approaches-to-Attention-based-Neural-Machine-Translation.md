@@ -1,6 +1,8 @@
 ---
 comments: true
-title: 논문 요약&#58; Effective Approaches to Attention-based Neural Machine Translation
+title: "논문 요약: Effective Approaches to Attention-based Neural Machine Translation"
+image: "/assets/images/paper-summary/Luong-EMNLP2015/2.png"
+description: "Luong 등의 attention 기반 신경망 기계 번역 논문을 정리합니다. Global·local attention의 차이, input feeding 구조와 번역 실험에서의 관찰을 살펴봅니다."
 key: 201805191
 tags:
   - AI
@@ -8,6 +10,7 @@ tags:
   - NMT
   - 논문
   - EMNLP
+image_alt: "전체 입력 위치를 참조하는 global attention 번역 모델"
 ---
 
 > EMNLP 2015
@@ -22,7 +25,7 @@ local attention-based model과 global attention-based model 비교.
 
 아래는 기존 NMT
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/1.png){:width="400px"}
+![입력 문장을 출력 문장으로 번역하는 다층 순환신경망 구조](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/1.png){:width="400px"}
 
 
 ## Introduction
@@ -82,7 +85,7 @@ $$p({ y }_{ t }|{ y }_{ <t },x)=softmax({ W }_{ s }{ \widetilde { h } }_{ t })$$
 
 ### Global Attention
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/2.png){:width="400px"}
+![전체 입력 위치를 참조하는 global attention 번역 모델](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/2.png){:width="400px"}
 
 Global Attention model은 $${c}_{t}$$를 뽑아낼 때, encoder의 모든 hidden state를 고려한다.
 이를 위해서는 alignment vector $${a}_{t}$$가 필요하다. $${a}_{t}$$는 source side의 timestep 갯수와 동일한 크기를 가진다.
@@ -111,7 +114,7 @@ score를 구할 때, 이 논문은 세 가지를 시험했고, [Bahdanau et al. 
 
 ### Local Attention
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/3.png){:width="400px"}
+![일부 입력 구간에 집중하는 local attention 번역 모델](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/3.png){:width="400px"}
 
 global attention은 전체 source word를 attend했다.
 이는 resource가 많이 필요하고, 긴 문작 혹은 문맥을 해석하는 데에 비실용적이다.
@@ -150,7 +153,7 @@ $${ a }_{ t }(s)=align({ h }_{ t },{ \bar { h } }_{ s })exp(-\frac { { (s- }{ p 
 
 ### Input-feeding Approach
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/4.png){:width="400px"}
+![이전 attention 출력을 다음 단계 입력에 넣는 input-feeding 구조](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Luong-EMNLP2015/4.png){:width="400px"}
 
 이 논문의 모델에서는, atttentional decision이 독립적으로 이뤄진다.
 하지만, 일반적인 machine training에서는 어느 단어가 번역이 완료되었는지 지속적으로 체크한다.

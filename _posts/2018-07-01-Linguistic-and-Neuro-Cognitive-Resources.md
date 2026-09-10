@@ -1,6 +1,9 @@
 ---
 comments: true
-title: 1st Workshop on Linguistic and Neuro-Cognitive Resources (LiNCR) 정리
+title: "1st Workshop on Linguistic and Neuro-Cognitive Resources (LiNCR) 정리"
+image_alt: "1st Workshop on Linguistic and Neuro-Cognitive Resources (LiNCR) 정리 — 글 공유 카드"
+image: "/assets/images/social/201807011.png"
+description: "LREC 2018의 Linguistic and Neuro-Cognitive Resources 워크숍 자료를 모았습니다. 언어 처리와 뇌 활동, EEG·fMRI·시선 데이터 등을 다루는 논문 링크를 소개합니다."
 key: 201807011
 picture_frame: shadow
 tags:

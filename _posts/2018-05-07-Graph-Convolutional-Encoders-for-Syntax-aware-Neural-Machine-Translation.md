@@ -1,6 +1,8 @@
 ---
 comments: true
-title: 논문 요약&#58; Graph Convolutional Encoders for Syntax-aware Neural Machine Translation
+title: "논문 요약: Graph Convolutional Encoders for Syntax-aware Neural Machine Translation"
+image: "/assets/images/paper-summary/Bastings-EMNLP2017/9.png"
+description: "구문 정보를 활용하는 신경망 기계 번역 논문을 정리합니다. GCN의 방향·레이블·게이팅 처리와 기존 인코더에 그래프 합성곱을 결합하는 방법, 번역 성능 비교를 다룹니다."
 key: 201805061
 tags:
   - AI
@@ -8,6 +10,7 @@ tags:
   - NMT
   - 논문
   - EMNLP
+image_alt: "CNN 인코더 위에 구문 관계를 반영하는 GCN 레이어를 쌓은 구조"
 ---
 
 > EMNLP 2017
@@ -47,7 +50,7 @@ graph-convolutional networks(GCNs)는 graph-structured data를 이용하기 위�
   
 NMT<span style="color:blue">(Kalchbrenner and Blunsom, 2013; Sutskever et al., 2014; Cho et al., 2014b)</span>는 parallel corpus를 이용하여 neural net을 train하고 target sentence given source sentence의 conditional probability를 계산한다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/1.png)
+![소스 문장에 대한 목표 번역 문장의 조건부 확률](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/1.png)
 
 또한, attention mechanism을 이용하여 decoder가 encoder에 따라 영향을 받으며 작동하게 한다.
 
@@ -61,7 +64,7 @@ encoder는 source sentence를 input으로 sequence of hidden states를 만든다
 
 RNN은 sequential data를 이용한다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/2.png)
+![이전 상태와 입력으로 RNN 표현을 계산하는 식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/2.png)
 
 f는 LSTM이나 GRU를 이용함으로 만들어진 비선형함수.
 
@@ -69,7 +72,7 @@ f는 LSTM이나 GRU를 이용함으로 만들어진 비선형함수.
 
 이전 words만 사용하지 않고 이후 words도 사용하기 위해 BiRNN이 사용된다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/3.png)
+![순방향·역방향 RNN을 연결한 BiRNN 인코더 표현](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/3.png)
 
 F: forward, B: backward
 
@@ -81,7 +84,7 @@ RNN에 비해 장점이 있다면 fast parallel computation이 가능하다.
 
 Layer를 늘리면 non-local context또한 포함하여 loss를 줄일 수 있다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/4.png)
+![주변 단어를 입력으로 사용하는 CNN 인코더 표현](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/4.png)
 
 f는 ReLU와 같은 함수가 결합된 비선형함수, w는 window size.
 
@@ -91,7 +94,7 @@ BoW에는 모든 word를 그의 word embedding으로 encode하고, position 정�
 
 There are different strategies for defining position embeddings, and in this paper we choose to learn a vector for each absolute word position up to a certain maximum length. 
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/5.png)
+![단어 벡터와 위치 벡터를 더하는 BoW 인코더 표현](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/5.png)
 
 xt는 word embedding, pt는 t-th position embedding.
 
@@ -119,17 +122,17 @@ X가 d*n 차원의 행렬로, 모든 node의 정보(dimension d짜리 word embed
 
 1-layer GCN의 경우, output이 되는 hidden states는 아래와 같다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/6.png)
+![인접 노드의 정보를 합산하는 그래프 합성곱 계산식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/6.png)
 
 W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activation function이다.
 
 요렇게 하면 GCN layer가 더 쌓일 때 recursive computation으로 아래와 같은 식이 나옴.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/7.png)
+![여러 GCN 레이어에서 노드 표현을 갱신하는 식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/7.png)
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/8.png)
+![GCN 레이어 번호와 초기 노드 표현의 정의](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/8.png)
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/9.png)
+![CNN 인코더 위에 구문 관계를 반영하는 GCN 레이어를 쌓은 구조](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/9.png)
 
 ## 2.3. Syntactic GCNs
 
@@ -140,7 +143,7 @@ W는 d*d차원의 weight matrix, b는 d차원의 bias vector, 로우는 activati
 directionality를 이용하려면 incoming과 outgoing edge에 다른 weight matrix가 적용되야 한다. dependency tree에서는 edge가 출발점의 dependents로 향하므로, outgoing edge를 head-to-dependent connection, incoming edge를 dependent-to-head connection으로 사용한다.
 이제 앞의 general GCN의 recursive computation을 아래처럼 수정할 수 있다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/10.png)
+![간선 방향별 가중치를 사용하는 구문 GCN 계산식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/10.png)
 
 여기서 dir(u, v)는 (u, v)의 방향에 따라 다른 weight matrix를 선택한다.
 
@@ -150,7 +153,7 @@ directionality를 이용하려면 incoming과 outgoing edge에 다른 weight mat
 
 ### Labels.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/11.png)
+![구문 관계 레이블별 가중치를 사용하는 GCN 계산식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/11.png)
 
 이제 direction에 따라만 W가 바뀌는게 아닌 label과 direction의 combination에 따라 바뀜 => over-parametriztion.
 
@@ -162,19 +165,19 @@ Syntactic GCNs는 gates가 있어서 각 edge의 기여도를 줄이며 noisy할
 
 그러기 위해 각 edge에서 아래처럼 scalar gate value를 계산한다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/12.png)
+![각 구문 간선의 중요도를 조절하는 sigmoid gate 계산식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/12.png)
 
 sigma는 logistic sigmoid function.
 
 아래 둘은 gate를 위해 학습된 parameters
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/13.png)
+![간선 게이트의 방향별 가중치 벡터 차원](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/13.png)
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/14.png)
+![구문 관계 레이블에 대응하는 게이트 편향값](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/14.png)
 
 따라서 최종 computation은
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/15.png)
+![간선별 게이트를 적용한 GCN 노드 표현 갱신식](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/15.png)
 
 # 3. Graph Convolutional Encoders
 
@@ -247,7 +250,7 @@ validation BLEU가 99.2 달성.
 
 bias terms of gates의 평균 value는 아래와 같은 그래프를 만듬.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/16.png)
+![학습에 따른 실제 간선과 가짜 간선의 게이트 편향 변화](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/16.png)
 
 gate가 효과가 좋음을 확인 가능.
 
@@ -277,7 +280,7 @@ Czech와 German side에서는 rare words와 합성어에 대처해주기 위해 
 
 Given the size of our data set, and following <span style="color:blue">Wu et al. (2016)</span>, we use 8000 BPE merges to obtain robust frequencies for our subword units (16000 merges for full data experiment). Data set statistics are summarized in Table 1 and vocabulary sizes in Table 2. 
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/17.png)
+![영어·독일어와 영어·체코어 번역 데이터셋의 문장 수](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/17.png)
 
 #### Hyperparameters.
 
@@ -305,19 +308,19 @@ BLEU result<span style="color:blue">(Papineni et al., 2002)</span> using multi-b
 
 #### En-Ge
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/18.png)
+![영어·독일어 번역에서 인코더별 GCN 추가 효과 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/18.png)
 
 #### En-Cz
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/19.png)
+![영어·체코어 번역에서 인코더별 GCN 추가 효과 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/19.png)
 
 #### Effect of GCN layers.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/20.png)
+![GCN 레이어 수에 따른 영어·독일어와 영어·체코어 BLEU 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/20.png)
 
 #### Effect of sentence length.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/21.png)
+![문장 길이에 따른 CNN·BiRNN과 GCN 결합 모델의 BLEU 변화](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Bastings-EMNLP2017/21.png)
 
 #### Discussion.
 

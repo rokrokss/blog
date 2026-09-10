@@ -1,6 +1,8 @@
 ---
 comments: true
-title: 논문 요약&#58; Design Challenges for Entity Linking
+title: "논문 요약: Design Challenges for Entity Linking"
+image: "/assets/images/paper-summary/Ling-TACL2015/1.png"
+description: "Design Challenges for Entity Linking 논문을 정리합니다. 개체 연결 연구의 데이터셋·평가 지표 차이, NIL 개체 처리와 일관된 평가를 위한 가이드라인을 다룹니다."
 key: 201805241
 tags:
   - AI
@@ -8,6 +10,7 @@ tags:
   - EL
   - 논문
   - TACL
+image_alt: "Entity Linking 연구별 평가 데이터셋 사용 현황 비교표"
 ---
 
 > TACL 2015
@@ -51,7 +54,7 @@ Wikipedia에 없는 entity들. AIDA data는 비슷한 annotation으로 NIL entit
 
 ## Datasets
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Ling-TACL2015/1.png)
+![Entity Linking 연구별 평가 데이터셋 사용 현황 비교표](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Ling-TACL2015/1.png)
 
 당시 approach들이 사용하는 dataset의 sparsity를 보여 주는 표.
 

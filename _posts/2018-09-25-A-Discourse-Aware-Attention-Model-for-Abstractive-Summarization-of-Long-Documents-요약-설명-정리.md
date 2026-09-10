@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents
+title: "논문 요약: A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents"
+image: "/assets/images/paper-summary/Cohan-NAACL2018/1.png"
+description: "긴 문서의 추상적 요약을 위한 담화 인식 attention 모델을 정리합니다. 단어·섹션 계층의 인코더와 디코더 구조, arXiv·PubMed 데이터셋 평가를 살펴봅니다."
 key: 201809250
 tags:
   - AI
   - NLP
   - 논문
   - NAACL
+image_alt: "단어·섹션 attention을 결합한 긴 문서 요약 인코더·디코더"
 ---
 
 > NAACL 2018
@@ -27,10 +30,10 @@ Attention Mechanism만 알고 있다면 별로 어렵지 않습니다. 먼저 [�
  
 ## Model
  
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/1.png){:width="500px"}
+![단어·섹션 attention을 결합한 긴 문서 요약 인코더·디코더](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/1.png){:width="500px"}
  
 ## Result
  
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/2.png){:width="400px"}
+![arXiv·PubMed 문서 요약에서 모델별 ROUGE 점수 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Cohan-NAACL2018/2.png){:width="400px"}
  
 빠진 수식들은 [본 논문](https://arxiv.org/pdf/1804.05685.pdf)을 보시기 바랍니닷.

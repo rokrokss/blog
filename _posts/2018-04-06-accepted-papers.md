@@ -1,6 +1,9 @@
 ---
 comments: true
-title: ML 주요 학회 accepted papers
+title: "ML 주요 학회 accepted papers"
+image_alt: "ML 주요 학회 accepted papers — 글 공유 카드"
+image: "/assets/images/social/201804061.png"
+description: "AAAI, ICML, NIPS, CVPR, ACL 등 머신러닝·컴퓨터비전·자연어처리 주요 학회의 논문 목록 링크를 모았습니다. 2015~2018년 자료를 찾기 위한 학습용 북마크입니다."
 key: 201804061
 modify_date: 2018-05-18
 picture_frame: shadow

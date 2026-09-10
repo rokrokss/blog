@@ -1,11 +1,12 @@
 ---
 comments: true
-title: '“메이플스토리 만들어줘”: Astra, Fable, Meshy AI'
+title: "“메이플스토리 만들어줘”: Astra, Fable, Meshy AI"
+description: "Astra와 Fable에 같은 프롬프트로 메이플스토리풍 게임을 만들어 달라고 요청했습니다. 제작 시간·플레이 경험을 비교하고 Meshy AI로 3D를 구현한 과정을 기록합니다."
 key: 202609090
 permalink: /post/2026/09/09/make-maplestory-with-ai.html
 picture_frame: shadow
 excerpt: Astra와 Fable에 같은 요청을 해봤다. 
-image: /assets/images/maplestory-ai/astra-meshy-3d.jpg
+image: "/assets/images/maplestory-ai/astra-meshy-3d.jpg"
 tags:
   - AI
   - LLM
@@ -13,6 +14,7 @@ tags:
 mathjax: false
 mermaid: false
 chart: false
+image_alt: "Astra와 Meshy AI로 구현한 메이플스토리풍 3D 게임 화면"
 ---
 
 Astra와 Fable에 같은 요청을 해봤다. 

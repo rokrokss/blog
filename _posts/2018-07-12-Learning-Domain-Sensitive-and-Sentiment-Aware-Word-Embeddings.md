@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Learning Domain-Sensitive and Sentiment-Aware Word Embeddings
+title: "논문 요약: Learning Domain-Sensitive and Sentiment-Aware Word Embeddings"
+image: "/assets/images/paper-summary/Shi-ACL2018/2.png"
+description: "도메인과 감성 정보를 함께 반영하는 단어 임베딩 DSE 논문을 정리합니다. 임베딩 설계, 감성 정보 활용, 추론 알고리즘과 도메인 간 감성 분류 실험을 다룹니다."
 key: 201807121
 tags:
   - AI
   - NLP
   - 논문
   - ACL
+image_alt: "도메인 간 감성 분류에서 단어 임베딩 방법별 성능 비교"
 ---
 
 > ACL 2018
@@ -95,7 +98,7 @@ $$
 
 domain $$D^p, D^q$$는 주어진 것으로 한다. 그리고 EM 알고리즘을 사용하는데.......
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
+![도메인·감성 단어 임베딩 DSE의 EM negative sampling 알고리즘](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/1.png){:width="400px"}
 
 논문 한 페이지를 꽉 채우는 식들을 다 봐야한다. 논문을 직접 보는 것을 추천...
 
@@ -112,7 +115,7 @@ text와 1-to-5 score가 있는데, 3 이상은 positive, 미만은 negative revi
 
 ## Results
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
+![도메인 간 감성 분류에서 단어 임베딩 방법별 성능 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/Shi-ACL2018/2.png){:width="800px"}
 
 
 

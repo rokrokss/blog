@@ -1,12 +1,15 @@
 ---
 comments: true
-title: 논문 요약&#58; Convolutional Neural Networks for Sentence Classification
+title: "논문 요약: Convolutional Neural Networks for Sentence Classification"
+image: "/assets/images/paper-summary/YKim-EMNLP2014/model.png"
+description: "Yoon Kim의 문장 분류용 CNN 논문을 요약합니다. 단어 임베딩에 합성곱과 풀링을 적용하는 구조, 사전학습 벡터 활용 방식과 데이터셋별 분류 결과를 살펴봅니다."
 key: 201806161
 tags:
   - AI
   - NLP
   - 논문
   - EMNLP
+image_alt: "단어 임베딩에 합성곱과 max-pooling을 적용하는 문장 분류 CNN"
 ---
 
 > EMNLP 2014
@@ -18,7 +21,7 @@ Sentence Classification을 위한 CNN 모델
 이번 학기에 NLP 프로젝트들이랑 과제만 하다보니 이 모델을 두번이나 쓰게 되었다.
 모델 외에 덧붙일 말은 별로 없을 것 같다.
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/YKim-EMNLP2014/model.png)
+![단어 임베딩에 합성곱과 max-pooling을 적용하는 문장 분류 CNN](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/YKim-EMNLP2014/model.png)
 
 pre-trained word vector를 token마다 적용하여 embedding을 만들고, Convolutional Layer -> Max-pooling -> Fully Connected Layer -> Softmax 구조를 가진다.
 
@@ -33,7 +36,7 @@ pre-trained word vector를 token마다 적용하여 embedding을 만들고, Conv
 - CNN-non-static : n x k의 word embedding matrix를 word2vec로부터 초기화 및 해당 weight에 대해서 학습.
 - CNN-multichannel : 2개의 static, non-static n x k word embedding matrix를 사용하며, 두가지 결과를 합쳐서 학습. 
 
-![text](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/YKim-EMNLP2014/result.png)
+![여러 문장 분류 데이터셋에서 CNN 변형과 기존 모델의 성능 비교](https://raw.githubusercontent.com/rokrokss/blog/master/assets/images/paper-summary/YKim-EMNLP2014/result.png)
 
 각 방식별 결과와 다른 approach들과의 비교.
 
