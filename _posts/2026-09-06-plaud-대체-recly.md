@@ -1,6 +1,6 @@
 ---
 comments: true
-title: "녹음·전사 자동화 앱 Recly 만들기"
+title: "Plaud를 대체하는 녹음·전사 자동화 앱 Recly 만들기"
 description: "워치·폰·데스크톱의 녹음을 Google Drive에 올리고 전사하는 Recly 개발기입니다. 플랫폼별 구현, 공통 코어, 업로드·전사 흐름과 AI 활용 방식을 정리합니다."
 key: 202609060
 permalink: /post/2026/09/06/recly.html
